@@ -97,3 +97,11 @@ python scripts/collect.py
 
 大きな開発変更はCodexで細かなPull Requestに分けて実施します。議論で決めた要件はまずここに記録し、実装済みの機能と混同しないでください。
 
+
+## 次のプロジェクトでも再利用する開発ルール
+
+- [新しいものを作るときの共通プレイブック](docs/PROJECT_CREATION_PLAYBOOK.md) — 規模別の準備、企画テンプレート、PR開発、完成定義
+- [共通AGENTS.mdテンプレート](templates/COMMON_AGENTS_TEMPLATE.md) — 別プロジェクトに持ち込む短い不変条件の雛形。**このパスにあるだけでは自動適用されない**
+- [Curiosity Radar初動レビュー](docs/KICKOFF_RETROSPECTIVE.md) — 確認できた成功・改善すべきこと・優先順位・検証方法
+
+この共通ルールはCuriosity Radar専用の既存 [AGENTS.md](AGENTS.md) と役割が異なる。共通指示をすべてのリポジトリに自動適用したい場合は、使用するCodex環境のグローバル指示を別途設定・確認すること。既存プロジェクトの製品ルールはルートのAGENTS.mdを正本とする。
