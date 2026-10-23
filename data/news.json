@@ -1,0 +1,200 @@
+{
+  "generated_at": null,
+  "mode": "demo",
+  "errors": [],
+  "items": [
+    {
+      "id": "demo-browser-use",
+      "demo": true,
+      "category": "github",
+      "source": "GitHub · 公開リポジトリ例",
+      "title": "browser-use / browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "published": null,
+      "summary": "AIエージェントにブラウザー操作を任せるPythonライブラリ。定型業務の補助やブラウザー上の検証に応用できる。",
+      "reason": "個人開発の幅を広げられる技術。外部サービスでの自動化は利用規約を確認すること。",
+      "score": 95,
+      "tags": [
+        "AIエージェント",
+        "自動化",
+        "OSS"
+      ],
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "demo-changedetection",
+      "demo": true,
+      "category": "github",
+      "source": "GitHub · 公開リポジトリ例",
+      "title": "dgtlmoon / changedetection.io",
+      "url": "https://github.com/dgtlmoon/changedetection.io",
+      "published": null,
+      "summary": "ウェブサイトの変更を検出し、価格・再入荷・更新を監視できるオープンソースツール。",
+      "reason": "イベント・旅行・製品の新着監視などへの応用が考えられる。サイトごとの取得許可は別途確認。",
+      "score": 92,
+      "tags": [
+        "監視",
+        "価格変化",
+        "セルフホスト"
+      ],
+      "language": "Python"
+    },
+    {
+      "id": "demo-idea",
+      "demo": true,
+      "category": "money",
+      "source": "着想元: changedetection.io",
+      "title": "ニッチ業界向けの変更監視サービス",
+      "url": "https://github.com/dgtlmoon/changedetection.io",
+      "published": null,
+      "summary": "少数の店舗・事業者に、必要な公開情報だけを通知するサービスの需要を検証する。価格設定・費用・顧客需要は未検証。",
+      "reason": "汎用監視ではなく、特定の仕事に合った通知と確認フローで差別化する仮説。",
+      "score": 91,
+      "tags": [
+        "収益性未検証",
+        "SaaS",
+        "B2B"
+      ]
+    },
+    {
+      "id": "demo-karakeep",
+      "demo": true,
+      "category": "github",
+      "source": "GitHub · 公開リポジトリ例",
+      "title": "karakeep-app / karakeep",
+      "url": "https://github.com/karakeep-app/karakeep",
+      "published": null,
+      "summary": "リンク、ノート、画像などを整理するセルフホスト型ブックマークアプリ。AIによるタグ付けや全文検索に対応。",
+      "reason": "記事を「集める」だけで終わらせず、試す・実装するための個人知識基盤にできる。",
+      "score": 90,
+      "tags": [
+        "AI整理",
+        "ブックマーク",
+        "知識管理"
+      ],
+      "language": "TypeScript",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "demo-rsshub",
+      "demo": true,
+      "category": "github",
+      "source": "GitHub · 公開リポジトリ例",
+      "title": "DIYgod / RSSHub",
+      "url": "https://github.com/DIYgod/RSSHub",
+      "published": null,
+      "summary": "多様なウェブサービスをRSSとして配信するオープンソース基盤。取得対象ごとの規約・許諾が必要。",
+      "reason": "自分好みの情報収集機構を育てるための参考プロジェクト。",
+      "score": 84,
+      "tags": [
+        "RSS",
+        "情報収集",
+        "OSS"
+      ],
+      "language": "TypeScript",
+      "license": "AGPL-3.0"
+    },
+    {
+      "id": "demo-ai",
+      "demo": true,
+      "category": "ai",
+      "source": "情報源の案内",
+      "title": "AIニュース：生成AI・エージェント・開発ツール",
+      "url": "https://news.google.com/search?q=%E7%94%9F%E6%88%90AI",
+      "published": null,
+      "summary": "初回のGitHub Actions実行後、公開RSSからAI関連の記事が自動追加されます。これは記事そのものではなく収集カテゴリの説明です。",
+      "reason": "発表内容が実際の製品・開発にどう役立つかを調べるための入口。",
+      "score": 74,
+      "tags": [
+        "AI",
+        "エージェント"
+      ]
+    },
+    {
+      "id": "demo-security",
+      "demo": true,
+      "category": "security",
+      "source": "情報源の案内",
+      "title": "JVN・IPA・JPCERT/CC・CISAの注意喚起",
+      "url": "https://www.jpcert.or.jp/",
+      "published": null,
+      "summary": "脆弱性、緊急対策情報、CISAが悪用確認済みとしたCVEの更新を収集します。個別の速報を表したものではありません。",
+      "reason": "使っている製品・サービスのアップデート判断につながる情報。",
+      "score": 82,
+      "tags": [
+        "脆弱性",
+        "CVE",
+        "注意喚起"
+      ]
+    },
+    {
+      "id": "demo-travel",
+      "demo": true,
+      "category": "travel",
+      "source": "情報源の案内",
+      "title": "関東のドライブ・温泉・国内の穴場",
+      "url": "https://news.google.com/search?q=%E9%96%A2%E6%9D%B1%20%E6%97%85%E8%A1%8C%20%E6%B8%A9%E6%B3%89",
+      "published": null,
+      "summary": "国内旅行のニュースと週末ドライブ候補を収集します。所要時間や営業状況はリンク先で確認してください。",
+      "reason": "週末のお出かけや旅行計画を立てるための素材。",
+      "score": 78,
+      "tags": [
+        "ドライブ",
+        "温泉",
+        "関東"
+      ]
+    },
+    {
+      "id": "demo-hn",
+      "demo": true,
+      "category": "social",
+      "source": "情報源の案内",
+      "title": "Hacker Newsなどで話題の技術・サービス",
+      "url": "https://news.ycombinator.com/",
+      "published": null,
+      "summary": "技術系コミュニティの人気投稿や話題のニュースを収集します。Xの投稿を取得しているわけではありません。",
+      "reason": "ニュースメディアでは拾いにくい、開発者目線の注目トピックを探す。",
+      "score": 69,
+      "tags": [
+        "ネットの話題",
+        "Hacker News"
+      ]
+    },
+    {
+      "id": "demo-hobby",
+      "demo": true,
+      "category": "hobby",
+      "source": "情報源の案内",
+      "title": "ゲーム・ボードゲーム・ガジェットの新着",
+      "url": "https://news.google.com/search?q=%E3%83%9C%E3%83%BC%E3%83%89%E3%82%B2%E3%83%BC%E3%83%A0",
+      "published": null,
+      "summary": "ポケモン対戦やボードゲーム、ガジェット、AWS新機能などから関心の高い話題を収集します。",
+      "reason": "遊びにも個人開発にもつながる情報を探す。",
+      "score": 76,
+      "tags": [
+        "ゲーム",
+        "ボードゲーム",
+        "ガジェット"
+      ]
+    },
+    {
+      "id": "demo-activepieces",
+      "demo": true,
+      "category": "github",
+      "source": "GitHub · 公開リポジトリ例",
+      "title": "activepieces / activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "published": null,
+      "summary": "複数のサービスを接続し、処理を自動化できるオープンソースのワークフローツール。AIエージェントやMCPとの連携も可能。",
+      "reason": "定型業務を小さく自動化する実験に向いている。導入規模に応じた運用コストを確認。",
+      "score": 87,
+      "tags": [
+        "ワークフロー",
+        "MCP",
+        "自動化"
+      ],
+      "language": "TypeScript"
+    }
+  ]
+}
