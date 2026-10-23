@@ -1,7 +1,29 @@
 {
-  "generated_at": "2026-10-23T10:08:32.110432Z",
+  "generated_at": "2026-10-23T10:09:42.552394Z",
   "mode": "live",
   "items": [
+    {
+      "id": "github-4bef08f5f83b5a9b7d",
+      "category": "github",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "title": "Gathin23/cleanyourtv",
+      "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+      "published": "2026-10-23T08:01:15Z",
+      "source": "GitHub Search API",
+      "stars": 26022,
+      "star_delta": 4,
+      "language": "Java",
+      "license": null,
+      "tags": [
+        "adb",
+        "adblock",
+        "android-tv",
+        "android-tv-launcher",
+        "apple-tv"
+      ],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が4増加。",
+      "score": 95
+    },
     {
       "id": "security-5ddc5d30f8ed002a5b",
       "category": "security",
@@ -355,6 +377,22 @@
       "score": 94
     },
     {
+      "id": "money-4bef08f5f83b5a9b7d",
+      "category": "money",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "title": "OSSの導入・カスタマイズ支援 — cleanyourtv",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-23T08:01:15Z",
+      "source": "着想元: Gathin23/cleanyourtv",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 92
+    },
+    {
       "id": "social-eaf6e95c99cc41352e",
       "category": "social",
       "title": "Docker is weird",
@@ -467,7 +505,7 @@
       "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
       "published": "2026-10-23T10:03:06Z",
       "source": "GitHub Search API",
-      "stars": 19945,
+      "stars": 19946,
       "star_delta": 1,
       "language": "Go",
       "license": "MIT",
@@ -489,7 +527,7 @@
       "summary": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
       "published": "2026-10-23T08:30:54Z",
       "source": "GitHub Search API",
-      "stars": 20225,
+      "stars": 20226,
       "star_delta": 1,
       "language": "Rust",
       "license": "Apache-2.0",
@@ -504,25 +542,25 @@
       "score": 91
     },
     {
-      "id": "github-4bef08f5f83b5a9b7d",
+      "id": "github-81a7dc557ad3e7bb66",
       "category": "github",
-      "url": "https://github.com/Gathin23/cleanyourtv",
-      "title": "Gathin23/cleanyourtv",
-      "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
-      "published": "2026-10-23T08:01:15Z",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "title": "Ebony-Vinyl/dsh-our-free-model",
+      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi…",
+      "published": "2026-10-23T05:11:34Z",
       "source": "GitHub Search API",
-      "stars": 26018,
+      "stars": 38036,
       "star_delta": 1,
-      "language": "Java",
-      "license": null,
+      "language": "JavaScript",
+      "license": "MIT",
       "tags": [
-        "adb",
-        "adblock",
-        "android-tv",
-        "android-tv-launcher",
-        "apple-tv"
+        "ai-agents",
+        "deepseek",
+        "deepseek-harness",
+        "developer-tools",
+        "dsh"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が1増加。",
       "score": 91
     },
     {
@@ -569,6 +607,38 @@
         "OSS活用"
       ],
       "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 91
+    },
+    {
+      "id": "github-69450150efd0cc6113",
+      "category": "github",
+      "url": "https://github.com/google-research/harness2",
+      "title": "google-research/harness2",
+      "summary": "READMEを確認してください。",
+      "published": "2026-10-14T02:22:51Z",
+      "source": "GitHub Search API",
+      "stars": 18275,
+      "star_delta": 1,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
+      "score": 91
+    },
+    {
+      "id": "github-1b8e35a5a0147eea7e",
+      "category": "github",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "title": "browser-use/jev-ultrafast",
+      "summary": "Fastest and cheapest web agent",
+      "published": "2026-09-30T01:24:38Z",
+      "source": "GitHub Search API",
+      "stars": 23509,
+      "star_delta": 1,
+      "language": "Python",
+      "license": "MIT",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
       "score": 91
     },
     {
@@ -644,28 +714,6 @@
       "license": "MIT",
       "tags": [],
       "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
-      "score": 89
-    },
-    {
-      "id": "github-81a7dc557ad3e7bb66",
-      "category": "github",
-      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-      "title": "Ebony-Vinyl/dsh-our-free-model",
-      "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi…",
-      "published": "2026-10-23T05:11:34Z",
-      "source": "GitHub Search API",
-      "stars": 38035,
-      "star_delta": 0,
-      "language": "JavaScript",
-      "license": "MIT",
-      "tags": [
-        "ai-agents",
-        "deepseek",
-        "deepseek-harness",
-        "developer-tools",
-        "dsh"
-      ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。",
       "score": 89
     },
     {
@@ -824,38 +872,6 @@
       "score": 89
     },
     {
-      "id": "github-69450150efd0cc6113",
-      "category": "github",
-      "url": "https://github.com/google-research/harness2",
-      "title": "google-research/harness2",
-      "summary": "READMEを確認してください。",
-      "published": "2026-10-14T02:22:51Z",
-      "source": "GitHub Search API",
-      "stars": 18274,
-      "star_delta": 0,
-      "language": "Python",
-      "license": "Apache-2.0",
-      "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
-      "score": 89
-    },
-    {
-      "id": "github-1b8e35a5a0147eea7e",
-      "category": "github",
-      "url": "https://github.com/browser-use/jev-ultrafast",
-      "title": "browser-use/jev-ultrafast",
-      "summary": "Fastest and cheapest web agent",
-      "published": "2026-09-30T01:24:38Z",
-      "source": "GitHub Search API",
-      "stars": 23508,
-      "star_delta": 0,
-      "language": "Python",
-      "license": "MIT",
-      "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
-      "score": 89
-    },
-    {
       "id": "money-4683cd570ef39debe9",
       "category": "money",
       "url": "https://github.com/yetone/magpie",
@@ -888,15 +904,15 @@
       "score": 88
     },
     {
-      "id": "money-4bef08f5f83b5a9b7d",
+      "id": "money-81a7dc557ad3e7bb66",
       "category": "money",
-      "url": "https://github.com/Gathin23/cleanyourtv",
-      "title": "OSSの導入・カスタマイズ支援 — cleanyourtv",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-23T08:01:15Z",
-      "source": "着想元: Gathin23/cleanyourtv",
+      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+      "title": "業務特化のAIミニツール — dsh-our-free-model",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-10-23T05:11:34Z",
+      "source": "着想元: Ebony-Vinyl/dsh-our-free-model",
       "tags": [
-        "受託開発",
+        "AIサービス",
         "収益性未検証",
         "OSS活用"
       ],
@@ -916,6 +932,38 @@
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 88
+    },
+    {
+      "id": "money-69450150efd0cc6113",
+      "category": "money",
+      "url": "https://github.com/google-research/harness2",
+      "title": "OSSの導入・カスタマイズ支援 — harness2",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-14T02:22:51Z",
+      "source": "着想元: google-research/harness2",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 88
+    },
+    {
+      "id": "money-1b8e35a5a0147eea7e",
+      "category": "money",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "title": "中小事業者向けの作業自動化サポート — jev-ultrafast",
+      "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
+      "published": "2026-09-30T01:24:38Z",
+      "source": "着想元: browser-use/jev-ultrafast",
+      "tags": [
+        "自動化",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
       "score": 88
     },
     {
@@ -960,22 +1008,6 @@
       "source": "着想元: Niko1221/Strata",
       "tags": [
         "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 86
-    },
-    {
-      "id": "money-81a7dc557ad3e7bb66",
-      "category": "money",
-      "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-      "title": "業務特化のAIミニツール — dsh-our-free-model",
-      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-10-23T05:11:34Z",
-      "source": "着想元: Ebony-Vinyl/dsh-our-free-model",
-      "tags": [
-        "AIサービス",
         "収益性未検証",
         "OSS活用"
       ],
@@ -3329,6 +3361,20 @@
       "score": 41
     },
     {
+      "title": "【2026年秋の人気旅行先ランキング】九州旅行が急増、なぜ？…鹿児島は前年比198％、宮崎は204％に急伸 - ニコニコニュース",
+      "summary": "【2026年秋の人気旅行先ランキング】九州旅行が急増、なぜ？…鹿児島は前年比198％、宮崎は204％に急伸 ニコニコニュース",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WOXNLaTNmR3ZoRGY2SXlvcTRDV3MtYzlKWm5ZcEdHQ1cySUV4UURlUDB6WjBZZ2pWRFVRTjhUYnNlOGJQNjVOZ2Q2eVV6c0JxMXd2RQ?oc=5",
+      "published": "2026-10-15T23:15:25Z",
+      "id": "travel-5916669f9583fd2a85",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 41
+    },
+    {
       "title": "【ランキング】温泉ソムリエ50人が選ぶ「2026年 秋にオススメしたい温泉地」 - ゴールドオンライン",
       "summary": "【ランキング】温泉ソムリエ50人が選ぶ「2026年 秋にオススメしたい温泉地」 ゴールドオンライン",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBjaVRIT1VjYVg4SVlpcHM5OWJZQ0JWQU9TZllSV2xITVdDT1Rnb0VhSGtfUDFuclJYc1VlZmJtQ3RpVGVub0xpeFB1emlPQnZzcnc?oc=5",
@@ -3582,7 +3628,7 @@
       "title": "【FF】チョコボたちの大乱戦ボードゲームが2027年3月27日に発売。駆け引きを制してギサールの野菜を手に入れろ - ファミ通",
       "summary": "【FF】チョコボたちの大乱戦ボードゲームが2027年3月27日に発売。駆け引きを制してギサールの野菜を手に入れろ ファミ通",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5KWUtMZ3k5NlNBRHFTZlpNVDVDeHhPOFNuZS02enNPRmlUTzZuWmhDa0Y3LWNZT1JONDUzX0RaTHFJVmdMY2w3ZkZCNWc3TEsxV2FTb0Z2OA?oc=5",
-      "published": "2026-10-15T07:00:00Z",
+      "published": "2026-10-15T09:36:00Z",
       "id": "hobby-2b0b2429580f9b0e15",
       "category": "hobby",
       "source": "ポケモン・ゲーム",
@@ -3635,6 +3681,21 @@
         "公式動向"
       ],
       "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 37
+    },
+    {
+      "title": "「カイリキーを信じて！」―ポケモンバトルなのに“心理戦”が楽しめる新作ボードゲーム『お前、もしかしてロケット団？』を先行体験 - Yahoo!ニュース",
+      "summary": "「カイリキーを信じて！」―ポケモンバトルなのに“心理戦”が楽しめる新作ボードゲーム『お前、もしかしてロケット団？』を先行体験 Yahoo!ニュース",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVVBLT05sMk1nNnNVT3B6SFNkdXMwQzVFaUtIeDY2VUZOTzFwTXU2OEZsWHVkbHNPQ3RhbW1XX0pkNV93SzhMbHBvYXd3S2hvQ3V4Y0pCbExNODFOX2FtaVpIc3ZZMEVid0RUejVYeWtCNWM4LUJXS0FFNTU2Xzc1YU4zUGZJNVF5LTBWOF9R?oc=5",
+      "published": "2026-10-15T03:21:36Z",
+      "id": "hobby-78d745a231e8112c99",
+      "category": "hobby",
+      "source": "ポケモン・ゲーム",
+      "tags": [
+        "ゲーム",
+        "ボードゲーム"
+      ],
+      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
       "score": 37
     },
     {
@@ -3733,21 +3794,6 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kQ2FpQjFPcE5vdVFHbENFSHRGY1RSdzFZOXN0NDh6dW5McF9UaVdNTVY3OHVtV2dHMUhXLThYVWFJcXF6QldDbTZ6N0h0MWFwT0NmQUt3OWFZdF9OVzlKTGkxSmd1dld5YXc?oc=5",
       "published": "2026-10-15T03:00:03Z",
       "id": "hobby-a6b7de2fc790fffcf2",
-      "category": "hobby",
-      "source": "ポケモン・ゲーム",
-      "tags": [
-        "ゲーム",
-        "ボードゲーム"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 37
-    },
-    {
-      "title": "「カイリキーを信じて！」―ポケモンバトルなのに“心理戦”が楽しめる新作ボードゲーム『お前、もしかしてロケット団？』を先行体験 - Yahoo!ニュース",
-      "summary": "「カイリキーを信じて！」―ポケモンバトルなのに“心理戦”が楽しめる新作ボードゲーム『お前、もしかしてロケット団？』を先行体験 Yahoo!ニュース",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVVBLT05sMk1nNnNVT3B6SFNkdXMwQzVFaUtIeDY2VUZOTzFwTXU2OEZsWHVkbHNPQ3RhbW1XX0pkNV93SzhMbHBvYXd3S2hvQ3V4Y0pCbExNODFOX2FtaVpIc3ZZMEVid0RUejVYeWtCNWM4LUJXS0FFNTU2Xzc1YU4zUGZJNVF5LTBWOF9R?oc=5",
-      "published": "2026-10-15T03:00:03Z",
-      "id": "hobby-78d745a231e8112c99",
       "category": "hobby",
       "source": "ポケモン・ゲーム",
       "tags": [
@@ -4071,7 +4117,7 @@
       "title": "AWS Lambda ウェブ関数の発表 | Amazon Web Services ブログ - Amazon Web Services (AWS)",
       "summary": "AWS Lambda ウェブ関数の発表 | Amazon Web Services ブログ Amazon Web Services (AWS)",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQczRQaThVcUJHT0ZITUdGeENncmR2cEhaaUtfM0VNVzRfTGRwYmc4QzI5bFhHenJRNU9sV25XM3M4cm4ySDY3LVluUXF0Qk9QUFQ5aXVtU1pWQlF4TzNWeXk3ck1fYjZJd1pkWlZ6cm1KYjliY2J3SjVxSjNJR2FHcmRiMUZ3cE5OLU9ZZ2pmZW5ZSEF4VFM5VmJIa0l3Q3J2bkJFeHJ6T01IQmtoNThQeXo4ZzdIRlZabFlxd1Etaw?oc=5",
-      "published": "2026-10-15T07:00:00Z",
+      "published": "2026-10-15T07:41:27Z",
       "id": "hobby-590ceb2e33c7d64950",
       "category": "hobby",
       "source": "趣味・ガジェット",
