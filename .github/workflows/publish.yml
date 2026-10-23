@@ -49,6 +49,8 @@ jobs:
           fi
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Prepare public site (exclude source and workflow files)
         run: |
           mkdir -p _site/assets _site/data
