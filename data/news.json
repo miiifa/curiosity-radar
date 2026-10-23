@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:39:19.832012Z",
+  "generated_at": "2026-10-23T10:49:10.166557Z",
   "mode": "live",
   "items": [
     {
@@ -32,8 +32,8 @@
       "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
       "published": "2026-10-23T08:01:15Z",
       "source": "GitHub Search API",
-      "stars": 26081,
-      "star_delta": 59,
+      "stars": 26114,
+      "star_delta": 33,
       "language": "Java",
       "license": null,
       "tags": [
@@ -43,7 +43,7 @@
         "android-tv-launcher",
         "apple-tv"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が59増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が33増加。",
       "score": 99
     },
     {
@@ -70,8 +70,8 @@
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi…",
       "published": "2026-10-23T05:11:34Z",
       "source": "GitHub Search API",
-      "stars": 38092,
-      "star_delta": 56,
+      "stars": 38118,
+      "star_delta": 26,
       "language": "JavaScript",
       "license": "MIT",
       "tags": [
@@ -81,7 +81,7 @@
         "developer-tools",
         "dsh"
       ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が56増加。",
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が26増加。",
       "score": 99
     },
     {
@@ -679,6 +679,22 @@
       "score": 93
     },
     {
+      "id": "money-9816345b0430e76f4e",
+      "category": "money",
+      "url": "https://github.com/eternity4719/HowToLiveBetter",
+      "title": "OSSの導入・カスタマイズ支援 — HowToLiveBetter",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-21T07:20:02Z",
+      "source": "着想元: eternity4719/HowToLiveBetter",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
+    },
+    {
       "id": "money-be38b11f937cd76cc2",
       "category": "money",
       "url": "https://github.com/deepseek-ai/DeepInfer",
@@ -730,7 +746,7 @@
       "id": "social-eaf6e95c99cc41352e",
       "category": "social",
       "title": "Docker is weird",
-      "summary": "Hacker News: 510ポイント、225件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 514ポイント、233件のコメント。投稿先で内容を確認。",
       "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
       "source": "Hacker News",
       "published": "2026-10-22T23:45:56Z",
@@ -745,7 +761,7 @@
       "id": "social-67d9de400f929ce027",
       "category": "social",
       "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-      "summary": "Hacker News: 426ポイント、108件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 439ポイント、108件のコメント。投稿先で内容を確認。",
       "url": "https://edjefferson.com/localwiki/",
       "source": "Hacker News",
       "published": "2026-10-22T23:01:18Z",
@@ -760,7 +776,7 @@
       "id": "social-6eb73169f84ce43f98",
       "category": "social",
       "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
-      "summary": "Hacker News: 403ポイント、194件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 405ポイント、195件のコメント。投稿先で内容を確認。",
       "url": "https://github.com/NVIDIA/OpenShell",
       "source": "Hacker News",
       "published": "2026-10-22T17:44:06Z",
@@ -775,7 +791,7 @@
       "id": "social-c4ef979d44385fe4ae",
       "category": "social",
       "title": "Every AI model has the same \"controversial\" take on humans",
-      "summary": "Hacker News: 432ポイント、437件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 437ポイント、437件のコメント。投稿先で内容を確認。",
       "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
       "source": "Hacker News",
       "published": "2026-10-22T16:08:00Z",
@@ -790,7 +806,7 @@
       "id": "social-045a2ef443d2dc19e9",
       "category": "social",
       "title": "Run full iOS 16.5 firmware on Android Devices",
-      "summary": "Hacker News: 445ポイント、158件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 445ポイント、159件のコメント。投稿先で内容を確認。",
       "url": "https://github.com/oosexgang/hackios-xnu-kernel",
       "source": "Hacker News",
       "published": "2026-10-22T15:26:22Z",
@@ -805,7 +821,7 @@
       "id": "social-b3b089febd10cd22b0",
       "category": "social",
       "title": "Quad9 to exit France",
-      "summary": "Hacker News: 1222ポイント、412件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 1227ポイント、412件のコメント。投稿先で内容を確認。",
       "url": "https://quad9.net/news/blog/au-revoir-france/",
       "source": "Hacker News",
       "published": "2026-10-22T14:32:38Z",
@@ -820,7 +836,7 @@
       "id": "social-4172a5d1f809372749",
       "category": "social",
       "title": "eMudhra to exit global SSL/TLS certificate business",
-      "summary": "Hacker News: 1065ポイント、688件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 1066ポイント、688件のコメント。投稿先で内容を確認。",
       "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
       "source": "Hacker News",
       "published": "2026-10-22T13:33:39Z",
@@ -835,7 +851,7 @@
       "id": "social-760ea34d457135c080",
       "category": "social",
       "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
-      "summary": "Hacker News: 567ポイント、220件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 569ポイント、220件のコメント。投稿先で内容を確認。",
       "url": "https://news.ycombinator.com/item?id=50193416",
       "source": "Hacker News",
       "published": "2026-10-22T10:11:44Z",
@@ -850,7 +866,7 @@
       "id": "social-ce7705b5a8806fc4dc",
       "category": "social",
       "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
-      "summary": "Hacker News: 551ポイント、169件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 553ポイント、169件のコメント。投稿先で内容を確認。",
       "url": "https://simedw.com/2026/10/21/world-model-terminal/",
       "source": "Hacker News",
       "published": "2026-10-22T02:18:41Z",
@@ -884,19 +900,19 @@
       "score": 91
     },
     {
-      "id": "money-9816345b0430e76f4e",
-      "category": "money",
-      "url": "https://github.com/eternity4719/HowToLiveBetter",
-      "title": "OSSの導入・カスタマイズ支援 — HowToLiveBetter",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-21T07:20:02Z",
-      "source": "着想元: eternity4719/HowToLiveBetter",
-      "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "id": "github-1b8e35a5a0147eea7e",
+      "category": "github",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "title": "browser-use/jev-ultrafast",
+      "summary": "Fastest and cheapest web agent",
+      "published": "2026-09-30T01:24:38Z",
+      "source": "GitHub Search API",
+      "stars": 23511,
+      "star_delta": 1,
+      "language": "Python",
+      "license": "MIT",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
       "score": 91
     },
     {
@@ -918,7 +934,7 @@
       "id": "social-fee3d05e48142d8e73",
       "category": "social",
       "title": "Getting ready to operate GNU Taler in Germany",
-      "summary": "Hacker News: 303ポイント、130件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 304ポイント、129件のコメント。投稿先で内容を確認。",
       "url": "https://www.taler.net/en/news/2026-13.html",
       "source": "Hacker News",
       "published": "2026-10-22T16:14:31Z",
@@ -933,7 +949,7 @@
       "id": "social-050546a5bfa26223a4",
       "category": "social",
       "title": "Xbox wants you to pay 24 to 40 cents per hour to stream games you bought",
-      "summary": "Hacker News: 307ポイント、278件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 308ポイント、278件のコメント。投稿先で内容を確認。",
       "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/",
       "source": "Hacker News",
       "published": "2026-10-22T11:42:03Z",
@@ -963,22 +979,6 @@
         "huggingface",
         "jev"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
-      "score": 89
-    },
-    {
-      "id": "github-1b8e35a5a0147eea7e",
-      "category": "github",
-      "url": "https://github.com/browser-use/jev-ultrafast",
-      "title": "browser-use/jev-ultrafast",
-      "summary": "Fastest and cheapest web agent",
-      "published": "2026-09-30T01:24:38Z",
-      "source": "GitHub Search API",
-      "stars": 23510,
-      "star_delta": 0,
-      "language": "Python",
-      "license": "MIT",
-      "tags": [],
       "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
       "score": 89
     },
@@ -1081,7 +1081,7 @@
       "id": "social-63640e7cc1c616d427",
       "category": "social",
       "title": "The foolishness of \"natural language programming\" (1978)",
-      "summary": "Hacker News: 187ポイント、112件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 189ポイント、112件のコメント。投稿先で内容を確認。",
       "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
       "source": "Hacker News",
       "published": "2026-10-23T00:52:01Z",
@@ -1096,7 +1096,7 @@
       "id": "social-d2d147873d73c857a6",
       "category": "social",
       "title": "Ask HN: If the models are so good, why doesn't OpenAI just start 100 companies?",
-      "summary": "Hacker News: 172ポイント、155件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 173ポイント、161件のコメント。投稿先で内容を確認。",
       "url": "https://news.ycombinator.com/item?id=50200997",
       "source": "Hacker News",
       "published": "2026-10-22T21:03:55Z",
@@ -1168,28 +1168,28 @@
       "score": 79
     },
     {
-      "id": "social-feb96ce32c1cb9b21c",
+      "id": "social-426d9cff83b6f7aa13",
       "category": "social",
-      "title": "Jank – The native Clojure dialect with seamless C++ interop",
-      "summary": "Hacker News: 105ポイント、12件のコメント。投稿先で内容を確認。",
-      "url": "https://jank-lang.org/",
+      "title": "Railpass",
+      "summary": "Hacker News: 109ポイント、27件のコメント。投稿先で内容を確認。",
+      "url": "https://train.samismith.com/",
       "source": "Hacker News",
-      "published": "2026-10-22T23:56:36Z",
+      "published": "2026-10-22T21:38:32Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 78
+      "score": 79
     },
     {
-      "id": "social-426d9cff83b6f7aa13",
+      "id": "social-feb96ce32c1cb9b21c",
       "category": "social",
-      "title": "Railpass",
-      "summary": "Hacker News: 108ポイント、27件のコメント。投稿先で内容を確認。",
-      "url": "https://train.samismith.com/",
+      "title": "Jank – The native Clojure dialect with seamless C++ interop",
+      "summary": "Hacker News: 105ポイント、13件のコメント。投稿先で内容を確認。",
+      "url": "https://jank-lang.org/",
       "source": "Hacker News",
-      "published": "2026-10-22T21:38:32Z",
+      "published": "2026-10-22T23:56:36Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -1216,7 +1216,7 @@
       "id": "social-c0a20c3752cc5338a2",
       "category": "social",
       "title": "This I Believe (1952)",
-      "summary": "Hacker News: 92ポイント、36件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 93ポイント、36件のコメント。投稿先で内容を確認。",
       "url": "https://www.awakin.org/v2/read/view.php?tid=468",
       "source": "Hacker News",
       "published": "2026-10-23T02:19:38Z",
@@ -1231,7 +1231,7 @@
       "id": "social-595e0c468133c6b695",
       "category": "social",
       "title": "How does Fable 5.1 hide messages in images?",
-      "summary": "Hacker News: 94ポイント、30件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 96ポイント、31件のコメント。投稿先で内容を確認。",
       "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
       "source": "Hacker News",
       "published": "2026-10-22T21:41:13Z",
@@ -1306,7 +1306,7 @@
       "id": "social-16453fadf716a18f7b",
       "category": "social",
       "title": "The alien space of science: Coherent but cognitively unavailable directions",
-      "summary": "Hacker News: 73ポイント、15件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 75ポイント、18件のコメント。投稿先で内容を確認。",
       "url": "https://arxiv.org/abs/2603.01092",
       "source": "Hacker News",
       "published": "2026-10-22T13:25:01Z",
@@ -1393,6 +1393,21 @@
       "score": 74
     },
     {
+      "id": "social-7502ffe393ce17ad75",
+      "category": "social",
+      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
+      "summary": "Hacker News: 66ポイント、32件のコメント。投稿先で内容を確認。",
+      "url": "https://github.com/dsmurrell/onkey",
+      "source": "Hacker News",
+      "published": "2026-10-22T14:04:44Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 74
+    },
+    {
       "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について",
       "summary": "",
       "url": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",
@@ -1436,21 +1451,6 @@
       ],
       "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
       "score": 74
-    },
-    {
-      "id": "social-7502ffe393ce17ad75",
-      "category": "social",
-      "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
-      "summary": "Hacker News: 64ポイント、30件のコメント。投稿先で内容を確認。",
-      "url": "https://github.com/dsmurrell/onkey",
-      "source": "Hacker News",
-      "published": "2026-10-22T14:04:44Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 73
     },
     {
       "title": "Weekly Report: Microsoft Edgeに複数の脆弱性",
@@ -1516,7 +1516,7 @@
       "id": "social-75ad2fd9754844be19",
       "category": "social",
       "title": "The HTML-in-Canvas API origin trial",
-      "summary": "Hacker News: 51ポイント、23件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 53ポイント、24件のコメント。投稿先で内容を確認。",
       "url": "https://developer.chrome.com/blog/html-in-canvas-origin-trial",
       "source": "Hacker News",
       "published": "2026-10-22T19:54:04Z",
@@ -1531,7 +1531,7 @@
       "id": "social-2e7b82a6cf1fbca0a8",
       "category": "social",
       "title": "A lost Schrödinger manuscript reveals a twist in quantum physics",
-      "summary": "Hacker News: 49ポイント、29件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 50ポイント、29件のコメント。投稿先で内容を確認。",
       "url": "https://www.sciencealert.com/a-lost-schrdinger-manuscript-reveals-a-surprising-twist-in-quantum-physics",
       "source": "Hacker News",
       "published": "2026-10-22T07:41:29Z",
@@ -1591,7 +1591,7 @@
       "id": "social-439301370e2d55175c",
       "category": "social",
       "title": "I reverse engineered a board game",
-      "summary": "Hacker News: 42ポイント、15件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 42ポイント、16件のコメント。投稿先で内容を確認。",
       "url": "https://wuemeli.com/blog/reversing-hitster-game/",
       "source": "Hacker News",
       "published": "2026-10-21T13:40:31Z",
@@ -2747,11 +2747,39 @@
       "score": 47
     },
     {
+      "title": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に (2026年10月22日掲載) - ライブドアニュース",
+      "summary": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に (2026年10月22日掲載) ライブドアニュース",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ob0pjUW51SHRLbUNLREM4ODBTeEthXzgtSE9xaXRaajRDZU5uNkg4UkxKTWV5X3I2NmNJbmtVMENiR3FORkwzdmI3NG5TamlGM3NSUXRHbjVwdnZMUmc?oc=5",
+      "published": "2026-10-22T02:49:30Z",
+      "id": "social-55c6b8bbd4a61bc2ad",
+      "category": "social",
+      "source": "話題のニュース",
+      "tags": [
+        "話題"
+      ],
+      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
+      "score": 47
+    },
+    {
       "title": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に - オリコンニュース",
       "summary": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に オリコンニュース",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5GeVBTNG9GdWNQRjFkb09oWWJiZTNOWGhPRHBpcTJHRGhtMjY1ME5TRHZyQmxrblhMZTVobzFFY0dhMEh1ZnFUUFVDS1ZEUmM?oc=5",
       "published": "2026-10-22T02:49:00Z",
       "id": "social-62b51f0d94f4515619",
+      "category": "social",
+      "source": "話題のニュース",
+      "tags": [
+        "話題"
+      ],
+      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
+      "score": 47
+    },
+    {
+      "title": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に - 山陽新聞デジタル｜さんデジ",
+      "summary": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に 山陽新聞デジタル｜さんデジ",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13SlhaY3YteVJicDJ6QTFzOXhqUElyTm05OGdJNU5SbDdfeXBveFAtb3NIQWpNczB5MjdpbldtR3haMXc2a050dEdrSzFIN2xZd1NpbHBPVkRCaUg3aWc?oc=5",
+      "published": "2026-10-22T02:49:00Z",
+      "id": "social-89fbfce763b45e8f68",
       "category": "social",
       "source": "話題のニュース",
       "tags": [
@@ -2981,6 +3009,20 @@
       "score": 45
     },
     {
+      "title": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(1/3) - Finasee",
+      "summary": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(1/3) Finasee",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1zSTllU0FsY1BidkRxX04yb0VQem9jVDFLY0pLYUpNVHQzSHJoNDVFeURHTVZoMjIycEs0bk1SNjZ4clZwYzRKaGJlbHJrY3F1S1Jr?oc=5",
+      "published": "2026-10-20T21:00:00Z",
+      "id": "social-f33df1b7e25fbbdd0d",
+      "category": "social",
+      "source": "話題のニュース",
+      "tags": [
+        "話題"
+      ],
+      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
+      "score": 45
+    },
+    {
       "title": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(3/3) - Finasee",
       "summary": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(3/3) Finasee",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVX1NlOEg0T2dqQ2FVWlFMTld6MnZFbEVhOHgzcTJSeFNuUW9EZ3RZV1BMWUs1UkRJRElhRmU2cVROWkNKbm5vd2xJU3luOFN5SHlIcmt2U2hYTHZm?oc=5",
@@ -3156,6 +3198,20 @@
         "最新技術"
       ],
       "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 44
+    },
+    {
+      "title": "【国内旅行】じゃらん人気温泉地ランキング 2022 ー西日本編ー Lane Kiffin (MZ8Bt9odcy) - Unisba Media",
+      "summary": "【国内旅行】じゃらん人気温泉地ランキング 2022 ー西日本編ー Lane Kiffin (MZ8Bt9odcy) Unisba Media",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNa0Z1SEFIcDdyYVBHTjJNenBpWERKNXlVcHJabTUtUlFYaENYTWphVWxJaTBhWG5iZjFvQ21nR19UcGF0R1V4NTBFeDJHcklHNnROcDR3dmxWU2tBZFZiY29jSnF0VGtXeFZnWFpBVFh1RUYyM2UzWUo2c3BMTm5qOW1B?oc=5",
+      "published": "2026-10-17T16:26:45Z",
+      "id": "travel-f87fc6798a6772fb0f",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 44
     },
     {
@@ -3728,6 +3784,20 @@
       "score": 37
     },
     {
+      "title": "なぜ今、ジャイアンツ対ドジャースが日本で話題？ - 日本のトレンド (September 2026) | NewsDrop JP Alex Pereira (qVTreaQllk) - Unisba Media",
+      "summary": "なぜ今、ジャイアンツ対ドジャースが日本で話題？ - 日本のトレンド (September 2026) | NewsDrop JP Alex Pereira (qVTreaQllk) Unisba Media",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVThUcTloVmZOZDNUeFBPS050LURJQlNOOG5wU2xyeFNGbnNCRzJJVm5EZ1NaYWpleG9yVS1oSFpMYTc0TkRZVXlEODlsUk5TWXRyRTlFZTliSXVXb3dIcUVQeTRSMVhGcEduQ1JNdGtXUE1XRmp3ZnpEZnpkUWZJTmhR?oc=5",
+      "published": "2026-10-16T23:11:32Z",
+      "id": "social-4fce9775b4de639582",
+      "category": "social",
+      "source": "話題のニュース",
+      "tags": [
+        "話題"
+      ],
+      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
+      "score": 37
+    },
+    {
       "title": "全顧客に向けた生成 AI の構築：Itaú の取り組み - OpenAI",
       "summary": "全顧客に向けた生成 AI の構築：Itaú の取り組み OpenAI",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1wUklaMlVFbHdUT2V4Vmh2T19JeTU0OTVWODZCOHZPcjVPYVZ5WE5QTVNmXy1tUWl4akNrWW53ZUZIbkZNbXpUSndRNGEtSFNiYjV1NWJPNldmbUFjZktn?oc=5",
@@ -3907,11 +3977,11 @@
       "score": 36
     },
     {
-      "title": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 - Funliday",
-      "summary": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 Funliday",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GOURxQkdVVkRoXy1YWmNUYjg1LUxTWXJ2YVFWLVRER0Zva1ZmdHJpWVUzWTJBU0RYTktHNk9taEJqSWxsdU5ybDNtWG9YOHI3dmk0bERZMWxtQ3Jl?oc=5",
+      "title": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 - LIMO | くらしとお金の経済メディア",
+      "summary": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 LIMO | くらしとお金の経済メディア",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yVzR5c1AzNFY1QXpsMGZsR093ZFBVNEZ3clowQlFrYjJsdFFsU3VRSDhWMlZadnJCek5xYzhoOGxMaUsxMDl6blF1WlI?oc=5",
       "published": "2026-10-13T07:00:00Z",
-      "id": "travel-b87b835ee24e21a6cf",
+      "id": "travel-bd25e6fb1a07515890",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3921,11 +3991,11 @@
       "score": 36
     },
     {
-      "title": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 - LIMO | くらしとお金の経済メディア",
-      "summary": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 LIMO | くらしとお金の経済メディア",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yVzR5c1AzNFY1QXpsMGZsR093ZFBVNEZ3clowQlFrYjJsdFFsU3VRSDhWMlZadnJCek5xYzhoOGxMaUsxMDl6blF1WlI?oc=5",
+      "title": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 - Funliday",
+      "summary": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 Funliday",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GOURxQkdVVkRoXy1YWmNUYjg1LUxTWXJ2YVFWLVRER0Zva1ZmdHJpWVUzWTJBU0RYTktHNk9taEJqSWxsdU5ybDNtWG9YOHI3dmk0bERZMWxtQ3Jl?oc=5",
       "published": "2026-10-13T07:00:00Z",
-      "id": "travel-bd25e6fb1a07515890",
+      "id": "travel-b87b835ee24e21a6cf",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
