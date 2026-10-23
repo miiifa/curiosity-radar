@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:37:19.856983Z",
+  "generated_at": "2026-10-23T10:37:50.232631Z",
   "mode": "live",
   "items": [
     {
@@ -899,6 +899,22 @@
       "score": 90
     },
     {
+      "id": "money-9816345b0430e76f4e",
+      "category": "money",
+      "url": "https://github.com/eternity4719/HowToLiveBetter",
+      "title": "OSSの導入・カスタマイズ支援 — HowToLiveBetter",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-21T07:20:02Z",
+      "source": "着想元: eternity4719/HowToLiveBetter",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 90
+    },
+    {
       "id": "social-fee3d05e48142d8e73",
       "category": "social",
       "title": "Getting ready to operate GNU Taler in Germany",
@@ -976,22 +992,6 @@
       "source": "着想元: lexmount/moli",
       "tags": [
         "自動化",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 88
-    },
-    {
-      "id": "money-9816345b0430e76f4e",
-      "category": "money",
-      "url": "https://github.com/eternity4719/HowToLiveBetter",
-      "title": "OSSの導入・カスタマイズ支援 — HowToLiveBetter",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-21T07:20:02Z",
-      "source": "着想元: eternity4719/HowToLiveBetter",
-      "tags": [
-        "受託開発",
         "収益性未検証",
         "OSS活用"
       ],
@@ -1946,6 +1946,36 @@
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GSUxIUVFZRWEyb2ZiYXZodWFFX3ZBNEF4ZTBLN3RPR3JPWklma2lHWW9zLWZKcWlVMjE3OEkzQW9HYXRFMnJQQXRCTXIzTHJQX0EtN000cjRiR2dPcy1OQQ?oc=5",
       "published": "2026-10-23T03:17:31Z",
       "id": "ai-45615d2706e8308553",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 53
+    },
+    {
+      "title": "米大手行、サードパーティー製ＡＩエージェントの口座アクセス遮断＝関係筋 - Reuters",
+      "summary": "米大手行、サードパーティー製ＡＩエージェントの口座アクセス遮断＝関係筋 Reuters",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1rbW1lYXJmYWZKZUJFVGVMMXZZSUZYNS1zUDhTMzNCSjhDeFpFWGh3LWdkZ19hQ0FicHI3RUFqN0gwcTdXc0F5VHJQVVpvb2x1U2Fsd1hPVFdvLWpIYWZrdjNnWW1PZFpiY3FkSzQ4bUdMejFKZXNFemh1ZWVNZw?oc=5",
+      "published": "2026-10-22T23:11:01Z",
+      "id": "ai-53e34ec7cb14a1bb78",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 53
+    },
+    {
+      "title": "オラクル、業種別アプリ向けにAIエージェント基盤を発表 8業種に対応しMCPも利用可 - ビジネス+IT",
+      "summary": "オラクル、業種別アプリ向けにAIエージェント基盤を発表 8業種に対応しMCPも利用可 ビジネス+IT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9PckJ6ak10eXhRT1Z2dC1GcHBRamdpWVM1NENmTDhqZ1VFcGYxd2cteUFiWW1CYmpCVTZvQnFaakxIcnRXMUdLRjRsbFZNSl9fd0lr?oc=5",
+      "published": "2026-10-22T17:20:00Z",
+      "id": "ai-34236e837e055a5a1e",
       "category": "ai",
       "source": "AI・テクノロジー",
       "tags": [
@@ -2965,6 +2995,21 @@
       "score": 45
     },
     {
+      "title": "「言い訳文化」から脱却のNECが足立区に伝授した生成AI活用術とは データ活用“逆算”の鉄則 - キーマンズネット",
+      "summary": "「言い訳文化」から脱却のNECが足立区に伝授した生成AI活用術とは データ活用“逆算”の鉄則 キーマンズネット",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1SdWJGTnVoakhuWkNmNDRJZVk5UDhGa0dqQ0pZMFFlZG5Fd0hmN1Znc3FHSVFsVTFWTXhGeU15eXBGNzJlYmJiMGkwUU5heW9NRTBzcU1lbE1iNjN3ZFdBSUdyaVF5Zw?oc=5",
+      "published": "2026-10-18T22:00:00Z",
+      "id": "ai-3de0e49da20c3ff636",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 45
+    },
+    {
       "title": "UAT-11985: AI-assisted event lures delivering real-time Google AitM phishing",
       "summary": "Cisco Talos identified an APT spear-phishing campaign against individuals affiliated with Taiwan research organizations. The operation leveraged legitimate public event themes and impersonated reputable academic and policy institutions.",
       "url": "https://blog.talosintelligence.com/uat-11985/",
@@ -3447,11 +3492,11 @@
       "score": 40
     },
     {
-      "title": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 - 宮崎日日新聞",
-      "summary": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 宮崎日日新聞",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83a3RUTkRhNjVQXzBiY3paX3pNWXMwOVpFaTAzOFl0X2NnMnQ3NUtJTXVjeHBTb20tRVprRkQxN2laQmtFNUVfcHJfSFF1X2lpRU9NNHBJaHBuWlBLLXVqU01VTklOZ3hJRGtreDhZZ3hJRjg?oc=5",
+      "title": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 - まっぷるウェブ",
+      "summary": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 まっぷるウェブ",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01ZldEQXB4ZnNUS3VEMkRVWlU3cG5sU0NKdEtNTEd6cnJPSjNfSmdyR3ZpT1pUdk9rYjN1NzR5MVpoZWQ2cjg3Z1pITQ?oc=5",
       "published": "2026-10-15T07:00:00Z",
-      "id": "travel-68ce954bf7b3c94d59",
+      "id": "travel-d1d05cae383a9e30d8",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3461,11 +3506,11 @@
       "score": 40
     },
     {
-      "title": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 - まっぷるウェブ",
-      "summary": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 まっぷるウェブ",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01ZldEQXB4ZnNUS3VEMkRVWlU3cG5sU0NKdEtNTEd6cnJPSjNfSmdyR3ZpT1pUdk9rYjN1NzR5MVpoZWQ2cjg3Z1pITQ?oc=5",
+      "title": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 - 宮崎日日新聞",
+      "summary": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 宮崎日日新聞",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83a3RUTkRhNjVQXzBiY3paX3pNWXMwOVpFaTAzOFl0X2NnMnQ3NUtJTXVjeHBTb20tRVprRkQxN2laQmtFNUVfcHJfSFF1X2lpRU9NNHBJaHBuWlBLLXVqU01VTklOZ3hJRGtreDhZZ3hJRjg?oc=5",
       "published": "2026-10-15T07:00:00Z",
-      "id": "travel-d1d05cae383a9e30d8",
+      "id": "travel-68ce954bf7b3c94d59",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3848,11 +3893,11 @@
       "score": 36
     },
     {
-      "title": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 - Funliday",
-      "summary": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 Funliday",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GOURxQkdVVkRoXy1YWmNUYjg1LUxTWXJ2YVFWLVRER0Zva1ZmdHJpWVUzWTJBU0RYTktHNk9taEJqSWxsdU5ybDNtWG9YOHI3dmk0bERZMWxtQ3Jl?oc=5",
+      "title": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 - LIMO | くらしとお金の経済メディア",
+      "summary": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 LIMO | くらしとお金の経済メディア",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yVzR5c1AzNFY1QXpsMGZsR093ZFBVNEZ3clowQlFrYjJsdFFsU3VRSDhWMlZadnJCek5xYzhoOGxMaUsxMDl6blF1WlI?oc=5",
       "published": "2026-10-13T07:00:00Z",
-      "id": "travel-b87b835ee24e21a6cf",
+      "id": "travel-bd25e6fb1a07515890",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3862,11 +3907,11 @@
       "score": 36
     },
     {
-      "title": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 - LIMO | くらしとお金の経済メディア",
-      "summary": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 LIMO | くらしとお金の経済メディア",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yVzR5c1AzNFY1QXpsMGZsR093ZFBVNEZ3clowQlFrYjJsdFFsU3VRSDhWMlZadnJCek5xYzhoOGxMaUsxMDl6blF1WlI?oc=5",
+      "title": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 - Funliday",
+      "summary": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 Funliday",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GOURxQkdVVkRoXy1YWmNUYjg1LUxTWXJ2YVFWLVRER0Zva1ZmdHJpWVUzWTJBU0RYTktHNk9taEJqSWxsdU5ybDNtWG9YOHI3dmk0bERZMWxtQ3Jl?oc=5",
       "published": "2026-10-13T07:00:00Z",
-      "id": "travel-bd25e6fb1a07515890",
+      "id": "travel-b87b835ee24e21a6cf",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
