@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:38:19.271630Z",
+  "generated_at": "2026-10-23T10:39:19.832012Z",
   "mode": "live",
   "items": [
     {
@@ -869,7 +869,7 @@
       "summary": "A privacy-first app that strips AI watermarks from content you own.",
       "published": "2026-10-21T22:02:53Z",
       "source": "GitHub Search API",
-      "stars": 24695,
+      "stars": 24696,
       "star_delta": 1,
       "language": "Python",
       "license": "MIT",
@@ -882,21 +882,6 @@
       ],
       "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
       "score": 91
-    },
-    {
-      "id": "social-f6a301346a05e615cd",
-      "category": "social",
-      "title": "LLMs are making formal software verification feasible at a much larger scale",
-      "summary": "Hacker News: 350ポイント、207件のコメント。投稿先で内容を確認。",
-      "url": "https://www.anthropic.com/research/formal-verification",
-      "source": "Hacker News",
-      "published": "2026-10-22T22:54:43Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 90
     },
     {
       "id": "money-9816345b0430e76f4e",
@@ -912,6 +897,21 @@
         "OSS活用"
       ],
       "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 91
+    },
+    {
+      "id": "social-f6a301346a05e615cd",
+      "category": "social",
+      "title": "LLMs are making formal software verification feasible at a much larger scale",
+      "summary": "Hacker News: 350ポイント、207件のコメント。投稿先で内容を確認。",
+      "url": "https://www.anthropic.com/research/formal-verification",
+      "source": "Hacker News",
+      "published": "2026-10-22T22:54:43Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 90
     },
     {
