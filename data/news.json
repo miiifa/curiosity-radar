@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:07:31.949750Z",
+  "generated_at": "2026-10-23T10:08:32.110432Z",
   "mode": "live",
   "items": [
     {
@@ -339,6 +339,22 @@
       "score": 95
     },
     {
+      "id": "github-be38b11f937cd76cc2",
+      "category": "github",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "title": "deepseek-ai/DeepInfer",
+      "summary": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
+      "published": "2026-10-21T04:55:44Z",
+      "source": "GitHub Search API",
+      "stars": 20504,
+      "star_delta": 3,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が3増加。",
+      "score": 94
+    },
+    {
       "id": "social-eaf6e95c99cc41352e",
       "category": "social",
       "title": "Docker is weird",
@@ -444,6 +460,72 @@
       "score": 92
     },
     {
+      "id": "github-4683cd570ef39debe9",
+      "category": "github",
+      "url": "https://github.com/yetone/magpie",
+      "title": "yetone/magpie",
+      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "published": "2026-10-23T10:03:06Z",
+      "source": "GitHub Search API",
+      "stars": 19945,
+      "star_delta": 1,
+      "language": "Go",
+      "license": "MIT",
+      "tags": [
+        "claude-code",
+        "codex",
+        "deepseek",
+        "gemini-cli",
+        "llm"
+      ],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
+      "score": 91
+    },
+    {
+      "id": "github-9d064369411829e692",
+      "category": "github",
+      "url": "https://github.com/lexmount/moli",
+      "title": "lexmount/moli",
+      "summary": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+      "published": "2026-10-23T08:30:54Z",
+      "source": "GitHub Search API",
+      "stars": 20225,
+      "star_delta": 1,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "tags": [
+        "ai-agents",
+        "ai-tools",
+        "browser",
+        "browser-automation",
+        "cloud-browser"
+      ],
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が1増加。",
+      "score": 91
+    },
+    {
+      "id": "github-4bef08f5f83b5a9b7d",
+      "category": "github",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "title": "Gathin23/cleanyourtv",
+      "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
+      "published": "2026-10-23T08:01:15Z",
+      "source": "GitHub Search API",
+      "stars": 26018,
+      "star_delta": 1,
+      "language": "Java",
+      "license": null,
+      "tags": [
+        "adb",
+        "adblock",
+        "android-tv",
+        "android-tv-launcher",
+        "apple-tv"
+      ],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
+      "score": 91
+    },
+    {
       "id": "social-67d9de400f929ce027",
       "category": "social",
       "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
@@ -474,6 +556,22 @@
       "score": 91
     },
     {
+      "id": "money-be38b11f937cd76cc2",
+      "category": "money",
+      "url": "https://github.com/deepseek-ai/DeepInfer",
+      "title": "業務特化のAIミニツール — DeepInfer",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-10-21T04:55:44Z",
+      "source": "着想元: deepseek-ai/DeepInfer",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 91
+    },
+    {
       "id": "social-f6a301346a05e615cd",
       "category": "social",
       "title": "LLMs are making formal software verification feasible at a much larger scale",
@@ -497,7 +595,7 @@
       "published": "2026-10-23T10:06:47Z",
       "source": "GitHub Search API",
       "stars": 71605,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "Rust",
       "license": "Apache-2.0",
       "tags": [
@@ -511,28 +609,6 @@
       "score": 89
     },
     {
-      "id": "github-4683cd570ef39debe9",
-      "category": "github",
-      "url": "https://github.com/yetone/magpie",
-      "title": "yetone/magpie",
-      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-      "published": "2026-10-23T10:03:06Z",
-      "source": "GitHub Search API",
-      "stars": 19944,
-      "star_delta": null,
-      "language": "Go",
-      "license": "MIT",
-      "tags": [
-        "claude-code",
-        "codex",
-        "deepseek",
-        "gemini-cli",
-        "llm"
-      ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
-      "score": 89
-    },
-    {
       "id": "github-c92be186c651123ddf",
       "category": "github",
       "url": "https://github.com/anywhere-labs/dsh-desktop",
@@ -541,7 +617,7 @@
       "published": "2026-10-23T09:12:22Z",
       "source": "GitHub Search API",
       "stars": 32604,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "TypeScript",
       "license": "MIT",
       "tags": [
@@ -555,50 +631,6 @@
       "score": 89
     },
     {
-      "id": "github-9d064369411829e692",
-      "category": "github",
-      "url": "https://github.com/lexmount/moli",
-      "title": "lexmount/moli",
-      "summary": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
-      "published": "2026-10-23T08:30:54Z",
-      "source": "GitHub Search API",
-      "stars": 20224,
-      "star_delta": null,
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "tags": [
-        "ai-agents",
-        "ai-tools",
-        "browser",
-        "browser-automation",
-        "cloud-browser"
-      ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。",
-      "score": 89
-    },
-    {
-      "id": "github-4bef08f5f83b5a9b7d",
-      "category": "github",
-      "url": "https://github.com/Gathin23/cleanyourtv",
-      "title": "Gathin23/cleanyourtv",
-      "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
-      "published": "2026-10-23T08:01:15Z",
-      "source": "GitHub Search API",
-      "stars": 26017,
-      "star_delta": null,
-      "language": "Java",
-      "license": null,
-      "tags": [
-        "adb",
-        "adblock",
-        "android-tv",
-        "android-tv-launcher",
-        "apple-tv"
-      ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
-      "score": 89
-    },
-    {
       "id": "github-89be4e220d9f6acb17",
       "category": "github",
       "url": "https://github.com/Niko1221/Strata",
@@ -607,7 +639,7 @@
       "published": "2026-10-23T07:14:14Z",
       "source": "GitHub Search API",
       "stars": 30854,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "C++",
       "license": "MIT",
       "tags": [],
@@ -623,7 +655,7 @@
       "published": "2026-10-23T05:11:34Z",
       "source": "GitHub Search API",
       "stars": 38035,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "JavaScript",
       "license": "MIT",
       "tags": [
@@ -645,7 +677,7 @@
       "published": "2026-10-23T03:20:30Z",
       "source": "GitHub Search API",
       "stars": 17751,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "Swift",
       "license": "MIT",
       "tags": [],
@@ -661,7 +693,7 @@
       "published": "2026-10-23T00:02:05Z",
       "source": "GitHub Search API",
       "stars": 20276,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "JavaScript",
       "license": "CC0-1.0",
       "tags": [
@@ -698,7 +730,7 @@
       "published": "2026-10-21T22:02:53Z",
       "source": "GitHub Search API",
       "stars": 24694,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "Python",
       "license": "MIT",
       "tags": [
@@ -720,7 +752,7 @@
       "published": "2026-10-21T13:36:13Z",
       "source": "GitHub Search API",
       "stars": 34036,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "Python",
       "license": "Apache-2.0",
       "tags": [
@@ -742,25 +774,9 @@
       "published": "2026-10-21T07:20:02Z",
       "source": "GitHub Search API",
       "stars": 68185,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "HTML",
       "license": "CC-BY-4.0",
-      "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
-      "score": 89
-    },
-    {
-      "id": "github-be38b11f937cd76cc2",
-      "category": "github",
-      "url": "https://github.com/deepseek-ai/DeepInfer",
-      "title": "deepseek-ai/DeepInfer",
-      "summary": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
-      "published": "2026-10-21T04:55:44Z",
-      "source": "GitHub Search API",
-      "stars": 20501,
-      "star_delta": null,
-      "language": "Python",
-      "license": "Apache-2.0",
       "tags": [],
       "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
       "score": 89
@@ -774,7 +790,7 @@
       "published": "2026-10-18T20:20:24Z",
       "source": "GitHub Search API",
       "stars": 19404,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "JavaScript",
       "license": "MIT",
       "tags": [
@@ -795,7 +811,7 @@
       "published": "2026-10-17T08:16:09Z",
       "source": "GitHub Search API",
       "stars": 258810,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "TypeScript",
       "license": "MIT",
       "tags": [
@@ -816,7 +832,7 @@
       "published": "2026-10-14T02:22:51Z",
       "source": "GitHub Search API",
       "stars": 18274,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "Python",
       "license": "Apache-2.0",
       "tags": [],
@@ -832,12 +848,60 @@
       "published": "2026-09-30T01:24:38Z",
       "source": "GitHub Search API",
       "stars": 23508,
-      "star_delta": null,
+      "star_delta": 0,
       "language": "Python",
       "license": "MIT",
       "tags": [],
       "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
       "score": 89
+    },
+    {
+      "id": "money-4683cd570ef39debe9",
+      "category": "money",
+      "url": "https://github.com/yetone/magpie",
+      "title": "業務特化のAIミニツール — magpie",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-10-23T10:03:06Z",
+      "source": "着想元: yetone/magpie",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 88
+    },
+    {
+      "id": "money-9d064369411829e692",
+      "category": "money",
+      "url": "https://github.com/lexmount/moli",
+      "title": "中小事業者向けの作業自動化サポート — moli",
+      "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
+      "published": "2026-10-23T08:30:54Z",
+      "source": "着想元: lexmount/moli",
+      "tags": [
+        "自動化",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 88
+    },
+    {
+      "id": "money-4bef08f5f83b5a9b7d",
+      "category": "money",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "title": "OSSの導入・カスタマイズ支援 — cleanyourtv",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-23T08:01:15Z",
+      "source": "着想元: Gathin23/cleanyourtv",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 88
     },
     {
       "id": "social-fee3d05e48142d8e73",
@@ -1730,6 +1794,20 @@
       "score": 56
     },
     {
+      "title": "県内の最新ニュース - テレビ愛媛",
+      "summary": "県内の最新ニュース テレビ愛媛",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9qSXlDbm9HV0Z4dHVtUC1zSGFyeXBhckM2c1JKU3V0bnR0TGx0MERCcGlOUjdzNkpLc2NnUHRmYWJTVlVZMFFKN3k5dnlkT1F4N29yY1FoSU9JS19pNzVkeFJR?oc=5",
+      "published": "2026-10-23T09:35:00Z",
+      "id": "travel-c5d96192d5eb633d61",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 56
+    },
+    {
       "title": "食・絶景・パワースポットを巡る宮崎のおすすめ秋旅モデルコースを大公開！ - 時事ドットコム",
       "summary": "食・絶景・パワースポットを巡る宮崎のおすすめ秋旅モデルコースを大公開！ 時事ドットコム",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6dVZPLU1adXg0MDY3SFRfMm9WTG5mLW82a3ZzSC1xdlFpdVU0VjY0cWo1Z1hQSnVTeEVjZmZ5bmU3ZDVEOHFIaFkwNG1lNmdUeDdqdmt3OGhUMjFXNUltd243bnJfbk1rakZN?oc=5",
@@ -1814,6 +1892,20 @@
         "ボードゲーム"
       ],
       "reason": "ゲームや制作の次の趣味・試作につながる情報。",
+      "score": 54
+    },
+    {
+      "title": "【関東近郊】東京から日帰り2時間以内！ 秋のおでかけスポット26選｜絶景＆紅葉＆花畑＆パワースポットなど、都会を脱出して癒やされよう♪｜るるぶ&more. - るるぶWeb",
+      "summary": "【関東近郊】東京から日帰り2時間以内！ 秋のおでかけスポット26選｜絶景＆紅葉＆花畑＆パワースポットなど、都会を脱出して癒やされよう♪｜るるぶ&more. るるぶWeb",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1zTk5XSzZmVUhUdGNSTkRDMEs0YVllRHVrMzBOYkVsUGpNUUo1TGI5NFVaRndqcW9UZm1xYjU1VFVCaFREVElURmdacjJZVzF1?oc=5",
+      "published": "2026-10-22T08:36:12Z",
+      "id": "travel-d897f6a5fca2da7f00",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 54
     },
     {
@@ -1981,6 +2073,35 @@
       "score": 51
     },
     {
+      "title": "荏原製作所の生成AI「内製開発」の歩み 2名体制でのスタートからAIエージェント構築までを振り返る - EnterpriseZine",
+      "summary": "荏原製作所の生成AI「内製開発」の歩み 2名体制でのスタートからAIエージェント構築までを振り返る EnterpriseZine",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZaTdrZEl4eWVIU0xJWmpZUkpMZF80MmpNZW9oeEdiV3VfcUgzWWtBUFRMVlJxa3EyaV9hWmJpOGlTcHpTM3Y4elg1UkZJLThaZnlMUFdn?oc=5",
+      "published": "2026-10-22T01:45:00Z",
+      "id": "ai-fa3b3e3912127a1671",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 51
+    },
+    {
+      "title": "SNSで話題の動物たちがお出迎え？心地よい秋にこそ訪れたい人気「動物園」ランキング - TRiP EDiTOR",
+      "summary": "SNSで話題の動物たちがお出迎え？心地よい秋にこそ訪れたい人気「動物園」ランキング TRiP EDiTOR",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1nTXJGWjFyTFUxcUxhUENYVFBJdHcxcF9WQWxQZkhiMHBjV0t2S2VyTk1tNkxKY0tuMzR6REhHS2M3MU44OGJPd21nSdIBS0FVX3lxTE1nTXJGWjFyTFUxcUxhUENYVFBJdHcxcF9WQWxQZkhiMHBjV0t2S2VyTk1tNkxKY0tuMzR6REhHS2M3MU44OGJPd21nSQ?oc=5",
+      "published": "2026-10-20T23:24:03Z",
+      "id": "travel-ca8119e46e3c5fec8c",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 51
+    },
+    {
       "title": "【横浜・山下ふ頭】トヨタのイマーシブミュージアムで第2弾が開幕！ モネの『睡蓮』と浮世絵が響き合う没入型アートの世界 - entax（エンタックス）",
       "summary": "【横浜・山下ふ頭】トヨタのイマーシブミュージアムで第2弾が開幕！ モネの『睡蓮』と浮世絵が響き合う没入型アートの世界 entax（エンタックス）",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JOWtVTDExQWFSWlJiZHFqYzM2Sm96WUxYTjBsWDJVZUctRy1FU1BNaTE0SExLQjhlVjhBemhZWXV2LUJ1T3UxY1daLTJnYlU0ZzNndWVwR2VoUQ?oc=5",
@@ -1995,11 +2116,26 @@
       "score": 50
     },
     {
-      "title": "【関東近郊】東京から日帰り2時間以内！ 秋のおでかけスポット26選｜絶景＆紅葉＆花畑＆パワースポットなど、都会を脱出して癒やされよう♪｜るるぶ&more. - るるぶWeb",
-      "summary": "【関東近郊】東京から日帰り2時間以内！ 秋のおでかけスポット26選｜絶景＆紅葉＆花畑＆パワースポットなど、都会を脱出して癒やされよう♪｜るるぶ&more. るるぶWeb",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1zTk5XSzZmVUhUdGNSTkRDMEs0YVllRHVrMzBOYkVsUGpNUUo1TGI5NFVaRndqcW9UZm1xYjU1VFVCaFREVElURmdacjJZVzF1?oc=5",
-      "published": "2026-10-22T08:36:12Z",
-      "id": "travel-d897f6a5fca2da7f00",
+      "title": "かわいい動物に出会える！見どころいっぱい横浜ドライブ - ウォーカープラス",
+      "summary": "かわいい動物に出会える！見どころいっぱい横浜ドライブ ウォーカープラス",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5RUi1EVHZZMXZjRVV3U2VVTE11ZHVIRUw1SU03aXkzMjFNVzJzMnJGOF9uYVhLd3luOWtOVGw5RWxrM2pFQmgwdm9CaXVWaHVwZDBKd9IBWkFVX3lxTFA3emdSRTQtSWc1SDZHcTg4QmxxcGlpNUw5MEJVUHI0MjJuZ0JFTTc1RGZJcmJVWjYzQUpsQkx6MWxjNnQ3c3BFM3N5di1GRnBqOTViRUdZclZPUQ?oc=5",
+      "published": "2026-10-22T08:56:26Z",
+      "id": "travel-8b9f32f520f56a9b64",
+      "category": "travel",
+      "source": "関東発ドライブ",
+      "tags": [
+        "関東",
+        "ドライブ"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 50
+    },
+    {
+      "title": "佐賀で宇宙体験！周辺グルメも巡る武雄のドライブスポット4選 - ウォーカープラス",
+      "summary": "佐賀で宇宙体験！周辺グルメも巡る武雄のドライブスポット4選 ウォーカープラス",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14YzJLNC11NkJvVDBISmpUc0pOWlFucm01dVNRODVkQVIyWkg4c01HMm95WUZmdm9TT0pXd201VU5Fd1hsQ3FDa1hYaEpBNHFlbk81R3NBOEhEMVlHa2JyanVGeHEwUdIBa0FVX3lxTE4zSEJBYjZhNlVBcThkXzk4R3RiOFo4clVnZDlYU2hyUjBQRV9zY3R2aXRMNlQ3cTFFZXJ1VDFDVWh4ZXlDT2c1RlFGcEhmQ1liVVhVYkw3b2QyaVBEeGNtb0p3UzVnSmczV2tz?oc=5",
+      "published": "2026-10-22T06:30:29Z",
+      "id": "travel-7ccb697614aa7a442e",
       "category": "travel",
       "source": "関東発ドライブ",
       "tags": [
@@ -2334,6 +2470,20 @@
       "score": 48
     },
     {
+      "title": "【バレー】大友愛さん、心を癒す話題の新刊紹介 SNSで「涙が…」投稿も 今月離婚を発表 - ｄメニューニュース",
+      "summary": "【バレー】大友愛さん、心を癒す話題の新刊紹介 SNSで「涙が…」投稿も 今月離婚を発表 ｄメニューニュース",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNNW1vUFdDNkJfbXdlVjdNMk1yUFRwWjFKWE9maFNEU0dxb3F3ZEZudV8zM2YtVW5vR2dBckwwTkI4Zk5ILUtTdEM2aW0wSE9adHUtZ05yU1J0bll0QXN1U3g3Q2p6dGFGLVp1UmE5NlhxRE5YYzhPRlVyUHpxeU5oTUV4U1lXTDNoODljdVc4Q2p5WXZhbnNxUWpiSdIBmwFBVV95cUxNNW1vUFdDNkJfbXdlVjdNMk1yUFRwWjFKWE9maFNEU0dxb3F3ZEZudV8zM2YtVW5vR2dBckwwTkI4Zk5ILUtTdEM2aW0wSE9adHUtZ05yU1J0bll0QXN1U3g3Q2p6dGFGLVp1UmE5NlhxRE5YYzhPRlVyUHpxeU5oTUV4U1lXTDNoODljdVc4Q2p5WXZhbnNxUWpiSQ?oc=5",
+      "published": "2026-10-22T06:46:00Z",
+      "id": "social-6940a37ae5d81c07fd",
+      "category": "social",
+      "source": "話題のニュース",
+      "tags": [
+        "話題"
+      ],
+      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
+      "score": 48
+    },
+    {
       "title": "オーシャンビューを満喫！山口・角島＆下関のドライブスポット9選 - ウォーカープラス",
       "summary": "オーシャンビューを満喫！山口・角島＆下関のドライブスポット9選 ウォーカープラス",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE83aGMzdXdhTGVUMWlNOElkcFh4Q1JRRm9YXzJRazdieGM5WVFKUS1fTS1Qem94X1FpNldRLUZIOXl3MFhYcW1BQWxUNS0tSEtMRWVENdIBWkFVX3lxTE9BYThQTHpaUlMxWkhNWU9PRlpOS0hpVWRtbThfWHBZQ3lKNUpHMGNSZG1xdVJPUFE2SmpzVHZMb09GdFJJOTIwejduRG1vV1l6UWFzMFlSRURwZw?oc=5",
@@ -2376,6 +2526,20 @@
         "最新技術"
       ],
       "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 48
+    },
+    {
+      "title": "【2026年】奈良のおすすめホテル11選！日帰りでは味わえない朝の奈良を楽しむ宿 - Funliday",
+      "summary": "【2026年】奈良のおすすめホテル11選！日帰りでは味わえない朝の奈良を楽しむ宿 Funliday",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1wejVucnVkSElHcFlOSDR0ZnNXTDh3YWtQOTlhNkFtT2RCRWpQVGoyU1UwVXR3NS1JTk5ZbzczcEZ1NlJwb001d2tyYlM2bDZ2UXdmYUpB?oc=5",
+      "published": "2026-10-19T08:10:00Z",
+      "id": "travel-1bb60ec85239e69fa7",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 48
     },
     {
@@ -2620,6 +2784,21 @@
         "公式動向"
       ],
       "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 47
+    },
+    {
+      "title": "海の町でグルメドライブ！福岡・宗像＆福津のよくばり最新日帰り旅行 - ウォーカープラス",
+      "summary": "海の町でグルメドライブ！福岡・宗像＆福津のよくばり最新日帰り旅行 ウォーカープラス",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zVWdPRk9vTEFYSXJPZ3J2Y1luQWJINWV2aXdHRDF0SEVjQkFWX2hPNE9yNEkwaldzTTh1U3ZrM3RNZVQxMThpWFo2VS1yNGl3SjgzMdIBWkFVX3lxTFBWUUIxUUljSnFFVlY2MEJvWmN1S2U1NXhMd0tUR2ZzMURscVZQTmNOdzE2c283Q2g5WmlaR3ROR09GaHY5dVdZcmFCYThKeWtZV1hCcHZ4UmVidw?oc=5",
+      "published": "2026-10-20T20:26:27Z",
+      "id": "travel-ae86f3ca7d2674f83e",
+      "category": "travel",
+      "source": "関東発ドライブ",
+      "tags": [
+        "関東",
+        "ドライブ"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 47
     },
     {
@@ -2991,6 +3170,20 @@
       "score": 43
     },
     {
+      "title": "11年ぶりに大型シルバーウィークが来るぞ！混雑を避けて心が満たされる「穴場自治体」ランキング - TRiP EDiTOR",
+      "summary": "11年ぶりに大型シルバーウィークが来るぞ！混雑を避けて心が満たされる「穴場自治体」ランキング TRiP EDiTOR",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1vMklyR2lkUEFXMFk0Tm8tS1Q0bmdZU3RPS29tT0RvOU4wTm9vMnJ2RGhKcGlubnpqWmxVSVA1Wi1sUkhLOWpVekl3b9IBS0FVX3lxTE1vMklyR2lkUEFXMFk0Tm8tS1Q0bmdZU3RPS29tT0RvOU4wTm9vMnJ2RGhKcGlubnpqWmxVSVA1Wi1sUkhLOWpVekl3bw?oc=5",
+      "published": "2026-10-16T17:13:34Z",
+      "id": "travel-a0967ef68d85f0d6d4",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 43
+    },
+    {
       "title": "AWS、10月12日週に発表したアップデートをまとめて紹介 - CodeZine",
       "summary": "AWS、10月12日週に発表したアップデートをまとめて紹介 CodeZine",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE51SmQtMngyV1VTbnRzeGJlSmgzd2tDTU8yUnJrM2V6YnkyckJOMzJ1dk1Db0RoVDh2SC1MVGFHcjdoMk5VVTBKRnBjZy01dw?oc=5",
@@ -3108,6 +3301,20 @@
       "score": 41
     },
     {
+      "title": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北・北関東の名湯｜Infoseekニュース - Infoseek",
+      "summary": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北・北関東の名湯｜Infoseekニュース Infoseek",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE02dkFJMWFZUVBiMHBRVmZJd2c4STVXNTZZaEFGVlhEQ2JKU2c5b2NpdjdaMjFmRkNSeWVSU0Jjb25Da25vZG42WVhFSVNhN2lyZXJ4UHBxTzNzRU1YQ1piOEVhVQ?oc=5",
+      "published": "2026-10-16T01:15:00Z",
+      "id": "travel-b728ea471d4cc7295d",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 41
+    },
+    {
       "title": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北・北関東の名湯（THE GOLD ONLINE（ゴールドオンライン）） - Yahoo!ニュース",
       "summary": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北・北関東の名湯（THE GOLD ONLINE（ゴールドオンライン）） Yahoo!ニュース",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9pak1XYmljdXk4THVUWUtaR052dzZCUW5mb0xwcWwyYlVZZjFqVWhRMjZsWl95N2dzUkNzUjdxcVpjbGNoaTU2NkhrbmNSdGJ4SkNaMkgtOUtDNXBEeHhwV3lQNFBtVzN1aEViZlJjN2N6SnItN1FsOTVGdHUtUjQ?oc=5",
@@ -3194,6 +3401,20 @@
       "score": 40
     },
     {
+      "title": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 - 宮崎日日新聞",
+      "summary": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 宮崎日日新聞",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83a3RUTkRhNjVQXzBiY3paX3pNWXMwOVpFaTAzOFl0X2NnMnQ3NUtJTXVjeHBTb20tRVprRkQxN2laQmtFNUVfcHJfSFF1X2lpRU9NNHBJaHBuWlBLLXVqU01VTklOZ3hJRGtreDhZZ3hJRjg?oc=5",
+      "published": "2026-10-15T07:00:00Z",
+      "id": "travel-68ce954bf7b3c94d59",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 40
+    },
+    {
       "title": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 - まっぷるウェブ",
       "summary": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 まっぷるウェブ",
       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01ZldEQXB4ZnNUS3VEMkRVWlU3cG5sU0NKdEtNTEd6cnJPSjNfSmdyR3ZpT1pUdk9rYjN1NzR5MVpoZWQ2cjg3Z1pITQ?oc=5",
@@ -3265,6 +3486,21 @@
         "開発"
       ],
       "reason": "ゲームや制作の次の趣味・試作につながる情報。",
+      "score": 39
+    },
+    {
+      "title": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する - ニコニコニュース",
+      "summary": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する ニコニコニュース",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXSG8xNFZMYkd4bTBvdnhLTnVyZW5USkx6VEVCM1ZibVE3cTJWd3lJajJ6a0F3b0s1SDhHSHliNUJqWjdQc1VCWDRqWUJnb1h5TW9oVg?oc=5",
+      "published": "2026-10-17T00:12:08Z",
+      "id": "travel-9491e388c84d829a40",
+      "category": "travel",
+      "source": "関東発ドライブ",
+      "tags": [
+        "関東",
+        "ドライブ"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 39
     },
     {
@@ -3355,6 +3591,20 @@
         "ボードゲーム"
       ],
       "reason": "ゲームや制作の次の趣味・試作につながる情報。",
+      "score": 38
+    },
+    {
+      "title": "その土地でしか味わえない秋がある。食欲の秋に行きたい「穴場グルメ旅」ランキング - TRiP EDiTOR",
+      "summary": "その土地でしか味わえない秋がある。食欲の秋に行きたい「穴場グルメ旅」ランキング TRiP EDiTOR",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1tbEQxY1RCb193Z0tPSUhMVlBFamNnampGS3JRZmp6U3ZBQVRIN3h1Z2hBUG1hMjRqaFo1azlCeGlLd2_SAUhBVV95cUxPMzBKeU9YVDA0aEEzbF9XYVJPcHM5WVNUaDl6bUhyMS1UOUNIbEZ3bUdKbF9qWTVrNmhOSjB6dlhkanJ2eEhjYWI?oc=5",
+      "published": "2026-10-14T07:00:00Z",
+      "id": "travel-297308942333a97058",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 38
     },
     {
@@ -3552,11 +3802,11 @@
       "score": 36
     },
     {
-      "title": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 - LIMO | くらしとお金の経済メディア",
-      "summary": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 LIMO | くらしとお金の経済メディア",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yVzR5c1AzNFY1QXpsMGZsR093ZFBVNEZ3clowQlFrYjJsdFFsU3VRSDhWMlZadnJCek5xYzhoOGxMaUsxMDl6blF1WlI?oc=5",
+      "title": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 - Funliday",
+      "summary": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 Funliday",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GOURxQkdVVkRoXy1YWmNUYjg1LUxTWXJ2YVFWLVRER0Zva1ZmdHJpWVUzWTJBU0RYTktHNk9taEJqSWxsdU5ybDNtWG9YOHI3dmk0bERZMWxtQ3Jl?oc=5",
       "published": "2026-10-13T07:00:00Z",
-      "id": "travel-bd25e6fb1a07515890",
+      "id": "travel-b87b835ee24e21a6cf",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3566,11 +3816,11 @@
       "score": 36
     },
     {
-      "title": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 - Funliday",
-      "summary": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 Funliday",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GOURxQkdVVkRoXy1YWmNUYjg1LUxTWXJ2YVFWLVRER0Zva1ZmdHJpWVUzWTJBU0RYTktHNk9taEJqSWxsdU5ybDNtWG9YOHI3dmk0bERZMWxtQ3Jl?oc=5",
+      "title": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 - LIMO | くらしとお金の経済メディア",
+      "summary": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 LIMO | くらしとお金の経済メディア",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yVzR5c1AzNFY1QXpsMGZsR093ZFBVNEZ3clowQlFrYjJsdFFsU3VRSDhWMlZadnJCek5xYzhoOGxMaUsxMDl6blF1WlI?oc=5",
       "published": "2026-10-13T07:00:00Z",
-      "id": "travel-b87b835ee24e21a6cf",
+      "id": "travel-bd25e6fb1a07515890",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3875,6 +4125,20 @@
         "ボードゲーム"
       ],
       "reason": "ゲームや制作の次の趣味・試作につながる情報。",
+      "score": 30
+    },
+    {
+      "title": "【2026年最新】兵庫・神戸でしたいこと、きっと見つかる！ 編集部おすすめの最旬観光スポット＆グルメ案内｜るるぶ&more. - るるぶWeb",
+      "summary": "【2026年最新】兵庫・神戸でしたいこと、きっと見つかる！ 編集部おすすめの最旬観光スポット＆グルメ案内｜るるぶ&more. るるぶWeb",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5DN0xMWHNIcXY0SmNzWFZucGRmY2YyMnZYM000Yk9VYmRSdDF4V2hPa0VQOE1pcDJRVGM0OFl6ZGFvUEVpQUlleGZwS0ZEeThu?oc=5",
+      "published": "2026-10-10T08:32:26Z",
+      "id": "travel-ea02d21ab8ef02113f",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 30
     },
     {
