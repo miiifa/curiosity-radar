@@ -1,1 +1,42 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+# Codex開発開始指示（Curiosity Radar）
+
+この文書を開き、以下の初回タスクのみを実施してください。完了後は利用者のレビューを受け、明示的な次の指示があるまで次フェーズに着手しないこと。
+
+## 目的
+Curiosity Radarを個人用の発見ニュースアプリとして安定公開する。既存のUI/データ収集/Pages配信コードを尊重し、初回は品質・セキュリティ・公開確認の基盤を整える。
+
+## 必読
+1. `AGENTS.md`（共通AGENTS.mdと併用。一般指示は重複記載しない）
+2. `docs/USER_STORIES.md` のUS-01, US-04, US-11, US-12と受入基準AC-01, 04, 11, 12
+3. `docs/SYSTEM_DESIGN.md` のアーキテクチャ、データ契約、セキュリティ、CI/公開
+4. `docs/IMPLEMENTATION_PLAN.md` の「Phase 0 / PR-00」「共通レビュー観点」
+
+## 今回の作業: PR-00のみ
+
+1. 現行実装と設計の差を**関連ファイルの差分中心**で調べ、最初に7行以内で変更計画を報告する。
+2. PR時はテストのみ、mainでは安全にPages配信するCIを整え、ジョブの権限を最小化する。
+3. 公開JSONの必須フィールド/不正URL/モード/日時の自動テストを追加する。スキーマ全面変更はしない。
+4. 収集の致命的失敗時に正常な公開データを失わないことをfixtureで検証する。
+5. `README.md` の初回公開・Actions・トラブルシュート手順を実態と整合させる。
+6. 実行可能なテストをすべて実行し、結果と実行できなかった検証を分けて報告する。
+7. 変更をPull Requestにまとめ、US/AC対応・検証結果・ロールバック方針を記載する。
+
+## 禁止・制約
+
+- 既存の別プロジェクトを変更しない。勝手なフレームワーク移行をしない。
+- APIキー、会話履歴、個人情報、Cookieをソース・公開JSON・ログに保存しない。
+- Xへの無許可スクレイピング、ブラウザーRPA、回避行為を実装しない。
+- READMEにある「VRT」の実体が未確認な点を捏造しない。
+- テストの削除、例外の握りつぶし、未検証を「成功」と書くことをしない。
+- P1/P2や有料LLM連携はこのPRで実装しない。
+- 不明点はブロッカーとして明示し、外部接続を確認できない場合は未検証と報告する。
+
+## 最低テスト
+
+```bash
+python -m unittest discover -s tests -v
+node --check app.js
+python -m json.tool data/news.json >/dev/null
+```
+
+最終出力は「実装範囲 / テスト結果 / 未実施・リスク / PR URL / 次の作業候補」を簡潔に報告してください。
