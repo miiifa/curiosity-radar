@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:36:48.855479Z",
+  "generated_at": "2026-10-23T10:37:19.856983Z",
   "mode": "live",
   "items": [
     {
@@ -884,22 +884,6 @@
       "score": 91
     },
     {
-      "id": "github-1b8e35a5a0147eea7e",
-      "category": "github",
-      "url": "https://github.com/browser-use/jev-ultrafast",
-      "title": "browser-use/jev-ultrafast",
-      "summary": "Fastest and cheapest web agent",
-      "published": "2026-09-30T01:24:38Z",
-      "source": "GitHub Search API",
-      "stars": 23510,
-      "star_delta": 1,
-      "language": "Python",
-      "license": "MIT",
-      "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
-      "score": 91
-    },
-    {
       "id": "social-f6a301346a05e615cd",
       "category": "social",
       "title": "LLMs are making formal software verification feasible at a much larger scale",
@@ -967,6 +951,22 @@
       "score": 89
     },
     {
+      "id": "github-1b8e35a5a0147eea7e",
+      "category": "github",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "title": "browser-use/jev-ultrafast",
+      "summary": "Fastest and cheapest web agent",
+      "published": "2026-09-30T01:24:38Z",
+      "source": "GitHub Search API",
+      "stars": 23510,
+      "star_delta": 0,
+      "language": "Python",
+      "license": "MIT",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
+      "score": 89
+    },
+    {
       "id": "money-9d064369411829e692",
       "category": "money",
       "url": "https://github.com/lexmount/moli",
@@ -976,6 +976,22 @@
       "source": "着想元: lexmount/moli",
       "tags": [
         "自動化",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 88
+    },
+    {
+      "id": "money-9816345b0430e76f4e",
+      "category": "money",
+      "url": "https://github.com/eternity4719/HowToLiveBetter",
+      "title": "OSSの導入・カスタマイズ支援 — HowToLiveBetter",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-21T07:20:02Z",
+      "source": "着想元: eternity4719/HowToLiveBetter",
+      "tags": [
+        "受託開発",
         "収益性未検証",
         "OSS活用"
       ],
@@ -1038,22 +1054,6 @@
       "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
       "published": "2026-10-21T13:36:13Z",
       "source": "着想元: NandhaKishorM/laya",
-      "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 86
-    },
-    {
-      "id": "money-9816345b0430e76f4e",
-      "category": "money",
-      "url": "https://github.com/eternity4719/HowToLiveBetter",
-      "title": "OSSの導入・カスタマイズ支援 — HowToLiveBetter",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-21T07:20:02Z",
-      "source": "着想元: eternity4719/HowToLiveBetter",
       "tags": [
         "受託開発",
         "収益性未検証",
