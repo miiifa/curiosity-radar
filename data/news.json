@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:49:10.166557Z",
+  "generated_at": "2026-10-23T10:50:00.918831Z",
   "mode": "live",
   "items": [
     {
@@ -743,6 +743,22 @@
       "score": 93
     },
     {
+      "id": "money-ec4b5e65913390d00c",
+      "category": "money",
+      "url": "https://github.com/storytold/photocraft",
+      "title": "OSSの導入・カスタマイズ支援 — photocraft",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-23T10:06:47Z",
+      "source": "着想元: storytold/photocraft",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 92
+    },
+    {
       "id": "social-eaf6e95c99cc41352e",
       "category": "social",
       "title": "Docker is weird",
@@ -900,22 +916,6 @@
       "score": 91
     },
     {
-      "id": "github-1b8e35a5a0147eea7e",
-      "category": "github",
-      "url": "https://github.com/browser-use/jev-ultrafast",
-      "title": "browser-use/jev-ultrafast",
-      "summary": "Fastest and cheapest web agent",
-      "published": "2026-09-30T01:24:38Z",
-      "source": "GitHub Search API",
-      "stars": 23511,
-      "star_delta": 1,
-      "language": "Python",
-      "license": "MIT",
-      "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
-      "score": 91
-    },
-    {
       "id": "social-f6a301346a05e615cd",
       "category": "social",
       "title": "LLMs are making formal software verification feasible at a much larger scale",
@@ -983,6 +983,22 @@
       "score": 89
     },
     {
+      "id": "github-1b8e35a5a0147eea7e",
+      "category": "github",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "title": "browser-use/jev-ultrafast",
+      "summary": "Fastest and cheapest web agent",
+      "published": "2026-09-30T01:24:38Z",
+      "source": "GitHub Search API",
+      "stars": 23511,
+      "star_delta": 0,
+      "language": "Python",
+      "license": "MIT",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
+      "score": 89
+    },
+    {
       "id": "money-9d064369411829e692",
       "category": "money",
       "url": "https://github.com/lexmount/moli",
@@ -1013,22 +1029,6 @@
       ],
       "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
       "score": 88
-    },
-    {
-      "id": "money-ec4b5e65913390d00c",
-      "category": "money",
-      "url": "https://github.com/storytold/photocraft",
-      "title": "OSSの導入・カスタマイズ支援 — photocraft",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-23T10:06:47Z",
-      "source": "着想元: storytold/photocraft",
-      "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 86
     },
     {
       "id": "money-c92be186c651123ddf",
@@ -1986,6 +1986,21 @@
       "score": 53
     },
     {
+      "title": "ウォルマート、AIエージェント向けに専用プロフィールと接続口 上限額は顧客が設定 - ビジネス+IT",
+      "summary": "ウォルマート、AIエージェント向けに専用プロフィールと接続口 上限額は顧客が設定 ビジネス+IT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45aFA3c3l3SjVPblBQbkZiU0ZSdVVjMnRVaEwyaHN4QUdidnBsRHh1SlZDbXJpZVlWNlJKZ04tNFRkTEJaV2hyREFYeWc3U2U0T3Rz?oc=5",
+      "published": "2026-10-22T13:51:58Z",
+      "id": "ai-e564737cf0f5b269e7",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 52
+    },
+    {
       "title": "【ポケモンチャンピオンズ】最強ポケモンランキング・Tier表 - GameWith",
       "summary": "【ポケモンチャンピオンズ】最強ポケモンランキング・Tier表 GameWith",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xa1lLT1YxeDZaY3A2RWk5MWt3c2tMTzNkeFYxZnlHYjRYMlRTVUY5Yk9Cakdndm9icTFZUWhNX3ZOSWZMMlJaY1hVT1gwc0NYd2tMMDdzWQ?oc=5",
@@ -2006,6 +2021,21 @@
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBIVjlKc0ZObWRUNVNPcnVwYW5WSVl2YTlUc3FwVm13WkhCR2M2cHBLLTYtM0FxbFRSSkxIRzc4dFV5dE9mMWV5Qk5wZTdoS2s?oc=5",
       "published": "2026-10-22T11:17:00Z",
       "id": "ai-b4d952380001e7ab58",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 52
+    },
+    {
+      "title": "生成 ai - 北陸地方整備局",
+      "summary": "生成 ai 北陸地方整備局",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOVGNGOHE2VkF5U05CWEp3QWRaVXIxQ2gyNjF3cFo3YUFTc2x0ZW9JVWY2VkJTUF9vSzZwT0dObV80UV9ycXF1UkptSmhPcTB1MjBoYkNGSUFKbENTa0pXZHdtU3B5ZV9pMWk0dEl6R0NUcTlmeGhrNFg3OC10TXlfUE5JM25GY3Jld0tBMFdqdC1nRHFrWUV6a0hLejVlSlNNd3d0aGhCNWlHYm9SelVfTloxQnprdFg2MDVxT0ZvOHgtNnBtWDVrV0JHUnp0OGVBNUJEU2hxaG5mQldhQWdQNnln?oc=5",
+      "published": "2026-10-22T10:49:25Z",
+      "id": "ai-7c8266560cbea02530",
       "category": "ai",
       "source": "AI・テクノロジー",
       "tags": [
@@ -2140,6 +2170,21 @@
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ZaTdrZEl4eWVIU0xJWmpZUkpMZF80MmpNZW9oeEdiV3VfcUgzWWtBUFRMVlJxa3EyaV9hWmJpOGlTcHpTM3Y4elg1UkZJLThaZnlMUFdn?oc=5",
       "published": "2026-10-22T01:45:00Z",
       "id": "ai-fa3b3e3912127a1671",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 51
+    },
+    {
+      "title": "AIエージェント導入で「RPAを捨てる」は大間違い？失敗しないための「4つの視点」 - ビジネス+IT",
+      "summary": "AIエージェント導入で「RPAを捨てる」は大間違い？失敗しないための「4つの視点」 ビジネス+IT",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUYWVHU0U0OF96NF9KdEoxb1l4OGhjRDhSQ2hybHRkeVE2YUROajlNWlJPUE00UURtdnBuQ1o5czFkMHYzVk8zdVFYczJYQlBsb0ZV?oc=5",
+      "published": "2026-10-21T21:10:00Z",
+      "id": "ai-1c0bc26b6094cb24d0",
       "category": "ai",
       "source": "AI・テクノロジー",
       "tags": [
@@ -2398,6 +2443,21 @@
       "score": 49
     },
     {
+      "title": "乱立するAIエージェント、管理ツール徹底解剖 - 日経クロステック",
+      "summary": "乱立するAIエージェント、管理ツール徹底解剖 日経クロステック",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1vUjJTcHZJRnNadkhlZHFhWnFLSHk1aWFYUHprYzRxQUt3NVBPbWlkUFpWWjNWMXNPOUQwTzVncHhLZXU5N09Zd0laUlNwTVYtMmp1MVpkb3FJVTdMazFj?oc=5",
+      "published": "2026-10-21T03:07:26Z",
+      "id": "ai-069898386045c9b183",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 49
+    },
+    {
       "title": "無料で使えるAI｢ローカルLLM｣の進化がすごいよって話 - Gizmodo",
       "summary": "無料で使えるAI｢ローカルLLM｣の進化がすごいよって話 Gizmodo",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5VRXlmVndlZ3JMNmRINXZkRENjdGF0RXZ2cEpSR2g5dzdaYUNaU2FzdnBOcUFTU2xXNXVtRGZsQmdndS12MEVOazE3ZEpOWTg3SnlRcXI4NC10WWMzTy1ZX0E3Q21uVkMx?oc=5",
@@ -2566,6 +2626,21 @@
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvc3dpTFZnbUhRXzdwaUM4U25jbU1yX3duUUhkYmQ3Y3M3WGFWMmNpTGt4QXllWTh1R1FMTzYtMjh6ZVRuQzdqV2RwUVpLNjBhZlJTbEtHTVVKSm5wUW1ZbE8ybXZUbEJtQ2hLckpsOGpJZ1NldmtRUUI0bzNrY2M?oc=5",
       "published": "2026-10-20T08:46:20Z",
       "id": "ai-2532b7fe678cb2f735",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 48
+    },
+    {
+      "title": "デジタル庁、政府職員18万人にAIエージェント環境を展開──「源内」で提供開始、独自の安全基準も - ITmedia",
+      "summary": "デジタル庁、政府職員18万人にAIエージェント環境を展開──「源内」で提供開始、独自の安全基準も ITmedia",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9FdmxQdzZhMjh1WG55cGxnRk8zNkktLVVQbnJXdnVnTXk2aGl3aDIxV25zNzBhTUZFTVJpU29ndGx6UUlpLUU2X1BPdlRqZ3dORURxZ1U0UDNIU3NHdWQ1ZGZxQWYxOHoyWmc?oc=5",
+      "published": "2026-10-20T08:14:44Z",
+      "id": "ai-614ad8ad596b45eef6",
       "category": "ai",
       "source": "AI・テクノロジー",
       "tags": [
@@ -2775,11 +2850,11 @@
       "score": 47
     },
     {
-      "title": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に - 山陽新聞デジタル｜さんデジ",
-      "summary": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に 山陽新聞デジタル｜さんデジ",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13SlhaY3YteVJicDJ6QTFzOXhqUElyTm05OGdJNU5SbDdfeXBveFAtb3NIQWpNczB5MjdpbldtR3haMXc2a050dEdrSzFIN2xZd1NpbHBPVkRCaUg3aWc?oc=5",
+      "title": "画像・写真 | 阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に 2枚目 - オリコンニュース",
+      "summary": "画像・写真 | 阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に 2枚目 オリコンニュース",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kSUh0MGxZdWZCTFV1N1dfNndMYndlVVFjX3lvMkV0aVBVQ01xS3ZtamdDZXF2czNPNWo1Y1dFVTZlUzFyQkhPNjVNUV80alJSajRyMTNObk5DTXhnbVpDVnhBSk4?oc=5",
       "published": "2026-10-22T02:49:00Z",
-      "id": "social-89fbfce763b45e8f68",
+      "id": "social-6606ee7a744e14b997",
       "category": "social",
       "source": "話題のニュース",
       "tags": [
@@ -2789,11 +2864,11 @@
       "score": 47
     },
     {
-      "title": "画像・写真 | 阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に 2枚目 - オリコンニュース",
-      "summary": "画像・写真 | 阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に 2枚目 オリコンニュース",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kSUh0MGxZdWZCTFV1N1dfNndMYndlVVFjX3lvMkV0aVBVQ01xS3ZtamdDZXF2czNPNWo1Y1dFVTZlUzFyQkhPNjVNUV80alJSajRyMTNObk5DTXhnbVpDVnhBSk4?oc=5",
+      "title": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に - 山陽新聞デジタル｜さんデジ",
+      "summary": "阿部寛公式サイト、メンテナンスに SNSで話題 トレンドランキングで一時上位に 山陽新聞デジタル｜さんデジ",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE13SlhaY3YteVJicDJ6QTFzOXhqUElyTm05OGdJNU5SbDdfeXBveFAtb3NIQWpNczB5MjdpbldtR3haMXc2a050dEdrSzFIN2xZd1NpbHBPVkRCaUg3aWc?oc=5",
       "published": "2026-10-22T02:49:00Z",
-      "id": "social-6606ee7a744e14b997",
+      "id": "social-89fbfce763b45e8f68",
       "category": "social",
       "source": "話題のニュース",
       "tags": [
@@ -3009,11 +3084,11 @@
       "score": 45
     },
     {
-      "title": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(1/3) - Finasee",
-      "summary": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(1/3) Finasee",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1zSTllU0FsY1BidkRxX04yb0VQem9jVDFLY0pLYUpNVHQzSHJoNDVFeURHTVZoMjIycEs0bk1SNjZ4clZwYzRKaGJlbHJrY3F1S1Jr?oc=5",
+      "title": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(3/3) - Finasee",
+      "summary": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(3/3) Finasee",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVX1NlOEg0T2dqQ2FVWlFMTld6MnZFbEVhOHgzcTJSeFNuUW9EZ3RZV1BMWUs1UkRJRElhRmU2cVROWkNKbm5vd2xJU3luOFN5SHlIcmt2U2hYTHZm?oc=5",
       "published": "2026-10-20T21:00:00Z",
-      "id": "social-f33df1b7e25fbbdd0d",
+      "id": "social-1e8ab9d2d2d31f0127",
       "category": "social",
       "source": "話題のニュース",
       "tags": [
@@ -3023,11 +3098,11 @@
       "score": 45
     },
     {
-      "title": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(3/3) - Finasee",
-      "summary": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(3/3) Finasee",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBVX1NlOEg0T2dqQ2FVWlFMTld6MnZFbEVhOHgzcTJSeFNuUW9EZ3RZV1BMWUs1UkRJRElhRmU2cVROWkNKbm5vd2xJU3luOFN5SHlIcmt2U2hYTHZm?oc=5",
+      "title": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(1/3) - Finasee",
+      "summary": "今、話題の「モメンタム」とは？ 投資を上昇トレンドでとらえる21銘柄集中の日本株ファンド(1/3) Finasee",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1zSTllU0FsY1BidkRxX04yb0VQem9jVDFLY0pLYUpNVHQzSHJoNDVFeURHTVZoMjIycEs0bk1SNjZ4clZwYzRKaGJlbHJrY3F1S1Jr?oc=5",
       "published": "2026-10-20T21:00:00Z",
-      "id": "social-1e8ab9d2d2d31f0127",
+      "id": "social-f33df1b7e25fbbdd0d",
       "category": "social",
       "source": "話題のニュース",
       "tags": [
@@ -3548,11 +3623,11 @@
       "score": 40
     },
     {
-      "title": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 - まっぷるウェブ",
-      "summary": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 まっぷるウェブ",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01ZldEQXB4ZnNUS3VEMkRVWlU3cG5sU0NKdEtNTEd6cnJPSjNfSmdyR3ZpT1pUdk9rYjN1NzR5MVpoZWQ2cjg3Z1pITQ?oc=5",
+      "title": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 - 宮崎日日新聞",
+      "summary": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 宮崎日日新聞",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83a3RUTkRhNjVQXzBiY3paX3pNWXMwOVpFaTAzOFl0X2NnMnQ3NUtJTXVjeHBTb20tRVprRkQxN2laQmtFNUVfcHJfSFF1X2lpRU9NNHBJaHBuWlBLLXVqU01VTklOZ3hJRGtreDhZZ3hJRjg?oc=5",
       "published": "2026-10-15T07:00:00Z",
-      "id": "travel-d1d05cae383a9e30d8",
+      "id": "travel-68ce954bf7b3c94d59",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3562,11 +3637,11 @@
       "score": 40
     },
     {
-      "title": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 - 宮崎日日新聞",
-      "summary": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 宮崎日日新聞",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83a3RUTkRhNjVQXzBiY3paX3pNWXMwOVpFaTAzOFl0X2NnMnQ3NUtJTXVjeHBTb20tRVprRkQxN2laQmtFNUVfcHJfSFF1X2lpRU9NNHBJaHBuWlBLLXVqU01VTklOZ3hJRGtreDhZZ3hJRjg?oc=5",
+      "title": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 - まっぷるウェブ",
+      "summary": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 まっぷるウェブ",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01ZldEQXB4ZnNUS3VEMkRVWlU3cG5sU0NKdEtNTEd6cnJPSjNfSmdyR3ZpT1pUdk9rYjN1NzR5MVpoZWQ2cjg3Z1pITQ?oc=5",
       "published": "2026-10-15T07:00:00Z",
-      "id": "travel-68ce954bf7b3c94d59",
+      "id": "travel-d1d05cae383a9e30d8",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3977,11 +4052,11 @@
       "score": 36
     },
     {
-      "title": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 - LIMO | くらしとお金の経済メディア",
-      "summary": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 LIMO | くらしとお金の経済メディア",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yVzR5c1AzNFY1QXpsMGZsR093ZFBVNEZ3clowQlFrYjJsdFFsU3VRSDhWMlZadnJCek5xYzhoOGxMaUsxMDl6blF1WlI?oc=5",
+      "title": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 - Funliday",
+      "summary": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 Funliday",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GOURxQkdVVkRoXy1YWmNUYjg1LUxTWXJ2YVFWLVRER0Zva1ZmdHJpWVUzWTJBU0RYTktHNk9taEJqSWxsdU5ybDNtWG9YOHI3dmk0bERZMWxtQ3Jl?oc=5",
       "published": "2026-10-13T07:00:00Z",
-      "id": "travel-bd25e6fb1a07515890",
+      "id": "travel-b87b835ee24e21a6cf",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
@@ -3991,11 +4066,11 @@
       "score": 36
     },
     {
-      "title": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 - Funliday",
-      "summary": "【2026年】関西の温泉おすすめ5選！冬に行きたい有馬・城崎・白浜の名湯 Funliday",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1GOURxQkdVVkRoXy1YWmNUYjg1LUxTWXJ2YVFWLVRER0Zva1ZmdHJpWVUzWTJBU0RYTktHNk9taEJqSWxsdU5ybDNtWG9YOHI3dmk0bERZMWxtQ3Jl?oc=5",
+      "title": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 - LIMO | くらしとお金の経済メディア",
+      "summary": "北海道「落石岬」の絶景に目が奪われる ディープな旅人向けスポットに反響 LIMO | くらしとお金の経済メディア",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yVzR5c1AzNFY1QXpsMGZsR093ZFBVNEZ3clowQlFrYjJsdFFsU3VRSDhWMlZadnJCek5xYzhoOGxMaUsxMDl6blF1WlI?oc=5",
       "published": "2026-10-13T07:00:00Z",
-      "id": "travel-b87b835ee24e21a6cf",
+      "id": "travel-bd25e6fb1a07515890",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
