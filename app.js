@@ -45,7 +45,7 @@
     $('#mobileChips').innerHTML=Object.entries(CATEGORIES).map(([cat,label])=>`<button data-chip="${cat}" class="${cat===state.category&&!state.savedView?'active':''}">${esc(label[0])}</button>`).join('')+`<button data-chip="saved" class="${state.savedView?'active':''}">♡ 保存</button>`;
     const entries=diversify(filtered());$('#feed').innerHTML=entries.length?entries.map((x,index)=>renderCard(x,index===0&&!state.savedView&&!state.search&&state.sort==='recommended')).join(''):'';$('#empty').hidden=!!entries.length;$('#savedCount').textContent=state.bookmarks.length;$('#metricSaved').textContent=state.bookmarks.length;
     $('#metricTotal').textContent=state.items.length;$('#metricRepos').textContent=state.items.filter(x=>x.category==='github').length;$('#metricMoney').textContent=state.items.filter(x=>x.category==='money').length;
-    for(const cat of Object.keys(CATEGORIES)){`#count-${cat}` && ($(`#count-${cat}`).textContent=cat==='all'?state.items.length:state.items.filter(i=>i.category===cat).length);}
+    for(const cat of Object.keys(CATEGORIES)){$(`#count-${cat}`).textContent=cat==='all'?state.items.length:state.items.filter(i=>i.category===cat).length;}
   }
   function promptFor(item){if(item.category==='github')return `以下のOSSを評価して、私が個人開発で実際に使う／改造する場合の提案をしてください。\n\nリポジトリ: ${item.url}\n概要: ${item.summary}\n\n1. README・ライセンス・セキュリティ・更新状況・依存関係の調査\n2. できること／できないことと実行コスト\n3. 30分で試せる最小の実験手順\n4. 私向けの応用アイデア3件と差別化\n5. 収益化する場合の顧客・課題・価格仮説（売上は保証しない）\n6. 最小MVPの実装、テスト、安全性検証\n不明点は推測と明記。規約違反や秘密情報の送信はしない。`;
     return `この収益化の仮説を検証してください。\nネタ: ${item.title}\n情報源: ${item.url}\n仮説: ${item.summary}\n\n顧客・課題・競合・解決策・課金方法・法規約・必要な費用・最小限の顧客検証方法を整理。データで裏付けられない売上予測を断定しない。`;}
