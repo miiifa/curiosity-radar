@@ -1,0 +1,77 @@
+# ✺ Curiosity Radar — 好奇心レーダー
+
+個人用のニュース＆OSS発見ダッシュボード。AI、GitHubプロジェクト、国内旅行、セキュリティ、インターネットの話題、ゲーム、収益化のアイデアを一か所に集め、興味の重みに応じて優先表示します。
+
+## できること
+
+- GitHub Search APIで最近作られた人気リポジトリと更新の活発なOSSを探索。スター増分は**前回保存時との比較**（「24時間の増分」とは限りません）。
+- 公開RSSとCISA KEV、Hacker Newsから新着情報を収集。元記事へのリンクを優先。
+- GitHub Actionsで1日2回を目安に自動収集し、GitHub Pagesへ静的配信（遅延する場合あり）。
+- カテゴリ、検索、未読、ブックマーク、興味の重み、並べ替え。状態はブラウザーのlocalStorageに保存。
+- OSS・事業仮説についてCodexに貼り付ける評価・検証指示をコピー。
+- スマホ向け画面、PWAインストール対応（オフラインでは直近キャッシュ表示）。
+
+### 重要な制限
+
+- **AIによる要約・推薦ではありません**。v1ではRSS抜粋、GitHubメタデータ、ルールベースのスコア・推薦理由・収益化仮説を使います。LLM追加は次の段階です。
+- **X/Twitterの人気ポスト自動収集はしません**。X公式APIの利用や手動で選択した投稿の公式埋め込みが安全な拡張方針です。Hacker NewsのデータをX人気ポストとして表示しません。
+- 収益性・OSSの安全性・ライセンス適合性は確認していません。第三者OSSの実行前に必ず検証してください。
+- セキュリティの緊急対応には必ず原典を参照してください。CISA KEVのリンクはCVE詳細であり、該当製品の利用確認が必要です。
+- 「デモデータ」のままなら実ニュースの取得・公開はまだ行われていません。
+
+## GitHubへの公開手順（初回）
+
+1. GitHubで **新規リポジトリ** `curiosity-radar` を作成します。既存リポジトリを使わないでください。GitHub FreeならPages公開のため **Public** を選びます。GitHub Pro等ならPrivateリポジトリからのPages公開も可能ですが、**Pagesサイト自体は一般公開されます**。機密情報は含めないでください。
+2. このフォルダーの中身（`index.html`、`scripts/`、`.github/`、`data/`など）をそのリポジトリの `main` ブランチの**直下**にプッシュします。zipファイルそのものをプッシュするだけでは展開されません。
+3. GitHubの **Settings → Pages → Build and deployment → Source: GitHub Actions** を選びます。
+4. **Actions → Refresh and publish Curiosity Radar → Run workflow** で初回更新します。
+5. Actionsの実行成功後、Pagesで表示されたURLを開きます。通常 `https://<ユーザー名>.github.io/curiosity-radar/` ですが、必ず実際のPages URLを確認してください。
+
+個人情報は含めず、Pages公開用アーティファクトには `index.html`・静的アセット・公開ニュースJSONだけをコピーします。
+
+GitHub Actionsからファイルをプッシュできない場合：**Settings → Actions → General → Workflow permissions** で `Read and write permissions` を有効化できるか確認。できなくても収集結果のPages配信自体は行える設定です。
+
+### ローカルで試す
+
+```bash
+cd curiosity-radar
+python -m unittest discover -s tests -v
+python -m http.server 8000
+# http://localhost:8000 をブラウザーで表示。初期状態は明示的なプレビュー用データ。
+
+# 実際の情報を収集する場合（ネット接続が必要）
+python scripts/collect.py
+```
+
+## 技術構成
+
+- HTML / CSS / Vanilla JS：ビルド・JS依存なし、スマホ優先
+- Python 3.12標準ライブラリ：RSS/Atom/RDF、公開API取得、正規化、簡易スコアリング
+- GitHub Actions + Pages：無料枠や利用規約の範囲で定期更新
+- localStorage：個人設定・既読・保存を端末内に保持（同期しない）
+
+## ソースと帰属
+
+- GitHub Search API: https://docs.github.com/en/rest/search/search#search-repositories
+- Hacker News Algolia API: https://hn.algolia.com/api
+- JVN: https://jvn.jp/rss/jvn.rdf
+- JPCERT/CC: https://www.jpcert.or.jp/rss/jpcert.rdf
+- IPA: https://www.ipa.go.jp/security/alert-rss.rdf
+- CISA KEV: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+- Cisco Talos脅威研究: https://blog.talosintelligence.com/rss/ （「VRT」がTalos Vulnerability Research Teamの意味かは未確認）
+- Google News RSS検索: Google Newsの検索結果を各カテゴリに利用。検索・ソースの網羅性は保証できません。
+
+収集したニュースの全文や画像は転載しません。抜粋の利用・再配布は情報元の条件に従い、商用利用の前に見直してください。
+
+## 今後の改善（Codex向け）
+
+1. RSSの日本語品質評価、取得元のドメイン検証、重複のクラスタリング、非日本語記事の適切な翻訳。
+2. 許可済みのLLM APIによる「要点・具体的な応用・事実と仮説の区別」。秘密鍵はGitHub Actions secretsに限定し、出力コストに上限を設ける。
+3. フィードの正常性テスト、取得失敗通知、参照元ごとの取得成功率、変更検知。安全なURLの許可リストとレート制限。
+4. SNS枠：X公式の提供方法が利用可能な場合のみ組み込み。代替でBlueskyの公開APIを検討。
+5. 自分専用の旅行興味地点・実装中プロジェクトを追加できる画面。プライベート情報を公開サイトのリポジトリに保存しない。
+6. 収益化の検証用テンプレート（顧客インタビュー、競合調査、検証前提、ランニング費用）を追加。
+
+## セキュリティ・プライバシー
+
+公開GitHubリポジトリとPages上の `data/news.json` は誰でも閲覧できるため、個人の会話履歴、金融状況、シークレット、ログインCookie等を絶対に配置しないこと。ユーザーの興味の重みは公開JSONには含めずブラウザー内だけに保存します。リンクは外部の情報源へ移動します。HTTP通信、外部の入力に対して安全性を保証しません。
