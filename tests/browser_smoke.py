@@ -100,7 +100,7 @@ def run():
                             page.reload();page.wait_for_selector('[data-save]')
                             assert page.locator('#metricSaved').inner_text() == '1'
                         if name == 'dated-kev':
-                            assert page.locator('time').get_attribute('datetime') == '2026-10-24T12:00:00Z'
+                            assert page.locator('time').get_attribute('datetime') == '2026-10-24'  # Catalog calendar date, not an event timestamp.
                             assert 'KEV追加' in page.locator('time').inner_text()
                             assert '2026/10/24' in page.locator('time').inner_text()
                         if name == 'demo':
@@ -231,6 +231,49 @@ def run():
                 page.screenshot(path=str(screenshot_dir/f'dedup-search-{width}.png'),full_page=True)
                 context.close()
                 print(f'{width}px canonical dedup / related / categories / saved-read migration / filters / weights / injection: PASS',flush=True)
+            # Source status and catalog date semantics, with a negative UTC offset too.
+            quality={**fixture(),'errors':['RSS Fixture: HTTP429'],'items':[
+                {**fixture()['items'][0],'id':'kev','source':'CISA KEV','source_kind':'official_catalog',
+                 'source_url':'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json',
+                 'published':'2026-10-24T00:00:00Z','security':{'cves':['CVE-2026-12345'],'exploitation_status':'listed_in_kev',
+                    'user_impact':'not_assessed','kev_added_date':'2026-10-24','vendor':None,'product':None,
+                    'required_action':'<img src=x onerror=window.__qualityInjected=true> Read the advisory.'}},
+                {**fixture()['items'][0],'id':'travel','category':'travel','source':'関東発ドライブ','source_kind':'search_feed',
+                 'source_url':'https://news.google.com/rss/search?q=travel','url':'https://example.com/travel',
+                 'title':'沖縄の春旅、無料イベントの例','tags':['関東','ドライブ']}],
+                 'source_health':[{'id':'rss-fixture','name':'公開テスト用の取得元','url':'https://example.com/feed',
+                    'status':'failed','error':'HTTP429','count':0,'checked_at':NOW.isoformat(),'last_success_at':None,
+                    'consecutive_failures':2,'history_available':True}]}
+            validate_snapshot(quality)
+            for width in (400,1440):
+                for zone in ('Asia/Tokyo','America/Los_Angeles'):
+                    server.feed=(200,json.dumps(quality))
+                    context=browser.new_context(viewport={'width':width,'height':900},service_workers='block',timezone_id=zone)
+                    page=context.new_page();errors=[];page.on('pageerror',lambda error:errors.append(str(error)))
+                    page.goto(base);page.wait_for_selector('.article')
+                    kev=page.locator('[data-id="kev"]')
+                    assert '2026/10/24' in kev.locator('time').inner_text(),zone
+                    assert kev.locator('time').get_attribute('datetime')=='2026-10-24'
+                    assert '攻撃日・公表日ではありません' in kev.inner_text()
+                    assert 'この端末への影響は未確認' in kev.inner_text()
+                    assert '製品未確認' in kev.inner_text()
+                    assert 'CVE-2026-12345' in kev.inner_text()
+                    travel=page.locator('[data-id="travel"]')
+                    assert '検索結果のRSS' in travel.inner_text()
+                    assert '検索条件:関東' in travel.inner_text()
+                    assert '地域・見頃・料金・営業時間・営業状況は原典で確認' in travel.inner_text()
+                    page.locator('#sourceHealth summary').click()
+                    health=page.locator('#sourceHealthRows').inner_text()
+                    assert '連続取得エラー 2回' in health
+                    assert '最終成功 未確認' in health
+                    assert '取得回数が制限されています' in health
+                    assert not page.evaluate('Boolean(window.__qualityInjected)')
+                    assert page.locator('#feed img').count()==0
+                    assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+                    assert not errors,errors
+                    page.screenshot(path=str(screenshot_dir/f'source-quality-{width}-{zone.replace("/","-")}.png'),full_page=True)
+                    context.close()
+                    print(f'{width}px {zone} source health / KEV calendar date / unknown impact / travel provenance: PASS',flush=True)
             # Real service worker, real Cache Storage, real browser offline mode.
             server.feed = (200, json.dumps(partial_feed))
             context = browser.new_context(viewport={'width':400,'height':900})

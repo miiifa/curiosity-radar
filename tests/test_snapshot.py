@@ -122,8 +122,9 @@ class SnapshotTests(unittest.TestCase):
 
     def test_error_metadata_does_not_copy_exception_secrets(self):
         with patch.object(collect, 'get_bytes', side_effect=OSError('secret-token-value')), \
-             patch.object(collect, 'ERRORS', []):
+             patch.object(collect, 'ERRORS', []), patch('sys.stdout', new_callable=io.StringIO) as output:
             self.assertEqual(collect.read_hacker_news(), [])
+            self.assertNotIn('secret-token-value', output.getvalue())
             self.assertEqual(collect.ERRORS, ['Hacker News: OSError'])
 
     def test_star_delta_uses_previous_snapshot(self):
