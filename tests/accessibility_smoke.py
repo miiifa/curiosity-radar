@@ -129,7 +129,7 @@ def run():
                     assert contrast(color,bg)>=4.5,(selector,color,bg)
                 for selector in ('.card-time','.summary','.source','.rank','.provenance','.next-action summary','.hypothesis-note'):
                     color=page.locator(selector).first.evaluate('el=>getComputedStyle(el).color')
-                    assert contrast(color,'rgb(54,45,89)')>=4.5,(selector,color)
+                    assert contrast(color,page.locator('html').evaluate('el=>getComputedStyle(el).getPropertyValue("--card-contrast-bg").trim()'))>=4.5,(selector,color)
                 assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
                 assert not errors,errors
                 page.screenshot(path=str(screenshots/f'keyboard-mobile-{width}.png'),full_page=True)

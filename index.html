@@ -8,7 +8,7 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <title>Curiosity Radar — 自分の好奇心を更新する</title>
+  <title>Curiosity Radar — 日常に、ちょっと先のワクワクを</title>
 </head>
 <body>
   <a class="skip-link" href="#feedSection">記事一覧へ移動</a>
@@ -39,35 +39,37 @@
     </aside>
     <main class="main">
       <header class="topbar">
-        <div class="topbar-left"><span class="eyebrow">YOUR PERSONAL DISCOVERY ENGINE</span><span class="mini-logo">✺ CURIOSITY RADAR</span></div>
+        <div class="topbar-left"><span class="eyebrow">日常に、ちょっと先のワクワクを</span><span class="mini-logo">Curiosity Radar</span></div>
         <div class="topbar-right"><span class="updated" id="updatedAt">更新情報を読込中</span><button id="settingsTop" class="icon-button" aria-label="設定">⚙</button></div>
       </header>
       <div class="page-content">
         <div id="notice" class="notice" role="status" hidden></div>
-        <details id="sourceHealth" class="source-health"><summary>情報源の取得状況（最終収集時点）</summary><p>取得候補数は配信件数とは異なります。連続取得エラーは保存された観測履歴から数えています。</p><ul id="sourceHealthRows"></ul></details>
-        <section class="welcome">
+
+        <section class="welcome" hidden>
           <div><div class="eyebrow purple"><span class="sparkle">✦</span> MADE FOR THE CURIOUS</div><h1>面白いものは、<br><span>向こうから来る。</span></h1><p>ニュースの「量」ではなく、あなたの「次の一手」が見つかるフィード。</p></div>
           <div class="welcome-art" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="core">✳</div><div class="star star-a">✦</div><div class="star star-b">·</div><div class="star star-c">✧</div><div class="orbit-caption">FIND YOUR NEXT OBSESSION</div></div>
         </section>
-        <section class="metrics" aria-label="フィードの統計">
+        <section hidden class="metrics" aria-label="フィードの統計">
           <div class="metric"><div class="metric-label">発見した情報</div><strong id="metricTotal">—</strong><span>Signals collected</span></div>
           <div class="metric"><div class="metric-label">GitHub お宝候補</div><strong id="metricRepos">—</strong><span>Open source finds</span></div>
           <div class="metric"><div class="metric-label">収益化のヒント</div><strong id="metricMoney">—</strong><span>Ideas to explore</span></div>
           <div class="metric"><div class="metric-label">あなたの保存</div><strong id="metricSaved">0</strong><span>Saved discoveries</span></div>
         </section>
         <section class="feed-section" id="feedSection" tabindex="-1" aria-labelledby="sectionTitle">
-          <div class="feed-head"><div><div class="eyebrow purple" id="sectionKicker">CURATED FOR YOU</div><h2 id="sectionTitle" tabindex="-1">今日の発見 <span class="h2-spark">✳</span></h2><p id="sectionDesc">あなたの関心と、新しさから優先順位をつけています。</p></div><button id="settingsInline" class="tune-button">☷ 興味を調整</button></div>
+
           <div class="toolbar"><label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="キーワード・技術・旅行先で探す" autocomplete="off" aria-label="ニュースを検索" /></label><label class="select-wrap"><span>並び替え</span><select id="sort"><option value="recommended">おすすめ順</option><option value="latest">新着順</option><option value="popular">注目度順</option></select></label><button id="unreadFilter" class="filter-button" aria-pressed="false">未読のみ</button></div>
           <div id="mobileChips" class="mobile-chips" role="group" aria-label="カテゴリを選択"></div>
+          <div class="feed-head"><div><div class="eyebrow purple" id="sectionKicker">CURATED FOR YOU</div><h2 id="sectionTitle" tabindex="-1">今日の発見 <span class="h2-spark">✳</span></h2><details class="display-help"><summary>表示順について</summary><p id="sectionDesc">あなたの関心と、新しさから優先順位をつけています。</p></details></div><button id="settingsInline" class="tune-button">☷ 興味を調整</button></div>
           <p id="feedSummary" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
           <div id="feed" class="feed-grid"><div class="loading">発見を読み込み中…</div></div>
           <div id="empty" class="empty" hidden><div class="empty-icon">⌕</div><h3>条件に合う情報がありません</h3><p>カテゴリ・検索・未読フィルターを変えてみてください。</p><button id="clearFilters">条件をリセット</button></div>
         </section>
+        <details id="sourceHealth" class="source-health"><summary>情報源の取得状況（最終収集時点）</summary><p>取得候補数は配信件数とは異なります。連続取得エラーは保存された観測履歴から数えています。</p><ul id="sourceHealthRows"></ul></details>
         <footer><span>✺ Curiosity Radar</span><span>情報は元サイトで確認。収益や安全性を保証するものではありません。</span><a href="https://github.com" target="_blank" rel="noopener noreferrer">Powered by open sources ↗</a></footer>
       </div>
     </main>
   </div>
-  <nav class="bottom-nav" aria-label="モバイルナビゲーション"><button data-mobile-go="all"><span>◈</span>発見</button><button data-mobile-go="github"><span>⌘</span>GitHub</button><button data-mobile-go="money"><span>◐</span>アイデア</button><button data-mobile-go="saved"><span>♡</span>保存</button><button id="settingsBottom"><span>☷</span>設定</button></nav>
+  <nav class="bottom-nav" aria-label="モバイルナビゲーション"><button data-mobile-go="all"><span>⌂</span>ホーム</button><button data-mobile-go="github"><span>⌘</span>GitHub</button><button data-mobile-go="saved"><span>♡</span>保存</button><button id="settingsBottom"><span>☷</span>設定</button></nav>
   <dialog id="prefsDialog" class="prefs-dialog" aria-labelledby="prefsTitle"><form method="dialog"><div class="dialog-top"><div><div class="eyebrow purple">PERSONALIZE YOUR RADAR</div><h2 id="prefsTitle">何にワクワクする？</h2><p>優先度はこの端末にだけ保存されます。ニュース収集自体は全カテゴリを継続します。</p></div><button class="icon-button" value="cancel" aria-label="閉じる">×</button></div><div class="prefs-content"><div id="weightControls" class="weight-controls"></div>
     <section class="prefs-transfer" aria-labelledby="transferTitle"><h3 id="transferTitle">設定と保存を持ち運ぶ</h3><p>重みと保存IDだけを端末内のJSONに書き出します。既読・記事本文は含みません。ファイルには興味の情報があるため、公開しないでください。</p>
       <div class="transfer-buttons"><button id="exportPrefs" type="button" class="secondary-button">JSONを書き出す</button><button id="importPrefs" type="button" class="secondary-button">JSONを読み込む</button><input id="prefsFile" type="file" accept=".json,application/json" hidden /></div>

@@ -128,6 +128,7 @@ def run():
                 page = context.new_page(); page.goto(base); page.wait_for_selector('.article')
                 ids = page.locator('.article').evaluate_all('(els)=>els.map(el=>el.dataset.id)')
                 assert ids == ['small','rising','large'], ids
+                for panel in page.locator('.card-analysis>summary').all():panel.click()
                 for text in ['小規模OSS候補','急上昇候補','定番候補','ライセンス未確認','スター差 0','スター差 -3','約48時間の観測差']:
                     assert text in page.locator('#feed').inner_text(), text
                 assert not page.evaluate('document.documentElement.scrollWidth > innerWidth')
@@ -154,6 +155,7 @@ def run():
             server.feed = (200,json.dumps(legacy))
             context=browser.new_context(service_workers='block')
             page=context.new_page();page.goto(base);page.wait_for_selector('.article')
+            page.locator('.card-analysis>summary').click()
             assert 'スター比較未確認' in page.locator('.repo-stats').inner_text()
             assert '+99' not in page.locator('.repo-stats').inner_text()
             context.close()
@@ -200,6 +202,7 @@ def run():
                 page.locator('#unreadFilter').click()
                 assert page.locator('.article').count()==1
                 assert page.locator('.article').first.get_attribute('data-id')=='unread-security'
+                page.locator('.article .card-analysis>summary').click()
                 assert '0/100' in page.locator('.article .rank').inner_text()
                 page.locator('#sort').select_option('popular')
                 page.locator('#search').fill('ｐｙｔｈｏｎ')
@@ -251,6 +254,7 @@ def run():
                     context=browser.new_context(viewport={'width':width,'height':900},service_workers='block',timezone_id=zone)
                     page=context.new_page();errors=[];page.on('pageerror',lambda error:errors.append(str(error)))
                     page.goto(base);page.wait_for_selector('.article')
+                    for panel in page.locator('.card-analysis>summary').all():panel.click()
                     kev=page.locator('[data-id="kev"]')
                     assert '2026/10/24' in kev.locator('time').inner_text(),zone
                     assert kev.locator('time').get_attribute('datetime')=='2026-10-24'
@@ -298,6 +302,7 @@ def run():
                     page.on('request',lambda request:external.append(request.url) if not request.url.startswith(base) else None)
                     page.goto(base);page.wait_for_selector('[data-prompt]')
                     assert page.evaluate('window.__copies.length')==0
+                    page.locator('[data-id="money-action"] .card-analysis>summary').click()
                     assert '収益性未検証' in page.locator('[data-id="money-action"] .hypothesis-note').inner_text()
                     assert page.locator('[data-id="money-action"] .hypothesis-note a').get_attribute('href')=='https://example.com/money'
                     for category,label in [('github','30分で試す／作る'),('money','仮説を検証する'),('travel','旅行を計画する')]:
