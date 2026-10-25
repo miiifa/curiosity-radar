@@ -14,7 +14,7 @@
   <a class="skip-link" href="#feedSection">記事一覧へ移動</a>
   <div class="shell">
     <aside class="sidebar" aria-label="サイドバー">
-      <a class="brand" href="#all" aria-label="Curiosity Radar ホーム">
+      <a class="brand" href="#" data-category="all" aria-label="Curiosity Radar ホーム">
         <span class="brand-symbol">✺</span><span class="brand-words">CURIOSITY<br><b>RADAR</b></span><span class="brand-beta">BETA</span>
       </a>
       <div class="side-kicker">YOUR SIGNAL, NOT THE NOISE.</div>
@@ -54,6 +54,7 @@
           <div class="metric"><div class="metric-label">収益化のヒント</div><strong id="metricMoney">—</strong><span>Ideas to explore</span></div>
           <div class="metric"><div class="metric-label">あなたの保存</div><strong id="metricSaved">0</strong><span>Saved discoveries</span></div>
         </section>
+        <section id="articleDetail" hidden aria-labelledby="detailTitle"></section>
         <section class="feed-section" id="feedSection" tabindex="-1" aria-labelledby="sectionTitle">
 
           <div class="toolbar"><label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="キーワード・技術・旅行先で探す" autocomplete="off" aria-label="ニュースを検索" /></label><label class="select-wrap"><span>並び替え</span><select id="sort"><option value="recommended">おすすめ順</option><option value="latest">新着順</option><option value="popular">注目度順</option></select></label><button id="unreadFilter" class="filter-button" aria-pressed="false">未読のみ</button></div>
