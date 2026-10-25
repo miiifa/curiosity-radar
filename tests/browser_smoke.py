@@ -274,6 +274,60 @@ def run():
                     page.screenshot(path=str(screenshot_dir/f'source-quality-{width}-{zone.replace("/","-")}.png'),full_page=True)
                     context.close()
                     print(f'{width}px {zone} source health / KEV calendar date / unknown impact / travel provenance: PASS',flush=True)
+            # PR-05: preview selected public information and copy only on an explicit click.
+            action_feed = fixture()
+            action_feed['items'] = [
+                {**fixture()['items'][0], 'id': category+'-action', 'category': category,
+                 'title': category+'公開テスト </pre><img src=x onerror="window.__actionInjected=true">',
+                 'summary': 'NONTRUSTED_'+category, 'url': 'https://example.com/'+category}
+                for category in ('github','money','travel')]
+            for width in (360,390,430,1280):
+                for reject in (False,True):
+                    server.feed = (200,json.dumps(action_feed))
+                    context = browser.new_context(viewport={'width':width,'height':900}, service_workers='block')
+                    context.add_init_script('''
+                        window.__copies=[];
+                        localStorage.setItem('radar:test-private','PRIVATE_STORAGE_MARKER');
+                        Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>{
+                            window.__copies.push(text);
+                            if (REJECT_COPY) throw new Error('denied');
+                        }}});
+                    '''.replace('REJECT_COPY',str(reject).lower()))
+                    page=context.new_page();errors=[];external=[]
+                    page.on('pageerror',lambda error:errors.append(str(error)))
+                    page.on('request',lambda request:external.append(request.url) if not request.url.startswith(base) else None)
+                    page.goto(base);page.wait_for_selector('[data-prompt]')
+                    assert page.evaluate('window.__copies.length')==0
+                    assert '収益性未検証' in page.locator('[data-id="money-action"] .hypothesis-note').inner_text()
+                    assert page.locator('[data-id="money-action"] .hypothesis-note a').get_attribute('href')=='https://example.com/money'
+                    for category,label in [('github','30分で試す／作る'),('money','仮説を検証する'),('travel','旅行を計画する')]:
+                        article=page.locator(f'[data-id="{category}-action"]')
+                        preview=article.locator('.next-action')
+                        assert label in preview.locator('summary').inner_text()
+                        preview.locator('summary').click()
+                        assert preview.locator('pre').is_visible()
+                        expected=preview.locator('pre').inner_text()
+                        assert 'NONTRUSTED_'+category in expected
+                        for other in ('github','money','travel'):
+                            if other!=category:assert 'NONTRUSTED_'+other not in expected
+                        assert 'PRIVATE_STORAGE_MARKER' not in expected
+                        assert page.evaluate('window.__copies.length')==('github','money','travel').index(category)
+                        article.locator('[data-prompt]').click()
+                        page.wait_for_function('document.querySelector("#toast").classList.contains("show")')
+                        assert page.evaluate('window.__copies.at(-1)')==expected
+                        message=page.locator('#toast').inner_text()
+                        assert ('コピーできませんでした' if reject else '指示をコピーしました') in message
+                        assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+                        preview.locator('summary').click()
+                    assert not page.evaluate('Boolean(window.__actionInjected)')
+                    assert page.locator('#feed img').count()==0
+                    assert not errors,errors
+                    assert not external,external
+                    if not reject:
+                        page.locator('[data-id="travel-action"] summary').click()
+                        page.locator('[data-id="travel-action"]').screenshot(path=str(screenshot_dir/f'next-action-{width}.png'))
+                    context.close()
+                    print(f'{width}px next actions preview / selected data / copy {"denied" if reject else "success"}: PASS',flush=True)
             # Real service worker, real Cache Storage, real browser offline mode.
             server.feed = (200, json.dumps(partial_feed))
             context = browser.new_context(viewport={'width':400,'height':900})
