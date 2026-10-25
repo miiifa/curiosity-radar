@@ -16,3 +16,17 @@ test('generated hypotheses and security uncertainty keep their meaning in copied
 test('invalid and excessively long URLs cannot create a misleading truncated citation',()=>{
  for(const url of ['javascript:alert(1)','https://example.com/'+ 'x'.repeat(4000)])assert.throws(()=>discussionFor({...item,url}));
 });
+test('demo disclosure survives shortening and explicit snapshot mode also protects missing item flags',()=>{
+ for(const options of [{...item,demo:true},{...item}]){
+  const text=discussionFor({...options,summary:'架空の説明'.repeat(1000),url:'https://example.com/'+'x'.repeat(500)},{mode:'demo'});
+  assert.ok(text.includes('これはデモデータです'));assert.ok(text.includes('架空の例示'));assert.ok(text.includes('デモ作成日時'));assert.ok(text.length<=2000);
+ }
+ const live=discussionFor(item,{mode:'live'});assert.ok(!live.includes('これはデモデータです'));
+});
+test('KEV calendar dates and repository update timestamps keep their source-specific meanings',()=>{
+ const published='2026-10-23T00:00:00Z';
+ const parse=text=>JSON.parse(text.slice(text.indexOf('{'),text.lastIndexOf('}')+1));
+ const kev=parse(discussionFor({...item,category:'security',source:'CISA KEV',published}));
+ assert.equal(kev['KEV追加日'],'2026-10-23');assert.ok(!('掲載日時' in kev));assert.ok(kev['日付の意味'].includes('攻撃日・脆弱性の公表日ではありません'));
+ const repo=parse(discussionFor({...item,category:'github',published}));assert.equal(repo['リポジトリ更新日時'],published);assert.ok(!('掲載日時' in repo));
+});

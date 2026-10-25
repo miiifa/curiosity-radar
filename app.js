@@ -159,7 +159,7 @@
   }
   async function openDiscussion(item){
     discussionAttempt++;$('#discussionStatus').textContent='';
-    try{$('#discussionText').value=RadarFeed.discussionFor(item,{generatedAt:state.meta.generated_at});$('#copyDiscussion').disabled=false;}
+    try{$('#discussionText').value=RadarFeed.discussionFor(item,{generatedAt:state.meta.generated_at,mode:state.meta.mode});$('#copyDiscussion').disabled=false;}
     catch{$('#discussionText').value='';$('#copyDiscussion').disabled=true;$('#discussionStatus').textContent='URLや文面が長すぎるため相談文を作れませんでした。元記事を確認し、必要な情報を手動で選んでください。';}
     $('#discussionDialog').showModal();if(!$('#copyDiscussion').disabled)await copyDiscussion();
   }
