@@ -24,6 +24,8 @@ OUTPUT = ROOT / 'data' / 'news.json'
 MAX_DAYS = 40
 NOW = dt.datetime.now(UTC)
 ERRORS: list[str] = []
+EXCLUDED_REPO_URLS: set[str] = set()
+REPO_TOPICS = {'automation', 'ai-agent', 'workflow', 'mcp', 'self-hosted', 'dashboard', 'monitoring'}
 USER_AGENT = 'CuriosityRadar/1.0 (personal news reader; https://github.com)'
 
 
@@ -217,78 +219,152 @@ def read_kev() -> list[dict]:
         return []
 
 
+def repo_topics(repo: dict) -> set[str]:
+    values = repo.get('topics')
+    return {x.lower() for x in values if isinstance(x, str)} if isinstance(values, list) else set()
+
+
+def repo_license(repo: dict) -> str | None:
+    info = repo.get('license')
+    value = info.get('spdx_id') if isinstance(info, dict) else None
+    return value if isinstance(value, str) and value and value not in ('NOASSERTION', 'OTHER') else None
+
+
+def star_count(value) -> int | None:
+    return value if type(value) is int and value >= 0 else None
+
+
 def repo_reason(repo: dict, delta: int | None) -> str:
-    topics = ' '.join(repo.get('topics',[])).lower()
-    base = '改造・検証・自分のサービスへの転用を検討できるOSS。'
-    if any(x in topics for x in ['automation','ai-agent','workflow','mcp']):
-        base = '定型作業の自動化やAIエージェントとの連携に応用可能。'
-    elif any(x in topics for x in ['self-hosted','dashboard','monitoring']):
-        base = '自分で運用できるツールや監視ダッシュボード作りに応用可能。'
-    if delta is not None and delta > 0:
-        base += f' 前回収集からスター数が{delta}増加。'
-    if not repo.get('license'):
-        base += ' ライセンスが不明なので利用条件の確認が必要。'
+    topics = repo_topics(repo)
+    if topics & {'automation', 'ai-agent', 'workflow', 'mcp'}:
+        base = '公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。'
+    elif topics & {'self-hosted', 'dashboard', 'monitoring'}:
+        base = '公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。'
+    else:
+        base = '公開メタデータをもとに用途を調べる候補。'
+    if not repo_license(repo):
+        base += ' ライセンス未確認。利用条件の確認が必要。'
     return base
 
 
-def repo_score(repo: dict, delta: int | None) -> int:
-    stars = repo.get('stargazers_count', 0)
+def repo_score(repo: dict, daily_delta: float | None) -> int:
+    stars = star_count(repo.get('stargazers_count')) or 0
     created = iso_date(repo.get('created_at'))
     age = max(1, (NOW-dt.datetime.fromisoformat(created.replace('Z','+00:00'))).days) if created else 60
     velocity = stars / max(7,age)
     score = 34 + min(30,math.log10(stars+1)*11) + min(25,math.log10(1+velocity)*16)
-    if delta is not None:
-        score += min(15, math.log1p(max(0,delta))*4)
-    if repo.get('archived') or repo.get('disabled'):
-        score -= 45
+    if daily_delta is not None:
+        score += min(15, math.log1p(max(0,daily_delta))*4)
     return max(10,min(99,int(score)))
 
 
+def star_observation(repo: dict, prior: dict | None) -> dict:
+    stars = star_count(repo.get('stargazers_count'))
+    old = star_count(prior.get('stars')) if prior else None
+    delta = stars - old if stars is not None and old is not None else None
+    since = None
+    raw_time = prior.get('stars_observed_at') if prior else None
+    if isinstance(raw_time, str) and 'T' in raw_time:
+        try:
+            parsed = dt.datetime.fromisoformat(raw_time.replace('Z','+00:00'))
+            if parsed.utcoffset() is not None:
+                since = iso_date(raw_time)
+        except ValueError:
+            pass
+    elapsed = (NOW-dt.datetime.fromisoformat(since.replace('Z','+00:00'))).total_seconds() if since else 0
+    if elapsed <= 0:
+        since = None
+    # Short intervals amplify noise. Keep the actual difference, but no rate/rising claim.
+    rate = delta * 86400 / elapsed if delta is not None and elapsed >= 3600 else None
+    percent = rate / max(1, old) * 100 if rate is not None else None
+    return {'stars': stars, 'stars_observed_at': NOW.isoformat().replace('+00:00','Z') if stars is not None else None,
+            'star_delta': delta, 'star_delta_since': since if delta is not None else None,
+            'star_delta_per_day': round(rate, 6) if rate is not None else None,
+            'star_growth_percent_per_day': round(percent, 6) if percent is not None else None}
+
+
+def select_repos(items: list[dict]) -> list[dict]:
+    """Reserve bounded, disjoint discovery pools; never fabricate a missing pool."""
+    groups = {key: [] for key in ('small', 'rising', 'established', 'other')}
+    for item in sorted(items, key=lambda x: (-x['score'], x['id'])):
+        group = item.get('discovery_group')
+        groups[group if group in groups else 'other'].append(item)
+    caps = {'small': 12, 'rising': 8, 'established': 9, 'other': 29}
+    groups = {key: values[:caps[key]] for key, values in groups.items()}
+    result = []
+    while any(groups.values()) and len(result) < 29:
+        for values in groups.values():
+            if values and len(result) < 29:
+                result.append(values.pop(0))
+    return result
+
+
 def read_github(previous: dict) -> list[dict]:
+    EXCLUDED_REPO_URLS.clear()
     token = os.environ.get('GH_TOKEN') or os.environ.get('GITHUB_TOKEN')
     since = (NOW-dt.timedelta(days=80)).strftime('%Y-%m-%d')
-    queries = [f'created:>{since} stars:>=30 fork:false archived:false',
-               f'topic:ai-agent pushed:>{(NOW-dt.timedelta(days=25)).strftime("%Y-%m-%d")} stars:>=80 archived:false',
-               f'topic:automation pushed:>{(NOW-dt.timedelta(days=25)).strftime("%Y-%m-%d")} stars:>=60 archived:false',
-               f'topic:self-hosted pushed:>{(NOW-dt.timedelta(days=25)).strftime("%Y-%m-%d")} stars:>=80 archived:false']
+    # Keep the four-request budget, but let the new/small query escape the star leaderboard.
+    queries = [(f'created:>{since} stars:30..9999 fork:false archived:false', 'updated'),
+               (f'topic:ai-agent pushed:>{(NOW-dt.timedelta(days=25)).strftime("%Y-%m-%d")} stars:>=30 fork:false archived:false', 'stars'),
+               (f'topic:automation pushed:>{(NOW-dt.timedelta(days=25)).strftime("%Y-%m-%d")} stars:>=30 fork:false archived:false', 'stars'),
+               (f'topic:self-hosted pushed:>{(NOW-dt.timedelta(days=25)).strftime("%Y-%m-%d")} stars:>=30 fork:false archived:false', 'stars')]
     repo_map = {}
-    for q in queries:
-        uri='https://api.github.com/search/repositories?'+urlencode({'q':q,'sort':'stars','order':'desc','per_page':'25'})
+    for q, sort in queries:
+        uri='https://api.github.com/search/repositories?'+urlencode({'q':q+' is:public','sort':sort,'order':'desc','per_page':'25'})
         try:
             payload = json.loads(get_bytes(uri,token=token))
-            for repo in payload.get('items',[]):
-                if not repo.get('html_url','').startswith('https://github.com/'):
+            if not isinstance(payload, dict) or not isinstance(payload.get('items'), list):
+                raise ValueError('invalid GitHub search response')
+            if payload.get('incomplete_results'):
+                ERRORS.append('GitHub search: IncompleteResults')
+            for repo in payload['items']:
+                if not isinstance(repo, dict):
                     continue
-                if repo.get('archived') or repo.get('fork'):
+                url = repo.get('html_url')
+                if not valid_link(url) or urlsplit(url).scheme != 'https' or urlsplit(url).netloc != 'github.com':
                     continue
-                repo_map[repo['full_name']] = repo
+                if not re.fullmatch(r'/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', urlsplit(url).path) or urlsplit(url).query or urlsplit(url).fragment:
+                    continue
+                if repo.get('archived') or repo.get('fork') or repo.get('disabled') or repo.get('private') or repo.get('visibility') in ('private', 'internal'):
+                    EXCLUDED_REPO_URLS.add(url)
+                    continue
+                if not repo_topics(repo) & REPO_TOPICS:
+                    EXCLUDED_REPO_URLS.add(url)
+                    continue
+                repo_map[url] = repo
             print(f'GitHub search: {len(payload.get("items",[]))} rows')
         except (OSError, ValueError, RuntimeError) as exc:
             ERRORS.append(f'GitHub search: {failure_kind(exc)}')
         time.sleep(.3)
+    previous_repos = {x.get('url'): x for x in previous.get('items', [])
+                      if x.get('category') == 'github' and not x.get('demo')}
+    if previous.get('mode') == 'demo':
+        previous_repos = {}
     all_repos=[]
-    previous_stars={x.get('url'):x.get('stars') for x in previous.get('items',[]) if x.get('category')=='github' and not x.get('demo')}
-    for repo in repo_map.values():
-        url = repo['html_url']
-        stars=int(repo.get('stargazers_count') or 0)
-        prior=previous_stars.get(url)
-        delta=max(0,stars-int(prior)) if isinstance(prior,int) else None
-        license_info=repo.get('license') or {}
-        license_name=license_info.get('spdx_id') if isinstance(license_info,dict) else ''
-        if license_name in ('NOASSERTION','OTHER'):
-            license_name=''
+    for url, repo in repo_map.items():
+        if url in EXCLUDED_REPO_URLS:
+            continue
+        observation = star_observation(repo, previous_repos.get(url))
+        stars = observation['stars']
+        rate = observation['star_delta_per_day']
+        percent = observation['star_growth_percent_per_day']
+        if rate is not None and rate >= 5 and percent >= 1:
+            group = 'rising'
+        elif stars is not None and 30 <= stars < 10000:
+            group = 'small'
+        elif stars is not None and stars >= 10000:
+            group = 'established'
+        else:
+            group = None
         all_repos.append({'id': identifier('github',url), 'category':'github', 'url':url,
             'title':repo.get('full_name') or 'Unnamed GitHub project',
             'summary':clean_text(repo.get('description') or 'READMEを確認してください。'),
-            'published':iso_date(repo.get('pushed_at')),
-            'source':'GitHub Search API', 'stars':stars,'star_delta':delta,
-            'language':repo.get('language'),'license':license_name or None,
-            'tags':(repo.get('topics') or [])[:5], 'reason':repo_reason(repo,delta),
-            'score':repo_score(repo,delta)})
-    all_repos.sort(key=lambda x:x['score'],reverse=True)
-    new_repos=[x for x in all_repos if x['stars']<10000][:12]
-    established=[x for x in all_repos if x not in new_repos][:17]
-    return (new_repos+established)[:29]
+            'published':iso_date(repo.get('pushed_at')), 'source':'GitHub Search API',
+            **observation, 'discovery_group':group,
+            'language':repo.get('language'),'license':repo_license(repo),
+            'tags':sorted(repo_topics(repo))[:5], 'reason':repo_reason(repo,observation['star_delta']),
+            'score':repo_score(repo,rate)})
+    return select_repos(all_repos)
 
 
 def idea_for(repo: dict) -> dict:
@@ -389,6 +465,20 @@ def validate_snapshot(data: dict) -> None:
             raise ValueError('missing published')
         if item['published'] is not None:
             timestamp(item['published'])
+        if item['category'] == 'github':
+            for key in ('stars', 'star_delta'):
+                value = item.get(key)
+                if value is not None and (type(value) is not int or (key == 'stars' and value < 0)):
+                    raise ValueError('invalid star count')
+            for key in ('stars_observed_at', 'star_delta_since'):
+                if item.get(key) is not None:
+                    timestamp(item[key])
+            for key in ('star_delta_per_day', 'star_growth_percent_per_day'):
+                value = item.get(key)
+                if value is not None and (type(value) not in (int, float) or not math.isfinite(value)):
+                    raise ValueError('invalid star rate')
+            if item.get('discovery_group') not in (None, 'small', 'rising', 'established'):
+                raise ValueError('invalid discovery group')
         if 'demo' in item and type(item['demo']) is not bool:
             raise ValueError('invalid demo flag')
         if (data['mode'] == 'live' and item.get('demo')) or (data['mode'] == 'demo' and not item.get('demo')):
@@ -416,6 +506,7 @@ def main() -> int:
         if OUTPUT.exists():previous=json.loads(OUTPUT.read_text(encoding='utf-8'))
     except (ValueError,OSError):
         pass
+    EXCLUDED_REPO_URLS.clear()
     repos=read_github(previous)
     items=read_feed_sources()+read_kev()+read_hacker_news()+repos
     items.extend(idea_for(r) for r in repos[:7])
@@ -423,9 +514,16 @@ def main() -> int:
     if not items:
         print('ERROR: All sources failed; preserving existing news.json instead of publishing an empty feed.',file=sys.stderr)
         return 1
-    previous_items=[x for x in previous.get('items',[]) if not x.get('demo') and recent(x.get('published'),15)]
+    fresh_keys={(x['category'], x['url'].split('#')[0]) for x in items}
+    github_failed=any(error.startswith('GitHub search:') for error in ERRORS)
+    previous_items=[x for x in previous.get('items',[]) if not x.get('demo') and recent(x.get('published'),15)
+                    and (x.get('category') != 'github' or github_failed)
+                    and x.get('url') not in EXCLUDED_REPO_URLS
+                    and (x.get('category'), x.get('url','').split('#')[0]) not in fresh_keys]
     items=deduplicate(items+previous_items)
-    items=sorted(items,key=lambda x:x.get('score',0),reverse=True)[:360]
+    github_items=select_repos([x for x in items if x['category']=='github'])
+    others=sorted((x for x in items if x['category']!='github'), key=lambda x:x.get('score',0),reverse=True)
+    items=sorted(github_items+others[:360-len(github_items)],key=lambda x:x.get('score',0),reverse=True)
     result={'generated_at':NOW.isoformat().replace('+00:00','Z'), 'mode':'live', 'items':items,
             'errors':ERRORS,'sources_attempted':len(SOURCES)+6, 'collector_version':1}
     save_snapshot(result)
