@@ -38,7 +38,17 @@
 
 個人情報は含めず、Pages公開用アーティファクトには `index.html`・静的アセット・公開ニュースJSONだけをコピーします。
 
-GitHub Actionsからファイルをプッシュできない場合：**Settings → Actions → General → Workflow permissions** で `Read and write permissions` を有効化できるか確認。できなくても収集結果のPages配信自体は行える設定です。
+### Actionsの運用・復旧
+
+- PRでは `test` ジョブだけ実行し、収集・データ保存・Pages公開は行いません。Pythonテスト、JS構文、公開JSONを検証します。
+- mainへのpush（`data/news.json`だけの更新を除く）、定期実行、mainを選択した手動実行では、`test` → `collect` → `deploy` の順に進みます。定期実行は07:30／19:30 JST目安で、遅延や長期無活動による停止があり得ます。復旧時はActions画面でスケジュール状態を確認し、mainの `Run workflow` を実行してください。
+- 権限はテストが `contents: read`、収集・スナップショット保存が `contents: write`、公開が `pages: write`／`id-token: write` です。PagesのSourceは事前にGitHub Actionsへ設定してください（workflowによるPagesの自動有効化は行いません）。
+- テスト失敗時のマージ自体を防ぐには、SettingsのRulesets／Branch protectionでmainへのPRと、このworkflowの `test` 成功を必須にしてください。workflowだけではマージ制限を設定できません。
+- スナップショットのpushが拒否された場合はActionsログとリポジトリ／組織の書き込みポリシーを確認してください。従来どおり配信は継続しますが、次回のスター増分は最後に**保存できた**スナップショットとの差になります。
+- 全取得失敗はジョブを失敗させて既存JSON・公開サイトを保持します。不正な候補も公開せず、正常な候補だけ一時ファイルから原子的に置換します。一部失敗はソース名・例外分類を `errors` に残します（生の例外詳細は公開しません）。
+- デモは `mode=demo`、実収集は `mode=live`。古いライブデータもライブのまま元の `generated_at` を維持し、鮮度を偽りません。部分成功・48時間超の表示改善は後続PRの対象です。
+- 公開後はPagesの一覧、`data/news.json` の `mode`・件数・`generated_at` と画面の更新日時を照合してください。CI成功だけでは外部API・Pagesの正常動作の証明にはなりません。
+- 不具合時は原因コミットをrevertし、mainで手動実行します。収集障害中は既存Pagesを維持し、必要なら最後の正常なPagesアーティファクトを再デプロイしてください。リポジトリ全体を初期化しないでください。
 
 ### ローカルで試す
 
