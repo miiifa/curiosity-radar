@@ -30,6 +30,99 @@ REPO_TOPICS = {'automation', 'ai-agent', 'workflow', 'mcp', 'self-hosted', 'dash
 USER_AGENT = 'CuriosityRadar/1.0 (personal news reader; https://github.com)'
 
 
+SOURCE_HEALTH: dict[str, dict] = {}
+HEALTH_PREVIOUS: dict[str, dict] = {}
+HEALTH_HISTORY_AVAILABLE = False
+SOURCE_KINDS = ('search_feed', 'official_feed', 'research_feed', 'official_catalog', 'public_api', 'github_api')
+KEV_URL = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
+
+
+def validate_health(rows: list) -> None:
+    if not isinstance(rows, list):
+        raise ValueError('invalid health records')
+    ids = set()
+    for row in rows:
+        if not isinstance(row, dict) or not all(isinstance(row.get(k), str) and row[k] for k in ('id','name','url')) or 'error' not in row or 'last_success_at' not in row:
+            raise ValueError('invalid health source')
+        if row['id'] in ids or not valid_link(row['url']) or row.get('status') not in ('ok','partial','failed'):
+            raise ValueError('invalid health status')
+        ids.add(row['id'])
+        for key in ('count','consecutive_failures'):
+            if type(row.get(key)) is not int or row[key] < 0:
+                raise ValueError('invalid health count')
+        if type(row.get('history_available')) is not bool:
+            raise ValueError('invalid history flag')
+        for key in ('checked_at','last_success_at'):
+            value = row.get(key)
+            if key == 'last_success_at' and value is None:
+                continue
+            if not isinstance(value, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})',value) or dt.datetime.fromisoformat(value.replace('Z','+00:00')).utcoffset() is None:
+                raise ValueError('invalid health timestamp')
+        error = row.get('error')
+        if error is not None and (not isinstance(error, str) or not re.fullmatch(r'[A-Za-z0-9_]{1,40}', error)):
+            raise ValueError('invalid health error')
+
+
+def health_path() -> Path:
+    return OUTPUT.with_name('.source-health.json')
+
+
+def start_health(previous: dict) -> None:
+    global HEALTH_PREVIOUS, HEALTH_HISTORY_AVAILABLE
+    SOURCE_HEALTH.clear()
+    HEALTH_HISTORY_AVAILABLE = False
+    rows = []
+    try:
+        state = json.loads(health_path().read_text(encoding='utf-8'))
+        if not isinstance(state, dict) or state.get('version') != 1:
+            raise ValueError('unsupported health history')
+        rows = state['sources']
+        validate_health(rows)
+        HEALTH_HISTORY_AVAILABLE = True
+    except (OSError, ValueError, KeyError, TypeError):
+        rows = previous.get('source_health', []) if previous.get('mode') != 'demo' else []
+        try:
+            validate_health(rows)
+        except (ValueError, TypeError):
+            rows = []
+    HEALTH_PREVIOUS = {row['id']:row for row in rows}
+    published = previous.get('source_health', []) if previous.get('mode') != 'demo' else []
+    try:
+        validate_health(published)
+        for row in published:
+            old = HEALTH_PREVIOUS.get(row['id'])
+            if old is None or dt.datetime.fromisoformat(row['checked_at'].replace('Z','+00:00')) > dt.datetime.fromisoformat(old['checked_at'].replace('Z','+00:00')):
+                HEALTH_PREVIOUS[row['id']] = row
+    except (ValueError, TypeError):
+        pass
+
+
+def record_health(id: str, name: str, url: str, count: int, error: str | None = None, *, partial=False) -> None:
+    previous = HEALTH_PREVIOUS.get(id, {})
+    known = bool(previous) and HEALTH_HISTORY_AVAILABLE
+    status = 'partial' if partial else 'failed' if error else 'ok'
+    failures = (previous.get('consecutive_failures', 0) if known else 0) + 1 if error else 0
+    row = {'id':id,'name':name,'url':url,'status':status,'count':count,'error':error,
+           'checked_at':NOW.isoformat().replace('+00:00','Z'),
+           'last_success_at':NOW.isoformat().replace('+00:00','Z') if status == 'ok' else previous.get('last_success_at'),
+           'consecutive_failures':failures,'history_available':known}
+    SOURCE_HEALTH[id] = row
+    print('SOURCE_HEALTH ' + json.dumps(row, ensure_ascii=False))
+    if failures >= 2:
+        print('::warning::Source health: ' + name.replace('%','%25').replace('\r','%0D').replace('\n','%0A') + f' reported collection errors in {failures} consecutive saved observations')
+
+
+def feed_metadata(url: str) -> dict:
+    host = urlsplit(url).hostname
+    kind = {'news.google.com':'search_feed','jvn.jp':'official_feed','www.jpcert.or.jp':'official_feed','www.ipa.go.jp':'official_feed','blog.talosintelligence.com':'research_feed'}.get(host)
+    return {'source_url':url,**({'source_kind':kind} if kind else {})}
+
+
+def security_metadata(text: str) -> dict:
+    return {'cves':sorted(set(re.findall(r'\bCVE-\d{4}-\d{4,}\b', text.upper())))[:8],
+            'user_impact':'not_assessed','exploitation_status':'not_assessed'}
+
+
 def get_bytes(url: str, *, token: str | None = None) -> bytes:
     headers = {'User-Agent': USER_AGENT, 'Accept': 'application/json,application/rss+xml,application/xml,text/xml,*/*'}
     if token:
@@ -145,7 +238,7 @@ SOURCES = [
     ('ai', 'AI・テクノロジー', google_news('生成AI OR AIエージェント OR LLM when:7d'), ['AI','最新技術'], 24),
     ('ai', '海外AI開発', google_news('site:openai.com OR site:anthropic.com OR site:deepmind.google AI when:14d'), ['AI','公式動向'], 20),
     ('travel', '国内旅行のニュース', google_news('国内旅行 穴場 絶景 OR 温泉 OR 離島 when:14d'), ['国内旅行'], 26),
-    ('travel', '関東発ドライブ', google_news('関東 ドライブ 日帰り 観光 OR キャンプ when:14d'), ['関東','ドライブ'], 22),
+    ('travel', '関東発ドライブ', google_news('関東 ドライブ 日帰り 観光 OR キャンプ when:14d'), ['検索条件:関東','ドライブ'], 22),
     ('social', '話題のニュース', google_news('SNS 話題 トレンド 日本 when:7d'), ['話題'], 20),
     ('hobby', 'ポケモン・ゲーム', google_news('ポケモンチャンピオンズ OR ポケモン対戦 OR ボードゲーム when:14d'), ['ゲーム','ボードゲーム'], 24),
     ('hobby', '趣味・ガジェット', google_news('ゲームマーケット OR ガジェット OR AWS 新機能 when:14d'), ['ガジェット','開発'], 17),
@@ -170,17 +263,19 @@ def read_feed_sources() -> list[dict]:
                 age = max(0, (NOW-published).total_seconds()/86400)
                 score = round(min(96, base + max(0, 30-age*2) + (12 if category == 'security' else 0)))
                 entries.append({**p, 'id': identifier(category, p['url']), 'category': category, 'source': name,
-                                'tags': tags, 'reason': reason_for(category, name), 'score': score})
+                                'tags': tags, 'reason': reason_for(category, name), 'score': score, **feed_metadata(url),
+                                **({'security':security_metadata(p['title']+' '+p['summary'])} if category == 'security' else {})})
                 added += 1
                 if added >= 22:
                     break
-            if not parsed:
-                ERRORS.append(f'RSS {name}: EmptyFeed')
-            elif all(p['published'] is None for p in parsed):
-                ERRORS.append(f'RSS {name}: MissingDates')
+            error = 'EmptyFeed' if not parsed else 'MissingDates' if all(p['published'] is None for p in parsed) else None
+            if error:
+                ERRORS.append(f'RSS {name}: {error}')
+            record_health(identifier('rss',url),name,url,added,error)
             print(f'RSS {name}: {added} relevant of {len(parsed)} parsed')
         except (OSError, ValueError, ET.ParseError, RuntimeError) as exc:
             ERRORS.append(f'RSS {name}: {failure_kind(exc)}')
+            record_health(identifier('rss',url),name,url,0,failure_kind(exc))
     return entries
 
 
@@ -196,27 +291,45 @@ def reason_for(category: str, source: str) -> str:
 
 
 def read_kev() -> list[dict]:
-    url = 'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
     try:
-        data = json.loads(get_bytes(url))
-        items = []
-        for row in data.get('vulnerabilities', []):
-            iso = iso_date(row.get('dateAdded'))
-            if not recent(iso, 21):
+        data = json.loads(get_bytes(KEV_URL))
+        if not isinstance(data, dict) or not isinstance(data.get('vulnerabilities'), list):
+            raise ValueError('invalid KEV catalog')
+        items, valid, invalid = [], 0, 0
+        for row in data['vulnerabilities']:
+            if not isinstance(row, dict):
+                invalid += 1
                 continue
-            cve = row.get('cveID','')
-            if not re.fullmatch(r'CVE-\d{4}-\d{4,}',cve):
+            cve, date = row.get('cveID'), row.get('dateAdded')
+            try:
+                if not isinstance(cve, str) or not re.fullmatch(r'CVE-\d{4}-\d{4,}',cve) or not isinstance(date,str) or dt.date.fromisoformat(date).isoformat() != date:
+                    raise ValueError('invalid CVE/date')
+            except ValueError:
+                invalid += 1
                 continue
+            valid += 1
+            iso = iso_date(date)
+            if not recent(iso,21):
+                continue
+            text = lambda value,limit: clean_text(value if isinstance(value,str) else '',limit) or None
+            vendor, product = text(row.get('vendorProject'),80), text(row.get('product'),80)
             link = f'https://nvd.nist.gov/vuln/detail/{cve}'
-            items.append({'id': identifier('security', link), 'category':'security',
-                'title':f"悪用確認: {row.get('vendorProject','')} {row.get('product','')} / {cve}",
-                'summary': clean_text(row.get('shortDescription',''),235), 'url':link,
-                'source':'CISA KEV', 'published':iso, 'tags':['KEV','悪用確認',cve],
-                'reason':'CISAのKEV登録。実際に悪用が確認された脆弱性。該当製品の影響と対応を確認。', 'score':95})
-        print(f'CISA KEV: {len(items)} recent CVEs')
-        return items[:38]
+            items.append({'id':identifier('security',link),'category':'security','url':link,
+                'title':f'KEV登録: {vendor or "提供元未確認"} {product or "製品未確認"} / {cve}',
+                'summary':text(row.get('shortDescription'),235) or '原典の情報を確認してください。',
+                'source':'CISA KEV','source_url':KEV_URL,'source_kind':'official_catalog','published':iso,
+                'security':{'cves':[cve],'user_impact':'not_assessed','exploitation_status':'listed_in_kev',
+                            'kev_added_date':date,'vendor':vendor,'product':product,'required_action':text(row.get('requiredAction'),230)},
+                'tags':['KEV','悪用確認',cve],'reason':'CISA KEVの悪用事例登録。利用製品への影響・対応は未確認。','score':95})
+        items = items[:38]
+        error = 'InvalidCVEData' if invalid else 'EmptyCatalog' if not valid else None
+        if error:
+            ERRORS.append(f'CISA KEV: {error}')
+        record_health('cisa-kev','CISA KEV',KEV_URL,len(items),error,partial=bool(error and valid))
+        return items
     except (OSError, ValueError, KeyError, RuntimeError) as exc:
         ERRORS.append(f'CISA KEV: {failure_kind(exc)}')
+        record_health('cisa-kev','CISA KEV',KEV_URL,0,failure_kind(exc))
         return []
 
 
@@ -310,7 +423,10 @@ def read_github(previous: dict) -> list[dict]:
                (f'topic:automation pushed:>{(NOW-dt.timedelta(days=25)).strftime("%Y-%m-%d")} stars:>=30 fork:false archived:false', 'stars'),
                (f'topic:self-hosted pushed:>{(NOW-dt.timedelta(days=25)).strftime("%Y-%m-%d")} stars:>=30 fork:false archived:false', 'stars')]
     repo_map = {}
-    for q, sort in queries:
+    for query_index, (q, sort) in enumerate(queries):
+        query_id = ('github-new','github-ai-agent','github-automation','github-self-hosted')[query_index]
+        query_name = ('GitHub 新規・小規模','GitHub AIエージェント','GitHub 自動化','GitHub セルフホスト')[query_index]
+        accepted = 0
         uri='https://api.github.com/search/repositories?'+urlencode({'q':q+' is:public','sort':sort,'order':'desc','per_page':'25'})
         try:
             payload = json.loads(get_bytes(uri,token=token))
@@ -333,9 +449,12 @@ def read_github(previous: dict) -> list[dict]:
                     EXCLUDED_REPO_URLS.add(url)
                     continue
                 repo_map[url] = repo
+                accepted += 1
+            record_health(query_id,query_name,uri,accepted,'IncompleteResults' if payload.get('incomplete_results') else None,partial=bool(payload.get('incomplete_results')))
             print(f'GitHub search: {len(payload.get("items",[]))} rows')
         except (OSError, ValueError, RuntimeError) as exc:
             ERRORS.append(f'GitHub search: {failure_kind(exc)}')
+            record_health(query_id,query_name,uri,0,failure_kind(exc))
         time.sleep(.3)
     previous_repos = {x.get('url'): x for x in previous.get('items', [])
                       if x.get('category') == 'github' and not x.get('demo')}
@@ -360,7 +479,7 @@ def read_github(previous: dict) -> list[dict]:
         all_repos.append({'id': identifier('github',url), 'category':'github', 'url':url,
             'title':repo.get('full_name') or 'Unnamed GitHub project',
             'summary':clean_text(repo.get('description') or 'READMEを確認してください。'),
-            'published':iso_date(repo.get('pushed_at')), 'source':'GitHub Search API',
+            'published':iso_date(repo.get('pushed_at')), 'source':'GitHub Search API','source_kind':'github_api','source_url':url,
             **observation, 'discovery_group':group,
             'language':repo.get('language'),'license':repo_license(repo),
             'tags':sorted(repo_topics(repo))[:5], 'reason':repo_reason(repo,observation['star_delta']),
@@ -398,11 +517,15 @@ def idea_for(repo: dict) -> dict:
 
 
 def read_hacker_news() -> list[dict]:
+    uri='https://hn.algolia.com/api/v1/search?'+urlencode({'tags':'front_page','hitsPerPage':25})
     try:
-        uri='https://hn.algolia.com/api/v1/search?'+urlencode({'tags':'front_page','hitsPerPage':25})
         payload=json.loads(get_bytes(uri))
+        if not isinstance(payload,dict) or not isinstance(payload.get('hits'),list):
+            raise ValueError('invalid Hacker News response')
         out=[]
-        for row in payload.get('hits',[]):
+        for row in payload['hits']:
+            if not isinstance(row,dict):
+                continue
             link=row.get('url') or ('https://news.ycombinator.com/item?id='+str(row.get('objectID','')))
             title=clean_text(row.get('title') or '',160)
             posted=iso_date(row.get('created_at'))
@@ -411,12 +534,14 @@ def read_hacker_news() -> list[dict]:
             points=int(row.get('points') or 0)
             out.append({'id':identifier('social',link),'category':'social', 'title':title,
                 'summary':f'Hacker News: {points}ポイント、{int(row.get("num_comments") or 0)}件のコメント。投稿先で内容を確認。',
-                'url':link,'source':'Hacker News', 'published':posted,'tags':['海外IT','コミュニティ'],
+                'url':link,'source':'Hacker News','source_kind':'public_api','source_url':uri, 'published':posted,'tags':['海外IT','コミュニティ'],
                 'reason':'技術コミュニティでの注目度を示す参考値。Xの話題とは別です。',
                 'score': min(92,32 + int(math.log1p(points)*10))})
+        record_health('hacker-news','Hacker News',uri,len(out))
         return out
     except (OSError, ValueError, RuntimeError) as exc:
         ERRORS.append(f'Hacker News: {failure_kind(exc)}')
+        record_health('hacker-news','Hacker News',uri,0,failure_kind(exc))
         return []
 
 
@@ -460,7 +585,7 @@ def merge_duplicates(rows: list[dict]) -> dict:
         for record in records:
             if all(record.get(key) for key in ('id', 'url', 'source')):
                 key = (record['id'], record['url'], record['source'], record['category'])
-                members.setdefault(key, {key: record.get(key) for key in ('id','url','title','source','category','published')})
+                members.setdefault(key, {field:record[field] for field in ('id','url','title','source','category','published','source_url','source_kind') if field in record})
     aliases.discard(chosen.get('id'))
     for key in ('aliases', 'categories', 'duplicates'):
         chosen.pop(key, None)
@@ -507,6 +632,27 @@ def related_headlines(items: list[dict]) -> list[dict]:
     return result
 
 
+def validate_source_metadata(item: dict) -> None:
+    if 'source_url' in item and not valid_link(item['source_url']):
+        raise ValueError('invalid source URL')
+    if 'source_kind' in item and item['source_kind'] not in SOURCE_KINDS:
+        raise ValueError('invalid source kind')
+    if 'security' not in item:
+        return
+    info = item['security']
+    if not isinstance(info, dict) or info.get('user_impact') != 'not_assessed' or info.get('exploitation_status') not in ('not_assessed','listed_in_kev'):
+        raise ValueError('invalid security assessment')
+    if not isinstance(info.get('cves'),list) or not all(isinstance(cve,str) and re.fullmatch(r'CVE-\d{4}-\d{4,}',cve) for cve in info['cves']):
+        raise ValueError('invalid CVE')
+    for key in ('vendor','product','required_action'):
+        if info.get(key) is not None and not isinstance(info[key],str):
+            raise ValueError('invalid security metadata')
+    if info['exploitation_status'] == 'listed_in_kev':
+        date = info.get('kev_added_date')
+        if item.get('source') != 'CISA KEV' or item.get('source_kind') != 'official_catalog' or len(info['cves']) != 1 or not isinstance(date,str) or dt.date.fromisoformat(date).isoformat() != date or not (item.get('published') or '').startswith(date+'T'):
+            raise ValueError('invalid KEV provenance/date')
+
+
 def validate_snapshot(data: dict) -> None:
     """Validate the existing v1 contract without treating old data as fresh."""
     def timestamp(value):
@@ -519,6 +665,8 @@ def validate_snapshot(data: dict) -> None:
     if not isinstance(data, dict) or data.get('mode') not in ('demo', 'live'):
         raise ValueError('invalid mode')
     timestamp(data.get('generated_at'))
+    if 'source_health' in data:
+        validate_health(data['source_health'])
     if not isinstance(data.get('items'), list) or not data['items']:
         raise ValueError('empty or invalid items')
     if not isinstance(data.get('errors'), list) or not all(isinstance(e, str) for e in data['errors']):
@@ -544,6 +692,7 @@ def validate_snapshot(data: dict) -> None:
             raise ValueError('missing published')
         if item['published'] is not None:
             timestamp(item['published'])
+        validate_source_metadata(item)
         if 'aliases' in item and (not isinstance(item['aliases'], list) or
                 not all(isinstance(value, str) and value and value != item['id'] for value in item['aliases'])):
             raise ValueError('invalid aliases')
@@ -561,6 +710,7 @@ def validate_snapshot(data: dict) -> None:
                     raise ValueError('invalid reference')
                 if reference['category'] not in ('github','ai','money','security','travel','social','hobby') or 'published' not in reference:
                     raise ValueError('invalid reference category/date')
+                validate_source_metadata(reference)
                 if reference['published'] is not None:
                     timestamp(reference['published'])
         if item['category'] == 'github':
@@ -592,14 +742,17 @@ def validate_snapshot(data: dict) -> None:
 
 def save_snapshot(data: dict) -> None:
     validate_snapshot(data)
-    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    write_json(OUTPUT, data)
+
+
+def write_json(path: Path, data: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
     temporary = None
     try:
-        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=OUTPUT.parent,
-                                         prefix='.news-', suffix='.tmp', delete=False) as stream:
+        with tempfile.NamedTemporaryFile(mode='w',encoding='utf-8',dir=path.parent,prefix='.'+path.name+'-',suffix='.tmp',delete=False) as stream:
             temporary = Path(stream.name)
-            stream.write(json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False) + '\n')
-        temporary.replace(OUTPUT)
+            stream.write(json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False)+'\n')
+        temporary.replace(path)
     finally:
         if temporary is not None:
             temporary.unlink(missing_ok=True)
@@ -611,13 +764,24 @@ def main() -> int:
         if OUTPUT.exists():previous=json.loads(OUTPUT.read_text(encoding='utf-8'))
     except (ValueError,OSError):
         pass
+    start_health(previous)
+    try:
+        return collect_snapshot(previous)
+    finally:
+        try:
+            write_json(health_path(), {'version':1,'sources':list(SOURCE_HEALTH.values())})
+        except (OSError, ValueError):
+            print('::warning::Source health history could not be saved; future failure counts may be unknown.')
+
+
+def collect_snapshot(previous: dict) -> int:
     EXCLUDED_REPO_URLS.clear()
     repos=read_github(previous)
     items=read_feed_sources()+read_kev()+read_hacker_news()+repos
     items.extend(idea_for(r) for r in repos[:7])
     items=deduplicate(items)
     if not items:
-        print('ERROR: All sources failed; preserving existing news.json instead of publishing an empty feed.',file=sys.stderr)
+        print('ERROR: No usable items from this collection; preserving existing news.json.',file=sys.stderr)
         return 1
     fresh_keys={item_key(x) for x in items}
     previous_by_key={}
@@ -636,7 +800,7 @@ def main() -> int:
     items=sorted(github_items+others[:360-len(github_items)],key=lambda x:x.get('score',0),reverse=True)
     items=related_headlines(items)
     result={'generated_at':NOW.isoformat().replace('+00:00','Z'), 'mode':'live', 'items':items,
-            'errors':ERRORS,'sources_attempted':len(SOURCES)+6, 'collector_version':1}
+            'errors':ERRORS,'sources_attempted':len(SOURCES)+6, 'collector_version':1,'source_health':list(SOURCE_HEALTH.values())}
     save_snapshot(result)
     print(f'Wrote {len(items)} items; {len(ERRORS)} sources failed.')
     return 0

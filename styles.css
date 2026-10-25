@@ -15,3 +15,5 @@
 .repo-group{color:#d9ceff;border:1px solid #564a7b;border-radius:5px;padding:4px 6px}.star-comparison{flex-basis:100%;overflow-wrap:anywhere}
 
 .article-references{font-size:11px;line-height:1.7;margin-top:12px;overflow-wrap:anywhere;color:#a7b6cf}.article-references summary{cursor:pointer}.article-references ul{padding-left:18px}.article-references a{color:#d5dcf6}
+
+.source-health{font-size:11px;line-height:1.8;margin:12px 0;color:#a7b6cf;overflow-wrap:anywhere}.source-health summary{cursor:pointer}.source-health li{margin:10px 0}.source-health ul{padding-left:18px}.source-health a,.provenance a{color:#d5dcf6}.provenance{font-size:11px;line-height:1.7;margin-top:12px;color:#a7b6cf;overflow-wrap:anywhere}.provenance p{margin:6px 0}.security-note,.travel-note{border-left:2px solid #8b82d8;padding-left:8px}

@@ -49,10 +49,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Restore source health history
+        uses: actions/cache/restore@v4
+        continue-on-error: true
+        with:
+          path: data/.source-health.json
+          key: ${{ runner.os }}-source-health-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: ${{ runner.os }}-source-health-v1-
       - name: Refresh feed
         env:
           GH_TOKEN: ${{ github.token }}
         run: python scripts/collect.py
+      - name: Save source health history even when collection fails
+        if: always() && hashFiles('data/.source-health.json') != ''
+        uses: actions/cache/save@v4
+        continue-on-error: true
+        with:
+          path: data/.source-health.json
+          key: ${{ runner.os }}-source-health-v1-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Save snapshot for momentum detection
         run: |
           git config user.name 'github-actions[bot]'

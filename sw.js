@@ -1,5 +1,5 @@
 importScripts('./feed-status.js');
-const VERSION = 'radar-static-v4';
+const VERSION = 'radar-static-v5';
 const ASSETS = ['./','./index.html','./styles.css','./feed-status.js','./app.js','./manifest.webmanifest','./assets/icon.svg'];
 const isFeed = req => new URL(req.url).pathname.endsWith('/data/news.json');
 self.addEventListener('install', event => event.waitUntil((async () => {

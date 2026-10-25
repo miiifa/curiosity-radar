@@ -85,6 +85,8 @@ python tests/browser_smoke.py
 
 ## ソースと帰属
 
+[情報源の取得状況・原典属性・KEV日付・旅行情報の扱い](docs/SOURCE_QUALITY.md)。画面で最終公開収集時点の状況を確認できます。全取得失敗回は公開データを保持するため、Actionsの `SOURCE_HEALTH` ログを確認してください。
+
 - GitHub Search API: https://docs.github.com/en/rest/search/search#search-repositories
 - Hacker News Algolia API: https://hn.algolia.com/api
 - JVN: https://jvn.jp/rss/jvn.rdf

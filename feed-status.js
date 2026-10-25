@@ -7,10 +7,58 @@
     const [year, month, day] = value.slice(0,10).split('-').map(Number);
     return month >= 1 && month <= 12 && day >= 1 && day <= new Date(Date.UTC(year,month,0)).getUTCDate() && Number.isFinite(Date.parse(value));
   }
+  const sourceKinds={search_feed:'検索結果のRSS',official_feed:'提供元の公式フィード',research_feed:'発信元の研究ブログ',official_catalog:'公式カタログ',public_api:'公開APIのメタデータ',github_api:'GitHub APIのメタデータ'};
+  function validURL(value){const url=new URL(value);return typeof value==='string' && /^https?:\/\//i.test(value) && !/[\s\x00-\x1f\x7f]/.test(value) && ['http:','https:'].includes(url.protocol) && !!url.hostname && !url.username && !url.password;}
+  function validateHealth(rows){
+    if(!Array.isArray(rows))throw Error('Invalid source health');
+    const ids=new Set();
+    for(const row of rows){
+      if(!row || !['id','name','url'].every(k=>typeof row[k]==='string'&&row[k]) || ids.has(row.id) || !validURL(row.url) ||
+          !['ok','partial','failed'].includes(row.status) || !['count','consecutive_failures'].every(k=>Number.isInteger(row[k])&&row[k]>=0) ||
+          typeof row.history_available!=='boolean' || !timestamp(row.checked_at) || (row.last_success_at!==null&&!timestamp(row.last_success_at)) ||
+          (row.error!==null&&(typeof row.error!=='string'||! /^[A-Za-z0-9_]{1,40}$/.test(row.error))))throw Error('Invalid source health record');
+      ids.add(row.id);
+    }
+  }
+  function validateSource(item){
+    if('source_url' in item&&!validURL(item.source_url))throw Error('Invalid source URL');
+    if('source_kind' in item&&!Object.hasOwn(sourceKinds,item.source_kind))throw Error('Invalid source kind');
+    if(!('security' in item))return;
+    const info=item.security;
+    if(!info||info.user_impact!=='not_assessed'||!['not_assessed','listed_in_kev'].includes(info.exploitation_status)||
+        !Array.isArray(info.cves)||!info.cves.every(c=>typeof c==='string'&&/^CVE-\d{4}-\d{4,}$/.test(c))||
+        !['vendor','product','required_action'].every(k=>info[k]==null||typeof info[k]==='string'))throw Error('Invalid security assessment');
+    if(info.exploitation_status==='listed_in_kev'&&(item.source!=='CISA KEV'||item.source_kind!=='official_catalog'||info.cves.length!==1||
+        typeof info.kev_added_date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(info.kev_added_date)||!timestamp(info.kev_added_date+'T00:00:00Z')||
+        !item.published?.startsWith(info.kev_added_date+'T')))throw Error('Invalid KEV provenance/date');
+  }
+  function healthIssue(code){
+    const labels={EmptyFeed:'有効な記事がありません',MissingDates:'掲載日時を確認できません',EmptyCatalog:'カタログが空です',InvalidCVEData:'一部のCVEデータが不正です',IncompleteResults:'結果が一部のみです',HTTP404:'取得先が見つかりません',HTTP401:'アクセスできません',HTTP403:'アクセスが拒否されました',HTTP429:'取得回数が制限されています',TimeoutError:'応答待ちが時間切れです',ParseError:'フィードの形式を読み取れません',ValueError:'データ形式が不正です'};
+    return Object.hasOwn(labels,code)?labels[code]:'取得エラー';
+  }
+
+  function sourceInfo(item){
+    const security=itemCategories(item).includes('security');
+    const travel=itemCategories(item).includes('travel');
+    return {kind:Object.hasOwn(sourceKinds,item.source_kind)?sourceKinds[item.source_kind]:'取得元の属性は未確認',
+      note:item.source_kind==='search_feed'?'検索結果からの候補です。原典の発信元と内容をリンク先で確認してください。':
+        ['official_feed','research_feed'].includes(item.source_kind)?'RSSの抜粋です。自動要約・独立した事実確認ではありません。':'',
+      security:security?(item.security?.exploitation_status==='listed_in_kev'?'CISA KEVに悪用事例が登録された脆弱性です。':'記事中の注意喚起です。悪用状況は未確認です。')+' 利用製品・この端末への影響は未確認です。原典と提供元の対応情報を確認してください。':'',
+      travel:travel?'地域・見頃・料金・営業時間・営業状況は原典で確認してください。検索条件を現地の確認済み情報として扱わないでください。':''};
+  }
+  function articleDate(item){
+    if(item.source==='CISA KEV'&&item.published){
+      const date=item.security?.kev_added_date||item.published.slice(0,10);
+      return {label:'KEV追加日',text:date.replaceAll('-','/'),datetime:date,title:'KEVカタログへの追加日です。攻撃日・脆弱性の公表日ではありません。'};
+    }
+    return {label:item.category==='github'?'更新':'掲載',text:item.published?new Date(item.published).toLocaleDateString('ja-JP'):'掲載日時不明',
+      datetime:item.published,title:item.published?new Date(item.published).toLocaleString('ja-JP'):'掲載日時不明'};
+  }
   function validate(data) {
     if (!data || !['demo','live'].includes(data.mode) || !timestamp(data.generated_at) ||
         !Array.isArray(data.items) || !data.items.length || !Array.isArray(data.errors) ||
         !data.errors.every(e => typeof e === 'string')) throw Error('Invalid feed');
+    if('source_health' in data)validateHealth(data.source_health);
     const ids = new Set();
     for (const item of data.items) {
       if (!item || !['id','title','source'].every(k => typeof item[k] === 'string' && item[k].trim()) ||
@@ -23,6 +71,7 @@
       if (typeof item.url !== 'string' || /[\s\x00-\x1f\x7f]/.test(item.url) || !/^https?:\/\//i.test(item.url)) throw Error('Invalid URL');
       const url = new URL(item.url);
       if (!['https:','http:'].includes(url.protocol) || !url.hostname || url.username || url.password) throw Error('Invalid URL');
+      validateSource(item);
       if ('aliases' in item && (!Array.isArray(item.aliases) || !item.aliases.every(id => typeof id === 'string' && id && id !== item.id))) throw Error('Invalid aliases');
       if ('categories' in item && (!Array.isArray(item.categories) || !item.categories.includes(item.category) || !item.categories.every(c => ['ai','security','travel','social','hobby'].includes(c)))) throw Error('Invalid categories');
       for (const key of ['duplicates','related']) if (key in item) {
@@ -30,6 +79,7 @@
         for (const ref of item[key]) {
           if (!ref || !['id','title','source','url','category'].every(k => typeof ref[k] === 'string' && ref[k].trim()) || !categories.has(ref.category) ||
               !('published' in ref) || (ref.published !== null && !timestamp(ref.published))) throw Error('Invalid reference');
+          validateSource(ref);
           const target = new URL(ref.url);
           if (!/^https?:\/\//i.test(ref.url) || /[\s\x00-\x1f\x7f]/.test(ref.url) || !['http:','https:'].includes(target.protocol) || !target.hostname || target.username || target.password) throw Error('Invalid reference URL');
         }
@@ -138,6 +188,6 @@
     }
     return ordered;
   }
-  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, itemCategories, remapIds, query};
+  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, itemCategories, remapIds, query, validateHealth, sourceInfo, articleDate, healthIssue};
   if (typeof module !== 'undefined') module.exports = root.RadarFeed;
 })(globalThis);
