@@ -1,7 +1,51 @@
 {
-  "generated_at": "2026-10-25T00:27:20.463609Z",
+  "generated_at": "2026-10-25T01:19:24.106324Z",
   "mode": "live",
   "items": [
+    {
+      "id": "github-ec4b5e65913390d00c",
+      "category": "github",
+      "url": "https://github.com/storytold/photocraft",
+      "title": "storytold/photocraft",
+      "summary": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
+      "published": "2026-10-25T00:57:58Z",
+      "source": "GitHub Search API",
+      "stars": 72412,
+      "star_delta": 16,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "tags": [
+        "art",
+        "image-editing",
+        "image-editing-software",
+        "image-editor",
+        "images"
+      ],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が16増加。",
+      "score": 99
+    },
+    {
+      "id": "github-4683cd570ef39debe9",
+      "category": "github",
+      "url": "https://github.com/yetone/magpie",
+      "title": "yetone/magpie",
+      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "published": "2026-10-25T00:41:28Z",
+      "source": "GitHub Search API",
+      "stars": 20795,
+      "star_delta": 19,
+      "language": "Go",
+      "license": "MIT",
+      "tags": [
+        "claude-code",
+        "codex",
+        "deepseek",
+        "gemini-cli",
+        "llm"
+      ],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が19増加。",
+      "score": 99
+    },
     {
       "id": "github-9d064369411829e692",
       "category": "github",
@@ -47,50 +91,6 @@
       "score": 99
     },
     {
-      "id": "github-4683cd570ef39debe9",
-      "category": "github",
-      "url": "https://github.com/yetone/magpie",
-      "title": "yetone/magpie",
-      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-      "published": "2026-10-25T00:05:50Z",
-      "source": "GitHub Search API",
-      "stars": 20776,
-      "star_delta": 178,
-      "language": "Go",
-      "license": "MIT",
-      "tags": [
-        "claude-code",
-        "codex",
-        "deepseek",
-        "gemini-cli",
-        "llm"
-      ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が178増加。",
-      "score": 99
-    },
-    {
-      "id": "github-ec4b5e65913390d00c",
-      "category": "github",
-      "url": "https://github.com/storytold/photocraft",
-      "title": "storytold/photocraft",
-      "summary": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
-      "published": "2026-10-24T23:49:00Z",
-      "source": "GitHub Search API",
-      "stars": 72396,
-      "star_delta": 183,
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "tags": [
-        "art",
-        "image-editing",
-        "image-editing-software",
-        "image-editor",
-        "images"
-      ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が183増加。",
-      "score": 99
-    },
-    {
       "id": "github-38ffa19f0aa61b7d08",
       "category": "github",
       "url": "https://github.com/NandhaKishorM/laya",
@@ -120,8 +120,8 @@
       "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
       "published": "2026-10-24T18:09:17Z",
       "source": "GitHub Search API",
-      "stars": 31754,
-      "star_delta": 1637,
+      "stars": 31849,
+      "star_delta": 95,
       "language": "Java",
       "license": null,
       "tags": [
@@ -131,7 +131,7 @@
         "android-tv-launcher",
         "apple-tv"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1637増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が95増加。",
       "score": 99
     },
     {
@@ -180,12 +180,12 @@
       "summary": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
       "published": "2026-10-24T09:19:58Z",
       "source": "GitHub Search API",
-      "stars": 31998,
-      "star_delta": 358,
+      "stars": 32024,
+      "star_delta": 26,
       "language": "C++",
       "license": "MIT",
       "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が358増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が26増加。",
       "score": 99
     },
     {
@@ -196,8 +196,8 @@
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi…",
       "published": "2026-10-24T06:03:04Z",
       "source": "GitHub Search API",
-      "stars": 41248,
-      "star_delta": 562,
+      "stars": 41288,
+      "star_delta": 40,
       "language": "JavaScript",
       "license": "MIT",
       "tags": [
@@ -207,7 +207,7 @@
         "developer-tools",
         "dsh"
       ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が562増加。",
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が40増加。",
       "score": 99
     },
     {
@@ -218,8 +218,8 @@
       "summary": "DeepSeek Harness: Everything is a Plugin.",
       "published": "2026-10-23T15:25:40Z",
       "source": "GitHub Search API",
-      "stars": 260479,
-      "star_delta": 322,
+      "stars": 260501,
+      "star_delta": 22,
       "language": "TypeScript",
       "license": "MIT",
       "tags": [
@@ -228,7 +228,7 @@
         "dsh",
         "dsh-plugin"
       ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が322増加。",
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が22増加。",
       "score": 99
     },
     {
@@ -293,8 +293,8 @@
       "summary": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
       "published": "2026-10-18T20:20:24Z",
       "source": "GitHub Search API",
-      "stars": 20156,
-      "star_delta": 198,
+      "stars": 20171,
+      "star_delta": 15,
       "language": "JavaScript",
       "license": "MIT",
       "tags": [
@@ -303,7 +303,7 @@
         "svg",
         "vizualization"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が198増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が15増加。",
       "score": 99
     },
     {
@@ -314,28 +314,12 @@
       "summary": "READMEを確認してください。",
       "published": "2026-10-14T02:22:51Z",
       "source": "GitHub Search API",
-      "stars": 19114,
-      "star_delta": 241,
+      "stars": 19128,
+      "star_delta": 14,
       "language": "Python",
       "license": "Apache-2.0",
       "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が241増加。",
-      "score": 99
-    },
-    {
-      "id": "github-1b8e35a5a0147eea7e",
-      "category": "github",
-      "url": "https://github.com/browser-use/jev-ultrafast",
-      "title": "browser-use/jev-ultrafast",
-      "summary": "Fastest and cheapest web agent",
-      "published": "2026-09-30T01:24:38Z",
-      "source": "GitHub Search API",
-      "stars": 23595,
-      "star_delta": 38,
-      "language": "Python",
-      "license": "MIT",
-      "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が38増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が14増加。",
       "score": 99
     },
     {
@@ -691,15 +675,47 @@
       "score": 95
     },
     {
+      "id": "github-1b8e35a5a0147eea7e",
+      "category": "github",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "title": "browser-use/jev-ultrafast",
+      "summary": "Fastest and cheapest web agent",
+      "published": "2026-09-30T01:24:38Z",
+      "source": "GitHub Search API",
+      "stars": 23599,
+      "star_delta": 4,
+      "language": "Python",
+      "license": "MIT",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が4増加。",
+      "score": 95
+    },
+    {
       "id": "money-ec4b5e65913390d00c",
       "category": "money",
       "url": "https://github.com/storytold/photocraft",
       "title": "OSSの導入・カスタマイズ支援 — photocraft",
       "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-24T23:49:00Z",
+      "published": "2026-10-25T00:57:58Z",
       "source": "着想元: storytold/photocraft",
       "tags": [
         "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
+    },
+    {
+      "id": "money-4683cd570ef39debe9",
+      "category": "money",
+      "url": "https://github.com/yetone/magpie",
+      "title": "業務特化のAIミニツール — magpie",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-10-25T00:41:28Z",
+      "source": "着想元: yetone/magpie",
+      "tags": [
+        "AIサービス",
         "収益性未検証",
         "OSS活用"
       ],
@@ -714,6 +730,22 @@
       "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
       "published": "2026-10-24T19:17:07Z",
       "source": "着想元: NandhaKishorM/laya",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
+    },
+    {
+      "id": "money-4bef08f5f83b5a9b7d",
+      "category": "money",
+      "url": "https://github.com/Gathin23/cleanyourtv",
+      "title": "OSSの導入・カスタマイズ支援 — cleanyourtv",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-24T18:09:17Z",
+      "source": "着想元: Gathin23/cleanyourtv",
       "tags": [
         "受託開発",
         "収益性未検証",
@@ -787,38 +819,6 @@
       "score": 93
     },
     {
-      "id": "money-4683cd570ef39debe9",
-      "category": "money",
-      "url": "https://github.com/yetone/magpie",
-      "title": "業務特化のAIミニツール — magpie",
-      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-10-23T10:20:07Z",
-      "source": "着想元: yetone/magpie",
-      "tags": [
-        "AIサービス",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
-      "id": "money-4bef08f5f83b5a9b7d",
-      "category": "money",
-      "url": "https://github.com/Gathin23/cleanyourtv",
-      "title": "OSSの導入・カスタマイズ支援 — cleanyourtv",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-23T08:01:15Z",
-      "source": "着想元: Gathin23/cleanyourtv",
-      "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
       "id": "money-9816345b0430e76f4e",
       "category": "money",
       "url": "https://github.com/eternity4719/HowToLiveBetter",
@@ -870,7 +870,7 @@
       "id": "social-a54fd0e20dbb904635",
       "category": "social",
       "title": "No signs of AI payoff outside the tech sector",
-      "summary": "Hacker News: 452ポイント、437件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 471ポイント、464件のコメント。投稿先で内容を確認。",
       "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
       "source": "Hacker News",
       "published": "2026-10-24T19:47:19Z",
@@ -960,7 +960,7 @@
       "id": "social-67d9de400f929ce027",
       "category": "social",
       "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-      "summary": "Hacker News: 1544ポイント、242件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 1548ポイント、243件のコメント。投稿先で内容を確認。",
       "url": "https://edjefferson.com/localwiki/",
       "source": "Hacker News",
       "published": "2026-10-22T23:01:18Z",
@@ -1095,7 +1095,7 @@
       "id": "social-1f21a11f54e05b7b97",
       "category": "social",
       "title": "Show HN: Steal My Bitcoin",
-      "summary": "Hacker News: 368ポイント、212件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 393ポイント、234件のコメント。投稿先で内容を確認。",
       "url": "https://stealmybitcoin.com/",
       "source": "Hacker News",
       "published": "2026-10-24T20:30:31Z",
@@ -1110,7 +1110,7 @@
       "id": "social-6c6bee7f14c39272d4",
       "category": "social",
       "title": "Twelve years of distributed SQLite",
-      "summary": "Hacker News: 362ポイント、62件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 365ポイント、62件のコメント。投稿先で内容を確認。",
       "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
       "source": "Hacker News",
       "published": "2026-10-24T01:16:58Z",
@@ -1119,7 +1119,7 @@
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 90
+      "score": 91
     },
     {
       "id": "social-f6a301346a05e615cd",
@@ -1245,7 +1245,7 @@
       "id": "social-c755b08d9cb3b23c3f",
       "category": "social",
       "title": "I don't understand quantum physics (2018)",
-      "summary": "Hacker News: 270ポイント、204件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 280ポイント、210件のコメント。投稿先で内容を確認。",
       "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
       "source": "Hacker News",
       "published": "2026-10-24T09:53:26Z",
@@ -1260,7 +1260,7 @@
       "id": "social-cbb045dba06decd7ef",
       "category": "social",
       "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
-      "summary": "Hacker News: 270ポイント、136件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 275ポイント、137件のコメント。投稿先で内容を確認。",
       "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
       "source": "Hacker News",
       "published": "2026-10-24T08:06:39Z",
@@ -1306,7 +1306,7 @@
       "id": "social-e2f60b8a844782dac9",
       "category": "social",
       "title": "Physicists trap a single antimatter particle for a month",
-      "summary": "Hacker News: 276ポイント、80件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 278ポイント、80件のコメント。投稿先で内容を確認。",
       "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
       "source": "Hacker News",
       "published": "2026-10-21T19:40:01Z",
@@ -1337,10 +1337,25 @@
       "id": "social-c852cf262baca51dc3",
       "category": "social",
       "title": "Roku developer repositories moved from GitHub to GitLab",
-      "summary": "Hacker News: 245ポイント、164件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 256ポイント、168件のコメント。投稿先で内容を確認。",
       "url": "https://blog.roku.com/developer/gitlab-move",
       "source": "Hacker News",
       "published": "2026-10-24T16:06:26Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 87
+    },
+    {
+      "id": "social-0358f37e52765a0f01",
+      "category": "social",
+      "title": "FreeDNS",
+      "summary": "Hacker News: 247ポイント、62件のコメント。投稿先で内容を確認。",
+      "url": "https://freedns.afraid.org/",
+      "source": "Hacker News",
+      "published": "2026-10-24T15:20:01Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -1394,13 +1409,13 @@
       "score": 87
     },
     {
-      "id": "social-0358f37e52765a0f01",
+      "id": "social-c6f7fce2eddef14cda",
       "category": "social",
-      "title": "FreeDNS",
-      "summary": "Hacker News: 241ポイント、61件のコメント。投稿先で内容を確認。",
-      "url": "https://freedns.afraid.org/",
+      "title": "The Goose Programming Language",
+      "summary": "Hacker News: 232ポイント、156件のコメント。投稿先で内容を確認。",
+      "url": "https://aardappel.github.io/goose/",
       "source": "Hacker News",
-      "published": "2026-10-24T15:20:01Z",
+      "published": "2026-10-24T19:06:55Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -1454,13 +1469,13 @@
       "score": 85
     },
     {
-      "id": "social-c6f7fce2eddef14cda",
+      "id": "social-b6ee2b32304d0c0d1a",
       "category": "social",
-      "title": "The Goose Programming Language",
-      "summary": "Hacker News: 198ポイント、149件のコメント。投稿先で内容を確認。",
-      "url": "https://aardappel.github.io/goose/",
+      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+      "summary": "Hacker News: 185ポイント、61件のコメント。投稿先で内容を確認。",
+      "url": "https://github.com/Zagitta/gpu-unlock",
       "source": "Hacker News",
-      "published": "2026-10-24T19:06:55Z",
+      "published": "2026-10-24T09:58:27Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -1484,21 +1499,6 @@
       "score": 84
     },
     {
-      "id": "social-b6ee2b32304d0c0d1a",
-      "category": "social",
-      "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-      "summary": "Hacker News: 176ポイント、61件のコメント。投稿先で内容を確認。",
-      "url": "https://github.com/Zagitta/gpu-unlock",
-      "source": "Hacker News",
-      "published": "2026-10-24T09:58:27Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 83
-    },
-    {
       "id": "social-332b8a0f3c708eb7e8",
       "category": "social",
       "title": "How close can pure functional programming get to C?",
@@ -1512,6 +1512,21 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 83
+    },
+    {
+      "id": "social-42532ee811b2ffa8d8",
+      "category": "social",
+      "title": "We should be more ambitious with the software we build",
+      "summary": "Hacker News: 148ポイント、99件のコメント。投稿先で内容を確認。",
+      "url": "https://danluu.com/ambitious/",
+      "source": "Hacker News",
+      "published": "2026-10-24T21:47:31Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 82
     },
     {
       "id": "social-595e0c468133c6b695",
@@ -1679,6 +1694,36 @@
       "score": 80
     },
     {
+      "id": "social-1f6056f34e61a5ea93",
+      "category": "social",
+      "title": "America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
+      "summary": "Hacker News: 117ポイント、89件のコメント。投稿先で内容を確認。",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "source": "Hacker News",
+      "published": "2026-10-24T23:11:54Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 79
+    },
+    {
+      "id": "social-c7a37d520ea53c8293",
+      "category": "social",
+      "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
+      "summary": "Hacker News: 111ポイント、75件のコメント。投稿先で内容を確認。",
+      "url": "https://missileer.watch",
+      "source": "Hacker News",
+      "published": "2026-10-24T19:43:27Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 79
+    },
+    {
       "id": "social-078b41e2b15912e708",
       "category": "social",
       "title": "Is this the new cyber normal?",
@@ -1752,36 +1797,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 79
-    },
-    {
-      "id": "social-42532ee811b2ffa8d8",
-      "category": "social",
-      "title": "We should be more ambitious with the software we build",
-      "summary": "Hacker News: 108ポイント、66件のコメント。投稿先で内容を確認。",
-      "url": "https://danluu.com/ambitious/",
-      "source": "Hacker News",
-      "published": "2026-10-24T21:47:31Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 78
-    },
-    {
-      "id": "social-c7a37d520ea53c8293",
-      "category": "social",
-      "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
-      "summary": "Hacker News: 102ポイント、68件のコメント。投稿先で内容を確認。",
-      "url": "https://missileer.watch",
-      "source": "Hacker News",
-      "published": "2026-10-24T19:43:27Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 78
     },
     {
       "id": "social-c88a74ab95ab151420",
@@ -1874,6 +1889,21 @@
       "score": 78
     },
     {
+      "id": "social-0c19e05bbb06ed260c",
+      "category": "social",
+      "title": "The St. Helena 5 pence coin shows Jonathan, a roughly 190 year old tortoise",
+      "summary": "Hacker News: 93ポイント、29件のコメント。投稿先で内容を確認。",
+      "url": "https://de.numista.com/9866",
+      "source": "Hacker News",
+      "published": "2026-10-24T16:41:55Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 77
+    },
+    {
       "title": "注意喚起: 直近で相次いでいる国内組織における不正アクセスに関する注意喚起 (更新)",
       "summary": "",
       "url": "https://www.jpcert.or.jp/at/2026/at260030.html",
@@ -1919,25 +1949,10 @@
       "score": 77
     },
     {
-      "id": "social-0c19e05bbb06ed260c",
-      "category": "social",
-      "title": "The St. Helena 5 pence coin shows Jonathan, a roughly 190 year old tortoise",
-      "summary": "Hacker News: 87ポイント、26件のコメント。投稿先で内容を確認。",
-      "url": "https://de.numista.com/9866",
-      "source": "Hacker News",
-      "published": "2026-10-24T16:41:55Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 76
-    },
-    {
       "id": "social-fca13fff3851522a61",
       "category": "social",
       "title": "Neural chip decodes interactions between brain regions",
-      "summary": "Hacker News: 86ポイント、29件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 89ポイント、31件のコメント。投稿先で内容を確認。",
       "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
       "source": "Hacker News",
       "published": "2026-10-24T15:57:17Z",
@@ -2054,6 +2069,21 @@
       "score": 75
     },
     {
+      "id": "social-c9d44435005d898d3b",
+      "category": "social",
+      "title": "SpeedCrunch 1.1",
+      "summary": "Hacker News: 68ポイント、10件のコメント。投稿先で内容を確認。",
+      "url": "https://www.speedcrunch.org/",
+      "source": "Hacker News",
+      "published": "2026-10-24T19:19:43Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 74
+    },
+    {
       "id": "social-71853833e5fa6c7e49",
       "category": "social",
       "title": "Securing our frontier model training environment",
@@ -2127,21 +2157,6 @@
       ],
       "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
       "score": 74
-    },
-    {
-      "id": "social-c9d44435005d898d3b",
-      "category": "social",
-      "title": "SpeedCrunch 1.1",
-      "summary": "Hacker News: 62ポイント、9件のコメント。投稿先で内容を確認。",
-      "url": "https://www.speedcrunch.org/",
-      "source": "Hacker News",
-      "published": "2026-10-24T19:19:43Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 73
     },
     {
       "id": "social-79525a8afd6fd57ace",
@@ -2297,7 +2312,7 @@
       "id": "social-402510afde2d9adf5a",
       "category": "social",
       "title": "Symbolic Learning in Python and Julia",
-      "summary": "Hacker News: 55ポイント、8件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 59ポイント、11件のコメント。投稿先で内容を確認。",
       "url": "https://github.com/astroautomata/PySR",
       "source": "Hacker News",
       "published": "2026-10-20T20:07:35Z",
@@ -2307,21 +2322,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 72
-    },
-    {
-      "id": "social-1f6056f34e61a5ea93",
-      "category": "social",
-      "title": "America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
-      "summary": "Hacker News: 49ポイント、18件のコメント。投稿先で内容を確認。",
-      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
-      "source": "Hacker News",
-      "published": "2026-10-24T23:11:54Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 71
     },
     {
       "id": "social-a274a475efbd40d376",
@@ -2414,6 +2414,21 @@
       "score": 71
     },
     {
+      "id": "social-c3ea527220c8a2c384",
+      "category": "social",
+      "title": "Bbtree: Fastest Ordered Map",
+      "summary": "Hacker News: 46ポイント、4件のコメント。投稿先で内容を確認。",
+      "url": "https://bbtree.xiangpeng.systems/post/",
+      "source": "Hacker News",
+      "published": "2026-10-24T18:22:14Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 70
+    },
+    {
       "id": "social-7182d2caefa5475c92",
       "category": "social",
       "title": "How to run a city builder on 16 MHz",
@@ -2459,6 +2474,21 @@
       "score": 70
     },
     {
+      "id": "social-e6f90c192a4bb56a45",
+      "category": "social",
+      "title": "Making a VGA Driver in SystemVerilog",
+      "summary": "Hacker News: 46ポイント、9件のコメント。投稿先で内容を確認。",
+      "url": "https://lukaswerner.com/post/2026-10-20@bottom-up-vga",
+      "source": "Hacker News",
+      "published": "2026-10-20T16:00:15Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 70
+    },
+    {
       "id": "social-7d1ef04ca1ec0c0283",
       "category": "social",
       "title": "France needs to read my paper",
@@ -2466,21 +2496,6 @@
       "url": "https://wilsoniumite.com/2026/10/23/france-needs-to-read-my-paper/",
       "source": "Hacker News",
       "published": "2026-10-23T09:54:40Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 69
-    },
-    {
-      "id": "social-e6f90c192a4bb56a45",
-      "category": "social",
-      "title": "Making a VGA Driver in SystemVerilog",
-      "summary": "Hacker News: 42ポイント、9件のコメント。投稿先で内容を確認。",
-      "url": "https://lukaswerner.com/post/2026-10-20@bottom-up-vga",
-      "source": "Hacker News",
-      "published": "2026-10-20T16:00:15Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -2504,21 +2519,6 @@
       "score": 69
     },
     {
-      "id": "social-c3ea527220c8a2c384",
-      "category": "social",
-      "title": "Bbtree: Fastest Ordered Map",
-      "summary": "Hacker News: 39ポイント、2件のコメント。投稿先で内容を確認。",
-      "url": "https://bbtree.xiangpeng.systems/post/",
-      "source": "Hacker News",
-      "published": "2026-10-24T18:22:14Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 68
-    },
-    {
       "id": "social-3513b9999983f116ac",
       "category": "social",
       "title": "Evolving Threat: http2shell is an RCE in node, Python, and more",
@@ -2534,6 +2534,51 @@
       "score": 68
     },
     {
+      "id": "social-88fc71cdd47c387941",
+      "category": "social",
+      "title": "Google has officially turned these Nest thermostats back into dumb thermostats",
+      "summary": "Hacker News: 33ポイント、25件のコメント。投稿先で内容を確認。",
+      "url": "https://www.makeuseof.com/google-nest-thermostats-unsupported/",
+      "source": "Hacker News",
+      "published": "2026-10-24T23:14:30Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 67
+    },
+    {
+      "id": "social-8763261ffc09bb097c",
+      "category": "social",
+      "title": "Small Programs and Languages",
+      "summary": "Hacker News: 34ポイント、1件のコメント。投稿先で内容を確認。",
+      "url": "https://ratfactor.com/cards/pl-small",
+      "source": "Hacker News",
+      "published": "2026-10-24T21:44:23Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 67
+    },
+    {
+      "id": "social-00fa61ca1ab1c68da7",
+      "category": "social",
+      "title": "Oai-math-revised: a community hub for revising OpenAI's math write-ups",
+      "summary": "Hacker News: 33ポイント、24件のコメント。投稿先で内容を確認。",
+      "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
+      "source": "Hacker News",
+      "published": "2026-10-24T15:35:17Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 67
+    },
+    {
       "id": "social-4fb051deb678302903",
       "category": "social",
       "title": "Rune 1.3: adds TypeScript, a Helix editor, Kitty graphics and OSC-7501",
@@ -2547,21 +2592,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 67
-    },
-    {
-      "id": "social-00fa61ca1ab1c68da7",
-      "category": "social",
-      "title": "Oai-math-revised: a community hub for revising OpenAI's math write-ups",
-      "summary": "Hacker News: 32ポイント、22件のコメント。投稿先で内容を確認。",
-      "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
-      "source": "Hacker News",
-      "published": "2026-10-24T15:35:17Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 66
     },
     {
       "id": "social-5cc99ef91beee0160c",
@@ -2654,6 +2684,21 @@
       "score": 64
     },
     {
+      "id": "social-b9668613fcaa619086",
+      "category": "social",
+      "title": "The Importance of Limitations for Creativity and Learning",
+      "summary": "Hacker News: 24ポイント、4件のコメント。投稿先で内容を確認。",
+      "url": "https://ratfactor.com/cards/limitations",
+      "source": "Hacker News",
+      "published": "2026-10-24T21:42:47Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 64
+    },
+    {
       "id": "social-7fac2c63054d14c164",
       "category": "social",
       "title": "German court calls Google aerial imagery 'spying'",
@@ -2676,6 +2721,21 @@
       "url": "https://corgi.computer/",
       "source": "Hacker News",
       "published": "2026-10-23T19:46:38Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 64
+    },
+    {
+      "id": "social-5015bb5628a4b8f3fe",
+      "category": "social",
+      "title": "I Built a Stereo Vision Board for Hardware Hackers",
+      "summary": "Hacker News: 26ポイント、0件のコメント。投稿先で内容を確認。",
+      "url": "https://rootkitlabs.com/2026/10/06/i-built-a-stereo-vision-board-for-hardware-hackers/",
+      "source": "Hacker News",
+      "published": "2026-10-20T20:45:52Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -2772,21 +2832,6 @@
       ],
       "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
       "score": 63
-    },
-    {
-      "id": "social-88fc71cdd47c387941",
-      "category": "social",
-      "title": "Google has officially turned these Nest thermostats back into dumb thermostats",
-      "summary": "Hacker News: 20ポイント、3件のコメント。投稿先で内容を確認。",
-      "url": "https://www.makeuseof.com/google-nest-thermostats-unsupported/",
-      "source": "Hacker News",
-      "published": "2026-10-24T23:14:30Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 62
     },
     {
       "title": "The Q3 Vulnerability Pulse: Discovery ≠ Exploitation",
@@ -3322,6 +3367,36 @@
       "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNT3ZzVDBBNncwN250dmFxNUlzT2xweElrQ3pkc1VPeEZvSXFZVW94SHZ2SVFLSGpfZ0kzRWY2b2tyTkVsR0UxWkFMNUpZSXgySEVTbDRtMnpBWGp3aEx4bzVSM1JkSkdyMGVKWldEMDlwWWc2YWY2dlAzWFM2bmI0R1NfVFRNbWJmT0dhc1RpTEtDVlRuUHhlRk1HNzhfSkl2ajBOOW1TYXI0SDJiaWVkUV92VTIxUmdNelZaYWV5S1VHeEFRNnJHTWQtRXQxNDBkSUhNLTMwR3dfWFZCaDVRRzJXb1lJNVlGbmNUeVVFV0l4VnM4eDJweDJISGcyQzZJTmFrTEF3azhJUFFBQV92TFZLYno5YTlKcTVhUjVGU3NQNUllRGVKNw?oc=5",
       "published": "2026-10-24T04:17:46Z",
       "id": "ai-0fe8103f8038eccb98",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 52
+    },
+    {
+      "title": "画像 生成 ai - 小豆島町",
+      "summary": "画像 生成 ai 小豆島町",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPY2Q5RDlsOWREWTNndUJsWXhZNWJHRU9qczJ0WlFaQW14Zlh1c0VqTXRob01MUF9qVVFxdGFhYXd1NEJOSzBDXzhUV0Q2eExBWE1uRkx2NFFWWW1XM2pWQnFmeEVMTUNOZ3VJd28zSjgyOFRpam0tc1M0dE1kVGp3ZjlDcHpmTFFDa19ybHRRQ3EyQ3FYZDFBZTVzV05KU1BwS0NqR3BtdWdmVVdhRkd5ZGxQalkzTXRzanI1VE1JUGp1aXZWenFpZExIZFRrV2dsRmtkRzN5T3NEdXVuNkZDcnh6RzIzMC01LVE4bUtkX2RxQjBkMnlSWW1JQ19GS05OY1pMVHFHQnFZeDk3UnlxcGQtbUJDS19yeFBtS0FvbUt1V1JXNERTRQ?oc=5",
+      "published": "2026-10-24T04:06:07Z",
+      "id": "ai-0810403896c4a852ff",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 52
+    },
+    {
+      "title": "生成 ai - 小豆島町",
+      "summary": "生成 ai 小豆島町",
+      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNRkloa0VrSFNwNmVlZ1JTRmNsT2FzbVJyT3pSNWxrQkZraFQ0d19QdmtlN2VlMV9LUHlVN2ZLSHRXdlNROEx6WjhldndCc0tLYVByYnFsaUxCTHJSYmlrVGdGY0JUYjFCSWYwNk1tQ0kzemw1TFJrT2xnWWk3YlpFaVhFSjlWeEhtV21DVGV1Q1lYcTFnMUNkMUJSenlfbUlGM3ZyWF85bmV2dmVaYVFuUUxPWERrb1NKQVRMMDNtWmg2Q3BzbG8wQ2xZUTBOdTBSSXFlZjlpTkgyOWhkdERQaUF6eTd4M3E3a1pLZ0lBbkMyeHpXVTVuLWROVkdLTmZua0diOHZxU0hxdjk0T3YyOUJrTEd0R3dVWFFsZzU4eDN1NVpjdG55LQ?oc=5",
+      "published": "2026-10-24T04:05:31Z",
+      "id": "ai-e5cd8ab72c7d37bc7e",
       "category": "ai",
       "source": "AI・テクノロジー",
       "tags": [
@@ -5374,80 +5449,6 @@
         "開発"
       ],
       "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 39
-    },
-    {
-      "title": "週刊AWS – 2026/10/12週 | Amazon Web Services ブログ - Amazon Web Services (AWS)",
-      "summary": "週刊AWS – 2026/10/12週 | Amazon Web Services ブログ Amazon Web Services (AWS)",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zekVLTDlXYjYtanp3cUJhc3NqOXBfRkdVTlc1WWstWFZqM19mOEY1OXFYNmFHbE83ZG1JTF9KU2tNRTdqYU5pdl9KLTMxcDFBLVIxT1V6NU1ETUJ3bnp4V09JTGJINHQ2?oc=5",
-      "published": "2026-10-19T11:08:23Z",
-      "id": "hobby-4b13f2668c14a42823",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 39
-    },
-    {
-      "title": "【ブロスタ】最新のアップデート(パッチノート)情報まとめ - GameWith",
-      "summary": "【ブロスタ】最新のアップデート(パッチノート)情報まとめ GameWith",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1mSlJoX1B1WF9fZDl5UnRjbWZKczVwUkZ5UC1aNHpDVkowS29aQW94WWJnLVFjemEzQ3hMaUkxM0xZQkNEVm9sSEpJWmkxUTJsZlE?oc=5",
-      "published": "2026-10-19T09:01:38Z",
-      "id": "hobby-a0df8ba895924cd804",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 39
-    },
-    {
-      "title": "「すごく親近感がわいた」 スイス人が驚愕 日本で見つけた母国との意外な共通点とは - au Webポータル",
-      "summary": "「すごく親近感がわいた」 スイス人が驚愕 日本で見つけた母国との意外な共通点とは au Webポータル",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wZGNwenpiN3lIZkV2SjBTbDIzdER4ZkdMZ28xRXEyRkUyZXpVYjNqd1VqYWVkcm81d3doNkQ2VElqZkN2WUpyZ05aT1NMZmRwU21SUFplWjljMHJzc1hkZUg2d3BBOVBLelp6anhn?oc=5",
-      "published": "2026-10-18T04:34:12Z",
-      "id": "social-935c78a29536e4dee7",
-      "category": "social",
-      "source": "話題のニュース",
-      "tags": [
-        "話題"
-      ],
-      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
-      "score": 39
-    },
-    {
-      "title": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する - ニコニコニュース",
-      "summary": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する ニコニコニュース",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXSG8xNFZMYkd4bTBvdnhLTnVyZW5USkx6VEVCM1ZibVE3cTJWd3lJajJ6a0F3b0s1SDhHSHliNUJqWjdQc1VCWDRqWUJnb1h5TW9oVg?oc=5",
-      "published": "2026-10-17T00:12:08Z",
-      "id": "travel-9491e388c84d829a40",
-      "category": "travel",
-      "source": "関東発ドライブ",
-      "tags": [
-        "関東",
-        "ドライブ"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 39
-    },
-    {
-      "title": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する - ASCII.jp",
-      "summary": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する ASCII.jp",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SbFdwTFhkU2hFd0xUaTEyRXpoUDZLM1VrNks4S096OWJTTTRFY0NMcGliNkpfUVAxaFVNS0JVeGNQQ3lUSXVCenp0UmdSdFl6ZW43Zw?oc=5",
-      "published": "2026-10-17T00:00:00Z",
-      "id": "travel-6fb016107ade4c1771",
-      "category": "travel",
-      "source": "関東発ドライブ",
-      "tags": [
-        "関東",
-        "ドライブ"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 39
     }
   ],
