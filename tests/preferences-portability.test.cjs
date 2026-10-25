@@ -42,6 +42,10 @@ test('import merges existing saves, remaps aliases, keeps unknown IDs and leaves
   assert.deepEqual(merged.bookmarks,['existing','canonical','new-id','expired-id']);assert.equal(merged.weights.ai,1);
   assert.deepEqual(state.bookmarks,['existing','old-id']);assert.deepEqual(state.read,['seen']);
   assert.throws(()=>mergePreferences({...state,bookmarks:Array.from({length:5000},(_,i)=>'existing-'+i)},incoming,[]));
+  const big=prefix=>Array.from({length:1500},(_,i)=>prefix+'あ'.repeat(190)+i);
+  const largeIncoming=profile({bookmarks:big('new-')});
+  assert.doesNotThrow(()=>decodePreferences(JSON.stringify(largeIncoming)));
+  assert.throws(()=>mergePreferences({...state,bookmarks:big('old-')},largeIncoming,[]));
 });
 test('storage success writes only preference keys, never read history',()=>{
   const storage=memory();assert.deepEqual(writePreferences(storage,profile()),{ok:true,restored:true});

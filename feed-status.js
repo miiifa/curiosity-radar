@@ -222,7 +222,9 @@
     if(!exactKeys(value,['format','version','weights','bookmarks'])||value.format!=='curiosity-radar-preferences'||value.version!==1||
         !exactKeys(value.weights,Object.keys(DEFAULT_WEIGHTS))||!Object.values(value.weights).every(v=>Number.isInteger(v)&&v>=1&&v<=5)||
         !Array.isArray(value.bookmarks)||value.bookmarks.length>5000||!value.bookmarks.every(id=>typeof id==='string'&&id.length>0&&id.length<=200&&!/[\s\x00-\x1f\x7f]/.test(id)))throw Error('Invalid preferences');
-    return {format:value.format,version:1,weights:{...value.weights},bookmarks:[...new Set(value.bookmarks)]};
+    const checked={format:value.format,version:1,weights:{...value.weights},bookmarks:[...new Set(value.bookmarks)]};
+    if(new TextEncoder().encode(JSON.stringify(checked)).length>MAX_PREFERENCES_BYTES)throw Error('Preferences too large');
+    return checked;
   }
   function decodePreferences(text){
     if(typeof text!=='string'||text.length>MAX_PREFERENCES_BYTES||new TextEncoder().encode(text).length>MAX_PREFERENCES_BYTES)throw Error('Preferences file too large');

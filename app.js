@@ -89,7 +89,7 @@
     $('#exportPrefs').addEventListener('click',()=>{
       let url,link;
       try{
-        const text=JSON.stringify(RadarFeed.portablePreferences(state),null,2);
+        const text=JSON.stringify(RadarFeed.portablePreferences(state));
         RadarFeed.decodePreferences(text); // Enforce the same byte limit as the importer.
         url=URL.createObjectURL(new Blob([text],{type:'application/json;charset=utf-8'}));
         link=document.createElement('a');link.href=url;link.download='curiosity-radar-settings-v1.json';link.hidden=true;document.body.append(link);link.click();
@@ -118,7 +118,7 @@
       if(!pendingPreferences)return;
       let merged,result;
       try{merged=RadarFeed.mergePreferences(state,pendingPreferences,state.items);}
-      catch{transferMessage('適用できませんでした。保存IDの形式と追加後の件数（5000件以内）を確認してください。設定は変更していません。');return;}
+      catch{transferMessage('適用できませんでした。保存IDの形式と追加後の件数・容量（5000件・1 MiB以内）を確認してください。設定は変更していません。');return;}
       try{result=RadarFeed.writePreferences(localStorage,merged);}catch{result={ok:false,restored:true};}
       if(!result.ok){
         if(!result.restored){state.weights=RadarFeed.normalizeWeights(readStore('radar:weights',state.weights));state.bookmarks=RadarFeed.remapIds(readStore('radar:saved',state.bookmarks),state.items);drawPrefs();render();}
