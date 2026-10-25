@@ -127,6 +127,10 @@ def run():
                     color=page.locator(selector).first.evaluate('(el,pseudo)=>getComputedStyle(el,pseudo).color',pseudo)
                     bg=page.locator(background).first.evaluate('el=>getComputedStyle(el).backgroundColor')
                     assert contrast(color,bg)>=4.5,(selector,color,bg)
+                action=page.locator('.action').first
+                action.hover()
+                colors=action.evaluate('el=>({fg:getComputedStyle(el).color,bg:getComputedStyle(el).backgroundColor})')
+                assert contrast(colors['fg'],colors['bg'])>=4.5,colors
                 for selector in ('.card-time','.summary','.source','.rank','.provenance','.next-action summary','.hypothesis-note'):
                     color=page.locator(selector).first.evaluate('el=>getComputedStyle(el).color')
                     assert contrast(color,page.locator('html').evaluate('el=>getComputedStyle(el).getPropertyValue("--card-contrast-bg").trim()'))>=4.5,(selector,color)
