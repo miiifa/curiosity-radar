@@ -9,11 +9,14 @@ import json
 import os
 from pathlib import Path
 import threading
+import sys
 
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, expect
 
 ROOT = Path(__file__).resolve().parents[1]
 NOW = dt.datetime.now(dt.timezone.utc)
+sys.path.insert(0,str(ROOT / 'scripts'))
+from collect import deduplicate, related_headlines, validate_snapshot
 
 
 def fixture():
@@ -155,6 +158,79 @@ def run():
             assert '+99' not in page.locator('.repo-stats').inner_text()
             context.close()
             print('Legacy star difference without observation period: PASS',flush=True)
+            # End-to-end collector metadata -> category/search/ranking/saved/read UI.
+            base_item={**fixture()['items'][0], 'id':'primary', 'category':'ai', 'score':90,
+                'url':'https://example.com/article?utm_source=fixture', 'title':'ＡＩ Pythonの新しい公開モデルを確認する',
+                'published':NOW.isoformat(), 'tags':['Python','</span><img src=x onerror=window.__newsInjected=true>']}
+            raw=[base_item,{**base_item,'id':'legacy-saved','category':'security','score':70,'source':'別の掲載元','url':'https://example.com/article'},
+                 {**base_item,'id':'similar','category':'travel','score':60,'source':'別の記事候補','url':'https://other.example/story'},
+                 {**fixture()['items'][0],'id':'unread-security','score':0,'url':'https://example.com/security-unread'},
+                 {**base_item,'id':'rank-ai','score':70,'title':'Rankcase AI','url':'https://example.com/rank-ai','tags':[]},
+                 {**base_item,'id':'rank-travel','category':'travel','score':80,'title':'Rankcase Travel','url':'https://example.com/rank-travel','tags':[]}]
+            raw += [{**base_item,'id':f'dominant-{n}','title':f'AI candidate {n}','score':99,'url':f'https://example.com/dominant/{n}','tags':[]} for n in range(8)]
+            dedup_feed={**fixture(),'items':related_headlines(deduplicate(raw))}
+            validate_snapshot(dedup_feed)
+            for width in (360,390,430,1280):
+                server.feed=(200,json.dumps(dedup_feed))
+                context=browser.new_context(viewport={'width':width,'height':900},service_workers='block')
+                context.add_init_script("""if(!localStorage.getItem('fixture-initialized')){
+                  localStorage.setItem('radar:saved',JSON.stringify(['legacy-saved','expired']));
+                  localStorage.setItem('radar:read',JSON.stringify(['legacy-saved']));
+                  localStorage.setItem('radar:weights',JSON.stringify({ai:5,travel:1}));
+                  localStorage.setItem('fixture-initialized','yes');} """)
+                page=context.new_page();errors=[]
+                page.on('pageerror',lambda error:errors.append(str(error)))
+                page.goto(base);page.wait_for_selector('.article')
+                assert page.locator('.article').count()==len(raw)-1
+                assert page.evaluate("JSON.parse(localStorage.getItem('radar:saved'))")==['primary','expired']
+                assert page.evaluate("JSON.parse(localStorage.getItem('radar:read'))")==['primary']
+                assert page.locator('#metricSaved').inner_text()=='2'
+                primary=page.locator('.article[data-id="primary"]')
+                assert 'utm_source=fixture' in primary.locator('h3 a').get_attribute('href')
+                assert primary.locator('.article-references').count()==2
+                assert not page.evaluate('Boolean(window.__newsInjected)')
+                assert page.locator('#feed img').count()==0
+                first_ids=page.locator('.article').evaluate_all('(els)=>els.slice(0,6).map(el=>el.dataset.id)')
+                categories={item['id']:item['category'] for item in dedup_feed['items']}
+                assert len({categories[id] for id in first_ids})>=2
+                mobile=page.locator('[data-chip="security"]')
+                (mobile if mobile.is_visible() else page.locator('#desktopNav [data-category="security"]')).click()
+                assert page.locator('.article').count()==2
+                assert 'セキュリティ' in primary.locator('.category-pill').inner_text()
+                page.locator('#unreadFilter').click()
+                assert page.locator('.article').count()==1
+                assert page.locator('.article').first.get_attribute('data-id')=='unread-security'
+                assert '0/100' in page.locator('.article .rank').inner_text()
+                page.locator('#sort').select_option('popular')
+                page.locator('#search').fill('ｐｙｔｈｏｎ')
+                assert page.locator('#empty').is_visible()
+                page.locator('#clearFilters').click()
+                assert page.locator('#sort').input_value()=='popular'
+                assert page.locator('#search').input_value()==''
+                assert page.locator('#unreadFilter').get_attribute('aria-pressed')=='false'
+                page.locator('#sort').select_option('recommended')
+                page.locator('#search').fill('rankcase')
+                assert page.locator('.article').first.get_attribute('data-id')=='rank-ai'
+                page.locator('#settingsTop').click()
+                page.locator('[data-weight="ai"]').press('Home')
+                expect(page.locator('[data-weight="ai"]')).to_have_value('1')
+                page.locator('[data-weight="travel"]').press('End')
+                expect(page.locator('[data-weight="travel"]')).to_have_value('5')
+                page.wait_for_function("JSON.parse(localStorage.getItem('radar:weights')).ai===1 && JSON.parse(localStorage.getItem('radar:weights')).travel===5")
+                page.locator('#prefsDialog button[type="submit"]').click()
+                expect(page.locator('.article').first).to_have_attribute('data-id','rank-travel')
+                page.reload();page.wait_for_selector('.article');page.locator('#search').fill('rankcase')
+                expect(page.locator('.article').first).to_have_attribute('data-id','rank-travel')
+                page.locator('#search').fill('')
+                mobile_saved=page.locator('[data-mobile-go="saved"]')
+                (mobile_saved if mobile_saved.is_visible() else page.locator('#savedNav')).click()
+                assert page.locator('.article').count()==1
+                assert page.locator('.article').first.get_attribute('data-id')=='primary'
+                assert not page.evaluate('document.documentElement.scrollWidth>innerWidth')
+                assert not errors,errors
+                page.screenshot(path=str(screenshot_dir/f'dedup-search-{width}.png'),full_page=True)
+                context.close()
+                print(f'{width}px canonical dedup / related / categories / saved-read migration / filters / weights / injection: PASS',flush=True)
             # Real service worker, real Cache Storage, real browser offline mode.
             server.feed = (200, json.dumps(partial_feed))
             context = browser.new_context(viewport={'width':400,'height':900})

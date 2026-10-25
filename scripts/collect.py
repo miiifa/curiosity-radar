@@ -13,8 +13,9 @@ import re
 import sys
 import time
 import tempfile
+import unicodedata
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode, urlsplit
+from urllib.parse import urlencode, urlsplit, urlunsplit, unquote_plus
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
@@ -419,13 +420,91 @@ def read_hacker_news() -> list[dict]:
         return []
 
 
+def canonical_url(url: str) -> str:
+    """Comparison only: never replace an attributed original URL or resolve redirects."""
+    if not valid_link(url):
+        return url
+    parts = urlsplit(url)
+    host = parts.hostname.lower()
+    if ':' in host:
+        host = '[' + host + ']'
+    if parts.port is not None and (parts.scheme, parts.port) not in (('https', 443), ('http', 80)):
+        host += ':' + str(parts.port)
+    # Unknown query bytes can be identifiers/signatures: do not decode/re-encode values.
+    pairs = []
+    for segment in parts.query.split('&') if parts.query else []:
+        raw_key = segment.partition('=')[0]
+        decoded_key = unquote_plus(raw_key)
+        key = decoded_key.lower()
+        if not key.startswith('utm_') and key not in ('fbclid', 'gclid'):
+            pairs.append((decoded_key, segment))
+    if len({key for key, _ in pairs}) == len(pairs):
+        pairs.sort()
+    fragment = parts.fragment if parts.fragment.startswith(('/', '!')) else ''
+    return urlunsplit((parts.scheme, host, parts.path.rstrip('/') or '/', '&'.join(segment for _, segment in pairs), fragment))
+
+
+def item_key(item: dict) -> tuple:
+    kind = item.get('category') if item.get('category') in ('github', 'money') else 'news'
+    return kind, canonical_url(item.get('url', ''))
+
+
+def merge_duplicates(rows: list[dict]) -> dict:
+    # The first row is authoritative (fresh observations must beat old high scores).
+    chosen = dict(rows[0])
+    aliases, categories, members = set(), set(), {}
+    for row in rows:
+        aliases.update(x for x in [row.get('id'), *row.get('aliases', [])] if isinstance(x, str))
+        categories.update([row['category'], *row.get('categories', [])])
+        records = [row, *row.get('duplicates', [])]
+        for record in records:
+            if all(record.get(key) for key in ('id', 'url', 'source')):
+                key = (record['id'], record['url'], record['source'], record['category'])
+                members.setdefault(key, {key: record.get(key) for key in ('id','url','title','source','category','published')})
+    aliases.discard(chosen.get('id'))
+    for key in ('aliases', 'categories', 'duplicates'):
+        chosen.pop(key, None)
+    if aliases:
+        chosen['aliases'] = sorted(aliases)
+    if len(categories) > 1:
+        chosen['categories'] = sorted(categories)
+    own = (chosen.get('id'), chosen.get('url'), chosen.get('source'), chosen.get('category'))
+    others = [value for key, value in sorted(members.items()) if key != own]
+    if others:
+        chosen['duplicates'] = others
+    return chosen
+
+
 def deduplicate(items: list[dict]) -> list[dict]:
-    used=set();out=[]
-    for item in sorted(items,key=lambda x:(x.get('score',0),x.get('published') or ''),reverse=True):
-        key=(item.get('category'),item.get('url','').split('#')[0])
-        if key in used:continue
-        used.add(key);out.append(item)
-    return out
+    groups = {}
+    def order(item):
+        date = iso_date(item.get('published'))
+        timestamp = dt.datetime.fromisoformat(date.replace('Z','+00:00')).timestamp() if date else -math.inf
+        return -item.get('score',0), -timestamp, item.get('id','')
+    for item in sorted(items, key=order):
+        groups.setdefault(item_key(item), []).append(item)
+    return [merge_duplicates(rows) for rows in groups.values()]
+
+
+def related_headlines(items: list[dict]) -> list[dict]:
+    """Title similarity is a hint, never evidence for deleting another article."""
+    result = [{key:value for key,value in item.items() if key != 'related'} for item in items]
+    groups = {}
+    for item in result:
+        if item['category'] in ('github', 'money') or not item.get('published'):
+            continue
+        title = ' '.join(unicodedata.normalize('NFKC', item['title']).casefold().split())
+        if len(title) >= 12:
+            groups.setdefault(title, []).append(item)
+    for rows in groups.values():
+        for item in rows:
+            published = dt.datetime.fromisoformat(item['published'].replace('Z','+00:00'))
+            others = [other for other in rows if other['id'] != item['id']
+                      and abs((published-dt.datetime.fromisoformat(other['published'].replace('Z','+00:00'))).total_seconds()) <= 48*3600]
+            if others:
+                item['related'] = [{key: other.get(key) for key in ('id','url','title','source','category','published')}
+                                   for other in sorted(others, key=lambda x:x['id'])[:3]]
+    return result
 
 
 def validate_snapshot(data: dict) -> None:
@@ -465,6 +544,25 @@ def validate_snapshot(data: dict) -> None:
             raise ValueError('missing published')
         if item['published'] is not None:
             timestamp(item['published'])
+        if 'aliases' in item and (not isinstance(item['aliases'], list) or
+                not all(isinstance(value, str) and value and value != item['id'] for value in item['aliases'])):
+            raise ValueError('invalid aliases')
+        if 'categories' in item and (not isinstance(item['categories'], list) or item['category'] not in item['categories'] or
+                not all(value in ('ai','security','travel','social','hobby') for value in item['categories'])):
+            raise ValueError('invalid categories')
+        for key in ('duplicates', 'related'):
+            if key not in item:
+                continue
+            if not isinstance(item[key], list):
+                raise ValueError('invalid references')
+            for reference in item[key]:
+                if not isinstance(reference, dict) or not all(isinstance(reference.get(field), str) and reference[field].strip()
+                        for field in ('id','url','title','source','category')) or not valid_link(reference['url']):
+                    raise ValueError('invalid reference')
+                if reference['category'] not in ('github','ai','money','security','travel','social','hobby') or 'published' not in reference:
+                    raise ValueError('invalid reference category/date')
+                if reference['published'] is not None:
+                    timestamp(reference['published'])
         if item['category'] == 'github':
             for key in ('stars', 'star_delta'):
                 value = item.get(key)
@@ -483,6 +581,13 @@ def validate_snapshot(data: dict) -> None:
             raise ValueError('invalid demo flag')
         if (data['mode'] == 'live' and item.get('demo')) or (data['mode'] == 'demo' and not item.get('demo')):
             raise ValueError('mixed demo/live items')
+
+    aliases = {}
+    for item in data['items']:
+        for alias in item.get('aliases', []):
+            if alias in seen or (alias in aliases and aliases[alias] != item['id']):
+                raise ValueError('conflicting alias')
+            aliases[alias] = item['id']
 
 
 def save_snapshot(data: dict) -> None:
@@ -514,16 +619,22 @@ def main() -> int:
     if not items:
         print('ERROR: All sources failed; preserving existing news.json instead of publishing an empty feed.',file=sys.stderr)
         return 1
-    fresh_keys={(x['category'], x['url'].split('#')[0]) for x in items}
+    fresh_keys={item_key(x) for x in items}
+    previous_by_key={}
+    for item in previous.get('items', []):
+        if not item.get('demo'):
+            previous_by_key.setdefault(item_key(item), []).append(item)
+    items=[merge_duplicates([item, *previous_by_key.get(item_key(item), [])]) for item in items]
     github_failed=any(error.startswith('GitHub search:') for error in ERRORS)
     previous_items=[x for x in previous.get('items',[]) if not x.get('demo') and recent(x.get('published'),15)
                     and (x.get('category') != 'github' or github_failed)
                     and x.get('url') not in EXCLUDED_REPO_URLS
-                    and (x.get('category'), x.get('url','').split('#')[0]) not in fresh_keys]
+                    and item_key(x) not in fresh_keys]
     items=deduplicate(items+previous_items)
     github_items=select_repos([x for x in items if x['category']=='github'])
     others=sorted((x for x in items if x['category']!='github'), key=lambda x:x.get('score',0),reverse=True)
     items=sorted(github_items+others[:360-len(github_items)],key=lambda x:x.get('score',0),reverse=True)
+    items=related_headlines(items)
     result={'generated_at':NOW.isoformat().replace('+00:00','Z'), 'mode':'live', 'items':items,
             'errors':ERRORS,'sources_attempted':len(SOURCES)+6, 'collector_version':1}
     save_snapshot(result)
