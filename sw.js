@@ -50,10 +50,13 @@ self.addEventListener('fetch', event => {
   if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
   if (isFeed(req)) { event.respondWith(feedResponse(req)); return; }
   event.respondWith((async () => {
-    try {
-      const response = await fetch(req);
-      if (response.ok) await (await caches.open(VERSION)).put(req, response.clone());
-      return response;
-    } catch { return await caches.match(req) || new Response('', {status: 503}); }
+    let response;
+    try { response = await fetch(req); }
+    catch { return await caches.match(req) || new Response('', {status: 503}); }
+    if (response.ok) {
+      try { await (await caches.open(VERSION)).put(req, response.clone()); }
+      catch { /* Storage failure must not discard a successful network response. */ }
+    }
+    return response;
   })());
 });
