@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T02:17:34.393654Z",
+  "generated_at": "2026-10-25T02:19:20.136216Z",
   "mode": "live",
   "items": [
     {
@@ -293,8 +293,8 @@
       "summary": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
       "published": "2026-10-18T20:20:24Z",
       "source": "GitHub Search API",
-      "stars": 20171,
-      "star_delta": 15,
+      "stars": 20183,
+      "star_delta": 12,
       "language": "JavaScript",
       "license": "MIT",
       "tags": [
@@ -303,7 +303,7 @@
         "svg",
         "vizualization"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が15増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が12増加。",
       "score": 99
     },
     {
@@ -675,20 +675,20 @@
       "score": 95
     },
     {
-      "id": "github-1b8e35a5a0147eea7e",
-      "category": "github",
-      "url": "https://github.com/browser-use/jev-ultrafast",
-      "title": "browser-use/jev-ultrafast",
-      "summary": "Fastest and cheapest web agent",
-      "published": "2026-09-30T01:24:38Z",
-      "source": "GitHub Search API",
-      "stars": 23602,
-      "star_delta": 3,
-      "language": "Python",
-      "license": "MIT",
-      "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が3増加。",
-      "score": 94
+      "id": "money-9d064369411829e692",
+      "category": "money",
+      "url": "https://github.com/lexmount/moli",
+      "title": "中小事業者向けの作業自動化サポート — moli",
+      "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
+      "published": "2026-10-25T02:11:39Z",
+      "source": "着想元: lexmount/moli",
+      "tags": [
+        "自動化",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
     },
     {
       "id": "money-ec4b5e65913390d00c",
@@ -698,6 +698,22 @@
       "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
       "published": "2026-10-25T02:11:26Z",
       "source": "着想元: storytold/photocraft",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
+    },
+    {
+      "id": "money-fe458ba76b95a6fa55",
+      "category": "money",
+      "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+      "title": "OSSの導入・カスタマイズ支援 — awesome-dsh-plugin",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-25T01:22:43Z",
+      "source": "着想元: awesome-dsh-plugin/awesome-dsh-plugin",
       "tags": [
         "受託開発",
         "収益性未検証",
@@ -870,7 +886,7 @@
       "id": "social-1f21a11f54e05b7b97",
       "category": "social",
       "title": "Show HN: Steal My Bitcoin",
-      "summary": "Hacker News: 412ポイント、253件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 414ポイント、253件のコメント。投稿先で内容を確認。",
       "url": "https://stealmybitcoin.com/",
       "source": "Hacker News",
       "published": "2026-10-24T20:30:31Z",
@@ -885,7 +901,7 @@
       "id": "social-a54fd0e20dbb904635",
       "category": "social",
       "title": "No signs of AI payoff outside the tech sector",
-      "summary": "Hacker News: 489ポイント、488件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 489ポイント、491件のコメント。投稿先で内容を確認。",
       "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
       "source": "Hacker News",
       "published": "2026-10-24T19:47:19Z",
@@ -894,6 +910,22 @@
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 92
+    },
+    {
+      "id": "money-5a733329e644a84bb5",
+      "category": "money",
+      "url": "https://github.com/robbietilton/Compositor",
+      "title": "OSSの導入・カスタマイズ支援 — Compositor",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-24T17:51:20Z",
+      "source": "着想元: robbietilton/Compositor",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
       "score": 92
     },
     {
@@ -1245,7 +1277,7 @@
       "id": "social-a2c4630c6610067fcd",
       "category": "social",
       "title": "Bringing uv and ty together",
-      "summary": "Hacker News: 303ポイント、110件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 303ポイント、111件のコメント。投稿先で内容を確認。",
       "url": "https://astral.sh/blog/uv-ty-integration",
       "source": "Hacker News",
       "published": "2026-10-20T21:30:56Z",
@@ -1254,6 +1286,22 @@
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 89
+    },
+    {
+      "id": "github-1b8e35a5a0147eea7e",
+      "category": "github",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "title": "browser-use/jev-ultrafast",
+      "summary": "Fastest and cheapest web agent",
+      "published": "2026-09-30T01:24:38Z",
+      "source": "GitHub Search API",
+      "stars": 23602,
+      "star_delta": 0,
+      "language": "Python",
+      "license": "MIT",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
       "score": 89
     },
     {
@@ -1284,22 +1332,6 @@
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 88
-    },
-    {
-      "id": "money-9d064369411829e692",
-      "category": "money",
-      "url": "https://github.com/lexmount/moli",
-      "title": "中小事業者向けの作業自動化サポート — moli",
-      "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
-      "published": "2026-10-23T08:30:54Z",
-      "source": "着想元: lexmount/moli",
-      "tags": [
-        "自動化",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
       "score": 88
     },
     {
@@ -1352,7 +1384,7 @@
       "id": "social-c6f7fce2eddef14cda",
       "category": "social",
       "title": "The Goose Programming Language",
-      "summary": "Hacker News: 247ポイント、168件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 248ポイント、170件のコメント。投稿先で内容を確認。",
       "url": "https://aardappel.github.io/goose/",
       "source": "Hacker News",
       "published": "2026-10-24T19:06:55Z",
@@ -1382,7 +1414,7 @@
       "id": "social-0358f37e52765a0f01",
       "category": "social",
       "title": "FreeDNS",
-      "summary": "Hacker News: 254ポイント、65件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 256ポイント、65件のコメント。投稿先で内容を確認。",
       "url": "https://freedns.afraid.org/",
       "source": "Hacker News",
       "published": "2026-10-24T15:20:01Z",
@@ -1487,7 +1519,7 @@
       "id": "social-42532ee811b2ffa8d8",
       "category": "social",
       "title": "We should be more ambitious with the software we build",
-      "summary": "Hacker News: 184ポイント、140件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 188ポイント、143件のコメント。投稿先で内容を確認。",
       "url": "https://danluu.com/ambitious/",
       "source": "Hacker News",
       "published": "2026-10-24T21:47:31Z",
@@ -1532,7 +1564,7 @@
       "id": "social-1f6056f34e61a5ea93",
       "category": "social",
       "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
-      "summary": "Hacker News: 176ポイント、147件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 177ポイント、149件のコメント。投稿先で内容を確認。",
       "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
       "source": "Hacker News",
       "published": "2026-10-24T23:11:54Z",
@@ -1637,7 +1669,7 @@
       "id": "social-c7a37d520ea53c8293",
       "category": "social",
       "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
-      "summary": "Hacker News: 121ポイント、79件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 121ポイント、81件のコメント。投稿先で内容を確認。",
       "url": "https://missileer.watch",
       "source": "Hacker News",
       "published": "2026-10-24T19:43:27Z",
@@ -1964,6 +1996,21 @@
       "score": 77
     },
     {
+      "id": "social-0345bd37193223743e",
+      "category": "social",
+      "title": "TornadoVM 7 Enables GPU-Native Workloads from Java Applications",
+      "summary": "Hacker News: 85ポイント、17件のコメント。投稿先で内容を確認。",
+      "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+      "source": "Hacker News",
+      "published": "2026-10-22T09:01:10Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 76
+    },
+    {
       "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (公開)",
       "summary": "",
       "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
@@ -1997,7 +2044,7 @@
       "id": "social-c9d44435005d898d3b",
       "category": "social",
       "title": "SpeedCrunch 1.1",
-      "summary": "Hacker News: 78ポイント、10件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 79ポイント、10件のコメント。投稿先で内容を確認。",
       "url": "https://www.speedcrunch.org/",
       "source": "Hacker News",
       "published": "2026-10-24T19:19:43Z",
@@ -2222,7 +2269,7 @@
       "id": "social-c3ea527220c8a2c384",
       "category": "social",
       "title": "Bbtree: Fastest Ordered Map",
-      "summary": "Hacker News: 56ポイント、6件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 57ポイント、6件のコメント。投稿先で内容を確認。",
       "url": "https://bbtree.xiangpeng.systems/post/",
       "source": "Hacker News",
       "published": "2026-10-24T18:22:14Z",
@@ -2612,7 +2659,7 @@
       "id": "social-b9668613fcaa619086",
       "category": "social",
       "title": "The Importance of Limitations for Creativity and Learning (2023)",
-      "summary": "Hacker News: 32ポイント、6件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 32ポイント、7件のコメント。投稿先で内容を確認。",
       "url": "https://ratfactor.com/cards/limitations",
       "source": "Hacker News",
       "published": "2026-10-24T21:42:47Z",
@@ -4438,6 +4485,21 @@
       "score": 47
     },
     {
+      "title": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する - ASCII.jp",
+      "summary": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する ASCII.jp",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SbFdwTFhkU2hFd0xUaTEyRXpoUDZLM1VrNks4S096OWJTTTRFY0NMcGliNkpfUVAxaFVNS0JVeGNQQ3lUSXVCenp0UmdSdFl6ZW43Zw?oc=5",
+      "published": "2026-10-22T09:00:00Z",
+      "id": "travel-6fb016107ade4c1771",
+      "category": "travel",
+      "source": "関東発ドライブ",
+      "tags": [
+        "関東",
+        "ドライブ"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 47
+    },
+    {
       "title": "【決定版・東海の実りの秋を満喫】10月に旬を迎える味覚狩りスポットベスト5！ 東海エリアの自然と果実が織りなす秋の味覚を堪能する - ASCII.jp",
       "summary": "【決定版・東海の実りの秋を満喫】10月に旬を迎える味覚狩りスポットベスト5！ 東海エリアの自然と果実が織りなす秋の味覚を堪能する ASCII.jp",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBhakdrTV95VFZoc0dYdmpFRW50Y1gxOGxnN3V5SHNHUVpXUXBOd2EtVjRoR3R4cWozQm1BZFh3OXQ3WEVSRFNGTnp0aFhNY01IWktVVQ?oc=5",
@@ -5388,62 +5450,6 @@
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE02dkFJMWFZUVBiMHBRVmZJd2c4STVXNTZZaEFGVlhEQ2JKU2c5b2NpdjdaMjFmRkNSeWVSU0Jjb25Da25vZG42WVhFSVNhN2lyZXJ4UHBxTzNzRU1YQ1piOEVhVQ?oc=5",
       "published": "2026-10-16T01:15:00Z",
       "id": "travel-b728ea471d4cc7295d",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 41
-    },
-    {
-      "title": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北・北関東の名湯（THE GOLD ONLINE（ゴールドオンライン）） - Yahoo!ニュース",
-      "summary": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北・北関東の名湯（THE GOLD ONLINE（ゴールドオンライン）） Yahoo!ニュース",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9pak1XYmljdXk4THVUWUtaR052dzZCUW5mb0xwcWwyYlVZZjFqVWhRMjZsWl95N2dzUkNzUjdxcVpjbGNoaTU2NkhrbmNSdGJ4SkNaMkgtOUtDNXBEeHhwV3lQNFBtVzN1aEViZlJjN2N6SnItN1FsOTVGdHUtUjQ?oc=5",
-      "published": "2026-10-16T01:00:38Z",
-      "id": "travel-2f88947b135743b6e9",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 41
-    },
-    {
-      "title": "【2026年秋の人気旅行先ランキング】九州旅行が急増、なぜ？…鹿児島は前年比198％、宮崎は204％に急伸 - ニコニコニュース",
-      "summary": "【2026年秋の人気旅行先ランキング】九州旅行が急増、なぜ？…鹿児島は前年比198％、宮崎は204％に急伸 ニコニコニュース",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WOXNLaTNmR3ZoRGY2SXlvcTRDV3MtYzlKWm5ZcEdHQ1cySUV4UURlUDB6WjBZZ2pWRFVRTjhUYnNlOGJQNjVOZ2Q2eVV6c0JxMXd2RQ?oc=5",
-      "published": "2026-10-15T23:15:25Z",
-      "id": "travel-5916669f9583fd2a85",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 41
-    },
-    {
-      "title": "【ランキング】温泉ソムリエ50人が選ぶ「2026年 秋にオススメしたい温泉地」 - ゴールドオンライン",
-      "summary": "【ランキング】温泉ソムリエ50人が選ぶ「2026年 秋にオススメしたい温泉地」 ゴールドオンライン",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBjaVRIT1VjYVg4SVlpcHM5OWJZQ0JWQU9TZllSV2xITVdDT1Rnb0VhSGtfUDFuclJYc1VlZmJtQ3RpVGVub0xpeFB1emlPQnZzcnc?oc=5",
-      "published": "2026-10-15T20:00:00Z",
-      "id": "travel-e3c4612c50fde5e988",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 41
-    },
-    {
-      "title": "【ランキング】47都道府県「2026年 秋の人気国内旅行先」 - ゴールドオンライン",
-      "summary": "【ランキング】47都道府県「2026年 秋の人気国内旅行先」 ゴールドオンライン",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9vYnpmd1JHTlVVZmI4dzgtMy1QanhtTlpNejlHN3NHN2J5aGk2dkFOM181cjYtTDhSNzJqSDljekZ2aE8wbkhQYWwya2xJYWRiTVE?oc=5",
-      "published": "2026-10-15T20:00:00Z",
-      "id": "travel-bb21fd5c4aa88ac554",
       "category": "travel",
       "source": "国内旅行のニュース",
       "tags": [
