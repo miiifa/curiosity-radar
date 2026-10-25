@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T01:19:24.106324Z",
+  "generated_at": "2026-10-25T02:17:34.393654Z",
   "mode": "live",
   "items": [
     {
@@ -8,10 +8,10 @@
       "url": "https://github.com/storytold/photocraft",
       "title": "storytold/photocraft",
       "summary": "PhotoCraft: An open-source, photo editor written by scratch in pure Rust",
-      "published": "2026-10-25T00:57:58Z",
+      "published": "2026-10-25T02:11:26Z",
       "source": "GitHub Search API",
-      "stars": 72412,
-      "star_delta": 16,
+      "stars": 72424,
+      "star_delta": 12,
       "language": "Rust",
       "license": "Apache-2.0",
       "tags": [
@@ -21,7 +21,7 @@
         "image-editor",
         "images"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が16増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が12増加。",
       "score": 99
     },
     {
@@ -30,10 +30,10 @@
       "url": "https://github.com/yetone/magpie",
       "title": "yetone/magpie",
       "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-      "published": "2026-10-25T00:41:28Z",
+      "published": "2026-10-25T01:57:48Z",
       "source": "GitHub Search API",
-      "stars": 20795,
-      "star_delta": 19,
+      "stars": 20815,
+      "star_delta": 20,
       "language": "Go",
       "license": "MIT",
       "tags": [
@@ -43,7 +43,7 @@
         "gemini-cli",
         "llm"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が19増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が20増加。",
       "score": 99
     },
     {
@@ -120,8 +120,8 @@
       "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
       "published": "2026-10-24T18:09:17Z",
       "source": "GitHub Search API",
-      "stars": 31849,
-      "star_delta": 95,
+      "stars": 31953,
+      "star_delta": 104,
       "language": "Java",
       "license": null,
       "tags": [
@@ -131,7 +131,7 @@
         "android-tv-launcher",
         "apple-tv"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が95増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が104増加。",
       "score": 99
     },
     {
@@ -158,8 +158,8 @@
       "summary": "为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。",
       "published": "2026-10-24T11:10:40Z",
       "source": "GitHub Search API",
-      "stars": 32905,
-      "star_delta": 52,
+      "stars": 32920,
+      "star_delta": 15,
       "language": "TypeScript",
       "license": "MIT",
       "tags": [
@@ -169,7 +169,7 @@
         "deepseek-harness",
         "desktop"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が52増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が15増加。",
       "score": 99
     },
     {
@@ -180,12 +180,12 @@
       "summary": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
       "published": "2026-10-24T09:19:58Z",
       "source": "GitHub Search API",
-      "stars": 32024,
-      "star_delta": 26,
+      "stars": 32060,
+      "star_delta": 36,
       "language": "C++",
       "license": "MIT",
       "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が26増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が36増加。",
       "score": 99
     },
     {
@@ -196,8 +196,8 @@
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi…",
       "published": "2026-10-24T06:03:04Z",
       "source": "GitHub Search API",
-      "stars": 41288,
-      "star_delta": 40,
+      "stars": 41358,
+      "star_delta": 70,
       "language": "JavaScript",
       "license": "MIT",
       "tags": [
@@ -207,7 +207,7 @@
         "developer-tools",
         "dsh"
       ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が40増加。",
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が70増加。",
       "score": 99
     },
     {
@@ -218,8 +218,8 @@
       "summary": "DeepSeek Harness: Everything is a Plugin.",
       "published": "2026-10-23T15:25:40Z",
       "source": "GitHub Search API",
-      "stars": 260501,
-      "star_delta": 22,
+      "stars": 260539,
+      "star_delta": 38,
       "language": "TypeScript",
       "license": "MIT",
       "tags": [
@@ -228,7 +228,7 @@
         "dsh",
         "dsh-plugin"
       ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が22増加。",
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が38増加。",
       "score": 99
     },
     {
@@ -261,12 +261,12 @@
       "summary": "高性价比人生指南: 长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、怀孕育儿、创业与做平台合规、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。",
       "published": "2026-10-21T07:20:02Z",
       "source": "GitHub Search API",
-      "stars": 68643,
-      "star_delta": 93,
+      "stars": 68663,
+      "star_delta": 20,
       "language": "HTML",
       "license": "CC-BY-4.0",
       "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が93増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が20増加。",
       "score": 99
     },
     {
@@ -277,12 +277,12 @@
       "summary": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
       "published": "2026-10-21T04:55:44Z",
       "source": "GitHub Search API",
-      "stars": 21848,
-      "star_delta": 252,
+      "stars": 21881,
+      "star_delta": 33,
       "language": "Python",
       "license": "Apache-2.0",
       "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が252増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が33増加。",
       "score": 99
     },
     {
@@ -314,7 +314,7 @@
       "summary": "READMEを確認してください。",
       "published": "2026-10-14T02:22:51Z",
       "source": "GitHub Search API",
-      "stars": 19128,
+      "stars": 19142,
       "star_delta": 14,
       "language": "Python",
       "license": "Apache-2.0",
@@ -682,13 +682,13 @@
       "summary": "Fastest and cheapest web agent",
       "published": "2026-09-30T01:24:38Z",
       "source": "GitHub Search API",
-      "stars": 23599,
-      "star_delta": 4,
+      "stars": 23602,
+      "star_delta": 3,
       "language": "Python",
       "license": "MIT",
       "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が4増加。",
-      "score": 95
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が3増加。",
+      "score": 94
     },
     {
       "id": "money-ec4b5e65913390d00c",
@@ -696,7 +696,7 @@
       "url": "https://github.com/storytold/photocraft",
       "title": "OSSの導入・カスタマイズ支援 — photocraft",
       "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-25T00:57:58Z",
+      "published": "2026-10-25T02:11:26Z",
       "source": "着想元: storytold/photocraft",
       "tags": [
         "受託開発",
@@ -867,10 +867,25 @@
       "score": 93
     },
     {
+      "id": "social-1f21a11f54e05b7b97",
+      "category": "social",
+      "title": "Show HN: Steal My Bitcoin",
+      "summary": "Hacker News: 412ポイント、253件のコメント。投稿先で内容を確認。",
+      "url": "https://stealmybitcoin.com/",
+      "source": "Hacker News",
+      "published": "2026-10-24T20:30:31Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 92
+    },
+    {
       "id": "social-a54fd0e20dbb904635",
       "category": "social",
       "title": "No signs of AI payoff outside the tech sector",
-      "summary": "Hacker News: 471ポイント、464件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 489ポイント、488件のコメント。投稿先で内容を確認。",
       "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
       "source": "Hacker News",
       "published": "2026-10-24T19:47:19Z",
@@ -960,7 +975,7 @@
       "id": "social-67d9de400f929ce027",
       "category": "social",
       "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-      "summary": "Hacker News: 1548ポイント、243件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 1552ポイント、243件のコメント。投稿先で内容を確認。",
       "url": "https://edjefferson.com/localwiki/",
       "source": "Hacker News",
       "published": "2026-10-22T23:01:18Z",
@@ -1090,21 +1105,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 92
-    },
-    {
-      "id": "social-1f21a11f54e05b7b97",
-      "category": "social",
-      "title": "Show HN: Steal My Bitcoin",
-      "summary": "Hacker News: 393ポイント、234件のコメント。投稿先で内容を確認。",
-      "url": "https://stealmybitcoin.com/",
-      "source": "Hacker News",
-      "published": "2026-10-24T20:30:31Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 91
     },
     {
       "id": "social-6c6bee7f14c39272d4",
@@ -1242,10 +1242,25 @@
       "score": 89
     },
     {
+      "id": "social-a2c4630c6610067fcd",
+      "category": "social",
+      "title": "Bringing uv and ty together",
+      "summary": "Hacker News: 303ポイント、110件のコメント。投稿先で内容を確認。",
+      "url": "https://astral.sh/blog/uv-ty-integration",
+      "source": "Hacker News",
+      "published": "2026-10-20T21:30:56Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 89
+    },
+    {
       "id": "social-c755b08d9cb3b23c3f",
       "category": "social",
       "title": "I don't understand quantum physics (2018)",
-      "summary": "Hacker News: 280ポイント、210件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 288ポイント、217件のコメント。投稿先で内容を確認。",
       "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
       "source": "Hacker News",
       "published": "2026-10-24T09:53:26Z",
@@ -1260,7 +1275,7 @@
       "id": "social-cbb045dba06decd7ef",
       "category": "social",
       "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
-      "summary": "Hacker News: 275ポイント、137件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 281ポイント、140件のコメント。投稿先で内容を確認。",
       "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
       "source": "Hacker News",
       "published": "2026-10-24T08:06:39Z",
@@ -1306,7 +1321,7 @@
       "id": "social-e2f60b8a844782dac9",
       "category": "social",
       "title": "Physicists trap a single antimatter particle for a month",
-      "summary": "Hacker News: 278ポイント、80件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 280ポイント、80件のコメント。投稿先で内容を確認。",
       "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
       "source": "Hacker News",
       "published": "2026-10-21T19:40:01Z",
@@ -1334,10 +1349,25 @@
       "score": 88
     },
     {
+      "id": "social-c6f7fce2eddef14cda",
+      "category": "social",
+      "title": "The Goose Programming Language",
+      "summary": "Hacker News: 247ポイント、168件のコメント。投稿先で内容を確認。",
+      "url": "https://aardappel.github.io/goose/",
+      "source": "Hacker News",
+      "published": "2026-10-24T19:06:55Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 87
+    },
+    {
       "id": "social-c852cf262baca51dc3",
       "category": "social",
       "title": "Roku developer repositories moved from GitHub to GitLab",
-      "summary": "Hacker News: 256ポイント、168件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 268ポイント、179件のコメント。投稿先で内容を確認。",
       "url": "https://blog.roku.com/developer/gitlab-move",
       "source": "Hacker News",
       "published": "2026-10-24T16:06:26Z",
@@ -1352,7 +1382,7 @@
       "id": "social-0358f37e52765a0f01",
       "category": "social",
       "title": "FreeDNS",
-      "summary": "Hacker News: 247ポイント、62件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 254ポイント、65件のコメント。投稿先で内容を確認。",
       "url": "https://freedns.afraid.org/",
       "source": "Hacker News",
       "published": "2026-10-24T15:20:01Z",
@@ -1371,6 +1401,21 @@
       "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
       "source": "Hacker News",
       "published": "2026-10-24T04:49:58Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 87
+    },
+    {
+      "id": "social-332b8a0f3c708eb7e8",
+      "category": "social",
+      "title": "How close can pure functional programming get to C?",
+      "summary": "Hacker News: 257ポイント、88件のコメント。投稿先で内容を確認。",
+      "url": "https://rtfeldman.com/fp-vs-c",
+      "source": "Hacker News",
+      "published": "2026-10-24T03:43:54Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -1409,21 +1454,6 @@
       "score": 87
     },
     {
-      "id": "social-c6f7fce2eddef14cda",
-      "category": "social",
-      "title": "The Goose Programming Language",
-      "summary": "Hacker News: 232ポイント、156件のコメント。投稿先で内容を確認。",
-      "url": "https://aardappel.github.io/goose/",
-      "source": "Hacker News",
-      "published": "2026-10-24T19:06:55Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 86
-    },
-    {
       "id": "social-167ed8b74ae4543a46",
       "category": "social",
       "title": "Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier",
@@ -1454,25 +1484,25 @@
       "score": 85
     },
     {
-      "id": "social-a2c4630c6610067fcd",
+      "id": "social-42532ee811b2ffa8d8",
       "category": "social",
-      "title": "Bringing uv and ty together",
-      "summary": "Hacker News: 205ポイント、65件のコメント。投稿先で内容を確認。",
-      "url": "https://astral.sh/blog/uv-ty-integration",
+      "title": "We should be more ambitious with the software we build",
+      "summary": "Hacker News: 184ポイント、140件のコメント。投稿先で内容を確認。",
+      "url": "https://danluu.com/ambitious/",
       "source": "Hacker News",
-      "published": "2026-10-20T21:30:56Z",
+      "published": "2026-10-24T21:47:31Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 85
+      "score": 84
     },
     {
       "id": "social-b6ee2b32304d0c0d1a",
       "category": "social",
       "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-      "summary": "Hacker News: 185ポイント、61件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 194ポイント、61件のコメント。投稿先で内容を確認。",
       "url": "https://github.com/Zagitta/gpu-unlock",
       "source": "Hacker News",
       "published": "2026-10-24T09:58:27Z",
@@ -1499,34 +1529,19 @@
       "score": 84
     },
     {
-      "id": "social-332b8a0f3c708eb7e8",
+      "id": "social-1f6056f34e61a5ea93",
       "category": "social",
-      "title": "How close can pure functional programming get to C?",
-      "summary": "Hacker News: 164ポイント、30件のコメント。投稿先で内容を確認。",
-      "url": "https://rtfeldman.com/fp-vs-c",
+      "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+      "summary": "Hacker News: 176ポイント、147件のコメント。投稿先で内容を確認。",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
       "source": "Hacker News",
-      "published": "2026-10-24T03:43:54Z",
+      "published": "2026-10-24T23:11:54Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 83
-    },
-    {
-      "id": "social-42532ee811b2ffa8d8",
-      "category": "social",
-      "title": "We should be more ambitious with the software we build",
-      "summary": "Hacker News: 148ポイント、99件のコメント。投稿先で内容を確認。",
-      "url": "https://danluu.com/ambitious/",
-      "source": "Hacker News",
-      "published": "2026-10-24T21:47:31Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 82
     },
     {
       "id": "social-595e0c468133c6b695",
@@ -1619,6 +1634,21 @@
       "score": 81
     },
     {
+      "id": "social-c7a37d520ea53c8293",
+      "category": "social",
+      "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
+      "summary": "Hacker News: 121ポイント、79件のコメント。投稿先で内容を確認。",
+      "url": "https://missileer.watch",
+      "source": "Hacker News",
+      "published": "2026-10-24T19:43:27Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 80
+    },
+    {
       "id": "social-d5bfffb2d100cc8f17",
       "category": "social",
       "title": "No Need for Retirement When Utopia Is Around the Corner",
@@ -1692,36 +1722,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 80
-    },
-    {
-      "id": "social-1f6056f34e61a5ea93",
-      "category": "social",
-      "title": "America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
-      "summary": "Hacker News: 117ポイント、89件のコメント。投稿先で内容を確認。",
-      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
-      "source": "Hacker News",
-      "published": "2026-10-24T23:11:54Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 79
-    },
-    {
-      "id": "social-c7a37d520ea53c8293",
-      "category": "social",
-      "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
-      "summary": "Hacker News: 111ポイント、75件のコメント。投稿先で内容を確認。",
-      "url": "https://missileer.watch",
-      "source": "Hacker News",
-      "published": "2026-10-24T19:43:27Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 79
     },
     {
       "id": "social-078b41e2b15912e708",
@@ -1892,10 +1892,25 @@
       "id": "social-0c19e05bbb06ed260c",
       "category": "social",
       "title": "The St. Helena 5 pence coin shows Jonathan, a roughly 190 year old tortoise",
-      "summary": "Hacker News: 93ポイント、29件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 96ポイント、32件のコメント。投稿先で内容を確認。",
       "url": "https://de.numista.com/9866",
       "source": "Hacker News",
       "published": "2026-10-24T16:41:55Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 77
+    },
+    {
+      "id": "social-fca13fff3851522a61",
+      "category": "social",
+      "title": "Neural chip decodes interactions between brain regions",
+      "summary": "Hacker News: 94ポイント、32件のコメント。投稿先で内容を確認。",
+      "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+      "source": "Hacker News",
+      "published": "2026-10-24T15:57:17Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -1949,21 +1964,6 @@
       "score": 77
     },
     {
-      "id": "social-fca13fff3851522a61",
-      "category": "social",
-      "title": "Neural chip decodes interactions between brain regions",
-      "summary": "Hacker News: 89ポイント、31件のコメント。投稿先で内容を確認。",
-      "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
-      "source": "Hacker News",
-      "published": "2026-10-24T15:57:17Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 76
-    },
-    {
       "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (公開)",
       "summary": "",
       "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
@@ -1992,6 +1992,21 @@
       ],
       "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
       "score": 76
+    },
+    {
+      "id": "social-c9d44435005d898d3b",
+      "category": "social",
+      "title": "SpeedCrunch 1.1",
+      "summary": "Hacker News: 78ポイント、10件のコメント。投稿先で内容を確認。",
+      "url": "https://www.speedcrunch.org/",
+      "source": "Hacker News",
+      "published": "2026-10-24T19:19:43Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 75
     },
     {
       "id": "social-3e015fe4294e09ecc9",
@@ -2067,21 +2082,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 75
-    },
-    {
-      "id": "social-c9d44435005d898d3b",
-      "category": "social",
-      "title": "SpeedCrunch 1.1",
-      "summary": "Hacker News: 68ポイント、10件のコメント。投稿先で内容を確認。",
-      "url": "https://www.speedcrunch.org/",
-      "source": "Hacker News",
-      "published": "2026-10-24T19:19:43Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 74
     },
     {
       "id": "social-71853833e5fa6c7e49",
@@ -2217,6 +2217,21 @@
       ],
       "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
       "score": 73
+    },
+    {
+      "id": "social-c3ea527220c8a2c384",
+      "category": "social",
+      "title": "Bbtree: Fastest Ordered Map",
+      "summary": "Hacker News: 56ポイント、6件のコメント。投稿先で内容を確認。",
+      "url": "https://bbtree.xiangpeng.systems/post/",
+      "source": "Hacker News",
+      "published": "2026-10-24T18:22:14Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 72
     },
     {
       "id": "social-137545da4da1bffd24",
@@ -2399,6 +2414,21 @@
       "score": 71
     },
     {
+      "id": "social-e6f90c192a4bb56a45",
+      "category": "social",
+      "title": "Making a VGA Driver in SystemVerilog",
+      "summary": "Hacker News: 50ポイント、10件のコメント。投稿先で内容を確認。",
+      "url": "https://lukaswerner.com/post/2026-10-20@bottom-up-vga",
+      "source": "Hacker News",
+      "published": "2026-10-20T16:00:15Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 71
+    },
+    {
       "title": "ヤマハ製VOCALOID6 Editorにおける外部エンティティ参照の不適切な制限の脆弱性",
       "summary": "ヤマハ株式会社が提供するVOCALOID6 Editorには、外部エンティティ参照の不適切な制限の脆弱性が存在します。",
       "url": "https://jvn.jp/vu/JVNVU93520490/",
@@ -2414,13 +2444,28 @@
       "score": 71
     },
     {
-      "id": "social-c3ea527220c8a2c384",
+      "id": "social-88fc71cdd47c387941",
       "category": "social",
-      "title": "Bbtree: Fastest Ordered Map",
-      "summary": "Hacker News: 46ポイント、4件のコメント。投稿先で内容を確認。",
-      "url": "https://bbtree.xiangpeng.systems/post/",
+      "title": "Google has officially turned these Nest thermostats back into dumb thermostats",
+      "summary": "Hacker News: 46ポイント、38件のコメント。投稿先で内容を確認。",
+      "url": "https://www.makeuseof.com/google-nest-thermostats-unsupported/",
       "source": "Hacker News",
-      "published": "2026-10-24T18:22:14Z",
+      "published": "2026-10-24T23:14:30Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 70
+    },
+    {
+      "id": "social-8763261ffc09bb097c",
+      "category": "social",
+      "title": "Small Programs and Languages",
+      "summary": "Hacker News: 45ポイント、1件のコメント。投稿先で内容を確認。",
+      "url": "https://ratfactor.com/cards/pl-small",
+      "source": "Hacker News",
+      "published": "2026-10-24T21:44:23Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -2474,21 +2519,6 @@
       "score": 70
     },
     {
-      "id": "social-e6f90c192a4bb56a45",
-      "category": "social",
-      "title": "Making a VGA Driver in SystemVerilog",
-      "summary": "Hacker News: 46ポイント、9件のコメント。投稿先で内容を確認。",
-      "url": "https://lukaswerner.com/post/2026-10-20@bottom-up-vga",
-      "source": "Hacker News",
-      "published": "2026-10-20T16:00:15Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 70
-    },
-    {
       "id": "social-7d1ef04ca1ec0c0283",
       "category": "social",
       "title": "France needs to read my paper",
@@ -2519,6 +2549,21 @@
       "score": 69
     },
     {
+      "id": "social-00fa61ca1ab1c68da7",
+      "category": "social",
+      "title": "Oai-math-revised: a community hub for revising OpenAI's math write-ups",
+      "summary": "Hacker News: 36ポイント、27件のコメント。投稿先で内容を確認。",
+      "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
+      "source": "Hacker News",
+      "published": "2026-10-24T15:35:17Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 68
+    },
+    {
       "id": "social-3513b9999983f116ac",
       "category": "social",
       "title": "Evolving Threat: http2shell is an RCE in node, Python, and more",
@@ -2534,49 +2579,19 @@
       "score": 68
     },
     {
-      "id": "social-88fc71cdd47c387941",
+      "id": "social-5015bb5628a4b8f3fe",
       "category": "social",
-      "title": "Google has officially turned these Nest thermostats back into dumb thermostats",
-      "summary": "Hacker News: 33ポイント、25件のコメント。投稿先で内容を確認。",
-      "url": "https://www.makeuseof.com/google-nest-thermostats-unsupported/",
+      "title": "I Built a Stereo Vision Board for Hardware Hackers",
+      "summary": "Hacker News: 36ポイント、0件のコメント。投稿先で内容を確認。",
+      "url": "https://rootkitlabs.com/2026/10/06/i-built-a-stereo-vision-board-for-hardware-hackers/",
       "source": "Hacker News",
-      "published": "2026-10-24T23:14:30Z",
+      "published": "2026-10-20T20:45:52Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 67
-    },
-    {
-      "id": "social-8763261ffc09bb097c",
-      "category": "social",
-      "title": "Small Programs and Languages",
-      "summary": "Hacker News: 34ポイント、1件のコメント。投稿先で内容を確認。",
-      "url": "https://ratfactor.com/cards/pl-small",
-      "source": "Hacker News",
-      "published": "2026-10-24T21:44:23Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 67
-    },
-    {
-      "id": "social-00fa61ca1ab1c68da7",
-      "category": "social",
-      "title": "Oai-math-revised: a community hub for revising OpenAI's math write-ups",
-      "summary": "Hacker News: 33ポイント、24件のコメント。投稿先で内容を確認。",
-      "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
-      "source": "Hacker News",
-      "published": "2026-10-24T15:35:17Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 67
+      "score": 68
     },
     {
       "id": "social-4fb051deb678302903",
@@ -2592,6 +2607,21 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 67
+    },
+    {
+      "id": "social-b9668613fcaa619086",
+      "category": "social",
+      "title": "The Importance of Limitations for Creativity and Learning (2023)",
+      "summary": "Hacker News: 32ポイント、6件のコメント。投稿先で内容を確認。",
+      "url": "https://ratfactor.com/cards/limitations",
+      "source": "Hacker News",
+      "published": "2026-10-24T21:42:47Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 66
     },
     {
       "id": "social-5cc99ef91beee0160c",
@@ -2684,21 +2714,6 @@
       "score": 64
     },
     {
-      "id": "social-b9668613fcaa619086",
-      "category": "social",
-      "title": "The Importance of Limitations for Creativity and Learning",
-      "summary": "Hacker News: 24ポイント、4件のコメント。投稿先で内容を確認。",
-      "url": "https://ratfactor.com/cards/limitations",
-      "source": "Hacker News",
-      "published": "2026-10-24T21:42:47Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 64
-    },
-    {
       "id": "social-7fac2c63054d14c164",
       "category": "social",
       "title": "German court calls Google aerial imagery 'spying'",
@@ -2721,21 +2736,6 @@
       "url": "https://corgi.computer/",
       "source": "Hacker News",
       "published": "2026-10-23T19:46:38Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 64
-    },
-    {
-      "id": "social-5015bb5628a4b8f3fe",
-      "category": "social",
-      "title": "I Built a Stereo Vision Board for Hardware Hackers",
-      "summary": "Hacker News: 26ポイント、0件のコメント。投稿先で内容を確認。",
-      "url": "https://rootkitlabs.com/2026/10/06/i-built-a-stereo-vision-board-for-hardware-hackers/",
-      "source": "Hacker News",
-      "published": "2026-10-20T20:45:52Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -2912,7 +2912,7 @@
       "title": "昼めし旅【放送3000回直前！紅葉スポット箱根町で遭遇！絶景カフェの絶品まかない】 - テレビ東京",
       "summary": "昼めし旅【放送3000回直前！紅葉スポット箱根町で遭遇！絶景カフェの絶品まかない】 テレビ東京",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQmRzZ0NaYldnY2g2QndodGdETTJLVnowbHlaSEVoOWw3a0ZjbEVIWllZeUJTMFlPbzZIUHM3X2dvMzIzTzU4cUxkZ1BZSVlDblpNQ0ZoYVRBcENnRmlkLTNUdVR3aWl6Rm5DU2xlcnZJS29oV2c1b0JUWW12N2RvalhDREFiZTdKYnVZakV2SQ?oc=5",
-      "published": "2026-10-24T20:03:09Z",
+      "published": "2026-10-25T02:03:09Z",
       "id": "travel-22d984ad9c4bda0af7",
       "category": "travel",
       "source": "国内旅行のニュース",
@@ -3078,6 +3078,21 @@
       "score": 55
     },
     {
+      "title": "‍‍‍画像 生成 ai ai - 小豆島町",
+      "summary": "‍‍‍画像 生成 ai ai 小豆島町",
+      "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxORlJlaWkzM1g4dlFpaDBXM0I3ZzktTGotUWZ3V0dHVk1pNi1FX1BqRnE1ZDV2Zk9pMTZBS2lYcU14akhTZTJYdWRESVdMOGtlV0g0ZFVzWmkwUlhhY0JxdEtUTi1lWHp5R3BFNXJNcWplbnRCWS1rT2taYjdwMUlFZlo0ZGhMTW9VNWZ3VzJ6cHlDNnJiN2tjU2t4LS1rS2NpektiRmxyOVNHZEppbGRKM0lHblptblV6bzJjRUtQNEhpY2RZQWFURk9uYjlBNjhaVXJVNklGUEliU3p0XzdzMnFSNm5sUGNPWElhZ0hiNi1nNXk5djF0czl0RDluSFV4LVBDdXdEdF8xUnp4UlhMLXo0YmxIalBWaXJSeVRyNmEyYUV1dzJfZkZ6VUVtUGg4bU9sSno2Y1dZUmE2SV8xXzRoekN1MnZRLUwzSVZNVEI?oc=5",
+      "published": "2026-10-25T00:05:13Z",
+      "id": "ai-46ed04248e3f71c873",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 54
+    },
+    {
       "title": "NEC、生成AIなどを活用し顧客の課題発見を支援する「BluStellar Studio」を開設 - EnterpriseZine",
       "summary": "NEC、生成AIなどを活用し顧客の課題発見を支援する「BluStellar Studio」を開設 EnterpriseZine",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBwdkFUMk93RXdjNy1VaHJKYzJLMmthNVhDVVQ1cjFZMmtjazlHVEF3d09NYUI1ak41a3hoNmpXNmlFMldQR0xmdGJKZXRTRjJMSkVmU2t3?oc=5",
@@ -3108,11 +3123,11 @@
       "score": 54
     },
     {
-      "title": "‍‍‍画像 生成 ai ai - 小豆島町",
-      "summary": "‍‍‍画像 生成 ai ai 小豆島町",
-      "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxORlJlaWkzM1g4dlFpaDBXM0I3ZzktTGotUWZ3V0dHVk1pNi1FX1BqRnE1ZDV2Zk9pMTZBS2lYcU14akhTZTJYdWRESVdMOGtlV0g0ZFVzWmkwUlhhY0JxdEtUTi1lWHp5R3BFNXJNcWplbnRCWS1rT2taYjdwMUlFZlo0ZGhMTW9VNWZ3VzJ6cHlDNnJiN2tjU2t4LS1rS2NpektiRmxyOVNHZEppbGRKM0lHblptblV6bzJjRUtQNEhpY2RZQWFURk9uYjlBNjhaVXJVNklGUEliU3p0XzdzMnFSNm5sUGNPWElhZ0hiNi1nNXk5djF0czl0RDluSFV4LVBDdXdEdF8xUnp4UlhMLXo0YmxIalBWaXJSeVRyNmEyYUV1dzJfZkZ6VUVtUGg4bU9sSno2Y1dZUmE2SV8xXzRoekN1MnZRLUwzSVZNVEI?oc=5",
-      "published": "2026-10-24T21:46:24Z",
-      "id": "ai-46ed04248e3f71c873",
+      "title": "‍‍‍生成 ai 画像 生成 - 小豆島町",
+      "summary": "‍‍‍生成 ai 画像 生成 小豆島町",
+      "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxONUdkRTVyc1lqNGlqQ0JTbnc2T2VPVzV1WFhkVXJReF9ZVDQxSDBqVVNNSldmWkk4eGFQLXhMemdsdDk1VmxTZTRGMkg2TDFORHB3dG1FMllVLXZjd3RXRmlrbnNrLWJzNklqamZSV1RFMmpEYlVMWHJ1MkR3a2tZWGxxWVlUbGZkT3ZjcTZvcmw4MURhNWtrdkpENWM0dkg1YXBBbDBkTGV0dy1hTFp6VlZJdXdPNVB6Y0R4QjRaM3F5MURINmRjYk5jRmNtWDRJcHVfcWoyUDRjZDZfNmtUNFJrMTFJTHVZa0RNT2lfU2dPeHdXbnZRS2M3MjRvdDU0N01xRlZaSmxVY092YzRrOGhXalFtQ0tlR25UU0VENVFwNU53eXZrbGlhSnhadFowSEhoNmFKVmg4WWZsYldSS0xZdmYyOGdrVEtFMzc1YkhJNUtZVWpzQXVDZHBiSUxiS0E?oc=5",
+      "published": "2026-10-24T21:46:39Z",
+      "id": "ai-4ec1bba6af5f172227",
       "category": "ai",
       "source": "AI・テクノロジー",
       "tags": [
@@ -3210,6 +3225,51 @@
       ],
       "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 54
+    },
+    {
+      "title": "【ポケモンチャンピオンズ】使用率ランキング - GameWith",
+      "summary": "【ポケモンチャンピオンズ】使用率ランキング GameWith",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5lU19NWHhwR3ZaUXV5UEd2ODJXZTJPdjZWTTNrWHBlYktsTkN1MTMxMXR6RlJXZ3lYbE5KeTl2SjhqMnNHVE5oejN2UE1hY21NT2VvRktiZw?oc=5",
+      "published": "2026-10-24T15:34:00Z",
+      "id": "hobby-8f62f5a003f987d112",
+      "category": "hobby",
+      "source": "ポケモン・ゲーム",
+      "tags": [
+        "ゲーム",
+        "ボードゲーム"
+      ],
+      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
+      "score": 53
+    },
+    {
+      "title": "小中学生向け「よいところを発見する力」を育むボードゲーム『YOI』をつくりたい - CAMPFIRE (キャンプファイヤー)",
+      "summary": "小中学生向け「よいところを発見する力」を育むボードゲーム『YOI』をつくりたい CAMPFIRE (キャンプファイヤー)",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE00TzlpTVZ2eHZ4c3Y0dUw4RGVvdmN1VVNpOEk3eFFkaVlWMFJmTlJyRVlzZExVTnkzWGlVNmNzSmM2NDlxcDkyNVBCR2dpZUluNGpv?oc=5",
+      "published": "2026-10-24T10:33:28Z",
+      "id": "hobby-35a8c55deb61ed085b",
+      "category": "hobby",
+      "source": "ポケモン・ゲーム",
+      "tags": [
+        "ゲーム",
+        "ボードゲーム"
+      ],
+      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
+      "score": 53
+    },
+    {
+      "title": "生成 ai {VFT01A} - 小豆島町",
+      "summary": "生成 ai {VFT01A} 小豆島町",
+      "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPa2gtMVNKZFNFUnpDWkJfQmpsQXV6MEpfOVB2VGpTVE9IeGFlME1WNVhEd3E2VlphYWdtaG1RYTAyOEtnaXI5azk2RVNud3dQN1BGeXIyV1BiR3lvd0xxZUVxY1NPX3FOVlBFNjQxSmhNRGZlcVdYcEo4bUpuWGY5N3IxelozTWV6LU5CdnpPZ043SWdicnJfd1JfeC14MzR3RVVFWnlWNGtpb2F2M0hCM1k1cnBfUV94M0NqSG14NG00aGFBQ0lCTzZKM3N4LXRzTE5rT3J3T3FWR3pUOGUyZm1Pcng2czd0M2FUTG04LTh6R3FOSmtoVl9IY0FELUNZRmJldEFMVlAtazliZ3FFQXhkYzVTcXNZbmdpek5YQzF4d2ltaG9wREhvRFVZRXhFcGotTnl1aDhaZlFjcldRSw?oc=5",
+      "published": "2026-10-24T09:28:48Z",
+      "id": "ai-66fab326d8550c336d",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 53
     },
     {
       "title": "生成 ai - 小豆島町",
@@ -3315,6 +3375,21 @@
       ],
       "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
       "score": 53
+    },
+    {
+      "title": "海の町でグルメドライブ！福岡・宗像＆福津のよくばり最新日帰り旅行 - ウォーカープラス",
+      "summary": "海の町でグルメドライブ！福岡・宗像＆福津のよくばり最新日帰り旅行 ウォーカープラス",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zVWdPRk9vTEFYSXJPZ3J2Y1luQWJINWV2aXdHRDF0SEVjQkFWX2hPNE9yNEkwaldzTTh1U3ZrM3RNZVQxMThpWFo2VS1yNGl3SjgzMdIBWkFVX3lxTFBWUUIxUUljSnFFVlY2MEJvWmN1S2U1NXhMd0tUR2ZzMURscVZQTmNOdzE2c283Q2g5WmlaR3ROR09GaHY5dVdZcmFCYThKeWtZV1hCcHZ4UmVidw?oc=5",
+      "published": "2026-10-24T21:45:34Z",
+      "id": "travel-ae86f3ca7d2674f83e",
+      "category": "travel",
+      "source": "関東発ドライブ",
+      "tags": [
+        "関東",
+        "ドライブ"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 52
     },
     {
       "title": "佐賀で宇宙体験！周辺グルメも巡る武雄のドライブスポット4選 - ウォーカープラス",
@@ -3556,6 +3631,21 @@
       "score": 52
     },
     {
+      "title": "【ポケモンチャンピオンズ】進め方と序盤にやること - GameWith",
+      "summary": "【ポケモンチャンピオンズ】進め方と序盤にやること GameWith",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0yNi0zeVRTdUp4TWRIVkFlNUQ5TW9PRDVhTUU0VjlnWG9FNk9aRXNaU2VPRW5LYXluSmNnN210RUlBVlhNUkVCd29VWUtZc2diOUpxcm9WRQ?oc=5",
+      "published": "2026-10-23T20:14:19Z",
+      "id": "hobby-b278198368eaa25693",
+      "category": "hobby",
+      "source": "ポケモン・ゲーム",
+      "tags": [
+        "ゲーム",
+        "ボードゲーム"
+      ],
+      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
+      "score": 51
+    },
+    {
       "title": "＜画像8 / 9＞空と湖に映える紅葉！伝統の日光秋色ドライブコース - ウォーカープラス",
       "summary": "＜画像8 / 9＞空と湖に映える紅葉！伝統の日光秋色ドライブコース ウォーカープラス",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02UEdqOEx3YmNCcW5lN3FVcTRpSjVNNnVEbDg3UGlPRjREalFWck15Y3BWY1NRcmI5OVJxZ2FNQ05lR0xSNGVVQVo2RkFMNjdKOHhIVHVFU0tfUXdzMmxmWU9YblZWVlNmSkE?oc=5",
@@ -3662,7 +3752,7 @@
       "title": "- OpenAI Platform",
       "summary": "OpenAI Platform",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lMFZqOEhGcHhjQUxfOWYyZWpnRWVaanRIckg1RTFSRGU2Y1JlTEdYajVtN1UzLUtfX1d0ZkItNGg1S0lqM3QtckVuekxoaFhPYVcxX0p5ZHh6N3dJZjJLd2UtckNYQXN2M0oxdTFieEswRU45ZTFpd1FmYk1EdXM?oc=5",
-      "published": "2026-10-24T20:46:15Z",
+      "published": "2026-10-24T23:48:41Z",
       "id": "ai-476a4dad0730063900",
       "category": "ai",
       "source": "海外AI開発",
@@ -3773,6 +3863,20 @@
       "tags": [
         "関東",
         "ドライブ"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 50
+    },
+    {
+      "title": "8月のアイスランド旅行【完全ガイド】 - Guide to Iceland",
+      "summary": "8月のアイスランド旅行【完全ガイド】 Guide to Iceland",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vUGtaaUZ2Qm1ueThiR0ZnRklTVjQtLTdXbXJvbjJFM3JjUkl4QUZhaGJ5UW9IMmtBYXZvdWhxZW84UjBkdXB1NDlGMk03UmpISnp1eklnUlgwMnRpZkljTllmWnZWRnhUV1E?oc=5",
+      "published": "2026-10-22T07:00:00Z",
+      "id": "travel-0644374b7be6bd4d26",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
       ],
       "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 50
@@ -4101,10 +4205,24 @@
       "score": 49
     },
     {
+      "title": "SNS話題の『バラバライド』、25年経て蘇る“マシンバトル”のDNA 『クラッシュギア』世代熱狂の裏にメーカーの願い【おもちゃショー2026】 - 山陽新聞",
+      "summary": "SNS話題の『バラバライド』、25年経て蘇る“マシンバトル”のDNA 『クラッシュギア』世代熱狂の裏にメーカーの願い【おもちゃショー2026】 山陽新聞",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tOTNxbmhiQWpRVndPWm9WR2VxSElORXlmX1Q0N2Z4RVowZGZrM1NmbXhLeFdOLVUzRGxKakRaR1MzUk5mcDB6Q1d4eVNYcHpTTTF2d3pIWG8?oc=5",
+      "published": "2026-10-24T02:17:28Z",
+      "id": "social-21be5581d0d7befd48",
+      "category": "social",
+      "source": "話題のニュース",
+      "tags": [
+        "話題"
+      ],
+      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
+      "score": 48
+    },
+    {
       "title": "Codex のリセットの仕組み - OpenAI Help Center",
       "summary": "Codex のリセットの仕組み OpenAI Help Center",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE81a0F1QV8zQ1VhOEVOYVhzdm44OUhhOWxRazFYdUdVXzNjR0h4QlEzcEJKYWN1dmdIUm1mX0J0UnpEaGYtRUNRNzduRmlEaVJaUkdpR0VGTnNER1IyTWE3RENOZzd1QjV5VkJMMUdWdlFQZmo0aFU3V1ptTWI?oc=5",
-      "published": "2026-10-24T00:33:34Z",
+      "published": "2026-10-24T01:31:51Z",
       "id": "ai-67efa43fd9404abba3",
       "category": "ai",
       "source": "海外AI開発",
@@ -4550,21 +4668,6 @@
       "score": 47
     },
     {
-      "title": "海の町でグルメドライブ！福岡・宗像＆福津のよくばり最新日帰り旅行 - ウォーカープラス",
-      "summary": "海の町でグルメドライブ！福岡・宗像＆福津のよくばり最新日帰り旅行 ウォーカープラス",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zVWdPRk9vTEFYSXJPZ3J2Y1luQWJINWV2aXdHRDF0SEVjQkFWX2hPNE9yNEkwaldzTTh1U3ZrM3RNZVQxMThpWFo2VS1yNGl3SjgzMdIBWkFVX3lxTFBWUUIxUUljSnFFVlY2MEJvWmN1S2U1NXhMd0tUR2ZzMURscVZQTmNOdzE2c283Q2g5WmlaR3ROR09GaHY5dVdZcmFCYThKeWtZV1hCcHZ4UmVidw?oc=5",
-      "published": "2026-10-20T20:26:27Z",
-      "id": "travel-ae86f3ca7d2674f83e",
-      "category": "travel",
-      "source": "関東発ドライブ",
-      "tags": [
-        "関東",
-        "ドライブ"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 47
-    },
-    {
       "title": "リコー、生成AIの安全な業務活用を支援する日本語向けセーフガードモデルを刷新 - Ricoh Global",
       "summary": "リコー、生成AIの安全な業務活用を支援する日本語向けセーフガードモデルを刷新 Ricoh Global",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9rMkR2MmIzY1BBekVJZFc2LVFGRzNlMDAzN2gzWkN0WnhOenFkVFJ0bG5IR3lNVTdIUUlrU2lEODNJQmFyUzh1cXc0dXljdWsxLUE?oc=5",
@@ -4930,6 +5033,35 @@
       "score": 44
     },
     {
+      "title": "GitLab Epic Tour Japan 2026キーノートレポート - gihyo.jp",
+      "summary": "GitLab Epic Tour Japan 2026キーノートレポート gihyo.jp",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQLVVLeTIwdXBncEJDYlk5bDBOZmpXX0tYaFVhZUhETGxBUjVwU0lxYUt3Mk13ZW50d2JKV2RtQU5qZkMxYXdnbVF0c2pOaVRQaWJ2MG8xUm5FVmpodVVJSWotNkZvb21zWWFsVjRXWFNwMkpQQnMwdVQ0U3c3OEVnRA?oc=5",
+      "published": "2026-10-20T00:24:00Z",
+      "id": "ai-616efa20cfb21ee286",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 44
+    },
+    {
+      "title": "12月のアイスランド｜完全ガイド - Guide to Iceland",
+      "summary": "12月のアイスランド｜完全ガイド Guide to Iceland",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5tWS1PVldYVUdWdlRBdlNtT1N2Z2N2TUFvZjRQNlFjZVlKZ2w0X2lPZkhxVFVERzFHVGJ6alZZai1TOTRudnZ6ZHNQeF9xaUhWMmd2NkROY3UxN3RxbWdTa0hkS1RnM3p3cXZxNw?oc=5",
+      "published": "2026-10-19T07:00:00Z",
+      "id": "travel-057e18e6c072dcf0ad",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 44
+    },
+    {
       "title": "漏えい急増は中国製LLM起因 指摘 - Yahoo!ニュース",
       "summary": "漏えい急増は中国製LLM起因 指摘 Yahoo!ニュース",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE44Ql83MFpudGVJWkdwb1RlMWRmVnhaaHRoSVpOSEVLZV90WjdfS3l4dTVnekZCNXJEQmpaZ0gwVU1hMHU1alB3dDFhQllYRDM0?oc=5",
@@ -5135,6 +5267,21 @@
       "score": 42
     },
     {
+      "title": "【ポケモンチャンピオンズ】レギュレーションMCの追加されるポケモンと期間 - GameWith",
+      "summary": "【ポケモンチャンピオンズ】レギュレーションMCの追加されるポケモンと期間 GameWith",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1SbFVxbDlNQ0JYcWowdEJQZTc0eUM2aXZBaXMzNURSbUZUVHFLcmZWSEVaa3E0Mk8xdk9TVHpFVnZ6cjM1d3dZTUZkS2R1TFo1MzJMQWxOVQ?oc=5",
+      "published": "2026-10-19T02:34:46Z",
+      "id": "hobby-f8848a83fdff671152",
+      "category": "hobby",
+      "source": "ポケモン・ゲーム",
+      "tags": [
+        "ゲーム",
+        "ボードゲーム"
+      ],
+      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
+      "score": 42
+    },
+    {
       "title": "「ゲームマーケット2026秋」にCODAが登壇、ボードゲームと著作権について解説 - 一般社団法人コンテンツ海外流通促進機構",
       "summary": "「ゲームマーケット2026秋」にCODAが登壇、ボードゲームと著作権について解説 一般社団法人コンテンツ海外流通促進機構",
       "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9aS3JsX2Y4M2wwSnV5RE1fRVhQQThKc3FuNnlLSlB0ekE0dnFlSnNsNk1VR1pHXzRBai15c0w2UFJjVVU?oc=5",
@@ -5304,152 +5451,6 @@
       ],
       "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
       "score": 41
-    },
-    {
-      "title": "先進的デザインと機能、そしてeSIM搭載のスマートウォッチ「HUAWEI WATCH 6」が11月5日発売 - 週刊アスキー",
-      "summary": "先進的デザインと機能、そしてeSIM搭載のスマートウォッチ「HUAWEI WATCH 6」が11月5日発売 週刊アスキー",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1rcjJQNm9aN3ZTdEV4b2U3b2JHOWdHelJBVTJYUWNnb2NBcFRvM3Z5V0l1cVJfMWlGdjJ2Z1dyY2x0NkNPMVptc28xbmZza0JnNV8tTHJmYXlDX0tiOEE?oc=5",
-      "published": "2026-10-21T09:30:00Z",
-      "id": "hobby-334fa6ce9a6fedf7d0",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 40
-    },
-    {
-      "title": "【速報】ファーウェイ新製品発表！WATCH GT 7や新型イヤホンなど登場（ゴーゴーシンゴ） - エキスパート - Yahoo!ニュース",
-      "summary": "【速報】ファーウェイ新製品発表！WATCH GT 7や新型イヤホンなど登場（ゴーゴーシンゴ） - エキスパート Yahoo!ニュース",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYWpkOHhRV0hlZlNsSkJkeE8ySkNzOTh0amtEclFKNzFTa29PUmc3Q0hZVUdVRDA4YlhTMFdKcEJjRzRzNkZxYUJ5Rl9raHdielBJYUF2elJHdVNISXRhME5UMFZRM19nbUFHTkstMVU0QnRiam41eXpWSmFZelV2R1FFMUxPY3Yw?oc=5",
-      "published": "2026-10-21T09:06:56Z",
-      "id": "hobby-87d73bcb6c9130ef39",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 40
-    },
-    {
-      "title": "Google Chromeに350件以上の脆弱性 最新版にアップデートを - 週刊アスキー",
-      "summary": "Google Chromeに350件以上の脆弱性 最新版にアップデートを 週刊アスキー",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBZeU5MNHF5bFdXcThDd3lQdjE3TGV4ZmpUZUZDYi16Y0VBQTJLOVV0TlVBalg0R0JWYklhdExfalJZUDVFOTU5ZVlFTE9PRnp5VFVtZmFOMVlRNDU5bUE?oc=5",
-      "published": "2026-10-21T06:50:00Z",
-      "id": "hobby-70af9f37c46aa0717b",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 40
-    },
-    {
-      "title": "中国では配信開始わずか1時間でSNSのトレンドを席巻し、大手プラットフォームiQIYIで配信スタートと同時に熱度（人気度）9000を突破した中国ドラマ「天地剣心」場面写真。チョン・イー（成毅）とリー・イートン（李一桐）が愛を知らない剣士と彼に自由を教えた妖を演じた [画像・動 - ナタリー",
-      "summary": "中国では配信開始わずか1時間でSNSのトレンドを席巻し、大手プラットフォームiQIYIで配信スタートと同時に熱度（人気度）9000を突破した中国ドラマ「天地剣心」場面写真。チョン・イー（成毅）とリー・イートン（李一桐）が愛を知らない剣士と彼に自由を教えた妖を演じた [画像・動 ナタリー",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAzSkNaTmFaZGotbHNaVC1mTWRKdzdkOUZXdmxvSzRWbFdCQmk1T0p2WjlYSWZHUUJhNUhjTzQtTTFBVkFKR3oyQzFqVG93YXhKNHh1cGRmZ3JiTmQtVm81Sw?oc=5",
-      "published": "2026-10-18T06:21:39Z",
-      "id": "social-cea98d6ccb32879c4a",
-      "category": "social",
-      "source": "話題のニュース",
-      "tags": [
-        "話題"
-      ],
-      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
-      "score": 40
-    },
-    {
-      "title": "脳トレ＆コミュニケーションを楽しもう！ボードゲーム入門 - www.city.yao.osaka.jp",
-      "summary": "脳トレ＆コミュニケーションを楽しもう！ボードゲーム入門 www.city.yao.osaka.jp",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQ2VpZ1NPa1JzdWZ2Mk1CbVotT3Z1NUNWTnhrT2w5bmdRX29uaGprWmtaQ1l0eHNmODdYME9rZjBENFNzZ2M3ZHRMRUkydGpLMmlqd3pfdXkxQ0hJUjUyUUdPUTVEXzI5Zm92eUtfdVNnZkdlM0dXNjlqV0JWa2VTWGpfRmktbnNxRDVuSXpJeWRaaXg3Rnc?oc=5",
-      "published": "2026-10-16T07:30:58Z",
-      "id": "hobby-1c3aad023f7d5417dc",
-      "category": "hobby",
-      "source": "ポケモン・ゲーム",
-      "tags": [
-        "ゲーム",
-        "ボードゲーム"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 40
-    },
-    {
-      "title": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北 - ニコニコニュース",
-      "summary": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北 ニコニコニュース",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE80cFNyU205a2E0X2tpWjlhai15QWVQcGtoTW0yb0xheGsxU2gzb0FLVDBXVFV2cm9SNkZ5S2s1SGRZMzM4M2tPc0RSYmYxenFQVE9Qeg?oc=5",
-      "published": "2026-10-16T01:21:21Z",
-      "id": "travel-493e2c2c6aa043dd30",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 40
-    },
-    {
-      "title": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 - 宮崎日日新聞",
-      "summary": "【九州ふっこう応援割】グッドトリップエクスプレスが大人気・九州ふっこう応援割の落選者限定復活抽選開催決定！【最大60％OFF】 宮崎日日新聞",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE83a3RUTkRhNjVQXzBiY3paX3pNWXMwOVpFaTAzOFl0X2NnMnQ3NUtJTXVjeHBTb20tRVprRkQxN2laQmtFNUVfcHJfSFF1X2lpRU9NNHBJaHBuWlBLLXVqU01VTklOZ3hJRGtreDhZZ3hJRjg?oc=5",
-      "published": "2026-10-15T07:00:00Z",
-      "id": "travel-68ce954bf7b3c94d59",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 40
-    },
-    {
-      "title": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 - まっぷるウェブ",
-      "summary": "奈良県の観光はこれで完璧【地図付き】人気スポットを徹底紹介35選 まっぷるウェブ",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01ZldEQXB4ZnNUS3VEMkRVWlU3cG5sU0NKdEtNTEd6cnJPSjNfSmdyR3ZpT1pUdk9rYjN1NzR5MVpoZWQ2cjg3Z1pITQ?oc=5",
-      "published": "2026-10-15T07:00:00Z",
-      "id": "travel-d1d05cae383a9e30d8",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 40
-    },
-    {
-      "title": "AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表 - Publickey",
-      "summary": "AWS LambdaでNext.jsやHonoなどNode.jsフレームワークとアプリをそのままデプロイ、実行できる「AWS Lambda Web Functions」発表 Publickey",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR285WFpHRGhkS25OY3dwZzdoVExqTFJ5SWl3TUkxd3hFWDJlcjdGOE9RbzNJNmVTYTNpZEdDZ0tZNTl1X0lPWjFrQTVoQWJ6RVM1OVo1MklUREZaX29ETzZLSU1qa1ZkQ3hhZHpOSXpzTjRQaE94Z3pxTmszX3VpM3U3OEFLa1NneWxoWWxPWHFKbWc?oc=5",
-      "published": "2026-10-19T13:54:31Z",
-      "id": "hobby-54182661121c8afd09",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 39
-    },
-    {
-      "title": "AWS Transform、Azure Functions用のコードをAWS Lambda用に変換など、Microsoft AzureからAWSへの移行に対応 - Publickey",
-      "summary": "AWS Transform、Azure Functions用のコードをAWS Lambda用に変換など、Microsoft AzureからAWSへの移行に対応 Publickey",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUHlkTjZTbFdHYnBjamtBdWJjeS11ekw4bnJNcnV5Q0V0R3BWS1lSbHowYk9JdUgxdk1kMmhTM0tsNVlJbGRySmJFcVpvQWxQRGxJSTYxbmxPLW1UTXc2cmZRbjM0bFMyVDdqelRnS0E2SlVEN2lHRldKZDNaZUt6UjFjOV9fcnZBa05Nc3ZJSXVjUkxMMGN5X2sxVQ?oc=5",
-      "published": "2026-10-19T13:49:30Z",
-      "id": "hobby-edf3f1287699294a3c",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 39
     }
   ],
   "errors": [],
