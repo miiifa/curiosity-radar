@@ -7,9 +7,9 @@
     trends: ['流行・話題', '流行・話題', '公開の話題と趣味の発見。Xの自動収集は未対応です。'],
     github: ['GitHub 発掘', 'コードの宝探し', '使ってみたいOSS、組み合わせたい技術、成長中のプロジェクト。'],
     ai: ['AI & 開発', 'AIの最前線', '話題性だけでなく、使い道まで考える。'],
-    money: ['収益化のヒント', 'アイデアの種', '収益保証ではありません。元ネタと検証するべき仮説を紹介します。'],
+    money: ['収益化アイデア', 'アイデアの種', '収益保証ではありません。元ネタと検証するべき仮説を紹介します。'],
     security: ['セキュリティ', '知っておきたいリスク', 'JVN・IPA・JPCERT/CC・CISAなど信頼できる発信元を優先。'],
-    travel: ['国内旅行', '次の休日はどこへ？', '関東発のドライブ、離島、温泉、絶景を優先。'],
+    travel: ['旅行・イベント', '次の休日はどこへ？', '関東発のドライブ、離島、温泉、絶景を優先。'],
     social: ['ネットの話題', 'いま、何が話題？', 'Hacker Newsなど公開情報を使用。Xポスト自体のランキングではありません。'],
     hobby: ['ゲーム・趣味', '好きなことを深掘り', 'ポケモン、ボードゲーム、クルマ、ガジェットなど。']
   };
@@ -79,7 +79,8 @@
     }
     if(focused.id==='clearFilters'&&entries.length)$('#sectionTitle').focus({preventScroll:true});
   }
-  function bind(){document.addEventListener('click',async ev=>{const b=ev.target.closest('[data-save],[data-open],[data-prompt],[data-category],[data-chip],[data-mobile-go],[data-detail],[data-return]');if(!b)return;
+  function bind(){document.addEventListener('click',async ev=>{const b=ev.target.closest('[data-save],[data-open],[data-prompt],[data-category],[data-chip],[data-mobile-go],[data-detail],[data-return],[data-discuss]');if(!b)return;
+      if(b.dataset.discuss){const item=state.items.find(row=>row.id===b.dataset.discuss);if(item)await openDiscussion(item);return;}
       if(b.hasAttribute('data-return')){ev.preventDefault();returnToList();return;}
       if(b.dataset.detail){
         if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.altKey||ev.button!==0)return;
@@ -98,15 +99,16 @@
     for(const id of ['settingsDesktop','settingsTop','settingsInline','settingsBottom'])$('#'+id).addEventListener('click',openSettings);
     $('#resetPrefs').addEventListener('click',()=>{state.weights={...DEFAULT_WEIGHTS};store('radar:weights',state.weights);drawPrefs();render();toast('優先度を初期設定に戻しました');});
     $('#prefsDialog').addEventListener('close',()=>{clearImport();render();});
-    $('#prefsDialog').addEventListener('keydown',event=>{
+    for(const id of ['prefsDialog','discussionDialog'])$('#'+id).addEventListener('keydown',trapDialogTab);
+    $('#weightControls').addEventListener('input',e=>{if(!e.target.matches('input[type="range"]'))return;const cat=e.target.dataset.weight;state.weights[cat]=Number(e.target.value);e.target.closest('.weight-row').querySelector('strong').textContent=weightLabel(state.weights[cat]);e.target.setAttribute('aria-valuetext',`${state.weights[cat]}: ${weightLabel(state.weights[cat])}`);store('radar:weights',state.weights);});
+  }
+  function trapDialogTab(event){
       if(event.key!=='Tab')return;
       const controls=Array.from(event.currentTarget.querySelectorAll('button,input,select,textarea,a[href],[tabindex]'))
         .filter(node=>!node.disabled&&node.tabIndex>=0&&node.getClientRects().length);
       const first=controls[0],last=controls.at(-1);
       if(event.shiftKey&&document.activeElement===first){event.preventDefault();last?.focus();}
       else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first?.focus();}
-    });
-    $('#weightControls').addEventListener('input',e=>{if(!e.target.matches('input[type="range"]'))return;const cat=e.target.dataset.weight;state.weights[cat]=Number(e.target.value);e.target.closest('.weight-row').querySelector('strong').textContent=weightLabel(state.weights[cat]);e.target.setAttribute('aria-valuetext',`${state.weights[cat]}: ${weightLabel(state.weights[cat])}`);store('radar:weights',state.weights);});
   }
   function weightLabel(v){return ({1:'低め',2:'やや低め',3:'標準',4:'高め',5:'最優先'})[v]||'標準';}
   function drawPrefs(){$('#weightControls').innerHTML=Object.entries(DEFAULT_WEIGHTS).map(([cat])=>`<div class="weight-row"><header><label for="weight-${cat}">${ICONS[cat]} ${esc(CATEGORIES[cat][0])}</label><strong>${weightLabel(state.weights[cat])}</strong></header><input id="weight-${cat}" type="range" min="1" max="5" step="1" value="${state.weights[cat]}" data-weight="${cat}" aria-valuetext="${state.weights[cat]}: ${weightLabel(state.weights[cat])}" /></div>`).join('');}
@@ -129,7 +131,7 @@
       <p class="provenance">${esc(origin.kind)}。${esc(origin.note||'原典の主張を独立検証したものではありません。')}</p>
       <section class="detail-overview" aria-labelledby="overviewTitle"><h2 id="overviewTitle">30秒の概要</h2><p class="overview-label">${esc(view.overviewLabel)}</p><p>${esc(view.overview)}</p></section>
       <section class="detail-note" aria-labelledby="noteTitle"><h2 id="noteTitle">あなたへのひとこと</h2><p>${esc(view.note)}</p><small>ルールベースの推薦理由。個人への適合性や成果を保証する評価ではありません。</small></section>
-      <div class="detail-actions"><a class="primary-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${esc(id)}">元記事を開く ↗</a><button class="save-btn ${saved(id)?'saved':''}" data-save="${esc(id)}" aria-label="あとで読むに保存" aria-pressed="${saved(id)}">${saved(id)?'♥':'♡'}</button></div>
+      <div class="detail-actions"><button type="button" class="chatgpt-button" data-discuss="${esc(id)}">ChatGPTで考察</button><a class="primary-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${esc(id)}">元記事を開く ↗</a><button class="save-btn ${saved(id)?'saved':''}" data-save="${esc(id)}" aria-label="あとで読むに保存" aria-pressed="${saved(id)}">${saved(id)?'♥':'♡'}</button></div>
       <details class="detail-points" open><summary>この記事のポイント</summary><h3>${esc(view.overviewHeading)}</h3><p>${esc(view.overview)}</p><p>${esc(view.attribution)}</p><h3>解釈・推薦理由</h3><p>${esc(view.note)}</p><h3>未確認・確認したいこと</h3><ul>${view.unknowns.map(text=>`<li>${esc(text)}</li>`).join('')}</ul></details>
       ${item.security?.cves.length?`<section class="detail-points"><h2>脆弱性の原典情報</h2><p>CVE: ${item.security.cves.map(esc).join(' / ')}</p>${item.security.exploitation_status==='listed_in_kev'?`<p>対象: ${esc(item.security.vendor||'提供元未確認')} / ${esc(item.security.product||'製品未確認')}</p><p>KEV追加日は攻撃日・公表日ではありません。</p><p>CISAの対応案内: ${esc(item.security.required_action||'未確認。原典を確認してください。')}</p>`:''}${item.source_url?`<a class="external" href="${esc(safeUrl(item.source_url))}" target="_blank" rel="noopener noreferrer">取得元のデータを確認 ↗</a>`:''}</section>`:''}
       <details class="detail-points"><summary>5軸のおすすめ評価</summary><p>情報源の確度・セキュリティ緊急性とは別の評価です。</p><dl class="assessment-list">${view.axes.map(name=>`<div><dt>${esc(name)}</dt><dd>未評価<span>採点に必要な根拠データがありません。</span></dd></div>`).join('')}</dl></details>
@@ -139,6 +141,7 @@
     </article>`;
   }
   function routeChanged(){
+    if($('#discussionDialog').open)$('#discussionDialog').close();
     render();
     if(detailId()!==null){window.scrollTo({top:0,behavior:'instant'});$('#detailTitle')?.focus({preventScroll:true});}
     else{window.scrollTo({top:listScroll,behavior:'instant'});const origin=$$('[data-detail]').find(node=>node.dataset.detail===listFocusId);(origin||$('#sectionTitle')).focus({preventScroll:true});}
@@ -146,6 +149,19 @@
   function returnToList(){
     if(history.state?.radarDetailFromList){history.back();return;}
     history.replaceState(null,'',location.pathname+location.search);routeChanged();
+  }
+  let discussionAttempt=0;
+  async function copyDiscussion(){
+    const attempt=++discussionAttempt,text=$('#discussionText').value;if(!text)return;
+    $('#discussionStatus').textContent='コピーしています…';
+    try{await navigator.clipboard.writeText(text);if(attempt===discussionAttempt&&$('#discussionDialog').open)$('#discussionStatus').textContent='コピーしました。ChatGPTを開いて貼り付けてください。';}
+    catch{if(attempt!==discussionAttempt||!$('#discussionDialog').open)return;$('#discussionStatus').textContent='コピーできませんでした。文面を選択して手動でコピーしてください。';$('#discussionText').focus();$('#discussionText').select();}
+  }
+  async function openDiscussion(item){
+    discussionAttempt++;$('#discussionStatus').textContent='';
+    try{$('#discussionText').value=RadarFeed.discussionFor(item,{generatedAt:state.meta.generated_at,mode:state.meta.mode});$('#copyDiscussion').disabled=false;}
+    catch{$('#discussionText').value='';$('#copyDiscussion').disabled=true;$('#discussionStatus').textContent='URLや文面が長すぎるため相談文を作れませんでした。元記事を確認し、必要な情報を手動で選んでください。';}
+    $('#discussionDialog').showModal();if(!$('#copyDiscussion').disabled)await copyDiscussion();
   }
   let pendingPreferences=null,importAttempt=0;
   function transferMessage(message){$('#transferStatus').textContent=message;}
@@ -227,6 +243,8 @@
   setInterval(()=>{if(state.meta.mode)updateFeedStatus();},60000);
   function showNotice(m){$('#notice').hidden=false;$('#notice').textContent=m;}
   window.addEventListener('hashchange',event=>{if(new URL(event.oldURL).hash.startsWith('#article/')||new URL(event.newURL).hash.startsWith('#article/'))routeChanged();});
+  $('#copyDiscussion').addEventListener('click',copyDiscussion);
+  $('#discussionDialog').addEventListener('close',()=>{discussionAttempt++;});
   bind();bindTransfers();load();
   if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
 })();

@@ -8,6 +8,7 @@ def run():
   'title':f'公開テストの物語 {i}','url':f'https://example.com/{i}','published':(NOW-dt.timedelta(hours=i)).isoformat(),
   'summary':'<img src=x onerror=window.__detailInjected=true> 原典の説明。','tags':['原典','旅'],'reason':'公開情報からの検討候補（ルールベース）。'} for i in range(24)]
  data['items'][8]['aliases']=['legacy-item-8']
+ data['items'][3].update(source='着想元: fixture/repo',summary='OSS導入支援というアプリの収益化仮説')
  data['items'][2].update(source='CISA KEV',source_kind='official_catalog',published='2026-10-25T00:00:00Z',source_url='https://example.com/catalog',security={'cves':['CVE-2026-12345'],'exploitation_status':'listed_in_kev','user_impact':'not_assessed','kev_added_date':'2026-10-25','vendor':None,'product':None,'required_action':'原典の対応案内を確認'})
  server=ThreadingHTTPServer(('127.0.0.1',0),partial(Handler,directory=str(ROOT)));server.feed=(200,json.dumps(data));threading.Thread(target=server.serve_forever,daemon=True).start();base=f'http://127.0.0.1:{server.server_port}'
  try:
@@ -37,6 +38,7 @@ def run():
     assert '攻撃日・公表日ではありません' in page.locator('#articleDetail').inner_text()
     page.goto(base+'/#article/legacy-item-8');expect(page.locator('#detailTitle')).to_have_text('公開テストの物語 8')
     page.locator('#settingsTop').click();page.keyboard.press('Escape');expect(page.locator('#detailTitle')).to_have_text('公開テストの物語 8')
+    page.goto(base+'/#article/item-3');expect(page.locator('.overview-label')).to_contain_text('アプリがルールベース');assert '作者の発言ではなく' in page.locator('#articleDetail').inner_text()
     page.goto(base+'/#article/%3Cimg%3E');expect(page.locator('#detailTitle')).to_have_text('記事が見つかりません');page.locator('[data-return]').click();expect(page.locator('#feedSection')).to_be_visible()
     assert not page.evaluate('document.documentElement.scrollWidth>innerWidth');assert not errors,errors
     page.goto(base+'/#article/item-8');page.wait_for_selector('#detailTitle');page.screenshot(path=f'/tmp/detail-{width}.png',full_page=True)
