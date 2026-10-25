@@ -38,7 +38,7 @@
   function renderCard(item,feature=false){const id=esc(item.id);const isSaved=saved(item.id);const url=safeUrl(item.url);const isRepo=item.category==='github';const isIdea=item.category==='money';const meta=isRepo ? `<div class="repo-stats">${typeof item.stars === 'number'?`<span>★ <b>${prettyCount(item.stars)}</b></span>`:''}${item.language?`<span>● ${esc(item.language)}</span>`:''}${item.license?`<span>License: ${esc(item.license)}</span>`:'<span>ライセンス未確認</span>'}${item.star_delta?`<span>+${esc(item.star_delta)} stars / 前回比</span>`:''}</div>`:'';
     const reason=item.reason?`<p class="why"><strong>注目する理由 · </strong>${esc(item.reason)}</p>`:'';
     const tags=(item.tags||[]).slice(0,4).map(t=>`<span class="tag">#${esc(t)}</span>`).join('');
-    return `<article class="article ${feature?'feature':''} ${item.demo?'demo-card':''}" data-id="${id}"><div class="card-top"><span class="category-pill ${esc(item.category)}">${ICONS[item.category]} ${esc(CATEGORIES[item.category][0])}</span><span class="card-time">${item.demo?'プレビュー':relative(item.published)}</span><button class="save-btn ${isSaved?'saved':''}" aria-label="${isSaved?'保存を解除':'あとで読むに保存'}" data-save="${id}">${isSaved?'♥':'♡'}</button></div><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">${esc(item.title)} ↗</a></h3><p class="summary">${esc(item.summary)}</p>${meta}${reason}<div class="tags">${tags}</div><div class="card-footer"><span class="source">${esc(item.source||'公開ソース')}</span><span class="rank">独自スコア ${Math.round(Number(item.score)||50)}/100${viewed(item.id)?' · 既読':''}</span><span class="card-spacer"></span>${isRepo||isIdea?`<button class="action" data-prompt="${id}">${isRepo?'Codexで試す ↗':'検証案をコピー ↗'}</button>`:''}<a class="external" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">元記事 →</a></div></article>`;
+    return `<article class="article ${feature?'feature':''} ${item.demo?'demo-card':''}" data-id="${id}"><div class="card-top"><span class="category-pill ${esc(item.category)}">${ICONS[item.category]} ${esc(CATEGORIES[item.category][0])}</span><span class="card-time">${item.demo?'プレビュー':item.published?`<time datetime="${esc(item.published)}" title="${esc(new Date(item.published).toLocaleString('ja-JP'))}">${isRepo?'更新':item.source==='CISA KEV'?'KEV追加':'掲載'} ${esc(new Date(item.published).toLocaleDateString('ja-JP'))}（${relative(item.published)}）</time>`:'掲載日時不明'}</span><button class="save-btn ${isSaved?'saved':''}" aria-label="${isSaved?'保存を解除':'あとで読むに保存'}" data-save="${id}">${isSaved?'♥':'♡'}</button></div><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">${esc(item.title)} ↗</a></h3><p class="summary">${esc(item.summary)}</p>${meta}${reason}<div class="tags">${tags}</div><div class="card-footer"><span class="source">${esc(item.source||'公開ソース')}</span><span class="rank">独自スコア ${Math.round(Number(item.score)||50)}/100${viewed(item.id)?' · 既読':''}</span><span class="card-spacer"></span>${isRepo||isIdea?`<button class="action" data-prompt="${id}">${isRepo?'Codexで試す ↗':'検証案をコピー ↗'}</button>`:''}<a class="external" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">元記事 →</a></div></article>`;
   }
   function render(){const [kicker,title,desc]=state.savedView?['SAVED DISCOVERIES','保存した記事','あとで読みたい発見だけを集めました。']:CATEGORIES[state.category];$('#sectionKicker').textContent=kicker.toUpperCase();$('#sectionTitle').innerHTML=`${esc(title)} <span class="h2-spark">✳</span>`;$('#sectionDesc').textContent=desc;
     $$('.nav-item[data-category]').forEach(n=>n.classList.toggle('active',!state.savedView&&n.dataset.category===state.category));$('#savedNav').classList.toggle('active',state.savedView);$$('[data-mobile-go]').forEach(n=>n.classList.toggle('active',n.dataset.mobileGo===(state.savedView?'saved':state.category)));
@@ -66,13 +66,30 @@
   function weightLabel(v){return ({1:'低め',2:'やや低め',3:'標準',4:'高め',5:'最優先'})[v]||'標準';}
   function drawPrefs(){$('#weightControls').innerHTML=Object.entries(DEFAULT_WEIGHTS).map(([cat])=>`<div class="weight-row"><header><label for="weight-${cat}">${ICONS[cat]} ${esc(CATEGORIES[cat][0])}</label><strong>${weightLabel(state.weights[cat])}</strong></header><input id="weight-${cat}" type="range" min="1" max="5" step="1" value="${state.weights[cat]}" data-weight="${cat}" /></div>`).join('');}
   function openSettings(){drawPrefs();const d=$('#prefsDialog');if(!d.open)d.showModal();}
-  async function load(){try {const response=await fetch('data/news.json',{cache:'no-store'});if(!response.ok)throw Error(`HTTP ${response.status}`);const data=await response.json();if(!data||!Array.isArray(data.items))throw Error('Invalid data');const unique=new Set();state.items=data.items.filter(i=>i&&i.id&&i.url&&CATEGORIES[i.category]&&!unique.has(i.id)&&unique.add(i.id));state.meta=data;
-      const d=data.generated_at ? new Date(data.generated_at):null;$('#updatedAt').textContent=d&&!Number.isNaN(d.getTime())?'最終更新 '+d.toLocaleString('ja-JP',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'}):'初期データ';$('#sidebarStatus').textContent=data.mode==='demo'?'プレビュー表示中':'フィード配信中';
-      if(data.mode==='live' && d && Date.now()-d.getTime()>48*3600000){showNotice('最新の収集から48時間以上経過しています。古い情報の可能性があるため、原典を確認してください。');}
-      if(data.mode==='demo'){showNotice('これは初回プレビューです。リポジトリのGitHub Actionsを実行すると、各情報源から取得した実際の記事に置き換わります。サンプルを最新ニュースとして扱わないでください。');}
-      else if((data.errors||[]).length){showNotice(`${data.errors.length}件の情報源で取得エラーが発生。取得できた情報のみ表示しています。エラー詳細はdata/news.jsonに記録されています。`);}
-      render();
-    }catch(e){showNotice('データを読み込めませんでした。GitHub Pages、または python -m http.server で開いてください。');$('#sidebarStatus').textContent='読み込みエラー';$('#feed').innerHTML='';$('#empty').hidden=false;console.warn('Curiosity Radar:',e);}}
+  let feedCached = false;
+  function updateFeedStatus(){
+    const status=RadarFeed.describe(state.meta,{cached:feedCached,online:navigator.onLine});
+    $('#sidebarStatus').textContent=status.label;
+    $('#notice').hidden=!status.messages.length;
+    $('#notice').textContent=status.messages.join(' ');
+  }
+  async function load(){try {
+      const response=await fetch('data/news.json',{cache:'no-store'});
+      if(!response.ok)throw Error('Feed HTTP error');
+      const data=RadarFeed.validate(await response.json());
+      state.items=data.items;state.meta=data;
+      feedCached=response.headers.get('X-Curiosity-Radar-Cache')==='fallback';
+      $('#updatedAt').textContent=(data.mode==='demo'?'デモ作成日時 ':'データ更新日時 ')+new Date(data.generated_at).toLocaleString('ja-JP');
+      updateFeedStatus();render();
+    }catch{
+      state.items=[];state.meta={};
+      $('#updatedAt').textContent='更新日時を確認できません';
+      $('#sidebarStatus').textContent=navigator.onLine?'読み込みエラー':'オフライン · データなし';
+      showNotice('データを読み込めませんでした。通信または公開JSONに問題があります。接続を確認して再読み込みしてください。');
+      render();$('#empty').hidden=true;
+    }}
+  for(const event of ['online','offline'])window.addEventListener(event,()=>{if(state.meta.mode)updateFeedStatus();else load();});
+  setInterval(()=>{if(state.meta.mode)updateFeedStatus();},60000);
   function showNotice(m){$('#notice').hidden=false;$('#notice').textContent=m;}
   bind();load();
   if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
