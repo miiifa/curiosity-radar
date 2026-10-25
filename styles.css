@@ -13,3 +13,5 @@
 @media(max-width:600px){.topbar{height:auto;min-height:59px;flex-wrap:wrap;gap:8px;padding-top:10px;padding-bottom:10px}.topbar-right{margin-left:auto;max-width:100%}}
 
 .repo-group{color:#d9ceff;border:1px solid #564a7b;border-radius:5px;padding:4px 6px}.star-comparison{flex-basis:100%;overflow-wrap:anywhere}
+
+.article-references{font-size:11px;line-height:1.7;margin-top:12px;overflow-wrap:anywhere;color:#a7b6cf}.article-references summary{cursor:pointer}.article-references ul{padding-left:18px}.article-references a{color:#d5dcf6}

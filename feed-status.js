@@ -20,9 +20,20 @@
           ('tags' in item && (!Array.isArray(item.tags) || !item.tags.every(t => typeof t === 'string'))) ||
           ('demo' in item && typeof item.demo !== 'boolean') ||
           (data.mode === 'demo' ? item.demo !== true : item.demo === true)) throw Error('Invalid item');
-      if (typeof item.url !== 'string' || /[\s\x00-\x1f\x7f]/.test(item.url) || !/^https?:\/\//.test(item.url)) throw Error('Invalid URL');
+      if (typeof item.url !== 'string' || /[\s\x00-\x1f\x7f]/.test(item.url) || !/^https?:\/\//i.test(item.url)) throw Error('Invalid URL');
       const url = new URL(item.url);
       if (!['https:','http:'].includes(url.protocol) || !url.hostname || url.username || url.password) throw Error('Invalid URL');
+      if ('aliases' in item && (!Array.isArray(item.aliases) || !item.aliases.every(id => typeof id === 'string' && id && id !== item.id))) throw Error('Invalid aliases');
+      if ('categories' in item && (!Array.isArray(item.categories) || !item.categories.includes(item.category) || !item.categories.every(c => ['ai','security','travel','social','hobby'].includes(c)))) throw Error('Invalid categories');
+      for (const key of ['duplicates','related']) if (key in item) {
+        if (!Array.isArray(item[key])) throw Error('Invalid references');
+        for (const ref of item[key]) {
+          if (!ref || !['id','title','source','url','category'].every(k => typeof ref[k] === 'string' && ref[k].trim()) || !categories.has(ref.category) ||
+              !('published' in ref) || (ref.published !== null && !timestamp(ref.published))) throw Error('Invalid reference');
+          const target = new URL(ref.url);
+          if (!/^https?:\/\//i.test(ref.url) || /[\s\x00-\x1f\x7f]/.test(ref.url) || !['http:','https:'].includes(target.protocol) || !target.hostname || target.username || target.password) throw Error('Invalid reference URL');
+        }
+      }
       if (item.category === 'github') {
         for (const key of ['stars','star_delta']) if (item[key] != null && (!Number.isInteger(item[key]) || (key === 'stars' && item[key] < 0))) throw Error('Invalid stars');
         for (const key of ['stars_observed_at','star_delta_since']) if (item[key] != null && !timestamp(item[key])) throw Error('Invalid observation timestamp');
@@ -30,6 +41,11 @@
         if (item.discovery_group != null && !['small','rising','established'].includes(item.discovery_group)) throw Error('Invalid discovery group');
       }
       ids.add(item.id);
+    }
+    const owners = new Map();
+    for (const item of data.items) for (const alias of item.aliases || []) {
+      if (ids.has(alias) || (owners.has(alias) && owners.get(alias) !== item.id)) throw Error('Conflicting alias');
+      owners.set(alias,item.id);
     }
     return data;
   }
@@ -73,6 +89,55 @@
     let index=0;
     return items.map(item => item.category === 'github' ? ordered[index++] : item);
   }
-  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos};
+  const DEFAULT_WEIGHTS = Object.freeze({github:5,ai:5,money:5,security:4,travel:4,social:3,hobby:4});
+  function normalizeWeights(values = {}) {
+    return Object.fromEntries(Object.entries(DEFAULT_WEIGHTS).map(([key,fallback]) => {
+      const value=Number(values?.[key]);
+      return [key,Number.isInteger(value) && value >= 1 && value <= 5 ? value : fallback];
+    }));
+  }
+  function itemCategories(item) { return item.categories || [item.category]; }
+  function remapIds(ids, items) {
+    const map=new Map(items.map(item => [item.id,item.id]));
+    for (const item of items) for (const alias of item.aliases || []) if (!map.has(alias)) map.set(alias,item.id);
+    return [...new Set((Array.isArray(ids)?ids:[]).filter(id => typeof id === 'string' && id).map(id => map.get(id) || id))];
+  }
+  function query(items, options = {}) {
+    const {category='all',savedView=false,search='',sort='recommended',unreadOnly=false,bookmarks=[],read=[]}=options;
+    const weights=normalizeWeights(options.weights);
+    const saved=new Set(Array.isArray(bookmarks)?bookmarks:[]), seen=new Set(Array.isArray(read)?read:[]);
+    const tokens=String(search).normalize('NFKC').toLocaleLowerCase('ja-JP').trim().split(/\s+/).filter(Boolean);
+    const date=item => Number.isFinite(Date.parse(item.published)) ? Date.parse(item.published) : -Infinity;
+    const score=item => item.score*(0.50+0.17*Math.max(...itemCategories(item).map(c=>weights[c] || 3)));
+    const compareId=(a,b)=>a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
+    const recommended=(a,b)=>score(b)-score(a) || date(b)-date(a) || compareId(a,b);
+    let result=items.filter(item => {
+      if (savedView ? !saved.has(item.id) : category !== 'all' && !itemCategories(item).includes(category)) return false;
+      if (unreadOnly && seen.has(item.id)) return false;
+      const text=[item.title,item.summary,item.source,item.reason,...(item.tags || []),...(item.duplicates || []).map(ref=>ref.source+' '+ref.title)].join(' ').normalize('NFKC').toLocaleLowerCase('ja-JP');
+      return tokens.every(token=>text.includes(token));
+    });
+    const popularity=item=>item.category === 'github' && typeof item.stars === 'number' ? item.stars : item.score;
+    if (sort === 'latest') result.sort((a,b)=>date(b)-date(a) || recommended(a,b));
+    else if (sort === 'popular') result.sort((a,b)=>popularity(b)-popularity(a) || recommended(a,b));
+    else result.sort(recommended);
+    if (sort !== 'recommended' || tokens.length || savedView) return result;
+    result=mixRepos(result);
+    if (category !== 'all') return result;
+    const groups=new Map();
+    for (const item of result) { if(!groups.has(item.category))groups.set(item.category,[]);groups.get(item.category).push(item); }
+    const ordered=[];
+    while (ordered.length < result.length) {
+      const available=[...groups.values()].filter(group=>group.length);
+      const last=ordered.at(-1)?.category;
+      const repeated=ordered.length >= 2 && ordered.at(-2).category === last;
+      const alternatives=available.filter(group=>group[0].category !== last);
+      const eligible=repeated && alternatives.length ? alternatives : available;
+      eligible.sort((a,b)=>recommended(a[0],b[0]));
+      ordered.push(eligible[0].shift());
+    }
+    return ordered;
+  }
+  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, itemCategories, remapIds, query};
   if (typeof module !== 'undefined') module.exports = root.RadarFeed;
 })(globalThis);
