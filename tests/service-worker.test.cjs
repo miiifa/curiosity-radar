@@ -83,3 +83,20 @@ test('upgrade preserves prior valid snapshot and other applications caches',asyn
   w.context.fetch=async()=>{throw Error('offline');};
   assert.deepEqual(await (await w.fetch()).json(),good());
 });
+
+test('quota failure during v2 upgrade retains readable backup and prefers current assets',async()=>{
+  const w=worker(), asset='http://localhost/app.js';
+  const old=await w.caches.open('radar-static-v2');
+  await old.put(url,Response.json(good()));
+  await old.put(asset,new Response('old bundle'));
+  w.context.fetch=async()=>new Response('current bundle');
+  await w.fetch(asset);
+  w.failWrites.enabled=true;
+  await w.activate();
+  assert.ok(w.stores.has('radar-static-v2'));
+  w.context.fetch=async()=>{throw Error('offline');};
+  const fallback=await w.fetch();
+  assert.equal(fallback.headers.get('X-Curiosity-Radar-Cache'),'fallback');
+  assert.deepEqual(await fallback.json(),good());
+  assert.equal(await (await w.fetch(asset)).text(),'current bundle');
+});
