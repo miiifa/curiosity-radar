@@ -146,6 +146,8 @@
       return [key,Number.isInteger(value) && value >= 1 && value <= 5 ? value : fallback];
     }));
   }
+  const GENRES=Object.freeze({travel:['travel'],deals:[],technology:['github','ai'],security:['security'],trends:['social','hobby'],money:['money']});
+  function inGenre(item,category){return (Object.hasOwn(GENRES,category)?GENRES[category]:[category]).some(key=>itemCategories(item).includes(key));}
   function itemCategories(item) { return item.categories || [item.category]; }
   function remapIds(ids, items) {
     const map=new Map(items.map(item => [item.id,item.id]));
@@ -162,7 +164,7 @@
     const compareId=(a,b)=>a.id < b.id ? -1 : a.id > b.id ? 1 : 0;
     const recommended=(a,b)=>score(b)-score(a) || date(b)-date(a) || compareId(a,b);
     let result=items.filter(item => {
-      if (savedView ? !saved.has(item.id) : category !== 'all' && !itemCategories(item).includes(category)) return false;
+      if (savedView ? !saved.has(item.id) : category !== 'all' && !inGenre(item,category)) return false;
       if (unreadOnly && seen.has(item.id)) return false;
       const text=[item.title,item.summary,item.source,item.reason,...(item.tags || []),...(item.duplicates || []).map(ref=>ref.source+' '+ref.title)].join(' ').normalize('NFKC').toLocaleLowerCase('ja-JP');
       return tokens.every(token=>text.includes(token));
@@ -255,6 +257,6 @@
     const ts=Date.parse(meta.generated_at),day=value=>new Date(value+9*3600000).toISOString().slice(0,10);
     return meta.mode==='live'&&!cached&&online&&Array.isArray(meta.errors)&&!meta.errors.length&&Number.isFinite(ts)&&ts<=now&&day(ts)===day(now)?'今日の注目':'前回取得時の注目';
   }
-  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, itemCategories, remapIds, query, validateHealth, sourceInfo, articleDate, healthIssue, nextAction, spotlightLabel, MAX_PREFERENCES_BYTES, validatePreferences, decodePreferences, portablePreferences, mergePreferences, writePreferences};
+  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, GENRES, inGenre, itemCategories, remapIds, query, validateHealth, sourceInfo, articleDate, healthIssue, nextAction, spotlightLabel, MAX_PREFERENCES_BYTES, validatePreferences, decodePreferences, portablePreferences, mergePreferences, writePreferences};
   if (typeof module !== 'undefined') module.exports = root.RadarFeed;
 })(globalThis);
