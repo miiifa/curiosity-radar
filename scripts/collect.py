@@ -50,6 +50,11 @@ def get_bytes(url: str, *, token: str | None = None) -> bytes:
     raise RuntimeError('no response')
 
 
+def failure_kind(exc: Exception) -> str:
+    """Public diagnostic classification, never the raw response/exception text."""
+    return f'HTTP{exc.code}' if isinstance(exc, HTTPError) else type(exc).__name__
+
+
 def clean_text(value: str | None, limit=230) -> str:
     plain = html.unescape(re.sub(r'<[^>]*>', ' ', value or ''))
     plain = re.sub(r'\s+', ' ', plain).strip()
@@ -166,9 +171,13 @@ def read_feed_sources() -> list[dict]:
                 added += 1
                 if added >= 22:
                     break
+            if not parsed:
+                ERRORS.append(f'RSS {name}: EmptyFeed')
+            elif all(p['published'] is None for p in parsed):
+                ERRORS.append(f'RSS {name}: MissingDates')
             print(f'RSS {name}: {added} relevant of {len(parsed)} parsed')
         except (OSError, ValueError, ET.ParseError, RuntimeError) as exc:
-            ERRORS.append(f'RSS {name}: {type(exc).__name__}')
+            ERRORS.append(f'RSS {name}: {failure_kind(exc)}')
     return entries
 
 
@@ -204,7 +213,7 @@ def read_kev() -> list[dict]:
         print(f'CISA KEV: {len(items)} recent CVEs')
         return items[:38]
     except (OSError, ValueError, KeyError, RuntimeError) as exc:
-        ERRORS.append(f'CISA KEV: {type(exc).__name__}')
+        ERRORS.append(f'CISA KEV: {failure_kind(exc)}')
         return []
 
 
@@ -255,7 +264,7 @@ def read_github(previous: dict) -> list[dict]:
                 repo_map[repo['full_name']] = repo
             print(f'GitHub search: {len(payload.get("items",[]))} rows')
         except (OSError, ValueError, RuntimeError) as exc:
-            ERRORS.append(f'GitHub search: {type(exc).__name__}')
+            ERRORS.append(f'GitHub search: {failure_kind(exc)}')
         time.sleep(.3)
     all_repos=[]
     previous_stars={x.get('url'):x.get('stars') for x in previous.get('items',[]) if x.get('category')=='github' and not x.get('demo')}
@@ -330,7 +339,7 @@ def read_hacker_news() -> list[dict]:
                 'score': min(92,32 + int(math.log1p(points)*10))})
         return out
     except (OSError, ValueError, RuntimeError) as exc:
-        ERRORS.append(f'Hacker News: {type(exc).__name__}')
+        ERRORS.append(f'Hacker News: {failure_kind(exc)}')
         return []
 
 

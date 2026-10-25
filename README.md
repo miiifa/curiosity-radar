@@ -46,7 +46,7 @@
 - テスト失敗時のマージ自体を防ぐには、SettingsのRulesets／Branch protectionでmainへのPRと、このworkflowの `test` 成功を必須にしてください。workflowだけではマージ制限を設定できません。
 - スナップショットのpushが拒否された場合はActionsログとリポジトリ／組織の書き込みポリシーを確認してください。従来どおり配信は継続しますが、次回のスター増分は最後に**保存できた**スナップショットとの差になります。
 - 全取得失敗はジョブを失敗させて既存JSON・公開サイトを保持します。不正な候補も公開せず、正常な候補だけ一時ファイルから原子的に置換します。一部失敗はソース名・例外分類を `errors` に残します（生の例外詳細は公開しません）。
-- デモは `mode=demo`、実収集は `mode=live`。古いライブデータもライブのまま元の `generated_at` を維持し、鮮度を偽りません。部分成功・48時間超の表示改善は後続PRの対象です。
+- デモは `mode=demo`、実収集は `mode=live`。古いライブデータもライブのまま元の `generated_at` を維持し、鮮度を偽りません。部分成功・48時間超・キャッシュ利用・オフラインは警告を併記し、日時を最新に見せかけません。壊れたJSONは読み込みエラーとし、正常キャッシュを上書きしません。空RSS／掲載日時が全件不明のRSSも診断対象です（最近の記事がないだけの場合とは区別）。
 - 公開後はPagesの一覧、`data/news.json` の `mode`・件数・`generated_at` と画面の更新日時を照合してください。CI成功だけでは外部API・Pagesの正常動作の証明にはなりません。
 - 不具合時は原因コミットをrevertし、mainで手動実行します。収集障害中は既存Pagesを維持し、必要なら最後の正常なPagesアーティファクトを再デプロイしてください。リポジトリ全体を初期化しないでください。
 
@@ -61,6 +61,20 @@ python -m http.server 8000
 # 実際の情報を収集する場合（ネット接続が必要）
 python scripts/collect.py
 ```
+
+### ローカルの回帰確認
+
+```bash
+python -m unittest discover -s tests -v
+node --test tests/*.test.cjs
+node --check app.js
+node --check sw.js
+python -m json.tool data/news.json >/dev/null
+# 任意: PlaywrightとChromiumが利用できる環境のみ（アプリ自体には不要）
+python tests/browser_smoke.py
+```
+
+ブラウザーテストは外部APIを使わず、一時ローカルサーバーのfixtureで表示状態と実Service Workerのオフライン復元を確認します。Chromiumの場所は `CHROMIUM_PATH` で指定できます。公開後は実端末でも再読み込みし、更新日時・出典・キャッシュ警告を確認してください。記事の掲載／更新／KEV追加日時と、スナップショットのデータ更新日時は別です。保持した記事ごとの最終取得時刻は現行v1データには記録していません。
 
 ## 技術構成
 

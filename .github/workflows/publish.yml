@@ -34,6 +34,8 @@ jobs:
           node-version: '24'
       - run: python -m unittest discover -s tests -v
       - run: node --check app.js
+      - run: node --check sw.js
+      - run: node --test tests/*.test.cjs
       - run: python -m json.tool data/news.json >/dev/null
 
   collect:
@@ -63,7 +65,7 @@ jobs:
       - name: Prepare public site (exclude source and workflow files)
         run: |
           mkdir -p _site/assets _site/data
-          cp index.html styles.css app.js sw.js manifest.webmanifest _site/
+          cp index.html styles.css feed-status.js app.js sw.js manifest.webmanifest _site/
           cp assets/*.svg _site/assets/
           cp data/news.json _site/data/
       - name: Upload site artifact
