@@ -1,7 +1,7 @@
 'use strict';
 (() => {
   const CATEGORIES = {
-    all: ['すべて', '今日の発見', 'あなたの関心と、新しさから優先順位をつけています。'],
+    all: ['すべて', 'おすすめの記事', '気になる発見を、次の一手へ。'],
     github: ['GitHub 発掘', 'コードの宝探し', '使ってみたいOSS、組み合わせたい技術、成長中のプロジェクト。'],
     ai: ['AI & 開発', 'AIの最前線', '話題性だけでなく、使い道まで考える。'],
     money: ['収益化のヒント', 'アイデアの種', '収益保証ではありません。元ネタと検証するべき仮説を紹介します。'],
@@ -37,7 +37,15 @@
     const tags=(item.tags||[]).slice(0,4).map(t=>item.source==='関東発ドライブ'&&t==='関東'?'検索条件:関東':t).map(t=>`<span class="tag">#${esc(t)}</span>`).join('')+RadarFeed.itemCategories(item).filter(c=>c!==category).map(c=>`<span class="tag">${esc(CATEGORIES[c][0])}</span>`).join('');
     const references=(label,rows,duplicate=false)=>rows?.length?`<details class="article-references"><summary>${label}（${rows.length}件）</summary><ul>${rows.map(ref=>`<li><a href="${esc(safeUrl(ref.url))}" target="_blank" rel="noopener noreferrer" data-open="${duplicate?id:esc(ref.id)}">${esc(ref.title)} — ${esc(ref.source)}</a></li>`).join('')}</ul></details>`:'';
     const related=references('URL比較でまとめた掲載元・元リンク',item.duplicates,true)+references('似た見出し（同じ記事とは未確認）',item.related);
-    return `<article class="article ${feature?'feature':''} ${item.demo?'demo-card':''}" data-id="${id}"><div class="card-top"><span class="category-pill ${esc(category)}">${ICONS[category]} ${esc(CATEGORIES[category][0])}</span><span class="card-time">${item.demo?'プレビュー':item.published?`<time datetime="${esc(date.datetime)}" title="${esc(date.title)}">${esc(date.label)} ${esc(date.text)}${item.source==='CISA KEV'?'':`（${relative(item.published)}）`}</time>`:'掲載日時不明'}</span><button class="save-btn ${isSaved?'saved':''}" aria-label="あとで読むに保存" data-save="${id}" aria-pressed="${isSaved}">${isSaved?'♥':'♡'}</button></div><h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">${esc(item.title)} ↗</a></h3><p class="summary">${esc(item.summary)}</p>${meta}${sourceInfo}${isIdea?`<p class="hypothesis-note">収益性未検証 · 元ネタ: <a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(item.source||'取得元')} ↗</a>。顧客需要・費用・ライセンスは要確認。</p>`:''}${reason}${related}${action?`<details class="next-action"><summary>${esc(action.label)} · 指示を確認</summary><p>選んだ記事の公開情報だけをコピーします。外部ツールへの送信や実行は行いません。貼り付け前に内容を確認してください。</p><pre tabindex="0" role="region" aria-label="${esc(action.label)}指示の全文">${esc(action.prompt)}</pre></details>`:''}<div class="tags">${tags}</div><div class="card-footer"><span class="source">${esc(item.source||'公開ソース')}</span><span class="rank">独自スコア（参考値） ${Math.round(item.score)}/100${viewed(item.id)?' · 既読':''}</span><span class="card-spacer"></span>${action?`<button class="action" data-prompt="${id}" aria-label="${esc(action.label)}指示をコピー">${item.category==='travel'?'計画をコピー':isRepo?'30分で試す指示':'検証案をコピー'}</button>`:''}<a class="external" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">元記事 →</a></div></article>`;
+    return `<article class="article ${feature?'feature':''} ${item.demo?'demo-card':''}" data-id="${id}">
+      ${feature?`<div class="feature-label">${esc(RadarFeed.spotlightLabel(state.meta,{cached:feedCached,online:navigator.onLine}))}</div>`:''}
+      <div class="card-top"><span class="category-pill ${esc(category)}">${ICONS[category]} ${esc(CATEGORIES[category][0])}</span><span class="card-time">${item.demo?'プレビュー':item.published?`<time datetime="${esc(date.datetime)}" title="${esc(date.title)}">${esc(date.label)} ${esc(date.text)}</time>`:'掲載日時不明'}</span><button class="save-btn ${isSaved?'saved':''}" aria-label="あとで読むに保存" data-save="${id}" aria-pressed="${isSaved}">${isSaved?'♥':'♡'}</button></div>
+      <h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">${esc(item.title)} ↗</a></h3><p class="summary">${esc(item.summary)}</p>
+      <div class="card-source"><span class="source">${esc(item.source||'公開ソース')}</span>${isIdea?'<span class="hypothesis-label">収益性未検証</span>':''}</div>${reason}
+      <div class="card-footer">${action?`<button class="action" data-prompt="${id}" aria-label="${esc(action.label)}指示をコピー">${item.category==='travel'?'計画をコピー':isRepo?'30分で試す指示':'検証案をコピー'}</button>`:''}<a class="external" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">元記事 →</a></div>
+      ${action?`<details class="next-action"><summary>${esc(action.label)} · 指示を確認</summary><p>選んだ記事の公開情報だけをコピーします。外部ツールへの送信や実行は行いません。貼り付け前に内容を確認してください。</p><pre tabindex="0" role="region" aria-label="${esc(action.label)}指示の全文">${esc(action.prompt)}</pre></details>`:''}
+      <details class="card-analysis"><summary>出典・参考情報</summary>${meta}${sourceInfo}${isIdea?`<p class="hypothesis-note">収益性未検証 · 元ネタ: <a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(item.source||'取得元')} ↗</a>。顧客需要・費用・ライセンスは要確認。</p>`:''}${related}<div class="tags">${tags}</div><span class="rank">独自スコア（参考値） ${Math.round(item.score)}/100${viewed(item.id)?' · 既読':''}</span></details>
+    </article>`;
   }
   function render(){
     const focused=document.activeElement;
@@ -136,6 +144,7 @@
   function updateFeedStatus(){
     const status=RadarFeed.describe(state.meta,{cached:feedCached,online:navigator.onLine});
     $('#sidebarStatus').textContent=status.label;
+    $$('.feature-label').forEach(node=>node.textContent=RadarFeed.spotlightLabel(state.meta,{cached:feedCached,online:navigator.onLine}));
     $('#notice').hidden=!status.messages.length;
     $('#notice').textContent=status.messages.join(' ');
   }
