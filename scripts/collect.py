@@ -434,9 +434,10 @@ def canonical_url(url: str) -> str:
     pairs = []
     for segment in parts.query.split('&') if parts.query else []:
         raw_key = segment.partition('=')[0]
-        key = unquote_plus(raw_key).lower()
+        decoded_key = unquote_plus(raw_key)
+        key = decoded_key.lower()
         if not key.startswith('utm_') and key not in ('fbclid', 'gclid'):
-            pairs.append((raw_key, segment))
+            pairs.append((decoded_key, segment))
     if len({key for key, _ in pairs}) == len(pairs):
         pairs.sort()
     fragment = parts.fragment if parts.fragment.startswith(('/', '!')) else ''

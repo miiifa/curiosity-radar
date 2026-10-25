@@ -114,3 +114,17 @@ class DeduplicationTests(unittest.TestCase):
               'items':[article(id='one',aliases=['two']),article(id='two',url='https://example.com/two')]}
         with self.assertRaisesRegex(ValueError,'conflicting alias'):
             collect.validate_snapshot(data)
+
+    def test_encoded_duplicate_query_names_keep_value_order_and_original_bytes(self):
+        pairs=[('id=1&%69d=2','%69d=2&id=1'),
+               ('a+b=1&a%20b=2','a%20b=2&a+b=1')]
+        for left,right in pairs:
+            left_url='https://example.com/article?'+left
+            right_url='https://example.com/article?'+right
+            with self.subTest(left=left):
+                self.assertEqual(collect.canonical_url(left_url),left_url)
+                self.assertEqual(collect.canonical_url(right_url),right_url)
+                result=collect.deduplicate([article(url=left_url),article(id='other',url=right_url)])
+                self.assertEqual(len(result),2)
+        # Sorting unique decoded names still preserves the original encoded query segments.
+        self.assertEqual(collect.canonical_url('https://example.com/a?z=%2F&%61=1'),'https://example.com/a?%61=1&z=%2F')
