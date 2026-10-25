@@ -11,3 +11,5 @@
 .updated{max-width:none;white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere}
 .card-time{max-width:50%;text-align:right}
 @media(max-width:600px){.topbar{height:auto;min-height:59px;flex-wrap:wrap;gap:8px;padding-top:10px;padding-bottom:10px}.topbar-right{margin-left:auto;max-width:100%}}
+
+.repo-group{color:#d9ceff;border:1px solid #564a7b;border-radius:5px;padding:4px 6px}.star-comparison{flex-basis:100%;overflow-wrap:anywhere}

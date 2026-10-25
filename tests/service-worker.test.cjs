@@ -73,7 +73,7 @@ test('malformed JSON, invalid feed, empty feed and demo mixing do not replace go
 test('offline without valid cache fails instead of inventing a feed',async()=>{
   const w=worker();w.context.fetch=async()=>{throw Error('offline');};
   assert.equal((await w.fetch()).status,503);
-  await (await w.caches.open('radar-static-v2')).put(url,new Response('{bad'));
+  await (await w.caches.open('radar-static-v3')).put(url,new Response('{bad'));
   assert.equal((await w.fetch()).status,503);
 });
 test('upgrade preserves prior valid snapshot and other applications caches',async()=>{

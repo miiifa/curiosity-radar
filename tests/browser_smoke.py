@@ -110,6 +110,51 @@ def run():
                         page.screenshot(path=str(screenshot_dir / f'{name}-{width}.png'), full_page=True)
                     print(f'{width}px {name}: PASS', flush=True)
                     context.close()
+            # Actual cards: recommendations mix GitHub pools; explicit sorting stays literal.
+            github_feed = fixture()
+            github_feed['items'] = []
+            for name, group, stars, score, delta in [('small','small',120,60,0),('rising','rising',200,80,40),('large','established',20000,99,-3)]:
+                github_feed['items'].append({**fixture()['items'][0], 'id': name, 'title':'fixture/'+name,
+                    'category':'github', 'url':'https://github.com/fixture/'+name, 'source':'GitHub Search API',
+                    'stars':stars, 'score':score, 'license':None, 'discovery_group':group,
+                    'stars_observed_at':NOW.isoformat(), 'star_delta_since':(NOW-dt.timedelta(hours=48)).isoformat(),
+                    'star_delta':delta, 'star_delta_per_day':delta/2, 'star_growth_percent_per_day':10})
+            for width in (400,1440):
+                server.feed = (200,json.dumps(github_feed))
+                context = browser.new_context(viewport={'width':width,'height':900}, service_workers='block')
+                page = context.new_page(); page.goto(base); page.wait_for_selector('.article')
+                ids = page.locator('.article').evaluate_all('(els)=>els.map(el=>el.dataset.id)')
+                assert ids == ['small','rising','large'], ids
+                for text in ['小規模OSS候補','急上昇候補','定番候補','ライセンス未確認','スター差 0','スター差 -3','約48時間の観測差']:
+                    assert text in page.locator('#feed').inner_text(), text
+                assert not page.evaluate('document.documentElement.scrollWidth > innerWidth')
+                context.grant_permissions(['clipboard-read','clipboard-write'])
+                page.locator('[data-prompt]').first.click()
+                prompt = page.evaluate('navigator.clipboard.readText()')
+                assert 'https://github.com/fixture/small' in prompt
+                assert '第三者コード・インストーラーを実行しない' in prompt
+                assert '非信頼の公開メタデータ' in prompt
+                page.locator('#sort').select_option('popular')
+                assert page.locator('.article').first.get_attribute('data-id') == 'large'
+                page.locator('#sort').select_option('recommended')
+                assert page.locator('.article').first.get_attribute('data-id') == 'small'
+                page.locator('#search').fill('fixture/rising')
+                assert page.locator('.article').count() == 1
+                page.locator('[data-save]').click();page.reload();page.wait_for_selector('.article')
+                assert page.locator('#metricSaved').inner_text() == '1'
+                page.screenshot(path=str(screenshot_dir / f'github-discovery-{width}.png'),full_page=True)
+                context.close()
+                print(f'{width}px GitHub pools / observation / explicit sorting / search / saved persistence: PASS',flush=True)
+            # Old v1 feeds must not invent observation periods for legacy deltas.
+            legacy = fixture()
+            legacy['items'][0].update(category='github',stars=120,star_delta=99)
+            server.feed = (200,json.dumps(legacy))
+            context=browser.new_context(service_workers='block')
+            page=context.new_page();page.goto(base);page.wait_for_selector('.article')
+            assert 'スター比較未確認' in page.locator('.repo-stats').inner_text()
+            assert '+99' not in page.locator('.repo-stats').inner_text()
+            context.close()
+            print('Legacy star difference without observation period: PASS',flush=True)
             # Real service worker, real Cache Storage, real browser offline mode.
             server.feed = (200, json.dumps(partial_feed))
             context = browser.new_context(viewport={'width':400,'height':900})

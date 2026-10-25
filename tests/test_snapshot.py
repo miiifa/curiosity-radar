@@ -128,7 +128,7 @@ class SnapshotTests(unittest.TestCase):
 
     def test_star_delta_uses_previous_snapshot(self):
         repo = {'full_name': 'fixture/tool', 'html_url': 'https://github.com/fixture/tool',
-                'stargazers_count': 120, 'pushed_at': collect.NOW.isoformat()}
+                'stargazers_count': 120, 'pushed_at': collect.NOW.isoformat(), 'topics': ['automation']}
         previous = {'items': [{'category': 'github', 'url': repo['html_url'], 'stars': 100}]}
         with patch.object(collect, 'get_bytes', return_value=json.dumps({'items': [repo]}).encode()), \
              patch.object(collect.time, 'sleep'), patch('sys.stdout', new_callable=io.StringIO):
