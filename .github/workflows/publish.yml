@@ -1,6 +1,7 @@
 name: Refresh and publish Curiosity Radar
 
 on:
+  pull_request:
   schedule:
     # 07:30 & 19:30 JST. GitHub cron is UTC and can be delayed.
     - cron: '30 22,10 * * *'
@@ -10,30 +11,42 @@ on:
     paths-ignore:
       - 'data/news.json'
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+permissions: {}
 
 concurrency:
-  group: curiosity-pages
+  group: curiosity-${{ github.event_name == 'pull_request' && github.event.pull_request.number || 'pages' }}
   cancel-in-progress: false
 
 jobs:
-  collect-and-deploy:
+  test:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test collector
-        run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: python -m unittest discover -s tests -v
+      - run: node --check app.js
+      - run: python -m json.tool data/news.json >/dev/null
+
+  collect:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Refresh feed
         env:
           GH_TOKEN: ${{ github.token }}
@@ -47,10 +60,6 @@ jobs:
             git commit -m 'chore: update curated feed [skip ci]'
             git push || echo 'Snapshot push not permitted. Deployment will still run.'
           fi
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - name: Prepare public site (exclude source and workflow files)
         run: |
           mkdir -p _site/assets _site/data
@@ -61,7 +70,20 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: '_site'
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: collect
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

@@ -12,8 +12,9 @@ from pathlib import Path
 import re
 import sys
 import time
+import tempfile
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
@@ -85,7 +86,15 @@ def recent(iso: str | None, days: int = MAX_DAYS) -> bool:
 
 
 def valid_link(link: str) -> bool:
-    return link.startswith('https://') or link.startswith('http://')
+    if not isinstance(link, str) or any(c.isspace() or ord(c) < 32 for c in link):
+        return False
+    try:
+        url = urlsplit(link)
+        return (url.scheme in ('http', 'https') and bool(url.hostname)
+                and url.username is None and url.password is None
+                and (url.port is None or 1 <= url.port <= 65535))
+    except ValueError:
+        return False
 
 
 def identifier(kind: str, url: str) -> str:
@@ -159,7 +168,7 @@ def read_feed_sources() -> list[dict]:
                     break
             print(f'RSS {name}: {added} relevant of {len(parsed)} parsed')
         except (OSError, ValueError, ET.ParseError, RuntimeError) as exc:
-            ERRORS.append(f'RSS {name}: {type(exc).__name__}: {str(exc)[:120]}')
+            ERRORS.append(f'RSS {name}: {type(exc).__name__}')
     return entries
 
 
@@ -195,7 +204,7 @@ def read_kev() -> list[dict]:
         print(f'CISA KEV: {len(items)} recent CVEs')
         return items[:38]
     except (OSError, ValueError, KeyError, RuntimeError) as exc:
-        ERRORS.append(f'CISA KEV: {type(exc).__name__}: {str(exc)[:120]}')
+        ERRORS.append(f'CISA KEV: {type(exc).__name__}')
         return []
 
 
@@ -246,7 +255,7 @@ def read_github(previous: dict) -> list[dict]:
                 repo_map[repo['full_name']] = repo
             print(f'GitHub search: {len(payload.get("items",[]))} rows')
         except (OSError, ValueError, RuntimeError) as exc:
-            ERRORS.append(f'GitHub search: {type(exc).__name__}: {str(exc)[:120]}')
+            ERRORS.append(f'GitHub search: {type(exc).__name__}')
         time.sleep(.3)
     all_repos=[]
     previous_stars={x.get('url'):x.get('stars') for x in previous.get('items',[]) if x.get('category')=='github' and not x.get('demo')}
@@ -321,7 +330,7 @@ def read_hacker_news() -> list[dict]:
                 'score': min(92,32 + int(math.log1p(points)*10))})
         return out
     except (OSError, ValueError, RuntimeError) as exc:
-        ERRORS.append(f'Hacker News: {type(exc).__name__}: {str(exc)[:120]}')
+        ERRORS.append(f'Hacker News: {type(exc).__name__}')
         return []
 
 
@@ -332,6 +341,64 @@ def deduplicate(items: list[dict]) -> list[dict]:
         if key in used:continue
         used.add(key);out.append(item)
     return out
+
+
+def validate_snapshot(data: dict) -> None:
+    """Validate the existing v1 contract without treating old data as fresh."""
+    def timestamp(value):
+        if not isinstance(value, str) or 'T' not in value:
+            raise ValueError('invalid timestamp')
+        parsed = dt.datetime.fromisoformat(value.replace('Z', '+00:00'))
+        if parsed.utcoffset() is None:
+            raise ValueError('timestamp requires timezone')
+
+    if not isinstance(data, dict) or data.get('mode') not in ('demo', 'live'):
+        raise ValueError('invalid mode')
+    timestamp(data.get('generated_at'))
+    if not isinstance(data.get('items'), list) or not data['items']:
+        raise ValueError('empty or invalid items')
+    if not isinstance(data.get('errors'), list) or not all(isinstance(e, str) for e in data['errors']):
+        raise ValueError('invalid errors')
+    seen = set()
+    for item in data['items']:
+        if not isinstance(item, dict):
+            raise ValueError('invalid item')
+        for key in ('id', 'title', 'source'):
+            if not isinstance(item.get(key), str) or not item[key].strip():
+                raise ValueError('missing item field: ' + key)
+        if item['id'] in seen:
+            raise ValueError('duplicate id')
+        seen.add(item['id'])
+        if item.get('category') not in ('github', 'ai', 'money', 'security', 'travel', 'social', 'hobby'):
+            raise ValueError('invalid category')
+        if not valid_link(item.get('url')):
+            raise ValueError('invalid URL')
+        score = item.get('score')
+        if type(score) not in (int, float) or not 0 <= score <= 100:
+            raise ValueError('invalid score')
+        if 'published' not in item:
+            raise ValueError('missing published')
+        if item['published'] is not None:
+            timestamp(item['published'])
+        if 'demo' in item and type(item['demo']) is not bool:
+            raise ValueError('invalid demo flag')
+        if (data['mode'] == 'live' and item.get('demo')) or (data['mode'] == 'demo' and not item.get('demo')):
+            raise ValueError('mixed demo/live items')
+
+
+def save_snapshot(data: dict) -> None:
+    validate_snapshot(data)
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=OUTPUT.parent,
+                                         prefix='.news-', suffix='.tmp', delete=False) as stream:
+            temporary = Path(stream.name)
+            stream.write(json.dumps(data, ensure_ascii=False, indent=2, allow_nan=False) + '\n')
+        temporary.replace(OUTPUT)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
 
 
 def main() -> int:
@@ -352,8 +419,7 @@ def main() -> int:
     items=sorted(items,key=lambda x:x.get('score',0),reverse=True)[:360]
     result={'generated_at':NOW.isoformat().replace('+00:00','Z'), 'mode':'live', 'items':items,
             'errors':ERRORS,'sources_attempted':len(SOURCES)+6, 'collector_version':1}
-    OUTPUT.parent.mkdir(parents=True,exist_ok=True)
-    OUTPUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    save_snapshot(result)
     print(f'Wrote {len(items)} items; {len(ERRORS)} sources failed.')
     return 0
 
