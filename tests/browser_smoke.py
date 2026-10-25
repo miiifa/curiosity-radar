@@ -329,7 +329,7 @@ def run():
                     assert not errors,errors
                     assert not external,external
                     if not reject:
-                        page.locator('[data-id="travel-action"] summary').click()
+                        page.locator('[data-id="travel-action"] .next-action summary').click()
                         page.locator('[data-id="travel-action"]').screenshot(path=str(screenshot_dir/f'next-action-{width}.png'))
                     context.close()
                     print(f'{width}px next actions preview / selected data / copy {"denied" if reject else "success"}: PASS',flush=True)
