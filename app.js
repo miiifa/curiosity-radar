@@ -69,7 +69,7 @@
     $('#savedNav').addEventListener('click',()=>categoryNav('all',true));$('#search').addEventListener('input',e=>{state.search=e.target.value;render();});$('#sort').addEventListener('change',e=>{state.sort=e.target.value;render();});$('#unreadFilter').addEventListener('click',()=>{state.unreadOnly=!state.unreadOnly;$('#unreadFilter').classList.toggle('active',state.unreadOnly);$('#unreadFilter').setAttribute('aria-pressed',String(state.unreadOnly));render();});$('#clearFilters').addEventListener('click',()=>categoryNav('all'));
     for(const id of ['settingsDesktop','settingsTop','settingsInline','settingsBottom'])$('#'+id).addEventListener('click',openSettings);
     $('#resetPrefs').addEventListener('click',()=>{state.weights={...DEFAULT_WEIGHTS};store('radar:weights',state.weights);drawPrefs();render();toast('優先度を初期設定に戻しました');});
-    $('#prefsDialog').addEventListener('close',()=>render());
+    $('#prefsDialog').addEventListener('close',()=>{clearImport();render();});
     $('#prefsDialog').addEventListener('keydown',event=>{
       if(event.key!=='Tab')return;
       const controls=Array.from(event.currentTarget.querySelectorAll('button,input,select,textarea,a[href],[tabindex]'))
@@ -82,7 +82,52 @@
   }
   function weightLabel(v){return ({1:'低め',2:'やや低め',3:'標準',4:'高め',5:'最優先'})[v]||'標準';}
   function drawPrefs(){$('#weightControls').innerHTML=Object.entries(DEFAULT_WEIGHTS).map(([cat])=>`<div class="weight-row"><header><label for="weight-${cat}">${ICONS[cat]} ${esc(CATEGORIES[cat][0])}</label><strong>${weightLabel(state.weights[cat])}</strong></header><input id="weight-${cat}" type="range" min="1" max="5" step="1" value="${state.weights[cat]}" data-weight="${cat}" aria-valuetext="${state.weights[cat]}: ${weightLabel(state.weights[cat])}" /></div>`).join('');}
-  function openSettings(){drawPrefs();const d=$('#prefsDialog');if(!d.open)d.showModal();}
+  let pendingPreferences=null,importAttempt=0;
+  function transferMessage(message){$('#transferStatus').textContent=message;}
+  function clearImport(){pendingPreferences=null;importAttempt++;$('#importPreview').hidden=true;$('#importSummary').textContent='';$('#importWeights').textContent='';}
+  function bindTransfers(){
+    $('#exportPrefs').addEventListener('click',()=>{
+      let url,link;
+      try{
+        const text=JSON.stringify(RadarFeed.portablePreferences(state));
+        RadarFeed.decodePreferences(text); // Enforce the same byte limit as the importer.
+        url=URL.createObjectURL(new Blob([text],{type:'application/json;charset=utf-8'}));
+        link=document.createElement('a');link.href=url;link.download='curiosity-radar-settings-v1.json';link.hidden=true;document.body.append(link);link.click();
+        transferMessage('JSONのダウンロードを開始しました。公開せず、ご自身で保管してください。');
+      }catch{transferMessage('書き出せませんでした。保存IDの形式・件数やブラウザーのダウンロード設定を確認してください。');}
+      finally{link?.remove();if(url)setTimeout(()=>URL.revokeObjectURL(url),60000);}
+    });
+    $('#importPrefs').addEventListener('click',()=>$('#prefsFile').click());
+    $('#cancelImport').addEventListener('click',()=>{clearImport();transferMessage('読み込みを取り消しました。設定は変更していません。');$('#importPrefs').focus();});
+    $('#prefsFile').addEventListener('change',async event=>{
+      const file=event.target.files[0];event.target.value='';clearImport();if(!file)return;
+      const attempt=importAttempt;
+      transferMessage('設定JSONを確認しています…');
+      try{
+        if(file.size>RadarFeed.MAX_PREFERENCES_BYTES)throw Error('File too large');
+        const text=await file.text();if(attempt!==importAttempt)return;
+        const value=RadarFeed.decodePreferences(text);
+        pendingPreferences=value;
+        const ids=RadarFeed.remapIds(value.bookmarks,state.items),known=new Set(state.items.map(item=>item.id));
+        $('#importSummary').textContent=`保存ID ${ids.length}件（現在の記事に一致 ${ids.filter(id=>known.has(id)).length}件）。一致しないIDも保持します。`;
+        $('#importWeights').textContent=Object.keys(DEFAULT_WEIGHTS).map(key=>`${CATEGORIES[key][0]} ${value.weights[key]}: ${weightLabel(value.weights[key])}`).join(' / ');
+        $('#importPreview').hidden=false;transferMessage('内容を確認してから適用してください。まだ設定は変更していません。');$('#applyPrefs').focus();
+      }catch{if(attempt===importAttempt)transferMessage('読み込めませんでした。形式v1の設定JSON（1 MiB以内・保存ID 5000件以内）を選んでください。設定は変更していません。');}
+    });
+    $('#applyPrefs').addEventListener('click',()=>{
+      if(!pendingPreferences)return;
+      let merged,result;
+      try{merged=RadarFeed.mergePreferences(state,pendingPreferences,state.items);}
+      catch{transferMessage('適用できませんでした。保存IDの形式と追加後の件数・容量（5000件・1 MiB以内）を確認してください。設定は変更していません。');return;}
+      try{result=RadarFeed.writePreferences(localStorage,merged);}catch{result={ok:false,restored:true};}
+      if(!result.ok){
+        if(!result.restored){state.weights=RadarFeed.normalizeWeights(readStore('radar:weights',state.weights));state.bookmarks=RadarFeed.remapIds(readStore('radar:saved',state.bookmarks),state.items);drawPrefs();render();}
+        transferMessage(result.restored?'保存できませんでした。読み込んだ設定は適用していません。':'保存と復元に失敗しました。一部の設定が変わった可能性があるため確認してください。');return;
+      }
+      state.weights=merged.weights;state.bookmarks=merged.bookmarks;drawPrefs();render();clearImport();transferMessage('重みと保存IDを適用しました。既存の保存・既読は保持しています。');$('#importPrefs').focus();
+    });
+  }
+  function openSettings(){clearImport();transferMessage('');drawPrefs();const d=$('#prefsDialog');if(!d.open)d.showModal();}
   function renderSourceHealth(){
     const rows=state.meta.mode==='demo'?[]:state.meta.source_health;
     $('#sourceHealthRows').innerHTML=rows?.length?rows.map(row=>`<li><a href="${esc(safeUrl(row.url))}" target="_blank" rel="noopener noreferrer">${esc(row.name)}</a>：${esc({ok:'成功',partial:'一部取得',failed:'取得失敗'}[row.status])} · 取得候補 ${row.count}件${row.error?`（${esc(RadarFeed.healthIssue(row.error))}）`:''}<br>確認 ${esc(new Date(row.checked_at).toLocaleString('ja-JP'))} / 最終成功 ${row.last_success_at?esc(new Date(row.last_success_at).toLocaleString('ja-JP')):'未確認'}${row.consecutive_failures?`<br>保存履歴で連続取得エラー ${row.consecutive_failures}回${row.history_available?'':'（それ以前は未確認）'}`:''}</li>`).join(''):'<li>このデータの情報源ごとの取得状況は未確認です。</li>';
@@ -115,6 +160,6 @@
   for(const event of ['online','offline'])window.addEventListener(event,()=>{if(state.meta.mode)updateFeedStatus();else load();});
   setInterval(()=>{if(state.meta.mode)updateFeedStatus();},60000);
   function showNotice(m){$('#notice').hidden=false;$('#notice').textContent=m;}
-  bind();load();
+  bind();bindTransfers();load();
   if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
 })();

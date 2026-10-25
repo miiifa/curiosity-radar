@@ -28,3 +28,4 @@
 .weight-row input{min-height:44px}.next-action pre{scroll-margin-bottom:90px}
 .side-kicker,.sidebar-section,.nav-count,.sidebar-footer p,.metric span{color:#98a6bf}.card-time{color:#a0aec7}
 .select-wrap select{min-height:44px}
+.prefs-content{overflow:auto;flex:1;min-height:0}.prefs-content .weight-controls{overflow:visible;flex:none}.prefs-transfer{border-top:1px solid #49526b;margin-top:18px;padding:12px 3px;color:#cbd5e6;font-size:12px;line-height:1.8;overflow-wrap:anywhere}.prefs-transfer h3{font-size:16px;margin:4px 0}.transfer-buttons{display:flex;gap:8px;flex-wrap:wrap}.transfer-buttons button{min-height:44px;white-space:normal}.prefs-transfer h4{margin:12px 0 4px}#importPreview{border:1px solid #7767b3;padding:12px;border-radius:8px;margin-top:12px}#transferStatus:empty{display:none}

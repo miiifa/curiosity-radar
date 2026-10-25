@@ -68,7 +68,12 @@
     </main>
   </div>
   <nav class="bottom-nav" aria-label="モバイルナビゲーション"><button data-mobile-go="all"><span>◈</span>発見</button><button data-mobile-go="github"><span>⌘</span>GitHub</button><button data-mobile-go="money"><span>◐</span>アイデア</button><button data-mobile-go="saved"><span>♡</span>保存</button><button id="settingsBottom"><span>☷</span>設定</button></nav>
-  <dialog id="prefsDialog" class="prefs-dialog" aria-labelledby="prefsTitle"><form method="dialog"><div class="dialog-top"><div><div class="eyebrow purple">PERSONALIZE YOUR RADAR</div><h2 id="prefsTitle">何にワクワクする？</h2><p>優先度はこの端末にだけ保存されます。ニュース収集自体は全カテゴリを継続します。</p></div><button class="icon-button" value="cancel" aria-label="閉じる">×</button></div><div id="weightControls" class="weight-controls"></div><div class="prefs-footer"><button id="resetPrefs" type="button" class="secondary-button">初期設定に戻す</button><button type="submit" class="primary-button">完了 ✓</button></div></form></dialog>
+  <dialog id="prefsDialog" class="prefs-dialog" aria-labelledby="prefsTitle"><form method="dialog"><div class="dialog-top"><div><div class="eyebrow purple">PERSONALIZE YOUR RADAR</div><h2 id="prefsTitle">何にワクワクする？</h2><p>優先度はこの端末にだけ保存されます。ニュース収集自体は全カテゴリを継続します。</p></div><button class="icon-button" value="cancel" aria-label="閉じる">×</button></div><div class="prefs-content"><div id="weightControls" class="weight-controls"></div>
+    <section class="prefs-transfer" aria-labelledby="transferTitle"><h3 id="transferTitle">設定と保存を持ち運ぶ</h3><p>重みと保存IDだけを端末内のJSONに書き出します。既読・記事本文は含みません。ファイルには興味の情報があるため、公開しないでください。</p>
+      <div class="transfer-buttons"><button id="exportPrefs" type="button" class="secondary-button">JSONを書き出す</button><button id="importPrefs" type="button" class="secondary-button">JSONを読み込む</button><input id="prefsFile" type="file" accept=".json,application/json" hidden /></div>
+      <p id="transferStatus" role="status" aria-live="polite"></p>
+      <div id="importPreview" hidden><h4>読み込む内容</h4><p id="importSummary"></p><p id="importWeights"></p><p>重みを置き換え、保存IDを追加します。既存の保存・既読は削除しません。</p><div class="transfer-buttons"><button id="applyPrefs" type="button" class="primary-button">確認して適用</button><button id="cancelImport" type="button" class="secondary-button">取り消す</button></div></div>
+    </section></div><div class="prefs-footer"><button id="resetPrefs" type="button" class="secondary-button">初期設定に戻す</button><button type="submit" class="primary-button">完了 ✓</button></div></form></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="feed-status.js" defer></script>
   <script src="app.js" defer></script>
