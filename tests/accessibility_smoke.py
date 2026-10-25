@@ -122,7 +122,7 @@ def run():
                             if selector in ('#settingsTop','.save-btn'):assert round(box['width'],2)>=44
                 # Flat control backgrounds use their real computed color. Article text is
                 # checked against a conservative lighter bound of its feature-card gradients.
-                checks=[('#search','::placeholder','.searchbox'),('.select-wrap',None,'.select-wrap')]
+                checks=[('#search','::placeholder','.searchbox'),('.select-wrap',None,'.select-wrap'),('#sort option',None,'#sort option')]
                 for selector,pseudo,background in checks:
                     color=page.locator(selector).first.evaluate('(el,pseudo)=>getComputedStyle(el,pseudo).color',pseudo)
                     bg=page.locator(background).first.evaluate('el=>getComputedStyle(el).backgroundColor')

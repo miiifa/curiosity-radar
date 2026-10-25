@@ -36,3 +36,4 @@
 @media(max-width:1000px){.page-content{padding:16px 18px 30px}.topbar{padding:14px 18px;min-height:72px}.feed-head h2{font-size:20px}.feed-head p{font-size:11px;line-height:1.7}.article.feature{padding:18px}.article.feature h3{font-size:21px}.mobile-chips{margin-bottom:14px}.bottom-nav{padding-bottom:env(safe-area-inset-bottom)}}@media(max-width:590px){.topbar-left{max-width:48%}.mini-logo{font-size:18px}.topbar-right{max-width:50%}.updated{font-size:9px}.article h3{font-size:16px}}
 .feed-section{margin-top:0}.display-help{font-size:11px;color:#52657b;margin-top:5px}.display-help summary{cursor:pointer}.display-help p{line-height:1.8}.feed-head{margin-top:0;margin-bottom:14px}.page-content{padding-top:20px}footer>span,footer>a{color:#52657b}
 .feed-section{padding-top:0}
+.select-wrap select option{background:#fff;color:#17263b}
