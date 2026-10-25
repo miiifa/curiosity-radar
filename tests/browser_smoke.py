@@ -188,7 +188,7 @@ def run():
                 assert page.evaluate("JSON.parse(localStorage.getItem('radar:read'))")==['primary']
                 assert page.locator('#metricSaved').inner_text()=='2'
                 primary=page.locator('.article[data-id="primary"]')
-                assert 'utm_source=fixture' in primary.locator('h3 a').get_attribute('href')
+                assert 'utm_source=fixture' in primary.locator('.external').get_attribute('href')
                 assert primary.locator('.article-references').count()==2
                 assert not page.evaluate('Boolean(window.__newsInjected)')
                 assert page.locator('#feed img').count()==0

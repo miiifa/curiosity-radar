@@ -257,6 +257,18 @@
     const ts=Date.parse(meta.generated_at),day=value=>new Date(value+9*3600000).toISOString().slice(0,10);
     return meta.mode==='live'&&!cached&&online&&Array.isArray(meta.errors)&&!meta.errors.length&&Number.isFinite(ts)&&ts<=now&&day(ts)===day(now)?'今日の注目':'前回取得時の注目';
   }
-  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, GENRES, inGenre, itemCategories, remapIds, query, validateHealth, sourceInfo, articleDate, healthIssue, nextAction, spotlightLabel, MAX_PREFERENCES_BYTES, validatePreferences, decodePreferences, portablePreferences, mergePreferences, writePreferences};
+  function articleView(item){
+    const origin=sourceInfo(item),rss=['search_feed','official_feed','research_feed'].includes(item.source_kind);
+    const unknowns=[origin.note||'原典の内容は独立検証していません。'];
+    if(origin.security)unknowns.push(origin.security);
+    if(origin.travel)unknowns.push(origin.travel);
+    if(item.category==='money')unknowns.push('収益性未検証。顧客需要・競合・費用・ライセンス・規約は要確認です。');
+    if(item.category==='github')unknowns.push('第三者コードの安全性・依存関係・ライセンス本文・実行コストは未検証です。');
+    return {overview:item.summary||'取得元の説明はありません。原典をご確認ください。',
+      overviewLabel:rss?'RSSの抜粋・説明（生成AIの独自要約ではありません）':'取得元の公開説明（生成AIの独自要約ではありません）',
+      note:item.reason||'気になる点を原典で確かめ、試す・調べる候補としてご覧ください。個別のおすすめ評価は未実施です。',
+      unknowns,axes:['発見度','関連度','行動しやすさ','実利','考察の余地'],keywords:[...new Set(item.tags||[])].slice(0,7)};
+  }
+  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, GENRES, inGenre, itemCategories, remapIds, query, validateHealth, sourceInfo, articleDate, healthIssue, nextAction, spotlightLabel, articleView, MAX_PREFERENCES_BYTES, validatePreferences, decodePreferences, portablePreferences, mergePreferences, writePreferences};
   if (typeof module !== 'undefined') module.exports = root.RadarFeed;
 })(globalThis);

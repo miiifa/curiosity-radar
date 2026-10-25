@@ -28,7 +28,7 @@
   const prettyCount = (n) => Number(n)>=10000?`${(n/10000).toFixed(1)}万`:Number(n).toLocaleString('ja-JP');
   let toastTimer;
   function toast(s){const node=$('#toast');node.textContent=s;node.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>node.classList.remove('show'),2700);}
-  function categoryNav(cat, saveView=false){state.category=cat;state.savedView=saveView;state.search='';state.unreadOnly=false;$('#search').value='';$('#unreadFilter').classList.remove('active');$('#unreadFilter').setAttribute('aria-pressed','false');render();window.scrollTo({top:0,behavior:'smooth'});}
+  function categoryNav(cat, saveView=false){if(detailId()!==null){history.pushState(null,'',location.pathname+location.search);}state.category=cat;state.savedView=saveView;state.search='';state.unreadOnly=false;$('#search').value='';$('#unreadFilter').classList.remove('active');$('#unreadFilter').setAttribute('aria-pressed','false');render();window.scrollTo({top:0,behavior:'smooth'});}
   function filtered(){return RadarFeed.query(state.items,state);}
   function renderCard(item,feature=false){const id=esc(item.id);const isSaved=saved(item.id);const url=safeUrl(item.url);const isRepo=item.category==='github';const isIdea=item.category==='money';const action=RadarFeed.nextAction(item);
     const category=state.category!=='all'&&!state.savedView&&RadarFeed.itemCategories(item).includes(state.category)?state.category:item.category;
@@ -43,7 +43,7 @@
     return `<article class="article ${feature?'feature':''} ${item.demo?'demo-card':''}" data-id="${id}">
       ${feature?`<div class="feature-label">${esc(RadarFeed.spotlightLabel(state.meta,{cached:feedCached,online:navigator.onLine}))}</div>`:''}
       <div class="card-top"><span class="category-pill ${esc(category)}">${ICONS[category]} ${esc(CATEGORIES[category][0])}</span><span class="card-time">${item.demo?'プレビュー':item.published?`<time datetime="${esc(date.datetime)}" title="${esc(date.title)}">${esc(date.label)} ${esc(date.text)}</time>`:'掲載日時不明'}</span><button class="save-btn ${isSaved?'saved':''}" aria-label="あとで読むに保存" data-save="${id}" aria-pressed="${isSaved}">${isSaved?'♥':'♡'}</button></div>
-      <h3><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">${esc(item.title)} ↗</a></h3><p class="summary">${esc(item.summary)}</p>
+      <h3><a href="#article/${esc(encodeURIComponent(item.id))}" data-detail="${id}">${esc(item.title)} →</a></h3><p class="summary">${esc(item.summary)}</p>
       <div class="card-source"><span class="source">${esc(item.source||'公開ソース')}</span>${isIdea?'<span class="hypothesis-label">収益性未検証</span>':''}</div>${reason}
       <div class="card-footer">${action?`<button class="action" data-prompt="${id}" aria-label="${esc(action.label)}指示をコピー">${item.category==='travel'?'計画をコピー':isRepo?'30分で試す指示':'検証案をコピー'}</button>`:''}<a class="external" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${id}">元記事 →</a></div>
       ${action?`<details class="next-action"><summary>${esc(action.label)} · 指示を確認</summary><p>選んだ記事の公開情報だけをコピーします。外部ツールへの送信や実行は行いません。貼り付け前に内容を確認してください。</p><pre tabindex="0" role="region" aria-label="${esc(action.label)}指示の全文">${esc(action.prompt)}</pre></details>`:''}
@@ -70,13 +70,23 @@
     $('#empty h3').textContent=state.category==='deals'?'お得情報は未収集です':'条件に合う情報がありません';
     $('#empty p').textContent=state.category==='deals'?'収集元は未接続です。ほかのジャンルをご覧ください。':'カテゴリ・検索・未読フィルターを変えてみてください。';
     $('#feedSummary').textContent=state.meta.mode?`${title}：${entries.length}件表示${state.unreadOnly?'（未読のみ）':''}。${entries.length?'':'条件をリセットできます。'}`:'記事を表示できません。取得状況を確認してください。';
+    const detailScroll=detailId()!==null?window.scrollY:null;
+    renderDetail();
+    if(detailScroll!==null)window.scrollTo({top:detailScroll,behavior:'instant'});
     if(focusKey&&!focused.isConnected){
-      const replacement=$$(focusContainer?`${focusContainer} [${focusKey}]`:`[${focusKey}]`).find(node=>node.getAttribute(focusKey)===focusValue);
+      const replacement=$$(focusContainer?`${focusContainer} [${focusKey}]`:`[${focusKey}]`).find(node=>node.getAttribute(focusKey)===focusValue&&node.getClientRects().length);
       (replacement||$('#sectionTitle')).focus({preventScroll:true});
     }
     if(focused.id==='clearFilters'&&entries.length)$('#sectionTitle').focus({preventScroll:true});
   }
-  function bind(){document.addEventListener('click',async ev=>{const b=ev.target.closest('[data-save],[data-open],[data-prompt],[data-category],[data-chip],[data-mobile-go]');if(!b)return;
+  function bind(){document.addEventListener('click',async ev=>{const b=ev.target.closest('[data-save],[data-open],[data-prompt],[data-category],[data-chip],[data-mobile-go],[data-detail],[data-return]');if(!b)return;
+      if(b.hasAttribute('data-return')){ev.preventDefault();returnToList();return;}
+      if(b.dataset.detail){
+        if(ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.altKey||ev.button!==0)return;
+        ev.preventDefault();const fromList=detailId()===null;
+        if(fromList){listScroll=window.scrollY;listFocusId=b.dataset.detail;}
+        history.pushState({radarDetailFromList:fromList},'','#article/'+encodeURIComponent(b.dataset.detail));routeChanged();return;
+      }
       if(b.dataset.save){const id=b.dataset.save;state.bookmarks=saved(id)?state.bookmarks.filter(s=>s!==id):[...state.bookmarks,id];store('radar:saved',state.bookmarks);toast(saved(id)?'保存しました':'保存を解除しました');render();return;}
       if(b.dataset.open){const id=b.dataset.open;if(!viewed(id)){state.read.push(id);store('radar:read',state.read);}return;}
       if(b.dataset.prompt){const item=state.items.find(i=>i.id===b.dataset.prompt);if(!item)return;const action=RadarFeed.nextAction(item);if(!action)return;try{await navigator.clipboard.writeText(action.prompt);toast('選んだ記事の指示をコピーしました');}catch{toast('コピーできませんでした。ブラウザーの権限を確認してください。');}return;}
@@ -100,6 +110,43 @@
   }
   function weightLabel(v){return ({1:'低め',2:'やや低め',3:'標準',4:'高め',5:'最優先'})[v]||'標準';}
   function drawPrefs(){$('#weightControls').innerHTML=Object.entries(DEFAULT_WEIGHTS).map(([cat])=>`<div class="weight-row"><header><label for="weight-${cat}">${ICONS[cat]} ${esc(CATEGORIES[cat][0])}</label><strong>${weightLabel(state.weights[cat])}</strong></header><input id="weight-${cat}" type="range" min="1" max="5" step="1" value="${state.weights[cat]}" data-weight="${cat}" aria-valuetext="${state.weights[cat]}: ${weightLabel(state.weights[cat])}" /></div>`).join('');}
+  let listScroll=0,listFocusId=null;
+  function detailId(){if(!location.hash.startsWith('#article/'))return null;try{return decodeURIComponent(location.hash.slice(9));}catch{return '';}}
+  function renderDetail(){
+    const requestedId=detailId(),detail=$('#articleDetail');
+    $('#feedSection').hidden=requestedId!==null;$('#sourceHealth').hidden=requestedId!==null;detail.hidden=requestedId===null;
+    if(requestedId===null){detail.replaceChildren();return;}
+    const item=state.items.find(row=>row.id===requestedId||(row.aliases||[]).includes(requestedId));
+    const back='<button type="button" class="secondary-button" data-return>← 一覧へ戻る</button>';
+    if(!item){detail.innerHTML=back+'<h1 id="detailTitle" tabindex="-1">記事が見つかりません</h1><p>現在の公開データにない記事です。一覧から選び直してください。</p>';return;}
+    const id=item.id;
+    if(!viewed(id)){state.read.push(id);store('radar:read',state.read);}
+    const view=RadarFeed.articleView(item),origin=RadarFeed.sourceInfo(item),date=RadarFeed.articleDate(item),url=safeUrl(item.url),action=RadarFeed.nextAction(item);
+    detail.innerHTML=`${back}<article class="detail-article">
+      <div class="detail-category"><span class="category-pill ${esc(item.category)}">${esc(CATEGORIES[item.category][0])}</span>${item.demo?'<span>デモ</span>':''}</div>
+      <h1 id="detailTitle" tabindex="-1">${esc(item.title)}</h1>
+      <p class="detail-source">${esc(item.source)} · ${item.published?`${esc(date.label)} ${esc(date.text)}`:'掲載日時不明'}</p>
+      <p class="provenance">${esc(origin.kind)}。${esc(origin.note||'原典の主張を独立検証したものではありません。')}</p>
+      <section class="detail-overview" aria-labelledby="overviewTitle"><h2 id="overviewTitle">30秒の概要</h2><p class="overview-label">${esc(view.overviewLabel)}</p><p>${esc(view.overview)}</p></section>
+      <section class="detail-note" aria-labelledby="noteTitle"><h2 id="noteTitle">あなたへのひとこと</h2><p>${esc(view.note)}</p><small>ルールベースの推薦理由。個人への適合性や成果を保証する評価ではありません。</small></section>
+      <div class="detail-actions"><a class="primary-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer" data-open="${esc(id)}">元記事を開く ↗</a><button class="save-btn ${saved(id)?'saved':''}" data-save="${esc(id)}" aria-label="あとで読むに保存" aria-pressed="${saved(id)}">${saved(id)?'♥':'♡'}</button></div>
+      <details class="detail-points" open><summary>この記事のポイント</summary><h3>取得元の説明</h3><p>${esc(view.overview)}</p><p>発信元の記述であり、内容の独立検証は未実施です。</p><h3>解釈・推薦理由</h3><p>${esc(view.note)}</p><h3>未確認・確認したいこと</h3><ul>${view.unknowns.map(text=>`<li>${esc(text)}</li>`).join('')}</ul></details>
+      ${item.security?.cves.length?`<section class="detail-points"><h2>脆弱性の原典情報</h2><p>CVE: ${item.security.cves.map(esc).join(' / ')}</p>${item.security.exploitation_status==='listed_in_kev'?`<p>対象: ${esc(item.security.vendor||'提供元未確認')} / ${esc(item.security.product||'製品未確認')}</p><p>KEV追加日は攻撃日・公表日ではありません。</p><p>CISAの対応案内: ${esc(item.security.required_action||'未確認。原典を確認してください。')}</p>`:''}${item.source_url?`<a class="external" href="${esc(safeUrl(item.source_url))}" target="_blank" rel="noopener noreferrer">取得元のデータを確認 ↗</a>`:''}</section>`:''}
+      <details class="detail-points"><summary>5軸のおすすめ評価</summary><p>情報源の確度・セキュリティ緊急性とは別の評価です。</p><dl class="assessment-list">${view.axes.map(name=>`<div><dt>${esc(name)}</dt><dd>未評価<span>採点に必要な根拠データがありません。</span></dd></div>`).join('')}</dl></details>
+      <section class="detail-keywords" aria-labelledby="keywordsTitle"><h2 id="keywordsTitle">関連キーワード</h2><div class="tags">${view.keywords.length?view.keywords.map(word=>`<span class="tag">${esc(word)}</span>`).join(''):'<span>未確認</span>'}</div></section>
+      ${origin.security?`<p class="security-note">${esc(origin.security)}</p>`:''}${origin.travel?`<p class="travel-note">${esc(origin.travel)}</p>`:''}
+      ${action?`<details class="next-action"><summary>${esc(action.label)} · 指示を確認</summary><pre tabindex="0" role="region" aria-label="${esc(action.label)}指示の全文">${esc(action.prompt)}</pre><button class="action" data-prompt="${esc(id)}">指示をコピー</button></details>`:''}
+    </article>`;
+  }
+  function routeChanged(){
+    render();
+    if(detailId()!==null){window.scrollTo({top:0,behavior:'instant'});$('#detailTitle')?.focus({preventScroll:true});}
+    else{window.scrollTo({top:listScroll,behavior:'instant'});const origin=$$('[data-detail]').find(node=>node.dataset.detail===listFocusId);(origin||$('#sectionTitle')).focus({preventScroll:true});}
+  }
+  function returnToList(){
+    if(history.state?.radarDetailFromList){history.back();return;}
+    history.replaceState(null,'',location.pathname+location.search);routeChanged();
+  }
   let pendingPreferences=null,importAttempt=0;
   function transferMessage(message){$('#transferStatus').textContent=message;}
   function clearImport(){pendingPreferences=null;importAttempt++;$('#importPreview').hidden=true;$('#importSummary').textContent='';$('#importWeights').textContent='';}
@@ -179,6 +226,7 @@
   for(const event of ['online','offline'])window.addEventListener(event,()=>{if(state.meta.mode)updateFeedStatus();else load();});
   setInterval(()=>{if(state.meta.mode)updateFeedStatus();},60000);
   function showNotice(m){$('#notice').hidden=false;$('#notice').textContent=m;}
+  window.addEventListener('hashchange',event=>{if(new URL(event.oldURL).hash.startsWith('#article/')||new URL(event.newURL).hash.startsWith('#article/'))routeChanged();});
   bind();bindTransfers();load();
   if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
 })();
