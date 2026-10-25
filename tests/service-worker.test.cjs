@@ -9,11 +9,12 @@ const good = () => ({mode:'live',generated_at:'2026-10-25T00:00:00Z',errors:[],i
   {id:'ai-fixture',category:'ai',title:'Fixture',source:'Fixture',url:'https://example.com',published:null,score:50}]});
 function worker() {
   const stores=new Map(), events={};
+  const failWrites={enabled:false};
   const key=r=>typeof r==='string'?r:r.url;
   const caches={
     async open(name){if(!stores.has(name))stores.set(name,new Map());const store=stores.get(name);return {
       async match(req){return store.get(key(req))?.clone();},
-      async put(req,res){store.set(key(req),res.clone());}, async addAll(){}
+      async put(req,res){if(failWrites.enabled)throw Error('QuotaExceededError');store.set(key(req),res.clone());}, async addAll(){}
     };},
     async keys(){return [...stores.keys()];},async delete(name){return stores.delete(name);},
     async match(req){for(const name of stores.keys()){const r=await (await this.open(name)).match(req);if(r)return r;}}
@@ -25,8 +26,8 @@ function worker() {
   });
   context.importScripts=()=>vm.runInContext(fs.readFileSync(path.join(root,'feed-status.js'),'utf8'),context);
   vm.runInContext(fs.readFileSync(path.join(root,'sw.js'),'utf8'),context);
-  return {context,caches,stores,
-    async fetch(){let promise;events.fetch({request:new Request(url),respondWith:p=>promise=p});return promise;},
+  return {context,caches,stores,failWrites,
+    async fetch(target=url){let promise;events.fetch({request:new Request(target),respondWith:p=>promise=p});return promise;},
     async activate(){let promise;events.activate({waitUntil:p=>promise=p});await promise;}
   };
 }
@@ -35,6 +36,22 @@ test('network 200 cached; offline fallback is explicitly marked with original ti
   w.context.fetch=async()=>{throw Error('offline');};
   const response=await w.fetch();assert.equal(response.headers.get('X-Curiosity-Radar-Cache'),'fallback');
   assert.deepEqual(await response.json(),good());
+});
+test('cache quota failure preserves successful static responses, with or without older cache',async()=>{
+  const w=worker(), asset='http://localhost/app.js';
+  w.context.fetch=async()=>new Response('previous',{status:200});
+  assert.equal(await (await w.fetch(asset)).text(),'previous');
+  w.failWrites.enabled=true;
+  w.context.fetch=async()=>new Response('latest',{status:200});
+  const response=await w.fetch(asset);
+  assert.equal(response.status,200);
+  assert.equal(await response.text(),'latest');
+  const uncached=await w.fetch('http://localhost/styles.css');
+  assert.equal(uncached.status,200);
+  assert.equal(await uncached.text(),'latest');
+  w.context.fetch=async()=>{throw Error('offline');};
+  assert.equal(await (await w.fetch(asset)).text(),'previous');
+  assert.equal((await w.fetch('http://localhost/styles.css')).status,503);
 });
 test('HTTP errors use marked cache, not an apparent successful refresh',async()=>{
   const w=worker();await w.fetch();
