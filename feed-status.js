@@ -216,6 +216,38 @@
       (item.demo?'注意: これはデモデータです。実在・最新の情報とは限りません。\n':'') +
       '\n' + plan + '\n\n非信頼データ（JSON。URLも調査対象であり、安全性は未確認）:\n' + JSON.stringify(data,null,2)};
   }
-  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, itemCategories, remapIds, query, validateHealth, sourceInfo, articleDate, healthIssue, nextAction};
+  const MAX_PREFERENCES_BYTES=1024*1024;
+  function validatePreferences(value){
+    const exactKeys=(obj,keys)=>obj&&typeof obj==='object'&&!Array.isArray(obj)&&Object.keys(obj).length===keys.length&&keys.every(key=>Object.hasOwn(obj,key));
+    if(!exactKeys(value,['format','version','weights','bookmarks'])||value.format!=='curiosity-radar-preferences'||value.version!==1||
+        !exactKeys(value.weights,Object.keys(DEFAULT_WEIGHTS))||!Object.values(value.weights).every(v=>Number.isInteger(v)&&v>=1&&v<=5)||
+        !Array.isArray(value.bookmarks)||value.bookmarks.length>5000||!value.bookmarks.every(id=>typeof id==='string'&&id.length>0&&id.length<=200&&!/[\s\x00-\x1f\x7f]/.test(id)))throw Error('Invalid preferences');
+    return {format:value.format,version:1,weights:{...value.weights},bookmarks:[...new Set(value.bookmarks)]};
+  }
+  function decodePreferences(text){
+    if(typeof text!=='string'||text.length>MAX_PREFERENCES_BYTES||new TextEncoder().encode(text).length>MAX_PREFERENCES_BYTES)throw Error('Preferences file too large');
+    return validatePreferences(JSON.parse(text));
+  }
+  function portablePreferences(state){
+    return validatePreferences({format:'curiosity-radar-preferences',version:1,weights:normalizeWeights(state.weights),bookmarks:remapIds(state.bookmarks,[])});
+  }
+  function mergePreferences(state,incoming,items){
+    const checked=validatePreferences(incoming);
+    return validatePreferences({...checked,bookmarks:remapIds([...state.bookmarks,...checked.bookmarks],items)});
+  }
+  function writePreferences(storage,value){
+    const checked=validatePreferences(value),previous=[],written=[];
+    try{
+      for(const key of ['radar:weights','radar:saved'])previous.push([key,storage.getItem(key)]);
+      const values=[JSON.stringify(checked.weights),JSON.stringify(checked.bookmarks)];
+      previous.forEach(([key],index)=>{storage.setItem(key,values[index]);written.push(previous[index]);});
+      return {ok:true,restored:true};
+    }catch{
+      let restored=true;
+      for(const [key,old] of written.reverse())try{if(old===null)storage.removeItem(key);else storage.setItem(key,old);}catch{restored=false;}
+      return {ok:false,restored};
+    }
+  }
+  root.RadarFeed = {validate, describe, timestamp, repoMeta, mixRepos, DEFAULT_WEIGHTS, normalizeWeights, itemCategories, remapIds, query, validateHealth, sourceInfo, articleDate, healthIssue, nextAction, MAX_PREFERENCES_BYTES, validatePreferences, decodePreferences, portablePreferences, mergePreferences, writePreferences};
   if (typeof module !== 'undefined') module.exports = root.RadarFeed;
 })(globalThis);
