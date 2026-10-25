@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T21:30:28.181025Z",
+  "generated_at": "2026-10-25T21:36:20.395689Z",
   "mode": "live",
   "items": [
     {
@@ -901,7 +901,7 @@
       "id": "social-42532ee811b2ffa8d8",
       "category": "social",
       "title": "We should be more ambitious with the software we build",
-      "summary": "Hacker News: 718ポイント、664件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 719ポイント、664件のコメント。投稿先で内容を確認。",
       "url": "https://danluu.com/ambitious/",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -983,7 +983,7 @@
       "id": "social-d46e0e54d2d1e48007",
       "category": "social",
       "title": "Root shell on Samsung TV",
-      "summary": "Hacker News: 701ポイント、540件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 704ポイント、540件のコメント。投稿先で内容を確認。",
       "url": "https://twitter.com/log4j/status/2113014142600953868?s=46",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -1362,9 +1362,9 @@
       "source_kind": "github_api",
       "source_url": "https://github.com/louislam/uptime-kuma",
       "stars": 92902,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
-      "star_delta": 1,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
+      "star_delta": 0,
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1390,10 +1390,10 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/stablyai/orca",
-      "stars": 105709,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
-      "star_delta": 14,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "stars": 105711,
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
+      "star_delta": 2,
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1420,9 +1420,9 @@
       "source_kind": "github_api",
       "source_url": "https://github.com/janhq/jan",
       "stars": 45082,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
-      "star_delta": 1,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
+      "star_delta": 0,
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1449,9 +1449,9 @@
       "source_kind": "github_api",
       "source_url": "https://github.com/Twigpine/openclaude",
       "stars": 34150,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
-      "star_delta": 1,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
+      "star_delta": 0,
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1473,14 +1473,14 @@
       "url": "https://github.com/QwenLM/qwen-code",
       "title": "QwenLM/qwen-code",
       "summary": "An open-source AI coding agent that lives in your terminal.",
-      "published": "2026-10-25T20:43:51Z",
+      "published": "2026-10-25T21:30:46Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/QwenLM/qwen-code",
       "stars": 28713,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
       "star_delta": 0,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1507,9 +1507,9 @@
       "source_kind": "github_api",
       "source_url": "https://github.com/usememos/memos",
       "stars": 64065,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
       "star_delta": 0,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1535,10 +1535,10 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/unslothai/unsloth",
-      "stars": 78555,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
+      "stars": 78556,
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
       "star_delta": 1,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1565,9 +1565,9 @@
       "source_kind": "github_api",
       "source_url": "https://github.com/HKUDS/Vibe-Trading",
       "stars": 36678,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
-      "star_delta": 1,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
+      "star_delta": 0,
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1594,9 +1594,9 @@
       "source_kind": "github_api",
       "source_url": "https://github.com/iOfficeAI/AionUi",
       "stars": 33759,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
       "star_delta": 0,
-      "star_delta_since": "2026-10-25T21:07:53.054036Z",
+      "star_delta_since": "2026-10-25T21:30:28.181025Z",
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "established",
@@ -1616,7 +1616,7 @@
       "id": "social-b83204b7e9c12d9e6e",
       "category": "social",
       "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
-      "summary": "Hacker News: 306ポイント、158件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 308ポイント、159件のコメント。投稿先で内容を確認。",
       "url": "https://lynchlab.net/llm-skin-cancer",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -1742,7 +1742,7 @@
       "id": "social-9d778a1a8d48394c44",
       "category": "social",
       "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
-      "summary": "Hacker News: 283ポイント、149件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 284ポイント、151件のコメント。投稿先で内容を確認。",
       "url": "https://talkweb.eu/openweb/4558/",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -1841,7 +1841,7 @@
       "id": "social-131a09f78affaf2026",
       "category": "social",
       "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
-      "summary": "Hacker News: 255ポイント、63件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 257ポイント、66件のコメント。投稿先で内容を確認。",
       "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -1968,7 +1968,7 @@
       "id": "social-e7f7d4275c4adeb7e7",
       "category": "social",
       "title": "Dolly Parton's Imagination Library",
-      "summary": "Hacker News: 231ポイント、39件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 234ポイント、43件のコメント。投稿先で内容を確認。",
       "url": "https://imaginationlibrary.com/",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2078,6 +2078,35 @@
       "score": 86
     },
     {
+      "id": "github-b12b5027384e543213",
+      "category": "github",
+      "url": "https://github.com/MichaelKinsy/PiG",
+      "title": "MichaelKinsy/PiG",
+      "summary": "PiG (Pi in Go) is a faithful Go port of upstream Pi, the TypeScript codebase behind the Pi coding agent. It is a parity-bound translation, not a rewrite: upstream behavior is the contract, and Go is the implementation language.",
+      "published": "2026-10-25T21:36:07Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/MichaelKinsy/PiG",
+      "stars": 747,
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "Go",
+      "license": "MIT",
+      "tags": [
+        "ai-agent",
+        "ai-coding",
+        "ai-tools",
+        "go",
+        "golang"
+      ],
+      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
+      "score": 85
+    },
+    {
       "id": "social-c9d44435005d898d3b",
       "category": "social",
       "title": "SpeedCrunch 1.1",
@@ -2144,7 +2173,7 @@
       "id": "social-9282e3edfd40c3e34e",
       "category": "social",
       "title": "fheroes2: A recreation of Heroes of Might and Magic II game engine",
-      "summary": "Hacker News: 187ポイント、66件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 188ポイント、66件のコメント。投稿先で内容を確認。",
       "url": "https://github.com/ihhub/fheroes2",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2223,10 +2252,26 @@
       "score": 83
     },
     {
+      "id": "money-b12b5027384e543213",
+      "category": "money",
+      "url": "https://github.com/MichaelKinsy/PiG",
+      "title": "業務特化のAIミニツール — PiG",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-10-25T21:36:07Z",
+      "source": "着想元: MichaelKinsy/PiG",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 82
+    },
+    {
       "id": "social-857f9c868190eef566",
       "category": "social",
       "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
-      "summary": "Hacker News: 154ポイント、236件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 154ポイント、237件のコメント。投稿先で内容を確認。",
       "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2254,22 +2299,6 @@
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 82
-    },
-    {
-      "id": "money-b12b5027384e543213",
-      "category": "money",
-      "url": "https://github.com/MichaelKinsy/PiG",
-      "title": "業務特化のAIミニツール — PiG",
-      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-10-25T09:28:21Z",
-      "source": "着想元: MichaelKinsy/PiG",
-      "tags": [
-        "AIサービス",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
       "score": 82
     },
     {
@@ -2462,7 +2491,7 @@
       "id": "social-0acf196572ceb07e1c",
       "category": "social",
       "title": "JetBrains Thinkrail",
-      "summary": "Hacker News: 113ポイント、75件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 114ポイント、76件のコメント。投稿先で内容を確認。",
       "url": "https://github.com/JetBrains/thinkrail",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2682,7 +2711,7 @@
       "id": "social-d8c2497a7a86b63bd8",
       "category": "social",
       "title": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
-      "summary": "Hacker News: 94ポイント、15件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 96ポイント、15件のコメント。投稿先で内容を確認。",
       "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2716,7 +2745,7 @@
       "id": "social-7c8a3bbcd0db0c0327",
       "category": "social",
       "title": "Active incident at Dreamhost forcing password reset",
-      "summary": "Hacker News: 82ポイント、32件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 83ポイント、32件のコメント。投稿先で内容を確認。",
       "url": "https://www.dreamhoststatus.com/",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2949,35 +2978,6 @@
       "score": 74
     },
     {
-      "id": "github-8393f1b51428a0cd06",
-      "category": "github",
-      "url": "https://github.com/WizisCool/oh-my-cpa",
-      "title": "WizisCool/oh-my-cpa",
-      "summary": "Self-hosted control plane & usage observability console for CLIProxyAPI (CPA) — AI providers, client keys, streaming telemetry, and model cost snapshots.",
-      "published": "2026-10-25T21:30:01Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/WizisCool/oh-my-cpa",
-      "stars": 235,
-      "stars_observed_at": "2026-10-25T21:30:28.181025Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "TypeScript",
-      "license": "MIT",
-      "tags": [
-        "ai-gateway",
-        "cliproxyapi",
-        "cpa",
-        "dashboard",
-        "golang"
-      ],
-      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
-      "score": 73
-    },
-    {
       "id": "money-df522b2c7f150a57f9",
       "category": "money",
       "url": "https://github.com/himovo/movo",
@@ -3024,6 +3024,23 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 73
+    },
+    {
+      "id": "social-e2dd6de856e590769d",
+      "category": "social",
+      "title": "All you need is Wide Events, not \"Metrics, Logs and Traces\"",
+      "summary": "Hacker News: 55ポイント、16件のコメント。投稿先で内容を確認。",
+      "url": "https://isburmistrov.substack.com/p/all-you-need-is-wide-events-not-metrics",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-25T18:11:38Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 72
     },
     {
       "id": "social-137545da4da1bffd24",
@@ -3214,23 +3231,6 @@
       "score": 72
     },
     {
-      "id": "social-e2dd6de856e590769d",
-      "category": "social",
-      "title": "All you need is Wide Events, not \"Metrics, Logs and Traces\"",
-      "summary": "Hacker News: 52ポイント、13件のコメント。投稿先で内容を確認。",
-      "url": "https://isburmistrov.substack.com/p/all-you-need-is-wide-events-not-metrics",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-25T18:11:38Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 71
-    },
-    {
       "id": "social-3ea651a409c1d63d5d",
       "category": "social",
       "title": "Sabre Wulf Remastered",
@@ -3407,6 +3407,23 @@
       "score": 70
     },
     {
+      "id": "social-9df18c08fcaf8dcc0a",
+      "category": "social",
+      "title": "Why I Am a Programmer",
+      "summary": "Hacker News: 44ポイント、6件のコメント。投稿先で内容を確認。",
+      "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-25T19:11:31Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 70
+    },
+    {
       "id": "money-d9f423f4cccdabaa93",
       "category": "money",
       "url": "https://github.com/acryldev/acryl",
@@ -3566,15 +3583,15 @@
       }
     },
     {
-      "id": "social-9df18c08fcaf8dcc0a",
+      "id": "social-1586649ea7227b24cd",
       "category": "social",
-      "title": "Why I Am a Programmer",
-      "summary": "Hacker News: 41ポイント、6件のコメント。投稿先で内容を確認。",
-      "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+      "title": "Eunice is almost here",
+      "summary": "Hacker News: 40ポイント、30件のコメント。投稿先で内容を確認。",
+      "url": "https://armincat.com/articles/eunice-is-almost-here",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-25T19:11:31Z",
+      "published": "2026-10-25T19:40:27Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -3590,6 +3607,23 @@
       "url": "https://www.darkhorizons.com/xbox-turns-down-netflix-500-million-offer/",
       "source": "Hacker News",
       "published": "2026-10-25T03:05:53Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 69
+    },
+    {
+      "id": "social-de91d83f1ebb5a2bc8",
+      "category": "social",
+      "title": "VCF Southwest 2026, but Edited on Silicon Graphics for '90s TV [video]",
+      "summary": "Hacker News: 40ポイント、11件のコメント。投稿先で内容を確認。",
+      "url": "https://www.youtube.com/watch?v=46wxttvq9qY",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-24T17:42:08Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -3741,23 +3775,6 @@
       "url": "https://codeberg.org/Misom/FindMyWeb",
       "source": "Hacker News",
       "published": "2026-10-24T23:42:52Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 68
-    },
-    {
-      "id": "social-de91d83f1ebb5a2bc8",
-      "category": "social",
-      "title": "VCF Southwest 2026, but Edited on Silicon Graphics for '90s TV [video]",
-      "summary": "Hacker News: 38ポイント、11件のコメント。投稿先で内容を確認。",
-      "url": "https://www.youtube.com/watch?v=46wxttvq9qY",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-24T17:42:08Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -4042,23 +4059,6 @@
       }
     },
     {
-      "id": "social-1586649ea7227b24cd",
-      "category": "social",
-      "title": "Eunice is almost here",
-      "summary": "Hacker News: 34ポイント、28件のコメント。投稿先で内容を確認。",
-      "url": "https://armincat.com/articles/eunice-is-almost-here",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-25T19:40:27Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 67
-    },
-    {
       "id": "social-9779d4b61c9982a810",
       "category": "social",
       "title": "The Lego group reveals collaboration with Daft Punk",
@@ -4128,6 +4128,23 @@
         "user_impact": "not_assessed",
         "exploitation_status": "not_assessed"
       }
+    },
+    {
+      "id": "social-4e1ee964c07eeb8496",
+      "category": "social",
+      "title": "Gheist campaign plants secret-dumping workflows using stolen GitHub tokens",
+      "summary": "Hacker News: 30ポイント、0件のコメント。投稿先で内容を確認。",
+      "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-25T19:10:36Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 66
     },
     {
       "id": "money-5e0e5f8ff23639e805",
@@ -4257,43 +4274,21 @@
       }
     },
     {
-      "title": "There's only so much code: the rise in vulnerability numbers",
-      "summary": "The September Microsoft Patch Tuesday release included 975 vulnerability advisories. This month, 1,415 vulnerabilities were just dropped. Compared to a pre-June average of 100 a month, that increase is staggering. Where did they come from? And what…",
-      "url": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
-      "published": "2026-10-20T15:31:22Z",
-      "id": "security-4939fa6a05be0d8e19",
-      "category": "security",
-      "source": "Cisco Talos (脅威・脆弱性研究)",
-      "tags": [
-        "海外",
-        "脅威リサーチ"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 65,
-      "source_url": "https://blog.talosintelligence.com/rss/",
-      "source_kind": "research_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "id": "social-4e1ee964c07eeb8496",
+      "id": "social-e0fecbd9ba085ce8ba",
       "category": "social",
-      "title": "Gheist campaign plants secret-dumping workflows using stolen GitHub tokens",
-      "summary": "Hacker News: 24ポイント、0件のコメント。投稿先で内容を確認。",
-      "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+      "title": "The U.S. Power Grid",
+      "summary": "Hacker News: 28ポイント、10件のコメント。投稿先で内容を確認。",
+      "url": "https://nomagicpill.site/knowledge/powergrid.html",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-25T19:10:36Z",
+      "published": "2026-10-22T15:20:04Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 64
+      "score": 65
     },
     {
       "id": "money-f7c0d10c27cf67ab64",
@@ -4374,27 +4369,32 @@
       "score": 64
     },
     {
-      "id": "social-e0fecbd9ba085ce8ba",
-      "category": "social",
-      "title": "The U.S. Power Grid",
-      "summary": "Hacker News: 26ポイント、9件のコメント。投稿先で内容を確認。",
-      "url": "https://nomagicpill.site/knowledge/powergrid.html",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-22T15:20:04Z",
+      "title": "There's only so much code: the rise in vulnerability numbers",
+      "summary": "The September Microsoft Patch Tuesday release included 975 vulnerability advisories. This month, 1,415 vulnerabilities were just dropped. Compared to a pre-June average of 100 a month, that increase is staggering. Where did they come from? And what…",
+      "url": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
+      "published": "2026-10-20T15:31:22Z",
+      "id": "security-4939fa6a05be0d8e19",
+      "category": "security",
+      "source": "Cisco Talos (脅威・脆弱性研究)",
       "tags": [
-        "海外IT",
-        "コミュニティ"
+        "海外",
+        "脅威リサーチ"
       ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 64
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 64,
+      "source_url": "https://blog.talosintelligence.com/rss/",
+      "source_kind": "research_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
     },
     {
       "id": "social-cc1bef6b8b72f981a3",
       "category": "social",
       "title": "UTS #39: Unicode Security Mechanisms",
-      "summary": "Hacker News: 23ポイント、2件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 23ポイント、4件のコメント。投稿先で内容を確認。",
       "url": "https://unicode.org/reports/tr39/",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -4421,6 +4421,64 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 63
+    },
+    {
+      "id": "github-201f47fe1d2ff98b9a",
+      "category": "github",
+      "url": "https://github.com/miguelguilherme201321-debug/AutoPiano-Maestro",
+      "title": "miguelguilherme201321-debug/AutoPiano-Maestro",
+      "summary": "AI Virtual Piano Auto Player Bot for MIDI Songs and Keyboard Automation 2026",
+      "published": "2026-10-25T21:35:51Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/miguelguilherme201321-debug/AutoPiano-Maestro",
+      "stars": 70,
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "HTML",
+      "license": null,
+      "tags": [
+        "ahk",
+        "audio",
+        "auto-player",
+        "autohotkey",
+        "automation"
+      ],
+      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
+      "score": 62
+    },
+    {
+      "id": "github-5693f9636b7e8bdb54",
+      "category": "github",
+      "url": "https://github.com/thryvaan-hub/pi-roblox-bridge",
+      "title": "thryvaan-hub/pi-roblox-bridge",
+      "summary": "Best On-Demand Roblox Studio MCP Tools for Pi Without Server 2026",
+      "published": "2026-10-25T21:36:07Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/thryvaan-hub/pi-roblox-bridge",
+      "stars": 68,
+      "stars_observed_at": "2026-10-25T21:36:20.395689Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "HTML",
+      "license": null,
+      "tags": [
+        "developer-tools",
+        "mcp",
+        "pi-coding-agent",
+        "pi-package",
+        "roblox"
+      ],
+      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
+      "score": 62
     },
     {
       "id": "money-4ff922b6087c993d18",
@@ -4453,6 +4511,23 @@
       ],
       "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
       "score": 62
+    },
+    {
+      "id": "social-08e7fd678891a909ab",
+      "category": "social",
+      "title": "What goes into making an animated film?",
+      "summary": "Hacker News: 17ポイント、7件のコメント。投稿先で内容を確認。",
+      "url": "https://www.disneyanimation.com/process/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-25T20:27:09Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 60
     },
     {
       "id": "money-1db2628a259cb0ed22",
@@ -4513,6 +4588,38 @@
         "user_impact": "not_assessed",
         "exploitation_status": "not_assessed"
       }
+    },
+    {
+      "id": "money-5693f9636b7e8bdb54",
+      "category": "money",
+      "url": "https://github.com/thryvaan-hub/pi-roblox-bridge",
+      "title": "業務特化のAIミニツール — pi-roblox-bridge",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-10-25T21:36:07Z",
+      "source": "着想元: thryvaan-hub/pi-roblox-bridge",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 59
+    },
+    {
+      "id": "money-201f47fe1d2ff98b9a",
+      "category": "money",
+      "url": "https://github.com/miguelguilherme201321-debug/AutoPiano-Maestro",
+      "title": "中小事業者向けの作業自動化サポート — AutoPiano-Maestro",
+      "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
+      "published": "2026-10-25T21:35:51Z",
+      "source": "着想元: miguelguilherme201321-debug/AutoPiano-Maestro",
+      "tags": [
+        "自動化",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 59
     },
     {
       "id": "money-d62b0493d186e9ce6b",
@@ -4728,6 +4835,23 @@
         "国内旅行"
       ],
       "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 55
+    },
+    {
+      "id": "social-6f90ef1e4f5ccd57a2",
+      "category": "social",
+      "title": "Overgrown, when plants invade your abandoned tabs",
+      "summary": "Hacker News: 10ポイント、0件のコメント。投稿先で内容を確認。",
+      "url": "https://charliegerard.dev/blog/overgrown-extension/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-22T15:52:21Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 55
     },
     {
@@ -6125,6 +6249,34 @@
       "score": 49
     },
     {
+      "title": "【関東近郊】東京から日帰り2時間以内！ 秋のおでかけスポット26選｜絶景＆紅葉＆花畑＆パワースポットなど、都会を脱出して癒やされよう♪ - るるぶWeb",
+      "summary": "【関東近郊】東京から日帰り2時間以内！ 秋のおでかけスポット26選｜絶景＆紅葉＆花畑＆パワースポットなど、都会を脱出して癒やされよう♪ るるぶWeb",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1zTk5XSzZmVUhUdGNSTkRDMEs0YVllRHVrMzBOYkVsUGpNUUo1TGI5NFVaRndqcW9UZm1xYjU1VFVCaFREVElURmdacjJZVzF1?oc=5",
+      "published": "2026-10-22T08:36:12Z",
+      "id": "travel-d897f6a5fca2da7f00",
+      "category": "travel",
+      "source": "国内旅行のニュース",
+      "tags": [
+        "国内旅行"
+      ],
+      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
+      "score": 49,
+      "source_url": "https://news.google.com/rss/search?q=%E5%9B%BD%E5%86%85%E6%97%85%E8%A1%8C+%E7%A9%B4%E5%A0%B4+%E7%B5%B6%E6%99%AF+OR+%E6%B8%A9%E6%B3%89+OR+%E9%9B%A2%E5%B3%B6+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "source_kind": "search_feed",
+      "duplicates": [
+        {
+          "id": "travel-d897f6a5fca2da7f00",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1zTk5XSzZmVUhUdGNSTkRDMEs0YVllRHVrMzBOYkVsUGpNUUo1TGI5NFVaRndqcW9UZm1xYjU1VFVCaFREVElURmdacjJZVzF1?oc=5",
+          "title": "【関東近郊】東京から日帰り2時間以内！ 秋のおでかけスポット26選｜絶景＆紅葉＆花畑＆パワースポットなど、都会を脱出して癒やされよう♪ - るるぶWeb",
+          "source": "関東発ドライブ",
+          "category": "travel",
+          "published": "2026-10-22T08:36:12Z",
+          "source_url": "https://news.google.com/rss/search?q=%E9%96%A2%E6%9D%B1+%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96+%E6%97%A5%E5%B8%B0%E3%82%8A+%E8%A6%B3%E5%85%89+OR+%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
+          "source_kind": "search_feed"
+        }
+      ]
+    },
+    {
       "title": "8月のアイスランド旅行【完全ガイド】 - Guide to Iceland",
       "summary": "8月のアイスランド旅行【完全ガイド】 Guide to Iceland",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5vUGtaaUZ2Qm1ueThiR0ZnRklTVjQtLTdXbXJvbjJFM3JjUkl4QUZhaGJ5UW9IMmtBYXZvdWhxZW84UjBkdXB1NDlGMk03UmpISnp1eklnUlgwMnRpZkljTllmWnZWRnhUV1E?oc=5",
@@ -6549,121 +6701,6 @@
       "score": 47,
       "source_url": "https://news.google.com/rss/search?q=%E5%9B%BD%E5%86%85%E6%97%85%E8%A1%8C+%E7%A9%B4%E5%A0%B4+%E7%B5%B6%E6%99%AF+OR+%E6%B8%A9%E6%B3%89+OR+%E9%9B%A2%E5%B3%B6+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
       "source_kind": "search_feed"
-    },
-    {
-      "title": "「DuckDB 2.0 LTS」正式リリース。Quackプロトコルによるクライアント/サーバ機能や非同期処理による高速化など - Publickey",
-      "summary": "「DuckDB 2.0 LTS」正式リリース。Quackプロトコルによるクライアント/サーバ機能や非同期処理による高速化など Publickey",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBQaHo0R3VxWmJQcENaRE53QV91cGRoeHhIdUlVMmhZV1RpV2dOZUdUbWxHWE9qMTVhclVxSkp6NmVYNEVXa054dlloSjAyLWpZc2hIVnZtSVZTNmk4VmlYa1pENjNFaENt?oc=5",
-      "published": "2026-10-25T13:49:41Z",
-      "id": "hobby-a1a39d83eeffefd2bd",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 46,
-      "source_url": "https://news.google.com/rss/search?q=%E3%82%B2%E3%83%BC%E3%83%A0%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88+OR+%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88+OR+AWS+%E6%96%B0%E6%A9%9F%E8%83%BD+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
-      "source_kind": "search_feed"
-    },
-    {
-      "title": "SNS話題の『バラバライド』、25年経て蘇る“マシンバトル”のDNA 『クラッシュギア』世代熱狂の裏にメーカーの願い【おもちゃショー2026】 - 山陽新聞",
-      "summary": "SNS話題の『バラバライド』、25年経て蘇る“マシンバトル”のDNA 『クラッシュギア』世代熱狂の裏にメーカーの願い【おもちゃショー2026】 山陽新聞",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tOTNxbmhiQWpRVndPWm9WR2VxSElORXlmX1Q0N2Z4RVowZGZrM1NmbXhLeFdOLVUzRGxKakRaR1MzUk5mcDB6Q1d4eVNYcHpTTTF2d3pIWG8?oc=5",
-      "published": "2026-10-24T02:17:28Z",
-      "id": "social-21be5581d0d7befd48",
-      "category": "social",
-      "source": "話題のニュース",
-      "tags": [
-        "話題"
-      ],
-      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
-      "score": 46,
-      "source_url": "https://news.google.com/rss/search?q=SNS+%E8%A9%B1%E9%A1%8C+%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89+%E6%97%A5%E6%9C%AC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
-      "source_kind": "search_feed"
-    },
-    {
-      "title": "【VIVANT】再開直後にまさかの「バロー」登場！X騒然「力技すぎる」恵那の場所を特定する声も Joni Lamb (mlZM7YZAMx) - Unisba Media",
-      "summary": "【VIVANT】再開直後にまさかの「バロー」登場！X騒然「力技すぎる」恵那の場所を特定する声も Joni Lamb (mlZM7YZAMx) Unisba Media",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB6STVRUFp4RDlGeE1qWUU3MXpEQWZ2R1ZzLTR4TEl1bXFJaWViSGhmYmFpbkhidmE2SGpieGJfdVNBbk42VUFpVHJfRVMybjdQdW5iS2JzN2dBVjJUazJJTTBha2RZUQ?oc=5",
-      "published": "2026-10-23T16:33:14Z",
-      "id": "social-8d7d3ea3af045f5559",
-      "category": "social",
-      "source": "話題のニュース",
-      "tags": [
-        "話題"
-      ],
-      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
-      "score": 46,
-      "source_url": "https://news.google.com/rss/search?q=SNS+%E8%A9%B1%E9%A1%8C+%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89+%E6%97%A5%E6%9C%AC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
-      "source_kind": "search_feed"
-    },
-    {
-      "title": "「え、足どこ」女子アナ（30）の衝撃ビジュアルに反響 足が“ない”ようにみえる不思議な現象に注目集まる - au Webポータル",
-      "summary": "「え、足どこ」女子アナ（30）の衝撃ビジュアルに反響 足が“ない”ようにみえる不思議な現象に注目集まる au Webポータル",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE41eHlPUXdTaWhwRjNOVFIwX205NVJyLXI5azdUc0RncmhpNnN3ZWhzcTBXZktrUjNQNEJ2LUlYMkFGU3RJbDNWcU9sQ0xnbVJoUUlYbWhoQTRfanFVRnFKOGxSU1A4MFEtVGtldWxB?oc=5",
-      "published": "2026-10-23T09:20:00Z",
-      "id": "social-f42849ba0079b82649",
-      "category": "social",
-      "source": "話題のニュース",
-      "tags": [
-        "話題"
-      ],
-      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
-      "score": 46,
-      "source_url": "https://news.google.com/rss/search?q=SNS+%E8%A9%B1%E9%A1%8C+%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89+%E6%97%A5%E6%9C%AC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
-      "source_kind": "search_feed"
-    },
-    {
-      "title": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する - ASCII.jp",
-      "summary": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する ASCII.jp",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SbFdwTFhkU2hFd0xUaTEyRXpoUDZLM1VrNks4S096OWJTTTRFY0NMcGliNkpfUVAxaFVNS0JVeGNQQ3lUSXVCenp0UmdSdFl6ZW43Zw?oc=5",
-      "published": "2026-10-22T09:00:00Z",
-      "id": "travel-6fb016107ade4c1771",
-      "category": "travel",
-      "source": "関東発ドライブ",
-      "tags": [
-        "検索条件:関東",
-        "ドライブ"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 46,
-      "source_url": "https://news.google.com/rss/search?q=%E9%96%A2%E6%9D%B1+%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96+%E6%97%A5%E5%B8%B0%E3%82%8A+%E8%A6%B3%E5%85%89+OR+%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
-      "source_kind": "search_feed"
-    },
-    {
-      "title": "アンソロピック、グーグル・クラウドでClaude Platform全機能を一般提供 請求も一本化 - ビジネス+IT",
-      "summary": "アンソロピック、グーグル・クラウドでClaude Platform全機能を一般提供 請求も一本化 ビジネス+IT",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TLWN3Z0lXNTVpVERKT011SXBkdHU4OFQ0UFFBWWNYaUgzRU92a1hMUW5NcmFpVm9wc0lnamJBV01xYTByRVFMNUt2ZUFGdjdSMTk0?oc=5",
-      "published": "2026-10-24T23:18:00Z",
-      "id": "hobby-9e5f6411757a815711",
-      "category": "hobby",
-      "source": "趣味・ガジェット",
-      "tags": [
-        "ガジェット",
-        "開発"
-      ],
-      "reason": "ゲームや制作の次の趣味・試作につながる情報。",
-      "score": 45,
-      "source_url": "https://news.google.com/rss/search?q=%E3%82%B2%E3%83%BC%E3%83%A0%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88+OR+%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88+OR+AWS+%E6%96%B0%E6%A9%9F%E8%83%BD+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
-      "source_kind": "search_feed"
-    },
-    {
-      "title": "なぜ今ビンゴ5が急上昇？その理由とは - 日本のトレンド (October 2026) | NewsDrop JP Rudy Gobert (zipeiLWWGk) - Unisba Media",
-      "summary": "なぜ今ビンゴ5が急上昇？その理由とは - 日本のトレンド (October 2026) | NewsDrop JP Rudy Gobert (zipeiLWWGk) Unisba Media",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBZbUM2ZzNmaTY1aEhHMktDVXZQazBlYTZFYUl0ZDJXTWxxSlYxRUQ1UXY4RjhGeXdUQk9CeDFoSlVVdDdCUnJFU05wOWJiSW5MRGphSGg4ZTVqSVg2Q3ZkMnl4YU5vQQ?oc=5",
-      "published": "2026-10-23T11:51:41Z",
-      "id": "social-9fe21427326830792f",
-      "category": "social",
-      "source": "話題のニュース",
-      "tags": [
-        "話題"
-      ],
-      "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
-      "score": 45,
-      "source_url": "https://news.google.com/rss/search?q=SNS+%E8%A9%B1%E9%A1%8C+%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89+%E6%97%A5%E6%9C%AC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
-      "source_kind": "search_feed"
     }
   ],
   "errors": [
@@ -6677,10 +6714,10 @@
       "name": "GitHub 新規・小規模",
       "url": "https://api.github.com/search/repositories?q=created%3A%3E2026-08-06+stars%3A30..9999+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=updated&order=desc&per_page=25",
       "status": "ok",
-      "count": 1,
+      "count": 3,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6691,8 +6728,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6703,8 +6740,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6715,8 +6752,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6727,8 +6764,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6739,8 +6776,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6751,8 +6788,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6763,8 +6800,8 @@
       "status": "ok",
       "count": 16,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6773,10 +6810,10 @@
       "name": "話題のニュース",
       "url": "https://news.google.com/rss/search?q=SNS+%E8%A9%B1%E9%A1%8C+%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89+%E6%97%A5%E6%9C%AC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
       "status": "ok",
-      "count": 8,
+      "count": 22,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6787,8 +6824,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6799,8 +6836,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6811,9 +6848,9 @@
       "status": "failed",
       "count": 0,
       "error": "EmptyFeed",
-      "checked_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
       "last_success_at": null,
-      "consecutive_failures": 8,
+      "consecutive_failures": 9,
       "history_available": true
     },
     {
@@ -6823,8 +6860,8 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6835,8 +6872,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6847,8 +6884,8 @@
       "status": "ok",
       "count": 7,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6859,8 +6896,8 @@
       "status": "ok",
       "count": 15,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6871,8 +6908,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6883,8 +6920,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-10-25T21:30:28.181025Z",
-      "last_success_at": "2026-10-25T21:30:28.181025Z",
+      "checked_at": "2026-10-25T21:36:20.395689Z",
+      "last_success_at": "2026-10-25T21:36:20.395689Z",
       "consecutive_failures": 0,
       "history_available": true
     }
