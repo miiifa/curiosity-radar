@@ -1,7 +1,51 @@
 {
-  "generated_at": "2026-10-25T02:19:20.136216Z",
+  "generated_at": "2026-10-25T02:48:00.520048Z",
   "mode": "live",
   "items": [
+    {
+      "id": "github-9d064369411829e692",
+      "category": "github",
+      "url": "https://github.com/lexmount/moli",
+      "title": "lexmount/moli",
+      "summary": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
+      "published": "2026-10-25T02:45:34Z",
+      "source": "GitHub Search API",
+      "stars": 20504,
+      "star_delta": 13,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "tags": [
+        "ai-agents",
+        "ai-tools",
+        "browser",
+        "browser-automation",
+        "cloud-browser"
+      ],
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が13増加。",
+      "score": 99
+    },
+    {
+      "id": "github-4683cd570ef39debe9",
+      "category": "github",
+      "url": "https://github.com/yetone/magpie",
+      "title": "yetone/magpie",
+      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "published": "2026-10-25T02:41:17Z",
+      "source": "GitHub Search API",
+      "stars": 20830,
+      "star_delta": 15,
+      "language": "Go",
+      "license": "MIT",
+      "tags": [
+        "claude-code",
+        "codex",
+        "deepseek",
+        "gemini-cli",
+        "llm"
+      ],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が15増加。",
+      "score": 99
+    },
     {
       "id": "github-ec4b5e65913390d00c",
       "category": "github",
@@ -25,59 +69,15 @@
       "score": 99
     },
     {
-      "id": "github-4683cd570ef39debe9",
-      "category": "github",
-      "url": "https://github.com/yetone/magpie",
-      "title": "yetone/magpie",
-      "summary": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-      "published": "2026-10-25T01:57:48Z",
-      "source": "GitHub Search API",
-      "stars": 20815,
-      "star_delta": 20,
-      "language": "Go",
-      "license": "MIT",
-      "tags": [
-        "claude-code",
-        "codex",
-        "deepseek",
-        "gemini-cli",
-        "llm"
-      ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が20増加。",
-      "score": 99
-    },
-    {
-      "id": "github-9d064369411829e692",
-      "category": "github",
-      "url": "https://github.com/lexmount/moli",
-      "title": "lexmount/moli",
-      "summary": "Best headless browser for AI agents. Lite, Fast, High-Compatibility. Built in Rust",
-      "published": "2026-10-25T00:16:17Z",
-      "source": "GitHub Search API",
-      "stars": 20491,
-      "star_delta": 38,
-      "language": "Rust",
-      "license": "Apache-2.0",
-      "tags": [
-        "ai-agents",
-        "ai-tools",
-        "browser",
-        "browser-automation",
-        "cloud-browser"
-      ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が38増加。",
-      "score": 99
-    },
-    {
       "id": "github-fe458ba76b95a6fa55",
       "category": "github",
       "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
       "title": "awesome-dsh-plugin/awesome-dsh-plugin",
       "summary": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
-      "published": "2026-10-25T00:15:25Z",
+      "published": "2026-10-25T01:22:43Z",
       "source": "GitHub Search API",
-      "stars": 20520,
-      "star_delta": 45,
+      "stars": 20535,
+      "star_delta": 15,
       "language": "JavaScript",
       "license": "CC0-1.0",
       "tags": [
@@ -87,7 +87,7 @@
         "dsh",
         "dsh-plugin"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が45増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が15増加。",
       "score": 99
     },
     {
@@ -120,8 +120,8 @@
       "summary": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
       "published": "2026-10-24T18:09:17Z",
       "source": "GitHub Search API",
-      "stars": 31953,
-      "star_delta": 104,
+      "stars": 32025,
+      "star_delta": 72,
       "language": "Java",
       "license": null,
       "tags": [
@@ -131,7 +131,7 @@
         "android-tv-launcher",
         "apple-tv"
       ],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が104増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が72増加。",
       "score": 99
     },
     {
@@ -180,12 +180,12 @@
       "summary": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input.",
       "published": "2026-10-24T09:19:58Z",
       "source": "GitHub Search API",
-      "stars": 32060,
-      "star_delta": 36,
+      "stars": 32080,
+      "star_delta": 20,
       "language": "C++",
       "license": "MIT",
       "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が36増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が20増加。",
       "score": 99
     },
     {
@@ -196,8 +196,8 @@
       "summary": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi…",
       "published": "2026-10-24T06:03:04Z",
       "source": "GitHub Search API",
-      "stars": 41358,
-      "star_delta": 70,
+      "stars": 41383,
+      "star_delta": 25,
       "language": "JavaScript",
       "license": "MIT",
       "tags": [
@@ -207,7 +207,7 @@
         "developer-tools",
         "dsh"
       ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が70増加。",
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が25増加。",
       "score": 99
     },
     {
@@ -218,8 +218,8 @@
       "summary": "DeepSeek Harness: Everything is a Plugin.",
       "published": "2026-10-23T15:25:40Z",
       "source": "GitHub Search API",
-      "stars": 260539,
-      "star_delta": 38,
+      "stars": 260561,
+      "star_delta": 22,
       "language": "TypeScript",
       "license": "MIT",
       "tags": [
@@ -228,7 +228,7 @@
         "dsh",
         "dsh-plugin"
       ],
-      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が38増加。",
+      "reason": "定型作業の自動化やAIエージェントとの連携に応用可能。 前回収集からスター数が22増加。",
       "score": 99
     },
     {
@@ -277,12 +277,12 @@
       "summary": "DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
       "published": "2026-10-21T04:55:44Z",
       "source": "GitHub Search API",
-      "stars": 21881,
-      "star_delta": 33,
+      "stars": 21894,
+      "star_delta": 13,
       "language": "Python",
       "license": "Apache-2.0",
       "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が33増加。",
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が13増加。",
       "score": 99
     },
     {
@@ -675,6 +675,22 @@
       "score": 95
     },
     {
+      "id": "money-4683cd570ef39debe9",
+      "category": "money",
+      "url": "https://github.com/yetone/magpie",
+      "title": "業務特化のAIミニツール — magpie",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-10-25T02:41:17Z",
+      "source": "着想元: yetone/magpie",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
+    },
+    {
       "id": "money-9d064369411829e692",
       "category": "money",
       "url": "https://github.com/lexmount/moli",
@@ -716,22 +732,6 @@
       "source": "着想元: awesome-dsh-plugin/awesome-dsh-plugin",
       "tags": [
         "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
-      "id": "money-4683cd570ef39debe9",
-      "category": "money",
-      "url": "https://github.com/yetone/magpie",
-      "title": "業務特化のAIミニツール — magpie",
-      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-10-25T00:41:28Z",
-      "source": "着想元: yetone/magpie",
-      "tags": [
-        "AIサービス",
         "収益性未検証",
         "OSS活用"
       ],
@@ -886,7 +886,7 @@
       "id": "social-1f21a11f54e05b7b97",
       "category": "social",
       "title": "Show HN: Steal My Bitcoin",
-      "summary": "Hacker News: 414ポイント、253件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 418ポイント、258件のコメント。投稿先で内容を確認。",
       "url": "https://stealmybitcoin.com/",
       "source": "Hacker News",
       "published": "2026-10-24T20:30:31Z",
@@ -901,7 +901,7 @@
       "id": "social-a54fd0e20dbb904635",
       "category": "social",
       "title": "No signs of AI payoff outside the tech sector",
-      "summary": "Hacker News: 489ポイント、491件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 496ポイント、493件のコメント。投稿先で内容を確認。",
       "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
       "source": "Hacker News",
       "published": "2026-10-24T19:47:19Z",
@@ -1007,7 +1007,7 @@
       "id": "social-67d9de400f929ce027",
       "category": "social",
       "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-      "summary": "Hacker News: 1552ポイント、243件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 1552ポイント、244件のコメント。投稿先で内容を確認。",
       "url": "https://edjefferson.com/localwiki/",
       "source": "Hacker News",
       "published": "2026-10-22T23:01:18Z",
@@ -1154,6 +1154,22 @@
       "score": 91
     },
     {
+      "id": "github-1b8e35a5a0147eea7e",
+      "category": "github",
+      "url": "https://github.com/browser-use/jev-ultrafast",
+      "title": "browser-use/jev-ultrafast",
+      "summary": "Fastest and cheapest web agent",
+      "published": "2026-09-30T01:24:38Z",
+      "source": "GitHub Search API",
+      "stars": 23603,
+      "star_delta": 1,
+      "language": "Python",
+      "license": "MIT",
+      "tags": [],
+      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。 前回収集からスター数が1増加。",
+      "score": 91
+    },
+    {
       "id": "social-f6a301346a05e615cd",
       "category": "social",
       "title": "LLMs are making formal software verification feasible at a much larger scale",
@@ -1289,26 +1305,10 @@
       "score": 89
     },
     {
-      "id": "github-1b8e35a5a0147eea7e",
-      "category": "github",
-      "url": "https://github.com/browser-use/jev-ultrafast",
-      "title": "browser-use/jev-ultrafast",
-      "summary": "Fastest and cheapest web agent",
-      "published": "2026-09-30T01:24:38Z",
-      "source": "GitHub Search API",
-      "stars": 23602,
-      "star_delta": 0,
-      "language": "Python",
-      "license": "MIT",
-      "tags": [],
-      "reason": "改造・検証・自分のサービスへの転用を検討できるOSS。",
-      "score": 89
-    },
-    {
       "id": "social-c755b08d9cb3b23c3f",
       "category": "social",
       "title": "I don't understand quantum physics (2018)",
-      "summary": "Hacker News: 288ポイント、217件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 288ポイント、219件のコメント。投稿先で内容を確認。",
       "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
       "source": "Hacker News",
       "published": "2026-10-24T09:53:26Z",
@@ -1323,7 +1323,7 @@
       "id": "social-cbb045dba06decd7ef",
       "category": "social",
       "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
-      "summary": "Hacker News: 281ポイント、140件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 282ポイント、140件のコメント。投稿先で内容を確認。",
       "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
       "source": "Hacker News",
       "published": "2026-10-24T08:06:39Z",
@@ -1353,7 +1353,7 @@
       "id": "social-e2f60b8a844782dac9",
       "category": "social",
       "title": "Physicists trap a single antimatter particle for a month",
-      "summary": "Hacker News: 280ポイント、80件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 282ポイント、80件のコメント。投稿先で内容を確認。",
       "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
       "source": "Hacker News",
       "published": "2026-10-21T19:40:01Z",
@@ -1384,7 +1384,7 @@
       "id": "social-c6f7fce2eddef14cda",
       "category": "social",
       "title": "The Goose Programming Language",
-      "summary": "Hacker News: 248ポイント、170件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 262ポイント、174件のコメント。投稿先で内容を確認。",
       "url": "https://aardappel.github.io/goose/",
       "source": "Hacker News",
       "published": "2026-10-24T19:06:55Z",
@@ -1399,7 +1399,7 @@
       "id": "social-c852cf262baca51dc3",
       "category": "social",
       "title": "Roku developer repositories moved from GitHub to GitLab",
-      "summary": "Hacker News: 268ポイント、179件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 268ポイント、183件のコメント。投稿先で内容を確認。",
       "url": "https://blog.roku.com/developer/gitlab-move",
       "source": "Hacker News",
       "published": "2026-10-24T16:06:26Z",
@@ -1414,7 +1414,7 @@
       "id": "social-0358f37e52765a0f01",
       "category": "social",
       "title": "FreeDNS",
-      "summary": "Hacker News: 256ポイント、65件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 257ポイント、65件のコメント。投稿先で内容を確認。",
       "url": "https://freedns.afraid.org/",
       "source": "Hacker News",
       "published": "2026-10-24T15:20:01Z",
@@ -1444,7 +1444,7 @@
       "id": "social-332b8a0f3c708eb7e8",
       "category": "social",
       "title": "How close can pure functional programming get to C?",
-      "summary": "Hacker News: 257ポイント、88件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 258ポイント、87件のコメント。投稿先で内容を確認。",
       "url": "https://rtfeldman.com/fp-vs-c",
       "source": "Hacker News",
       "published": "2026-10-24T03:43:54Z",
@@ -1486,6 +1486,21 @@
       "score": 87
     },
     {
+      "id": "social-42532ee811b2ffa8d8",
+      "category": "social",
+      "title": "We should be more ambitious with the software we build",
+      "summary": "Hacker News: 205ポイント、168件のコメント。投稿先で内容を確認。",
+      "url": "https://danluu.com/ambitious/",
+      "source": "Hacker News",
+      "published": "2026-10-24T21:47:31Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 85
+    },
+    {
       "id": "social-167ed8b74ae4543a46",
       "category": "social",
       "title": "Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier",
@@ -1516,13 +1531,13 @@
       "score": 85
     },
     {
-      "id": "social-42532ee811b2ffa8d8",
+      "id": "social-1f6056f34e61a5ea93",
       "category": "social",
-      "title": "We should be more ambitious with the software we build",
-      "summary": "Hacker News: 188ポイント、143件のコメント。投稿先で内容を確認。",
-      "url": "https://danluu.com/ambitious/",
+      "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+      "summary": "Hacker News: 193ポイント、170件のコメント。投稿先で内容を確認。",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
       "source": "Hacker News",
-      "published": "2026-10-24T21:47:31Z",
+      "published": "2026-10-24T23:11:54Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -1534,7 +1549,7 @@
       "id": "social-b6ee2b32304d0c0d1a",
       "category": "social",
       "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-      "summary": "Hacker News: 194ポイント、61件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 196ポイント、61件のコメント。投稿先で内容を確認。",
       "url": "https://github.com/Zagitta/gpu-unlock",
       "source": "Hacker News",
       "published": "2026-10-24T09:58:27Z",
@@ -1559,21 +1574,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 84
-    },
-    {
-      "id": "social-1f6056f34e61a5ea93",
-      "category": "social",
-      "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
-      "summary": "Hacker News: 177ポイント、149件のコメント。投稿先で内容を確認。",
-      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
-      "source": "Hacker News",
-      "published": "2026-10-24T23:11:54Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 83
     },
     {
       "id": "social-595e0c468133c6b695",
@@ -1669,7 +1669,7 @@
       "id": "social-c7a37d520ea53c8293",
       "category": "social",
       "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
-      "summary": "Hacker News: 121ポイント、81件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 129ポイント、84件のコメント。投稿先で内容を確認。",
       "url": "https://missileer.watch",
       "source": "Hacker News",
       "published": "2026-10-24T19:43:27Z",
@@ -1924,7 +1924,7 @@
       "id": "social-0c19e05bbb06ed260c",
       "category": "social",
       "title": "The St. Helena 5 pence coin shows Jonathan, a roughly 190 year old tortoise",
-      "summary": "Hacker News: 96ポイント、32件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 98ポイント、32件のコメント。投稿先で内容を確認。",
       "url": "https://de.numista.com/9866",
       "source": "Hacker News",
       "published": "2026-10-24T16:41:55Z",
@@ -1939,7 +1939,7 @@
       "id": "social-fca13fff3851522a61",
       "category": "social",
       "title": "Neural chip decodes interactions between brain regions",
-      "summary": "Hacker News: 94ポイント、32件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 95ポイント、33件のコメント。投稿先で内容を確認。",
       "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
       "source": "Hacker News",
       "published": "2026-10-24T15:57:17Z",
@@ -1996,6 +1996,21 @@
       "score": 77
     },
     {
+      "id": "social-c9d44435005d898d3b",
+      "category": "social",
+      "title": "SpeedCrunch 1.1",
+      "summary": "Hacker News: 85ポイント、11件のコメント。投稿先で内容を確認。",
+      "url": "https://www.speedcrunch.org/",
+      "source": "Hacker News",
+      "published": "2026-10-24T19:19:43Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 76
+    },
+    {
       "id": "social-0345bd37193223743e",
       "category": "social",
       "title": "TornadoVM 7 Enables GPU-Native Workloads from Java Applications",
@@ -2039,21 +2054,6 @@
       ],
       "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
       "score": 76
-    },
-    {
-      "id": "social-c9d44435005d898d3b",
-      "category": "social",
-      "title": "SpeedCrunch 1.1",
-      "summary": "Hacker News: 79ポイント、10件のコメント。投稿先で内容を確認。",
-      "url": "https://www.speedcrunch.org/",
-      "source": "Hacker News",
-      "published": "2026-10-24T19:19:43Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 75
     },
     {
       "id": "social-3e015fe4294e09ecc9",
@@ -2269,7 +2269,7 @@
       "id": "social-c3ea527220c8a2c384",
       "category": "social",
       "title": "Bbtree: Fastest Ordered Map",
-      "summary": "Hacker News: 57ポイント、6件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 59ポイント、9件のコメント。投稿先で内容を確認。",
       "url": "https://bbtree.xiangpeng.systems/post/",
       "source": "Hacker News",
       "published": "2026-10-24T18:22:14Z",
@@ -2464,7 +2464,7 @@
       "id": "social-e6f90c192a4bb56a45",
       "category": "social",
       "title": "Making a VGA Driver in SystemVerilog",
-      "summary": "Hacker News: 50ポイント、10件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 52ポイント、10件のコメント。投稿先で内容を確認。",
       "url": "https://lukaswerner.com/post/2026-10-20@bottom-up-vga",
       "source": "Hacker News",
       "published": "2026-10-20T16:00:15Z",
@@ -2509,7 +2509,7 @@
       "id": "social-8763261ffc09bb097c",
       "category": "social",
       "title": "Small Programs and Languages",
-      "summary": "Hacker News: 45ポイント、1件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 48ポイント、3件のコメント。投稿先で内容を確認。",
       "url": "https://ratfactor.com/cards/pl-small",
       "source": "Hacker News",
       "published": "2026-10-24T21:44:23Z",
@@ -2581,6 +2581,21 @@
       "score": 69
     },
     {
+      "id": "social-5015bb5628a4b8f3fe",
+      "category": "social",
+      "title": "I Built a Stereo Vision Board for Hardware Hackers",
+      "summary": "Hacker News: 41ポイント、1件のコメント。投稿先で内容を確認。",
+      "url": "https://rootkitlabs.com/2026/10/06/i-built-a-stereo-vision-board-for-hardware-hackers/",
+      "source": "Hacker News",
+      "published": "2026-10-20T20:45:52Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 69
+    },
+    {
       "title": "There's only so much code: the rise in vulnerability numbers",
       "summary": "The September Microsoft Patch Tuesday release included 975 vulnerability advisories. This month, 1,415 vulnerabilities were just dropped. Compared to a pre-June average of 100 a month, that increase is staggering. Where did they come from? And what…",
       "url": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
@@ -2626,19 +2641,19 @@
       "score": 68
     },
     {
-      "id": "social-5015bb5628a4b8f3fe",
+      "id": "social-b9668613fcaa619086",
       "category": "social",
-      "title": "I Built a Stereo Vision Board for Hardware Hackers",
-      "summary": "Hacker News: 36ポイント、0件のコメント。投稿先で内容を確認。",
-      "url": "https://rootkitlabs.com/2026/10/06/i-built-a-stereo-vision-board-for-hardware-hackers/",
+      "title": "The Importance of Limitations for Creativity and Learning (2023)",
+      "summary": "Hacker News: 33ポイント、9件のコメント。投稿先で内容を確認。",
+      "url": "https://ratfactor.com/cards/limitations",
       "source": "Hacker News",
-      "published": "2026-10-20T20:45:52Z",
+      "published": "2026-10-24T21:42:47Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 68
+      "score": 67
     },
     {
       "id": "social-4fb051deb678302903",
@@ -2656,13 +2671,13 @@
       "score": 67
     },
     {
-      "id": "social-b9668613fcaa619086",
+      "id": "social-ac965a872d542484cd",
       "category": "social",
-      "title": "The Importance of Limitations for Creativity and Learning (2023)",
-      "summary": "Hacker News: 32ポイント、7件のコメント。投稿先で内容を確認。",
-      "url": "https://ratfactor.com/cards/limitations",
+      "title": "Why Gopher in 2026?",
+      "summary": "Hacker News: 32ポイント、8件のコメント。投稿先で内容を確認。",
+      "url": "https://gopher.muffinlabs.com/sdf.org/users/nervtoji/phlog/001.txt",
       "source": "Hacker News",
-      "published": "2026-10-24T21:42:47Z",
+      "published": "2026-10-24T23:33:19Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -3855,6 +3870,21 @@
       "score": 50
     },
     {
+      "title": "政府職員18万人がAIエージェント活用へ--古川デジタル大臣は会見で何を語ったか - ZDNET Japan",
+      "summary": "政府職員18万人がAIエージェント活用へ--古川デジタル大臣は会見で何を語ったか ZDNET Japan",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE96eHFpWXRpUnBLaGQ2R1pUVjhDbVp4YlhBeWlVN05ycXdHNjVqQTRMbnlsNEFSeG15eUxocnFhamc5SVJ5blJMNHFXWGxNa1Fta1E4?oc=5",
+      "published": "2026-10-23T04:00:00Z",
+      "id": "ai-91dfed6f99d4cfc586",
+      "category": "ai",
+      "source": "AI・テクノロジー",
+      "tags": [
+        "AI",
+        "最新技術"
+      ],
+      "reason": "AIの具体的な活用や新機能につながる可能性。一次情報で詳細を確認。",
+      "score": 50
+    },
+    {
       "title": "SaaSは死なずAIエージェント前提に転生、データ不足や高コストに注意 - 日経クロステック",
       "summary": "SaaSは死なずAIエージェント前提に転生、データ不足や高コストに注意 日経クロステック",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBweU92NUtYSWMybWFGSWczbUpXRUlBTExZRzd3WGVRTVdyNEVRWlkxY2FMY08yMEdUNmFpVVBKRTk0T0d0MEtYRFFJNFBTQjVpaXNWdFB0cHBQLXVZQ0R6aXdQVXhCQVEwRW91UQ?oc=5",
@@ -4485,11 +4515,11 @@
       "score": 47
     },
     {
-      "title": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する - ASCII.jp",
-      "summary": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する ASCII.jp",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SbFdwTFhkU2hFd0xUaTEyRXpoUDZLM1VrNks4S096OWJTTTRFY0NMcGliNkpfUVAxaFVNS0JVeGNQQ3lUSXVCenp0UmdSdFl6ZW43Zw?oc=5",
+      "title": "【決定版・東海の実りの秋を満喫】10月に旬を迎える味覚狩りスポットベスト5！ 東海エリアの自然と果実が織りなす秋の味覚を堪能する - ASCII.jp",
+      "summary": "【決定版・東海の実りの秋を満喫】10月に旬を迎える味覚狩りスポットベスト5！ 東海エリアの自然と果実が織りなす秋の味覚を堪能する ASCII.jp",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBhakdrTV95VFZoc0dYdmpFRW50Y1gxOGxnN3V5SHNHUVpXUXBOd2EtVjRoR3R4cWozQm1BZFh3OXQ3WEVSRFNGTnp0aFhNY01IWktVVQ?oc=5",
       "published": "2026-10-22T09:00:00Z",
-      "id": "travel-6fb016107ade4c1771",
+      "id": "travel-84df6ffc31254c5741",
       "category": "travel",
       "source": "関東発ドライブ",
       "tags": [
@@ -4500,11 +4530,11 @@
       "score": 47
     },
     {
-      "title": "【決定版・東海の実りの秋を満喫】10月に旬を迎える味覚狩りスポットベスト5！ 東海エリアの自然と果実が織りなす秋の味覚を堪能する - ASCII.jp",
-      "summary": "【決定版・東海の実りの秋を満喫】10月に旬を迎える味覚狩りスポットベスト5！ 東海エリアの自然と果実が織りなす秋の味覚を堪能する ASCII.jp",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBhakdrTV95VFZoc0dYdmpFRW50Y1gxOGxnN3V5SHNHUVpXUXBOd2EtVjRoR3R4cWozQm1BZFh3OXQ3WEVSRFNGTnp0aFhNY01IWktVVQ?oc=5",
+      "title": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する - ASCII.jp",
+      "summary": "【決定版・関東の味覚狩り】10月に旬を迎える味覚狩りスポットベスト5！ 関東・山梨エリアの豊かな自然で秋の味覚を堪能する ASCII.jp",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SbFdwTFhkU2hFd0xUaTEyRXpoUDZLM1VrNks4S096OWJTTTRFY0NMcGliNkpfUVAxaFVNS0JVeGNQQ3lUSXVCenp0UmdSdFl6ZW43Zw?oc=5",
       "published": "2026-10-22T09:00:00Z",
-      "id": "travel-84df6ffc31254c5741",
+      "id": "travel-6fb016107ade4c1771",
       "category": "travel",
       "source": "関東発ドライブ",
       "tags": [
@@ -5429,37 +5459,11 @@
       ],
       "reason": "ネット上で取り上げられた話題。Xのポストランキングではない。",
       "score": 41
-    },
-    {
-      "title": "愛媛県の観光スポット地域別37選！おすすめ人気観光名所をご紹介！ - RNB 南海放送",
-      "summary": "愛媛県の観光スポット地域別37選！おすすめ人気観光名所をご紹介！ RNB 南海放送",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5qSUpLRXFOWkFTaTlLZGtyeUU2OU1fOHlVRGFkNlVyaWgzOWM3R2h1MlF4R2x4QVNNbnc2T25xLW81MTZqNFBydHA4TzB4cDhqQTg4?oc=5",
-      "published": "2026-10-16T03:13:52Z",
-      "id": "travel-8c1af94ceb0d9204c4",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 41
-    },
-    {
-      "title": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北・北関東の名湯｜Infoseekニュース - Infoseek",
-      "summary": "【秋に行きたい温泉地ランキング】温泉ソムリエ50人が選んだ1位は白濁湯と紅葉が楽しめる「万座温泉」。2位と3位は東北・北関東の名湯｜Infoseekニュース Infoseek",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE02dkFJMWFZUVBiMHBRVmZJd2c4STVXNTZZaEFGVlhEQ2JKU2c5b2NpdjdaMjFmRkNSeWVSU0Jjb25Da25vZG42WVhFSVNhN2lyZXJ4UHBxTzNzRU1YQ1piOEVhVQ?oc=5",
-      "published": "2026-10-16T01:15:00Z",
-      "id": "travel-b728ea471d4cc7295d",
-      "category": "travel",
-      "source": "国内旅行のニュース",
-      "tags": [
-        "国内旅行"
-      ],
-      "reason": "週末の候補探しに。アクセス・営業日・季節条件は要確認。",
-      "score": 41
     }
   ],
-  "errors": [],
+  "errors": [
+    "RSS 個人開発・事業化: EmptyFeed"
+  ],
   "sources_attempted": 18,
   "collector_version": 1
 }
