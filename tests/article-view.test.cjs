@@ -13,3 +13,11 @@ test('missing overview and reason remain explicit; unrelated local fields do not
 test('keyword lists are unique and capped without changing source text',()=>{
  const value={...item,tags:Array.from({length:20},(_,i)=>'語'+i),summary:'<script>untrusted</script>'};const view=articleView(value);assert.equal(view.keywords.length,7);assert.equal(view.overview,value.summary);assert.equal(value.tags.length,20);
 });
+test('generated business ideas belong to the app, never to the linked OSS author',()=>{
+ const view=articleView({...item,category:'money',source:'着想元: fixture/repo',source_kind:undefined,summary:'OSSの導入・カスタマイズ支援の仮説'});
+ assert.ok(view.overviewLabel.includes('アプリがルールベース'));assert.equal(view.overviewHeading,'アプリが作った仮説');assert.ok(view.attribution.includes('作者の発言ではなく'));assert.ok(view.attribution.includes('未検証'));
+});
+test('RSS revenue articles and unknown legacy ideas do not get a false attribution',()=>{
+ const rss=articleView({...item,category:'money',source:'個人開発・事業化'});assert.ok(rss.overviewLabel.includes('RSS'));
+ const unknown=articleView({...item,category:'money',source:'不明な出所',source_kind:undefined});assert.ok(unknown.overviewLabel.includes('出所未確認'));assert.ok(unknown.attribution.includes('断定しません'));
+});

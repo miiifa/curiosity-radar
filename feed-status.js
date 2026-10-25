@@ -259,13 +259,18 @@
   }
   function articleView(item){
     const origin=sourceInfo(item),rss=['search_feed','official_feed','research_feed'].includes(item.source_kind);
+    const generated=item.category==='money'&&item.source?.startsWith('着想元: ');
+    const unknownMoney=item.category==='money'&&!generated&&!rss;
+    const overviewLabel=generated?'アプリがルールベースで作成した収益化仮説（収益性未検証）':unknownMoney?'収益化の着想・説明（出所未確認・収益性未検証）':rss?'RSSの抜粋・説明（生成AIの独自要約ではありません）':'公開データを整形した説明（生成AIの独自要約ではありません）';
+    const overviewHeading=generated?'アプリが作った仮説':unknownMoney?'出所未確認の着想・説明':rss?'RSS配信元の説明':'取得データからの説明';
+    const attribution=generated?'リンク先の作者の発言ではなく、アプリが着想元から生成した仮説です。需要・利益は未検証です。':unknownMoney?'この説明の出所は未確認です。リンク先の作者の発言とは断定しません。':rss?'RSSが配信した抜粋・説明です。原典の内容や発信者の主張を独立検証したものではありません。':'公開データからの整形であり、発信者の逐語的な引用や独立検証ではありません。';
     const unknowns=[origin.note||'原典の内容は独立検証していません。'];
     if(origin.security)unknowns.push(origin.security);
     if(origin.travel)unknowns.push(origin.travel);
     if(item.category==='money')unknowns.push('収益性未検証。顧客需要・競合・費用・ライセンス・規約は要確認です。');
     if(item.category==='github')unknowns.push('第三者コードの安全性・依存関係・ライセンス本文・実行コストは未検証です。');
     return {overview:item.summary||'取得元の説明はありません。原典をご確認ください。',
-      overviewLabel:rss?'RSSの抜粋・説明（生成AIの独自要約ではありません）':'取得元の公開説明（生成AIの独自要約ではありません）',
+      overviewLabel,overviewHeading,attribution,
       note:item.reason||'気になる点を原典で確かめ、試す・調べる候補としてご覧ください。個別のおすすめ評価は未実施です。',
       unknowns,axes:['発見度','関連度','行動しやすさ','実利','考察の余地'],keywords:[...new Set(item.tags||[])].slice(0,7)};
   }
