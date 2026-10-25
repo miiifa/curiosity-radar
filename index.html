@@ -11,6 +11,7 @@
   <title>Curiosity Radar — 自分の好奇心を更新する</title>
 </head>
 <body>
+  <a class="skip-link" href="#feedSection">記事一覧へ移動</a>
   <div class="shell">
     <aside class="sidebar" aria-label="サイドバー">
       <a class="brand" href="#all" aria-label="Curiosity Radar ホーム">
@@ -54,11 +55,12 @@
           <div class="metric"><div class="metric-label">収益化のヒント</div><strong id="metricMoney">—</strong><span>Ideas to explore</span></div>
           <div class="metric"><div class="metric-label">あなたの保存</div><strong id="metricSaved">0</strong><span>Saved discoveries</span></div>
         </section>
-        <section class="feed-section">
-          <div class="feed-head"><div><div class="eyebrow purple" id="sectionKicker">CURATED FOR YOU</div><h2 id="sectionTitle">今日の発見 <span class="h2-spark">✳</span></h2><p id="sectionDesc">あなたの関心と、新しさから優先順位をつけています。</p></div><button id="settingsInline" class="tune-button">☷ 興味を調整</button></div>
+        <section class="feed-section" id="feedSection" tabindex="-1" aria-labelledby="sectionTitle">
+          <div class="feed-head"><div><div class="eyebrow purple" id="sectionKicker">CURATED FOR YOU</div><h2 id="sectionTitle" tabindex="-1">今日の発見 <span class="h2-spark">✳</span></h2><p id="sectionDesc">あなたの関心と、新しさから優先順位をつけています。</p></div><button id="settingsInline" class="tune-button">☷ 興味を調整</button></div>
           <div class="toolbar"><label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="キーワード・技術・旅行先で探す" autocomplete="off" aria-label="ニュースを検索" /></label><label class="select-wrap"><span>並び替え</span><select id="sort"><option value="recommended">おすすめ順</option><option value="latest">新着順</option><option value="popular">注目度順</option></select></label><button id="unreadFilter" class="filter-button" aria-pressed="false">未読のみ</button></div>
           <div id="mobileChips" class="mobile-chips" role="group" aria-label="カテゴリを選択"></div>
-          <div id="feed" class="feed-grid" aria-live="polite"><div class="loading">発見を読み込み中…</div></div>
+          <p id="feedSummary" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+          <div id="feed" class="feed-grid"><div class="loading">発見を読み込み中…</div></div>
           <div id="empty" class="empty" hidden><div class="empty-icon">⌕</div><h3>条件に合う情報がありません</h3><p>カテゴリ・検索・未読フィルターを変えてみてください。</p><button id="clearFilters">条件をリセット</button></div>
         </section>
         <footer><span>✺ Curiosity Radar</span><span>情報は元サイトで確認。収益や安全性を保証するものではありません。</span><a href="https://github.com" target="_blank" rel="noopener noreferrer">Powered by open sources ↗</a></footer>

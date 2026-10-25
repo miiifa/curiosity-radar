@@ -18,7 +18,7 @@
 - GitHub Actionsで1日2回を目安に自動収集し、GitHub Pagesへ静的配信（遅延する場合あり）。
 - カテゴリ、検索、未読、ブックマーク、興味の重み、並べ替え。状態はブラウザーのlocalStorageに保存。[重複整理・類似候補・検索と表示順の契約](docs/FEED_ORDERING.md)。
 - OSSの「30分で試す／作る」、収益仮説の「検証する」、旅行の「計画する」指示を内容確認後にコピー。[テンプレートと情報の扱い](docs/NEXT_ACTIONS.md)。
-- スマホ向け画面、PWAインストール対応（オフラインでは直近キャッシュ表示）。
+- スマホ向け画面、キーボード操作、PWAインストール対応（オフラインでは直近キャッシュ表示）。[操作・アクセシビリティの確認範囲](docs/ACCESSIBILITY.md)。
 
 ### 重要な制限
 
@@ -72,6 +72,7 @@ node --check sw.js
 python -m json.tool data/news.json >/dev/null
 # 任意: PlaywrightとChromiumが利用できる環境のみ（アプリ自体には不要）
 python tests/browser_smoke.py
+python tests/accessibility_smoke.py
 ```
 
 ブラウザーテストは外部APIを使わず、一時ローカルサーバーのfixtureで表示状態と実Service Workerのオフライン復元を確認します。Chromiumの場所は `CHROMIUM_PATH` で指定できます。公開後は実端末でも再読み込みし、更新日時・出典・キャッシュ警告を確認してください。記事の掲載／更新／KEV追加日時と、スナップショットのデータ更新日時は別です。保持した記事ごとの最終取得時刻は現行v1データには記録していません。
