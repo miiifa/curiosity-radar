@@ -2,6 +2,9 @@
 (() => {
   const CATEGORIES = {
     all: ['すべて', 'おすすめの記事', '気になる発見を、次の一手へ。'],
+    technology: ['技術・AI', '技術・GitHub・AI', '公開プロジェクトと開発の発見。GitHub・AIで絞り込めます。'],
+    deals: ['お得情報', 'お得情報', 'このジャンルの収集元は未接続です。条件や期限を確認できる原典の接続は今後の対応です。'],
+    trends: ['流行・話題', '流行・話題', '公開の話題と趣味の発見。Xの自動収集は未対応です。'],
     github: ['GitHub 発掘', 'コードの宝探し', '使ってみたいOSS、組み合わせたい技術、成長中のプロジェクト。'],
     ai: ['AI & 開発', 'AIの最前線', '話題性だけでなく、使い道まで考える。'],
     money: ['収益化のヒント', 'アイデアの種', '収益保証ではありません。元ネタと検証するべき仮説を紹介します。'],
@@ -11,7 +14,7 @@
     hobby: ['ゲーム・趣味', '好きなことを深掘り', 'ポケモン、ボードゲーム、クルマ、ガジェットなど。']
   };
   const DEFAULT_WEIGHTS = RadarFeed.DEFAULT_WEIGHTS;
-  const ICONS = {github:'⌘',ai:'✧',money:'◐',security:'⬡',travel:'↗',social:'◎',hobby:'♧'};
+  const ICONS = {technology:'⌘',deals:'◉',trends:'◎',github:'⌘',ai:'✧',money:'◐',security:'⬡',travel:'↗',social:'◎',hobby:'♧'};
   const readStore = (k, fallback) => {try { const value = JSON.parse(localStorage.getItem(k)); return value ?? fallback; } catch {return fallback;} };
   const state = {items:[], category:'all', savedView:false, weights:RadarFeed.normalizeWeights(readStore('radar:weights',{})), bookmarks:RadarFeed.remapIds(readStore('radar:saved',[]),[]), read:RadarFeed.remapIds(readStore('radar:read',[]),[]), search:'',sort:'recommended',unreadOnly:false, meta:{}};
   const $ = (s) => document.querySelector(s);
@@ -51,17 +54,24 @@
     const focused=document.activeElement;
     const focusKey=['data-save','data-chip'].find(key=>focused?.hasAttribute(key));
     const focusValue=focusKey?focused.getAttribute(focusKey):null;
+    const focusContainer=focused.closest('#sourceFilters')?'#sourceFilters':focusKey==='data-chip'?'#mobileChips':null;
     const [kicker,title,desc]=state.savedView?['SAVED DISCOVERIES','保存した記事','あとで読みたい発見だけを集めました。']:CATEGORIES[state.category];$('#sectionKicker').textContent=kicker.toUpperCase();$('#sectionTitle').innerHTML=`${esc(title)} <span class="h2-spark">✳</span>`;$('#sectionDesc').textContent=desc+' '+(state.sort==='latest'?'新着順：原典日時の新しい順（日時不明は最後）。':state.sort==='popular'?'注目度順：GitHubはスター数、他は独自スコアの順。':'おすすめ順：興味の重みと新しさを使い、検索・保存一覧以外では候補枠の偏りを抑えます（参考値）。');
     const selected=state.savedView?'saved':state.category;
+    const selectedGenre=Object.keys(RadarFeed.GENRES).find(key=>RadarFeed.GENRES[key].includes(selected))||selected;
     const selectButton=(node,active)=>{node.classList.toggle('active',active);node.setAttribute('aria-pressed',String(active));};
-    $$('.nav-item[data-category]').forEach(n=>selectButton(n,n.dataset.category===selected));selectButton($('#savedNav'),state.savedView);$$('[data-mobile-go]').forEach(n=>selectButton(n,n.dataset.mobileGo===selected));
-    $('#mobileChips').innerHTML=Object.entries(CATEGORIES).map(([cat,label])=>`<button data-chip="${cat}" aria-pressed="${cat===selected}" class="${cat===state.category&&!state.savedView?'active':''}">${esc(label[0])}</button>`).join('')+`<button data-chip="saved" aria-pressed="${state.savedView}" class="${state.savedView?'active':''}">♡ 保存</button>`;
+    $$('.nav-item[data-category]').forEach(n=>selectButton(n,n.dataset.category===selectedGenre));selectButton($('#savedNav'),state.savedView);$$('[data-mobile-go]').forEach(n=>selectButton(n,n.dataset.mobileGo===selectedGenre));
+    $('#mobileChips').innerHTML=['all',...Object.keys(RadarFeed.GENRES)].map(cat=>[cat,CATEGORIES[cat]]).map(([cat,label])=>`<button data-chip="${cat}" aria-pressed="${cat===selectedGenre}" class="${cat===selectedGenre&&!state.savedView?'active':''}">${esc(label[0])}</button>`).join('')+`<button data-chip="saved" aria-pressed="${state.savedView}" class="${state.savedView?'active':''}">♡ 保存</button>`;
+    const sourceKeys=['technology','github','ai'].includes(selected)?['technology','github','ai']:['trends','social','hobby'].includes(selected)?['trends','social','hobby']:[];
+    $('#sourceFilters').hidden=!sourceKeys.length;
+    $('#sourceFilters').innerHTML=sourceKeys.map(cat=>`<button data-chip="${cat}" aria-pressed="${cat===selected}">${esc(CATEGORIES[cat][0])}</button>`).join('');
     const entries=filtered();$('#feed').innerHTML=entries.length?entries.map((x,index)=>renderCard(x,index===0&&!state.savedView&&!state.search&&state.sort==='recommended')).join(''):'';$('#empty').hidden=!!entries.length;$('#savedCount').textContent=state.bookmarks.length;$('#metricSaved').textContent=state.bookmarks.length;
     $('#metricTotal').textContent=state.items.length;$('#metricRepos').textContent=state.items.filter(x=>x.category==='github').length;$('#metricMoney').textContent=state.items.filter(x=>x.category==='money').length;
-    for(const cat of Object.keys(CATEGORIES)){$(`#count-${cat}`).textContent=cat==='all'?state.items.length:state.items.filter(i=>RadarFeed.itemCategories(i).includes(cat)).length;}
+    for(const cat of Object.keys(CATEGORIES)){const node=$(`#count-${cat}`);if(node)node.textContent=cat==='all'?state.items.length:state.items.filter(i=>RadarFeed.inGenre(i,cat)).length;}
+    $('#empty h3').textContent=state.category==='deals'?'お得情報は未収集です':'条件に合う情報がありません';
+    $('#empty p').textContent=state.category==='deals'?'収集元は未接続です。ほかのジャンルをご覧ください。':'カテゴリ・検索・未読フィルターを変えてみてください。';
     $('#feedSummary').textContent=state.meta.mode?`${title}：${entries.length}件表示${state.unreadOnly?'（未読のみ）':''}。${entries.length?'':'条件をリセットできます。'}`:'記事を表示できません。取得状況を確認してください。';
     if(focusKey&&!focused.isConnected){
-      const replacement=$$(`[${focusKey}]`).find(node=>node.getAttribute(focusKey)===focusValue);
+      const replacement=$$(focusContainer?`${focusContainer} [${focusKey}]`:`[${focusKey}]`).find(node=>node.getAttribute(focusKey)===focusValue);
       (replacement||$('#sectionTitle')).focus({preventScroll:true});
     }
     if(focused.id==='clearFilters'&&entries.length)$('#sectionTitle').focus({preventScroll:true});

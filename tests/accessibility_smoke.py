@@ -73,7 +73,8 @@ def run():
                 popup=opened.value;popup.wait_for_load_state();popup.close()
                 expect(save).to_have_attribute('aria-pressed','true')
                 assert page.evaluate('JSON.parse(localStorage.getItem("radar:read")).includes("github")')
-                navigation=page.locator('[data-chip="github"]') if width<1000 else page.locator('#desktopNav [data-category="github"]')
+                (page.locator('[data-chip="technology"]') if width<1000 else page.locator('#desktopNav [data-category="technology"]')).click()
+                navigation=page.locator('#sourceFilters [data-chip="github"]')
                 navigation.focus();page.keyboard.press('Enter')
                 expect(navigation).to_be_focused();expect(navigation).to_have_attribute('aria-pressed','true')
                 assert page.locator('.article').count()==1

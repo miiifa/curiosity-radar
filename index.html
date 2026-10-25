@@ -21,13 +21,12 @@
       <div class="sidebar-section">DISCOVER</div>
       <nav id="desktopNav" class="nav" aria-label="カテゴリ">
         <button data-category="all" class="nav-item active"><span class="nav-emoji">◈</span> あなた向け <span class="nav-count" id="count-all">—</span></button>
-        <button data-category="github" class="nav-item"><span class="nav-emoji">⌘</span> GitHub発掘 <span class="nav-count" id="count-github">—</span></button>
-        <button data-category="ai" class="nav-item"><span class="nav-emoji">✧</span> AI & 開発 <span class="nav-count" id="count-ai">—</span></button>
-        <button data-category="money" class="nav-item"><span class="nav-emoji">◐</span> 収益化のヒント <span class="nav-count" id="count-money">—</span></button>
+        <button data-category="travel" class="nav-item"><span class="nav-emoji">↗</span> 旅行・イベント <span class="nav-count" id="count-travel">—</span></button>
+        <button data-category="deals" class="nav-item"><span class="nav-emoji">◉</span> お得情報 <span class="nav-count" id="count-deals">—</span></button>
+        <button data-category="technology" class="nav-item"><span class="nav-emoji">⌘</span> 技術・GitHub・AI <span class="nav-count" id="count-technology">—</span></button>
         <button data-category="security" class="nav-item"><span class="nav-emoji">⬡</span> セキュリティ <span class="nav-count" id="count-security">—</span></button>
-        <button data-category="travel" class="nav-item"><span class="nav-emoji">↗</span> 国内旅行 <span class="nav-count" id="count-travel">—</span></button>
-        <button data-category="social" class="nav-item"><span class="nav-emoji">◎</span> ネットの話題 <span class="nav-count" id="count-social">—</span></button>
-        <button data-category="hobby" class="nav-item"><span class="nav-emoji">♧</span> ゲーム・趣味 <span class="nav-count" id="count-hobby">—</span></button>
+        <button data-category="trends" class="nav-item"><span class="nav-emoji">◎</span> 流行・話題 <span class="nav-count" id="count-trends">—</span></button>
+        <button data-category="money" class="nav-item"><span class="nav-emoji">◐</span> 収益化アイデア <span class="nav-count" id="count-money">—</span></button>
       </nav>
       <div class="sidebar-section side-space">LIBRARY</div>
       <button id="savedNav" class="nav-item"><span class="nav-emoji">♡</span> 保存した記事 <span class="nav-count" id="savedCount">0</span></button>
@@ -59,6 +58,7 @@
 
           <div class="toolbar"><label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="キーワード・技術・旅行先で探す" autocomplete="off" aria-label="ニュースを検索" /></label><label class="select-wrap"><span>並び替え</span><select id="sort"><option value="recommended">おすすめ順</option><option value="latest">新着順</option><option value="popular">注目度順</option></select></label><button id="unreadFilter" class="filter-button" aria-pressed="false">未読のみ</button></div>
           <div id="mobileChips" class="mobile-chips" role="group" aria-label="カテゴリを選択"></div>
+          <div id="sourceFilters" class="source-filters" role="group" aria-label="記事の種類で絞る" hidden></div>
           <div class="feed-head"><div><div class="eyebrow purple" id="sectionKicker">CURATED FOR YOU</div><h2 id="sectionTitle" tabindex="-1">今日の発見 <span class="h2-spark">✳</span></h2><details class="display-help"><summary>表示順について</summary><p id="sectionDesc">あなたの関心と、新しさから優先順位をつけています。</p></details></div><button id="settingsInline" class="tune-button">☷ 興味を調整</button></div>
           <p id="feedSummary" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
           <div id="feed" class="feed-grid"><div class="loading">発見を読み込み中…</div></div>
@@ -69,7 +69,7 @@
       </div>
     </main>
   </div>
-  <nav class="bottom-nav" aria-label="モバイルナビゲーション"><button data-mobile-go="all"><span>⌂</span>ホーム</button><button data-mobile-go="github"><span>⌘</span>GitHub</button><button data-mobile-go="saved"><span>♡</span>保存</button><button id="settingsBottom"><span>☷</span>設定</button></nav>
+  <nav class="bottom-nav" aria-label="モバイルナビゲーション"><button data-mobile-go="all"><span>⌂</span>ホーム</button><button data-mobile-go="technology"><span>⌘</span>技術</button><button data-mobile-go="saved"><span>♡</span>保存</button><button id="settingsBottom"><span>☷</span>設定</button></nav>
   <dialog id="prefsDialog" class="prefs-dialog" aria-labelledby="prefsTitle"><form method="dialog"><div class="dialog-top"><div><div class="eyebrow purple">PERSONALIZE YOUR RADAR</div><h2 id="prefsTitle">何にワクワクする？</h2><p>優先度はこの端末にだけ保存されます。ニュース収集自体は全カテゴリを継続します。</p></div><button class="icon-button" value="cancel" aria-label="閉じる">×</button></div><div class="prefs-content"><div id="weightControls" class="weight-controls"></div>
     <section class="prefs-transfer" aria-labelledby="transferTitle"><h3 id="transferTitle">設定と保存を持ち運ぶ</h3><p>重みと保存IDだけを端末内のJSONに書き出します。既読・記事本文は含みません。ファイルには興味の情報があるため、公開しないでください。</p>
       <div class="transfer-buttons"><button id="exportPrefs" type="button" class="secondary-button">JSONを書き出す</button><button id="importPrefs" type="button" class="secondary-button">JSONを読み込む</button><input id="prefsFile" type="file" accept=".json,application/json" hidden /></div>
