@@ -2,7 +2,7 @@
 # Curiosity Radar v2 — 追加ユーザーストーリーと受入基準
 
 - ID: CR-PROD-002 / 2026-10-23
-- Status: 新しい要件、**未実装**
+- Status: 段階的実装。ホーム・詳細・手動引き継ぎの範囲は[UI改修記録](UI_REDESIGN.md)を参照。一次情報の新規接続・独自LLM要約・全ストーリーの品質ゲート完了を意味しない。
 - 詳細: EDITORIAL_POLICY_V2.md / ARTICLE_EXPERIENCE_V2.md
 - 既存のUSER_STORIES.mdは初版記録として維持。新しい体験と衝突する箇所は本書を優先し、実装前に設計変更を明示する。
 

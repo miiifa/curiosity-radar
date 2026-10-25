@@ -21,6 +21,9 @@
 - スマホ向け画面、キーボード操作、PWAインストール対応（オフラインでは直近キャッシュ表示）。[操作・アクセシビリティの確認範囲](docs/ACCESSIBILITY.md)。
 - 設定から重み・保存IDを端末内のJSONへ書き出し、確認してから読み込み。[持ち運びの手順と制限](docs/PORTABLE_PREFERENCES.md)。
 
+- 明るいホームの6ジャンルから記事詳細へ進み、概要・出所・未確認点・5軸の未評価を確認できます。お得情報は未接続です。
+- 記事詳細の「ChatGPTで考察」で公開情報を確認・コピーし、ChatGPTを明示的に開いて貼り付けられます。[画面改修と検証範囲](docs/UI_REDESIGN.md)。
+
 ### 重要な制限
 
 - **AIによる要約・推薦ではありません**。v1ではRSS抜粋、GitHubメタデータ、ルールベースのスコア・推薦理由・収益化仮説を使います。LLM追加は次の段階です。
@@ -75,6 +78,10 @@ python -m json.tool data/news.json >/dev/null
 python tests/browser_smoke.py
 python tests/accessibility_smoke.py
 python tests/preferences_smoke.py
+python tests/home_smoke.py
+python tests/genres_smoke.py
+python tests/detail_smoke.py
+python tests/discussion_smoke.py
 ```
 
 ブラウザーテストは外部APIを使わず、一時ローカルサーバーのfixtureで表示状態と実Service Workerのオフライン復元を確認します。Chromiumの場所は `CHROMIUM_PATH` で指定できます。公開後は実端末でも再読み込みし、更新日時・出典・キャッシュ警告を確認してください。記事の掲載／更新／KEV追加日時と、スナップショットのデータ更新日時は別です。保持した記事ごとの最終取得時刻は現行v1データには記録していません。

@@ -33,11 +33,13 @@ def run():
       assert 'コピーしました' not in page.locator('#discussionStatus').inner_text()
       page.evaluate('window.__mode="success"');page.locator('[data-discuss]').click()
      expect(page.locator('#discussionStatus')).to_contain_text('コピーしました')
+     if mode=='success':page.screenshot(path=f'/tmp/chatgpt-context-{width}.png')
      with page.expect_popup() as popup:page.locator('.chatgpt-link').click()
      destination=popup.value;destination.wait_for_load_state();assert destination.url=='https://chatgpt.com/';destination.close()
      assert opened==[('https://chatgpt.com/','GET',None)],opened
      page.locator('.chatgpt-link').focus();page.keyboard.press('Tab');assert page.evaluate('document.activeElement.closest("#discussionDialog")!==null')
      page.keyboard.press('Escape');expect(page.locator('[data-discuss]')).to_be_focused()
+     if mode=='success':page.screenshot(path=f'/tmp/detail-handoff-{width}.png',full_page=True)
      assert page.locator('#articleDetail img').count()==0 and not page.evaluate('Boolean(window.__handoffInjected)')
      assert not page.evaluate('document.documentElement.scrollWidth>innerWidth');assert not errors,errors
      context.close();print(f'{width}px {mode} handoff / selected public data / confirmed copy / manual fallback / explicit open / focus: PASS',flush=True)
