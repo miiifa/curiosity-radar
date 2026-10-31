@@ -1,23 +1,52 @@
 {
-  "generated_at": "2026-10-31T01:44:24.271923Z",
+  "generated_at": "2026-10-31T15:49:47.344286Z",
   "mode": "live",
   "items": [
+    {
+      "id": "github-05b853ba300b6a8978",
+      "category": "github",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "title": "louislam/uptime-kuma",
+      "summary": "A fancy self-hosted monitoring tool",
+      "published": "2026-10-31T11:53:29Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/louislam/uptime-kuma",
+      "stars": 93123,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": 13,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 22.143769,
+      "star_growth_percent_per_day": 0.023782,
+      "discovery_group": "established",
+      "language": "JavaScript",
+      "license": "MIT",
+      "tags": [
+        "docker",
+        "monitor",
+        "monitoring",
+        "responsive",
+        "self-hosted"
+      ],
+      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
+      "score": 99
+    },
     {
       "id": "github-0a8884baa5f55aa660",
       "category": "github",
       "url": "https://github.com/stablyai/orca",
       "title": "stablyai/orca",
       "summary": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "published": "2026-10-31T01:44:07Z",
+      "published": "2026-10-31T15:48:48Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/stablyai/orca",
-      "stars": 111147,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": 270,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 723.872317,
-      "star_growth_percent_per_day": 0.652861,
+      "stars": 111545,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": 398,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 677.940006,
+      "star_growth_percent_per_day": 0.609949,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": "MIT",
@@ -37,16 +66,16 @@
       "url": "https://github.com/janhq/jan",
       "title": "janhq/jan",
       "summary": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
-      "published": "2026-10-30T09:08:46Z",
+      "published": "2026-10-31T05:19:44Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/janhq/jan",
-      "stars": 45182,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": 9,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 24.129077,
-      "star_growth_percent_per_day": 0.053415,
+      "stars": 45197,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": 15,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 25.550503,
+      "star_growth_percent_per_day": 0.05655,
       "discovery_group": "established",
       "language": "Rust",
       "license": null,
@@ -66,16 +95,16 @@
       "url": "https://github.com/unslothai/unsloth",
       "title": "unslothai/unsloth",
       "summary": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
-      "published": "2026-10-31T01:33:29Z",
+      "published": "2026-10-31T15:49:02Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/unslothai/unsloth",
-      "stars": 78826,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": 17,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 45.577146,
-      "star_growth_percent_per_day": 0.057832,
+      "stars": 78856,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": 30,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 51.101006,
+      "star_growth_percent_per_day": 0.064828,
       "discovery_group": "established",
       "language": "Python",
       "license": "Apache-2.0",
@@ -99,12 +128,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/HKUDS/Vibe-Trading",
-      "stars": 37237,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": 19,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 50.939163,
-      "star_growth_percent_per_day": 0.136867,
+      "stars": 37282,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": 45,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 76.651508,
+      "star_growth_percent_per_day": 0.205848,
       "discovery_group": "established",
       "language": "Python",
       "license": "MIT",
@@ -128,12 +157,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/iOfficeAI/AionUi",
-      "stars": 33936,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": 9,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 24.129077,
-      "star_growth_percent_per_day": 0.071121,
+      "stars": 33949,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": 13,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 22.143769,
+      "star_growth_percent_per_day": 0.065252,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -157,12 +186,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/bojieli/ai-agent-book",
-      "stars": 56685,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": 18,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 48.258154,
-      "star_growth_percent_per_day": 0.085161,
+      "stars": 56750,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": 65,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 110.718845,
+      "star_growth_percent_per_day": 0.195323,
       "discovery_group": "established",
       "language": "Python",
       "license": "Apache-2.0",
@@ -186,12 +215,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/jackwener/OpenCLI",
-      "stars": 30787,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": 7,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 18.76706,
-      "star_growth_percent_per_day": 0.060972,
+      "stars": 30792,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": 5,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 8.516834,
+      "star_growth_percent_per_day": 0.027664,
       "discovery_group": "established",
       "language": "JavaScript",
       "license": "Apache-2.0",
@@ -203,36 +232,7 @@
         "browser-use"
       ],
       "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
-      "score": 99
-    },
-    {
-      "id": "github-05b853ba300b6a8978",
-      "category": "github",
-      "url": "https://github.com/louislam/uptime-kuma",
-      "title": "louislam/uptime-kuma",
-      "summary": "A fancy self-hosted monitoring tool",
-      "published": "2026-10-31T00:03:44Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/louislam/uptime-kuma",
-      "stars": 93110,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": 3,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 8.043026,
-      "star_growth_percent_per_day": 0.008638,
-      "discovery_group": "established",
-      "language": "JavaScript",
-      "license": "MIT",
-      "tags": [
-        "docker",
-        "monitor",
-        "monitoring",
-        "responsive",
-        "self-hosted"
-      ],
-      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
-      "score": 97
+      "score": 98
     },
     {
       "id": "github-15209dbc4583c650c1",
@@ -240,16 +240,16 @@
       "url": "https://github.com/Twigpine/openclaude",
       "title": "Twigpine/openclaude",
       "summary": "runs anywhere. uses anything",
-      "published": "2026-10-30T20:46:34Z",
+      "published": "2026-10-31T15:25:58Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/Twigpine/openclaude",
-      "stars": 34218,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
+      "stars": 34221,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
       "star_delta": 3,
-      "star_delta_since": "2026-10-30T16:47:17.594028Z",
-      "star_delta_per_day": 8.043026,
-      "star_growth_percent_per_day": 0.023507,
+      "star_delta_since": "2026-10-31T01:44:24.271923Z",
+      "star_delta_per_day": 5.110101,
+      "star_growth_percent_per_day": 0.014934,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": null,
@@ -261,7 +261,7 @@
         "coding"
       ],
       "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
-      "score": 97
+      "score": 96
     },
     {
       "id": "security-41d002bd444a3ccf23",
@@ -1052,26 +1052,10 @@
       "url": "https://github.com/stablyai/orca",
       "title": "中小事業者向けの作業自動化サポート — orca",
       "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
-      "published": "2026-10-31T01:44:07Z",
+      "published": "2026-10-31T15:48:48Z",
       "source": "着想元: stablyai/orca",
       "tags": [
         "自動化",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
-      "id": "money-1970f2aab6a882fb2b",
-      "category": "money",
-      "url": "https://github.com/unslothai/unsloth",
-      "title": "業務特化のAIミニツール — unsloth",
-      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-10-31T01:33:29Z",
-      "source": "着想元: unslothai/unsloth",
-      "tags": [
-        "AIサービス",
         "収益性未検証",
         "OSS活用"
       ],
@@ -1084,7 +1068,7 @@
       "url": "https://github.com/louislam/uptime-kuma",
       "title": "ニッチ情報を届ける有料ダッシュボード — uptime-kuma",
       "summary": "収集した情報を整理し、特定の職種に役立つレポートとして提供できるか調査。情報の再配布許諾に注意。",
-      "published": "2026-10-30T16:35:54Z",
+      "published": "2026-10-31T11:53:29Z",
       "source": "着想元: louislam/uptime-kuma",
       "tags": [
         "情報サービス",
@@ -1100,8 +1084,24 @@
       "url": "https://github.com/janhq/jan",
       "title": "業務特化のAIミニツール — jan",
       "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-10-30T09:08:46Z",
+      "published": "2026-10-31T05:19:44Z",
       "source": "着想元: janhq/jan",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
+    },
+    {
+      "id": "money-1970f2aab6a882fb2b",
+      "category": "money",
+      "url": "https://github.com/unslothai/unsloth",
+      "title": "業務特化のAIミニツール — unsloth",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-10-31T01:33:29Z",
+      "source": "着想元: unslothai/unsloth",
       "tags": [
         "AIサービス",
         "収益性未検証",
@@ -1415,6 +1415,23 @@
       "score": 93
     },
     {
+      "id": "social-9e9070e438511010b7",
+      "category": "social",
+      "title": "Serbia just elected the world's brainiest parliament",
+      "summary": "Hacker News: 562ポイント、327件のコメント。投稿先で内容を確認。",
+      "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-31T10:21:30Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 92
+    },
+    {
       "id": "social-55737272f83db8f20c",
       "category": "social",
       "title": "AI isn't replacing SREs, it's deskilling them",
@@ -1424,6 +1441,40 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-30T15:52:18Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 92
+    },
+    {
+      "id": "social-b49e140ae02cf75c05",
+      "category": "social",
+      "title": "Northflank Breached",
+      "summary": "Hacker News: 460ポイント、339件のコメント。投稿先で内容を確認。",
+      "url": "https://status.northflank.com",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-30T15:10:31Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 92
+    },
+    {
+      "id": "social-e0174682f4170dd9dd",
+      "category": "social",
+      "title": "The $6.3B Binance hack was pulled off in just 20 minutes",
+      "summary": "Hacker News: 527ポイント、370件のコメント。投稿先で内容を確認。",
+      "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-30T12:50:01Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -1452,7 +1503,7 @@
       "id": "social-a13f736d9894568550",
       "category": "social",
       "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-      "summary": "Hacker News: 775ポイント、485件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 938ポイント、537件のコメント。投稿先で内容を確認。",
       "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2540,15 +2591,32 @@
       "score": 91
     },
     {
-      "id": "social-b49e140ae02cf75c05",
+      "id": "social-2557b27e65604b5679",
       "category": "social",
-      "title": "Northflank Breached",
-      "summary": "Hacker News: 359ポイント、272件のコメント。投稿先で内容を確認。",
-      "url": "https://status.northflank.com",
+      "title": "My favourite PowerMac is a Nintendo Wii",
+      "summary": "Hacker News: 346ポイント、105件のコメント。投稿先で内容を確認。",
+      "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T15:10:31Z",
+      "published": "2026-10-30T17:25:15Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 90
+    },
+    {
+      "id": "social-67e05e526744384fb8",
+      "category": "social",
+      "title": "Florilegium: Procedural Flowers in LaTeX",
+      "summary": "Hacker News: 342ポイント、50件のコメント。投稿先で内容を確認。",
+      "url": "https://github.com/kevinraymond/florilegium",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-30T15:48:12Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -2787,44 +2855,32 @@
       "score": 90
     },
     {
-      "id": "github-bd036b2924d3b3d21c",
-      "category": "github",
-      "url": "https://github.com/kajisho5/ffmpeg-skill",
-      "title": "kajisho5/ffmpeg-skill",
-      "summary": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
-      "published": "2026-10-31T01:42:13Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/kajisho5/ffmpeg-skill",
-      "stars": 4120,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "Python",
-      "license": "MIT",
-      "tags": [
-        "agent-skills",
-        "ai-agents",
-        "audio-processing",
-        "captions",
-        "claude-code"
-      ],
-      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
-      "score": 89
-    },
-    {
-      "id": "social-e0174682f4170dd9dd",
+      "id": "social-6055dc2671b073d019",
       "category": "social",
-      "title": "The $6.3B Binance hack was pulled off in just 20 minutes",
-      "summary": "Hacker News: 312ポイント、216件のコメント。投稿先で内容を確認。",
-      "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+      "title": "The federated code forge",
+      "summary": "Hacker News: 310ポイント、90件のコメント。投稿先で内容を確認。",
+      "url": "https://tangled.org/blog/forge/",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T12:50:01Z",
+      "published": "2026-10-30T15:44:29Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 89
+    },
+    {
+      "id": "social-0d3b5aac153790f535",
+      "category": "social",
+      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+      "summary": "Hacker News: 326ポイント、59件のコメント。投稿先で内容を確認。",
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-30T10:06:15Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -2842,6 +2898,23 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-30T00:42:41Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 89
+    },
+    {
+      "id": "social-6e7c64a3d75c3d9e3c",
+      "category": "social",
+      "title": "Breaking the open web won't stop the bad bots",
+      "summary": "Hacker News: 299ポイント、128件のコメント。投稿先で内容を確認。",
+      "url": "https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-27T18:42:55Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -2974,6 +3047,40 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 89
+    },
+    {
+      "id": "social-3ab4a2ac04ee9b8208",
+      "category": "social",
+      "title": "Tell HN: Scribd Breached",
+      "summary": "Hacker News: 292ポイント、106件のコメント。投稿先で内容を確認。",
+      "url": "https://news.ycombinator.com/item?id=50312756",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-31T02:46:36Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 88
+    },
+    {
+      "id": "social-44da56d320b4140600",
+      "category": "social",
+      "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
+      "summary": "Hacker News: 273ポイント、135件のコメント。投稿先で内容を確認。",
+      "url": "https://github.com/dbreunig/nesformer",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-30T16:40:22Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 88
     },
     {
       "id": "social-18f639dbd639041a65",
@@ -3110,15 +3217,15 @@
       "score": 88
     },
     {
-      "id": "social-0d3b5aac153790f535",
+      "id": "social-4046f158b923cc55ad",
       "category": "social",
-      "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
-      "summary": "Hacker News: 263ポイント、52件のコメント。投稿先で内容を確認。",
-      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+      "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+      "summary": "Hacker News: 247ポイント、293件のコメント。投稿先で内容を確認。",
+      "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T10:06:15Z",
+      "published": "2026-10-30T14:08:20Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -3136,6 +3243,23 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-29T07:08:50Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 87
+    },
+    {
+      "id": "social-dc4cca89ce0bf93fed",
+      "category": "social",
+      "title": "Cloudflare Turnstile solver library (no headless browser required)",
+      "summary": "Hacker News: 267ポイント、91件のコメント。投稿先で内容を確認。",
+      "url": "https://github.com/chris124567/cfsolve",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-28T17:29:23Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -3341,40 +3465,6 @@
       "score": 86
     },
     {
-      "id": "social-2557b27e65604b5679",
-      "category": "social",
-      "title": "My favourite PowerMac is a Nintendo Wii",
-      "summary": "Hacker News: 242ポイント、65件のコメント。投稿先で内容を確認。",
-      "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T17:25:15Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 86
-    },
-    {
-      "id": "social-6055dc2671b073d019",
-      "category": "social",
-      "title": "The federated code forge",
-      "summary": "Hacker News: 233ポイント、77件のコメント。投稿先で内容を確認。",
-      "url": "https://tangled.org/blog/forge/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T15:44:29Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 86
-    },
-    {
       "id": "social-2169c46ff38eaf6095",
       "category": "social",
       "title": "If IPv4 were land",
@@ -3523,6 +3613,23 @@
       "score": 86
     },
     {
+      "id": "social-bba0da0d1585467e2e",
+      "category": "social",
+      "title": "Show HN: To Honor Sir Patrick Stewart, Enjoy the TNG Episode Guessing Game",
+      "summary": "Hacker News: 219ポイント、69件のコメント。投稿先で内容を確認。",
+      "url": "https://tng.episodle.com/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-30T23:51:24Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 85
+    },
+    {
       "id": "social-6aa4ccd1113a8300f2",
       "category": "social",
       "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
@@ -3532,23 +3639,6 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-30T20:23:30Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 85
-    },
-    {
-      "id": "social-67e05e526744384fb8",
-      "category": "social",
-      "title": "Florilegium: Procedural Flowers in LaTeX",
-      "summary": "Hacker News: 218ポイント、36件のコメント。投稿先で内容を確認。",
-      "url": "https://github.com/kevinraymond/florilegium",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T15:48:12Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -3774,40 +3864,6 @@
       "score": 84
     },
     {
-      "id": "social-44da56d320b4140600",
-      "category": "social",
-      "title": "Show HN: A working Nintendo in ~1GB of Qwen weights",
-      "summary": "Hacker News: 190ポイント、111件のコメント。投稿先で内容を確認。",
-      "url": "https://github.com/dbreunig/nesformer",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T16:40:22Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 84
-    },
-    {
-      "id": "social-6e7c64a3d75c3d9e3c",
-      "category": "social",
-      "title": "Breaking the open web won't stop the bad bots",
-      "summary": "Hacker News: 188ポイント、79件のコメント。投稿先で内容を確認。",
-      "url": "https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-27T18:42:55Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 84
-    },
-    {
       "id": "social-a657e4818f3f23e663",
       "category": "social",
       "title": "SS United States to be sunk as largest artificial reef",
@@ -3905,6 +3961,57 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 84
+    },
+    {
+      "id": "social-1c640f88e053cb517a",
+      "category": "social",
+      "title": "We Took over ChatGPT Accounts",
+      "summary": "Hacker News: 165ポイント、80件のコメント。投稿先で内容を確認。",
+      "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-31T10:30:11Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 83
+    },
+    {
+      "id": "social-f0f610dcc806e76c1c",
+      "category": "social",
+      "title": "Digital minimalism",
+      "summary": "Hacker News: 165ポイント、126件のコメント。投稿先で内容を確認。",
+      "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-31T06:16:36Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 83
+    },
+    {
+      "id": "social-6e1d64b93982139388",
+      "category": "social",
+      "title": "The oldest ice disappears and the Stone Age emerges from it",
+      "summary": "Hacker News: 179ポイント、79件のコメント。投稿先で内容を確認。",
+      "url": "https://www.sciencenorway.no/archaeology-climate-culture/the-oldest-ice-is-disappearing-the-stone-age-is-emerging-from-the-melting-ice/2713921",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-30T19:51:33Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 83
     },
     {
       "id": "social-71f6ace31bb2b54b89",
@@ -4093,6 +4200,23 @@
       "score": 83
     },
     {
+      "id": "social-f70b44b5822e23f939",
+      "category": "social",
+      "title": "Molly(Signal fork) has not been updated since 3 months and is vulnerable",
+      "summary": "Hacker News: 155ポイント、105件のコメント。投稿先で内容を確認。",
+      "url": "https://piefed.world/post/1503394",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-31T10:23:41Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 82
+    },
+    {
       "id": "social-09b80fe03886ba3bba",
       "category": "social",
       "title": "What we know so far about Spain train crash",
@@ -4258,6 +4382,35 @@
       "score": 82
     },
     {
+      "id": "github-d45c25f36a43223262",
+      "category": "github",
+      "url": "https://github.com/phishdestroy/TgWitness",
+      "title": "phishdestroy/TgWitness",
+      "summary": "Open-source Telegram chat exporter, deleted & edited message logger, and OSINT forensics archiver. Save chat history, capture deleted messages, compare edit versions, and export signed HTML/JSON/CSV evidence.",
+      "published": "2026-10-31T15:49:09Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/phishdestroy/TgWitness",
+      "stars": 180,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "Python",
+      "license": "MIT",
+      "tags": [
+        "chat-export",
+        "dfir",
+        "digital-forensics",
+        "evidence",
+        "evidence-preservation"
+      ],
+      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
+      "score": 81
+    },
+    {
       "id": "social-4fafb24bf0bf0a34db",
       "category": "social",
       "title": "Linode Security Incident",
@@ -4267,6 +4420,23 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-30T21:57:40Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 81
+    },
+    {
+      "id": "social-b65f6c56c4508fd784",
+      "category": "social",
+      "title": "Jules Verne's Lost Novel",
+      "summary": "Hacker News: 134ポイント、32件のコメント。投稿先で内容を確認。",
+      "url": "https://blue-continuum.com/verne-paris",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-30T19:55:10Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -4537,6 +4707,23 @@
       "score": 81
     },
     {
+      "id": "social-4e37f26bbf227fb764",
+      "category": "social",
+      "title": "Switch Lowering in GCC",
+      "summary": "Hacker News: 132ポイント、25件のコメント。投稿先で内容を確認。",
+      "url": "https://xoranth.net/gcc-switch/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-31T08:02:26Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 80
+    },
+    {
       "id": "social-d8989963e8e03233d5",
       "category": "social",
       "title": "Introducing LFM3: Every Modality for Specialized Intelligence",
@@ -4546,6 +4733,23 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-27T17:04:50Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 80
+    },
+    {
+      "id": "social-d9b54a915c19f75e09",
+      "category": "social",
+      "title": "Show HN: Marelleo, an open-source story box I built for my kids using ESP32",
+      "summary": "Hacker News: 133ポイント、40件のコメント。投稿先で内容を確認。",
+      "url": "https://zebra.rodeo/en/blog/marelleo/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-27T15:24:36Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -4693,6 +4897,23 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-29T15:30:22Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 79
+    },
+    {
+      "id": "social-7e8069f52fd9bcafc2",
+      "category": "social",
+      "title": "AI, Lean, and the Future of Formal Verification, with Lean Creator Leo de Moura",
+      "summary": "Hacker News: 114ポイント、28件のコメント。投稿先で内容を確認。",
+      "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-29T15:29:48Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -4949,6 +5170,22 @@
       "score": 79
     },
     {
+      "id": "money-d45c25f36a43223262",
+      "category": "money",
+      "url": "https://github.com/phishdestroy/TgWitness",
+      "title": "OSSの導入・カスタマイズ支援 — TgWitness",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-10-31T15:49:09Z",
+      "source": "着想元: phishdestroy/TgWitness",
+      "tags": [
+        "受託開発",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 78
+    },
+    {
       "id": "social-43d219ce1d28bc8d40",
       "category": "social",
       "title": "Infinite Mac: BeOS",
@@ -4964,67 +5201,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 78
-    },
-    {
-      "id": "social-4046f158b923cc55ad",
-      "category": "social",
-      "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
-      "summary": "Hacker News: 101ポイント、111件のコメント。投稿先で内容を確認。",
-      "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T14:08:20Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 78
-    },
-    {
-      "title": "三菱電機製の複数製品における複数の脆弱性（2026-006）",
-      "summary": "三菱電機株式会社が提供するGENESIS、GENESIS64、ICONICS Suite、Hyper Historian、AnalytiX、MobileHMI、IoTWorX、MC Works64、GENESIS32およびBizVizには、複数の脆弱性が存在します。",
-      "url": "https://jvn.jp/vu/JVNVU93251594/",
-      "published": "2026-10-30T05:00:00Z",
-      "id": "security-ea1f491fcc706c7b42",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 78,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月29日）",
-      "summary": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
-      "url": "https://jvn.jp/vu/JVNVU95856220/",
-      "published": "2026-10-30T00:15:00Z",
-      "id": "security-65d6f913af1ddea766",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 78,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
     },
     {
       "id": "social-519a776207ed3493f8",
@@ -5287,6 +5463,23 @@
       "score": 78
     },
     {
+      "id": "social-5da3c88e003c6fce53",
+      "category": "social",
+      "title": "Prospero: A new coding harness for a more civilized age",
+      "summary": "Hacker News: 91ポイント、60件のコメント。投稿先で内容を確認。",
+      "url": "https://nullprogram.com/blog/2026/10/31/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-31T11:54:59Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 77
+    },
+    {
       "id": "social-54dad389b9276c85f8",
       "category": "social",
       "title": "AO3 Down for Maintenance",
@@ -5318,6 +5511,50 @@
       ],
       "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
       "score": 77
+    },
+    {
+      "title": "三菱電機製の複数製品における複数の脆弱性（2026-006）",
+      "summary": "三菱電機株式会社が提供するGENESIS、GENESIS64、ICONICS Suite、Hyper Historian、AnalytiX、MobileHMI、IoTWorX、MC Works64、GENESIS32およびBizVizには、複数の脆弱性が存在します。",
+      "url": "https://jvn.jp/vu/JVNVU93251594/",
+      "published": "2026-10-30T05:00:00Z",
+      "id": "security-ea1f491fcc706c7b42",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 77,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月29日）",
+      "summary": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+      "url": "https://jvn.jp/vu/JVNVU95856220/",
+      "published": "2026-10-30T00:15:00Z",
+      "id": "security-65d6f913af1ddea766",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 77,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
     },
     {
       "id": "social-aee952625e88acbbe9",
@@ -5421,40 +5658,6 @@
       "score": 77
     },
     {
-      "id": "social-b65f6c56c4508fd784",
-      "category": "social",
-      "title": "Jules Verne's Lost Novel",
-      "summary": "Hacker News: 81ポイント、14件のコメント。投稿先で内容を確認。",
-      "url": "https://blue-continuum.com/verne-paris",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T19:55:10Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 76
-    },
-    {
-      "id": "social-6e1d64b93982139388",
-      "category": "social",
-      "title": "The oldest ice disappears and the Stone Age emerges from it",
-      "summary": "Hacker News: 89ポイント、33件のコメント。投稿先で内容を確認。",
-      "url": "https://www.sciencenorway.no/archaeology-climate-culture/the-oldest-ice-is-disappearing-the-stone-age-is-emerging-from-the-melting-ice/2713921",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T19:51:33Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 76
-    },
-    {
       "id": "social-33e6fe6cc1067bd4c2",
       "category": "social",
       "title": "How do you take a picture of a black hole?",
@@ -5487,28 +5690,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 76
-    },
-    {
-      "title": "Apache Struts 2 RESTプラグインにおける、@StrutsParameterの制限が@JsonAnySetterに適用されない問題",
-      "summary": "The Apache Software Foundationが提供するApache Struts 2のRESTプラグインには、Jacksonの @JsonAnySetter が指定されたフィールドやメソッドに対して @StrutsParameter の制限が行われない問題が存在します。",
-      "url": "https://jvn.jp/jp/JVN82782759/",
-      "published": "2026-10-29T03:00:00Z",
-      "id": "security-75cc2df1badc301d4a",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 76,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
     },
     {
       "id": "social-fbe3a7a1daf8c0ead6",
@@ -5577,33 +5758,26 @@
       "score": 76
     },
     {
-      "id": "github-f28daef0075169bbf1",
-      "category": "github",
-      "url": "https://github.com/UCS-Care-Group/mailcraft",
-      "title": "UCS-Care-Group/mailcraft",
-      "summary": "MailCraft: an open-source, clean-room mail, calendar and contacts program in pure Rust, for Microsoft 365, Outlook.com and IMAP. Early alpha.",
-      "published": "2026-10-31T01:44:04Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/UCS-Care-Group/mailcraft",
-      "stars": 173,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "Rust",
-      "license": "Apache-2.0",
+      "title": "Appraisal by AI: Model-driven victim prioritization in the VOLTA infostealer",
+      "summary": "The self-deleting VOLTA infostealer steals credentials, sessions, and cryptocurrency wallets. Then, it uses LLMs to profile victims and rank their most valuable assets.",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+      "published": "2026-10-31T12:00:00Z",
+      "id": "security-ef006b6d1900eae337",
+      "category": "security",
+      "source": "Cisco Talos (脅威・脆弱性研究)",
       "tags": [
-        "calendar",
-        "egui",
-        "email-client",
-        "imap",
-        "mcp"
+        "海外",
+        "脅威リサーチ"
       ],
-      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
-      "score": 75
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 75,
+      "source_url": "https://blog.talosintelligence.com/rss/",
+      "source_kind": "research_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
     },
     {
       "id": "money-6295540e8fe473e7aa",
@@ -5620,6 +5794,28 @@
       ],
       "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
       "score": 75
+    },
+    {
+      "title": "Apache Struts 2 RESTプラグインにおける、@StrutsParameterの制限が@JsonAnySetterに適用されない問題",
+      "summary": "The Apache Software Foundationが提供するApache Struts 2のRESTプラグインには、Jacksonの @JsonAnySetter が指定されたフィールドやメソッドに対して @StrutsParameter の制限が行われない問題が存在します。",
+      "url": "https://jvn.jp/jp/JVN82782759/",
+      "published": "2026-10-29T03:00:00Z",
+      "id": "security-75cc2df1badc301d4a",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 75,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
     },
     {
       "id": "social-fd6c7c6c47f5d50497",
@@ -5665,23 +5861,6 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-28T20:46:52Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 75
-    },
-    {
-      "id": "social-dc4cca89ce0bf93fed",
-      "category": "social",
-      "title": "Cloudflare Turnstile solver library (no headless browser required)",
-      "summary": "Hacker News: 79ポイント、29件のコメント。投稿先で内容を確認。",
-      "url": "https://github.com/chris124567/cfsolve",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-28T17:29:23Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -5786,173 +5965,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 75
-    },
-    {
-      "id": "github-5dd056d4a624c67fe1",
-      "category": "github",
-      "url": "https://github.com/rasonyang/freesbc",
-      "title": "rasonyang/freesbc",
-      "summary": "One binary, one YAML file. A pure-Go Session Border Controller that keeps FreeSWITCH or Asterisk off the public internet: SIP proxy, RTP/SRTP relay, WebRTC gateway, built-in SIP security.",
-      "published": "2026-10-31T01:42:38Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/rasonyang/freesbc",
-      "stars": 283,
-      "stars_observed_at": "2026-10-31T01:44:24.271923Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "Go",
-      "license": "Apache-2.0",
-      "tags": [
-        "asterisk",
-        "callcenter",
-        "freeswitch",
-        "go",
-        "golang"
-      ],
-      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
-      "score": 74
-    },
-    {
-      "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (更新)",
-      "summary": "",
-      "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
-      "published": "2026-10-29T06:43:00Z",
-      "id": "security-47020b964d9535efb8",
-      "category": "security",
-      "source": "JPCERT/CC",
-      "tags": [
-        "注意喚起",
-        "国内"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 74,
-      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [
-          "CVE-2026-109618",
-          "CVE-2026-109619"
-        ],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
-      "summary": "The PHP Groupから、PHPの2件の脆弱性（CVE-2026-109618、CVE-2026-109619）に対してアドバイザリが公開されました。",
-      "url": "https://jvn.jp/vu/JVNVU99905564/",
-      "published": "2026-10-28T07:30:00Z",
-      "id": "security-71a17a0ee58c11e737",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 74,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [
-          "CVE-2026-109618",
-          "CVE-2026-109619"
-        ],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "ヤマハ製NWR100における複数の脆弱性",
-      "summary": "ヤマハ株式会社が提供する無線LANルーターNWR100には、複数の脆弱性が存在します。",
-      "url": "https://jvn.jp/vu/JVNVU91027179/",
-      "published": "2026-10-28T05:15:00Z",
-      "id": "security-eb8d48ccb0d20758ae",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 74,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "Yamaha LAN Monitor for WindowsのインストーラにおけるDLL読み込みに関する脆弱性",
-      "summary": "ヤマハ株式会社が提供するYamaha LAN Monitor for Windowsのインストーラには、DLL読み込みに関する脆弱性が存在します。",
-      "url": "https://jvn.jp/jp/JVN23695234/",
-      "published": "2026-10-28T05:00:15Z",
-      "id": "security-9997c8c5a84c4812ca",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 74,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "ヤマハ製YMS-VPN8およびYMS-VPN8-CPにおける引用符で囲まれていないファイルパスの脆弱性",
-      "summary": "ヤマハ株式会社が提供するYMS-VPN8およびYMS-VPN8-CPには、登録されるWindowsサービスプログラムのファイルパスが引用符で囲まれていない問題が存在します。",
-      "url": "https://jvn.jp/jp/JVN30675482/",
-      "published": "2026-10-28T05:00:00Z",
-      "id": "security-a9a7b33c56b924482e",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 74,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月27日）",
-      "summary": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
-      "url": "https://jvn.jp/vu/JVNVU96093239/",
-      "published": "2026-10-28T00:00:00Z",
-      "id": "security-53450fc7003ffe5e27",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 74,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
     },
     {
       "id": "social-954c25883c862ed4d2",
@@ -6106,6 +6118,31 @@
       "score": 74
     },
     {
+      "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起 (更新)",
+      "summary": "",
+      "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+      "published": "2026-10-29T06:43:00Z",
+      "id": "security-47020b964d9535efb8",
+      "category": "security",
+      "source": "JPCERT/CC",
+      "tags": [
+        "注意喚起",
+        "国内"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 73,
+      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [
+          "CVE-2026-109618",
+          "CVE-2026-109619"
+        ],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
       "id": "social-887c59818f68e469bb",
       "category": "social",
       "title": "Artificial Analysis v5 and the benchmarker's dilemma",
@@ -6115,6 +6152,136 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-10-28T13:38:04Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 73
+    },
+    {
+      "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
+      "summary": "The PHP Groupから、PHPの2件の脆弱性（CVE-2026-109618、CVE-2026-109619）に対してアドバイザリが公開されました。",
+      "url": "https://jvn.jp/vu/JVNVU99905564/",
+      "published": "2026-10-28T07:30:00Z",
+      "id": "security-71a17a0ee58c11e737",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 73,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [
+          "CVE-2026-109618",
+          "CVE-2026-109619"
+        ],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
+      "title": "ヤマハ製NWR100における複数の脆弱性",
+      "summary": "ヤマハ株式会社が提供する無線LANルーターNWR100には、複数の脆弱性が存在します。",
+      "url": "https://jvn.jp/vu/JVNVU91027179/",
+      "published": "2026-10-28T05:15:00Z",
+      "id": "security-eb8d48ccb0d20758ae",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 73,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
+      "title": "Yamaha LAN Monitor for WindowsのインストーラにおけるDLL読み込みに関する脆弱性",
+      "summary": "ヤマハ株式会社が提供するYamaha LAN Monitor for Windowsのインストーラには、DLL読み込みに関する脆弱性が存在します。",
+      "url": "https://jvn.jp/jp/JVN23695234/",
+      "published": "2026-10-28T05:00:15Z",
+      "id": "security-9997c8c5a84c4812ca",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 73,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
+      "title": "ヤマハ製YMS-VPN8およびYMS-VPN8-CPにおける引用符で囲まれていないファイルパスの脆弱性",
+      "summary": "ヤマハ株式会社が提供するYMS-VPN8およびYMS-VPN8-CPには、登録されるWindowsサービスプログラムのファイルパスが引用符で囲まれていない問題が存在します。",
+      "url": "https://jvn.jp/jp/JVN30675482/",
+      "published": "2026-10-28T05:00:00Z",
+      "id": "security-a9a7b33c56b924482e",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 73,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
+      "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月27日）",
+      "summary": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+      "url": "https://jvn.jp/vu/JVNVU96093239/",
+      "published": "2026-10-28T00:00:00Z",
+      "id": "security-53450fc7003ffe5e27",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 73,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
+      "id": "social-3b5058c79cd924503b",
+      "category": "social",
+      "title": "Simple circuits can create complex behaviors",
+      "summary": "Hacker News: 64ポイント、10件のコメント。投稿先で内容を確認。",
+      "url": "https://aatishb.com/myriad/lets-build-a-brain/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-10-27T16:01:06Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -6224,471 +6391,149 @@
       "score": 73
     },
     {
-      "id": "social-3d3a3797f36f72035e",
-      "category": "social",
-      "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
-      "summary": "Hacker News: 62ポイント、13件のコメント。投稿先で内容を確認。",
-      "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-25T09:51:17Z",
+      "id": "github-95747231332901b7c1",
+      "category": "github",
+      "url": "https://github.com/Mistgate/mistgate",
+      "title": "Mistgate/mistgate",
+      "summary": "Beta. Self-hosted panel for running a VPN for others: family, friends, a community or a small team. Hysteria2, VLESS REALITY and AmneziaWG, one link per person. Add servers from the browser over SSH; client-eye health checks and…",
+      "published": "2026-10-31T15:48:33Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/Mistgate/mistgate",
+      "stars": 108,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "Go",
+      "license": "AGPL-3.0",
       "tags": [
-        "海外IT",
-        "コミュニティ"
+        "ai-agents",
+        "amneziawg",
+        "anti-censorship",
+        "censorship-circumvention",
+        "cloudflare-warp"
       ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 73
+      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
+      "score": 67
     },
     {
-      "id": "social-79525a8afd6fd57ace",
-      "category": "social",
-      "title": "I turned my TV into a Game Boy Color with a Pokemon town as my home screen",
-      "summary": "Hacker News: 65ポイント、24件のコメント。投稿先で内容を確認。",
-      "url": "https://twitter.com/robbietilton/status/2111936458923851923",
-      "source": "Hacker News",
-      "published": "2026-10-23T17:40:22Z",
+      "id": "github-efd1cb229b913dd15e",
+      "category": "github",
+      "url": "https://github.com/ExpertKT/notice-hub",
+      "title": "ExpertKT/notice-hub",
+      "summary": "QQ 群通知 → 自动待办 + 日历。Windows 出货包、安卓 App、iPhone 日历订阅（.ics）。只读接收，数据不出本机。",
+      "published": "2026-10-31T15:48:46Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/ExpertKT/notice-hub",
+      "stars": 74,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "Python",
+      "license": null,
       "tags": [
-        "海外IT",
-        "コミュニティ"
+        "calendar",
+        "chaoxing",
+        "dingtalk",
+        "ics",
+        "napcat"
       ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 73
+      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
+      "score": 64
     },
     {
-      "id": "money-f28daef0075169bbf1",
-      "category": "money",
-      "url": "https://github.com/UCS-Care-Group/mailcraft",
-      "title": "業務特化のAIミニツール — mailcraft",
-      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-10-31T01:44:04Z",
-      "source": "着想元: UCS-Care-Group/mailcraft",
+      "id": "github-da0238f2ba356f1837",
+      "category": "github",
+      "url": "https://github.com/SuperGODOG/ai-agent-interview-240",
+      "title": "SuperGODOG/ai-agent-interview-240",
+      "summary": "AI Agent 面试真题库：300 + 道大厂真实面试题（附答题框架）+ Java/Python/Go 语言八股文 + 2 个持续迭代 Agent 项目档案。AI Agent 面试准备、大模型应用开发面试、后端面试八股",
+      "published": "2026-10-31T15:48:05Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/SuperGODOG/ai-agent-interview-240",
+      "stars": 69,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "Python",
+      "license": "MIT",
       "tags": [
-        "AIサービス",
-        "収益性未検証",
-        "OSS活用"
+        "agent",
+        "ai-agent",
+        "backend",
+        "golang",
+        "interview"
       ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 72
+      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
+      "score": 58
     },
     {
-      "id": "social-8d821849286ada42db",
-      "category": "social",
-      "title": "sanstun: A sans-IO, parallel-friendly WireGuard implementation in Rust",
-      "summary": "Hacker News: 57ポイント、13件のコメント。投稿先で内容を確認。",
-      "url": "https://www.firezone.dev/blog/introducing-sanstun",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-30T21:30:00Z",
+      "id": "github-e0f228e9b64e6dd58e",
+      "category": "github",
+      "url": "https://github.com/futureweb/garmin-intervals-bridge",
+      "title": "futureweb/garmin-intervals-bridge",
+      "summary": "Puts back what Garmin strips from the FIT files it sends to Intervals.icu - and syncs the wellness data the official sync misses. Via Garmin's official Personal API, your Garmin Connect sign-in, or both.",
+      "published": "2026-10-31T15:49:20Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/futureweb/garmin-intervals-bridge",
+      "stars": 34,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "Python",
+      "license": "MIT",
       "tags": [
-        "海外IT",
-        "コミュニティ"
+        "cycling",
+        "docker",
+        "fit",
+        "fitness",
+        "garmin"
       ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 72
+      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
+      "score": 57
     },
     {
-      "id": "social-c0e3e86aceb957dec8",
-      "category": "social",
-      "title": "ElementaryUI – Swift, in the Browser",
-      "summary": "Hacker News: 57ポイント、15件のコメント。投稿先で内容を確認。",
-      "url": "https://elementary.codes",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-29T20:56:39Z",
+      "id": "github-cf6cb609312f47389f",
+      "category": "github",
+      "url": "https://github.com/moodiness/polyfin",
+      "title": "moodiness/polyfin",
+      "summary": "Self-hosted server that brings your addons and IPTV to any Jellyfin app.",
+      "published": "2026-10-31T15:49:43Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/moodiness/polyfin",
+      "stars": 30,
+      "stars_observed_at": "2026-10-31T15:49:47.344286Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "Go",
+      "license": "MIT",
       "tags": [
-        "海外IT",
-        "コミュニティ"
+        "debrid",
+        "docker",
+        "eclipse-music",
+        "epg",
+        "ffmpeg"
       ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 72
-    },
-    {
-      "title": "A quiet week in infosec <.<",
-      "summary": "In this edition of the Threat Source newsletter, William explores how PHP has taken over the conversation, Node.js has joined in, but underneath it all, there are still good people doing good work.",
-      "url": "https://blog.talosintelligence.com/a-quiet-week-in-infosec/",
-      "published": "2026-10-29T18:00:00Z",
-      "id": "security-04e2761a8dfbfd40f8",
-      "category": "security",
-      "source": "Cisco Talos (脅威・脆弱性研究)",
-      "tags": [
-        "海外",
-        "脅威リサーチ"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 72,
-      "source_url": "https://blog.talosintelligence.com/rss/",
-      "source_kind": "research_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "IR trends Q3 2026: Actors impersonate IT help desks in vishing attacks as ransomware activity increases",
-      "summary": "Phishing remained the leading initial access technique, while percentage of ransomware and pre-ransomware cases increased. Finance and public administration tied as the top-targeted industries.",
-      "url": "https://blog.talosintelligence.com/ir-trends-q3-2026/",
-      "published": "2026-10-29T14:00:00Z",
-      "id": "security-fe297ce9439a7675f5",
-      "category": "security",
-      "source": "Cisco Talos (脅威・脆弱性研究)",
-      "tags": [
-        "海外",
-        "脅威リサーチ"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 72,
-      "source_url": "https://blog.talosintelligence.com/rss/",
-      "source_kind": "research_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "NIK C2: The new AI-enabled command-and-control framework",
-      "summary": "Cisco Talos observed a new AI-integrated command-and-control (C2) framework in the wild called “NIK C2.”",
-      "url": "https://blog.talosintelligence.com/nik-c2-new-ai-enabled-framework/",
-      "published": "2026-10-29T10:00:00Z",
-      "id": "security-6a79ba8a4f3d294f88",
-      "category": "security",
-      "source": "Cisco Talos (脅威・脆弱性研究)",
-      "tags": [
-        "海外",
-        "脅威リサーチ"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 72,
-      "source_url": "https://blog.talosintelligence.com/rss/",
-      "source_kind": "research_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "id": "social-2c10954cc99447f40a",
-      "category": "social",
-      "title": "Show HN: SlideBySide – Present slides without sharing your screen",
-      "summary": "Hacker News: 59ポイント、24件のコメント。投稿先で内容を確認。",
-      "url": "https://slidebyside.com/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-28T17:07:09Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 72
-    },
-    {
-      "id": "social-a91f3872da0e7755cb",
-      "category": "social",
-      "title": "Tesla Semi catches fire on I-880",
-      "summary": "Hacker News: 58ポイント、32件のコメント。投稿先で内容を確認。",
-      "url": "https://electrek.co/2026/10/28/tesla-semi-fire-i-880-hayward-no-crash/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-28T14:54:07Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 72
-    },
-    {
-      "title": "Weekly Report: GitLabに複数の脆弱性",
-      "summary": "GitLabに複数の脆弱性",
-      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#4",
-      "published": "2026-10-28T00:07:00Z",
-      "id": "security-1dd6e643b2444c1761",
-      "category": "security",
-      "source": "JPCERT/CC",
-      "tags": [
-        "注意喚起",
-        "国内"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 72,
-      "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      },
-      "aliases": [
-        "security-2efd3518cea26d8e59",
-        "security-4e70f3a326c2226726",
-        "security-648c32860f482886f9",
-        "security-65e3ce7860072a0392",
-        "security-7e72e80d073427127c",
-        "security-878c9c08fbe45c6f51",
-        "security-87aee1cccb9a63484a",
-        "security-bfd486fde30417ebdc",
-        "security-c608dac3237f9999ba",
-        "security-c6be81f6b713b30b48",
-        "security-d8ecc62e24a7d5e1a8",
-        "security-e305c96d53447bd315",
-        "security-e352569c2d909a496a",
-        "security-e58c1b73add09f87ab"
-      ],
-      "duplicates": [
-        {
-          "id": "security-2efd3518cea26d8e59",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#1",
-          "title": "Weekly Report: VeloCloud OrchestratorにSQLインジェクションの脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-4e70f3a326c2226726",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#2",
-          "title": "Weekly Report: ISC BINDに複数の脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-648c32860f482886f9",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#8",
-          "title": "Weekly Report: 複数のMozilla製品に脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-65e3ce7860072a0392",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#3",
-          "title": "Weekly Report: 複数のCisco製品に脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-7e72e80d073427127c",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#11",
-          "title": "Weekly Report: MOVEit Transferに複数の脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-878c9c08fbe45c6f51",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#6",
-          "title": "Weekly Report: Google Chromeに複数の脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-87aee1cccb9a63484a",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#13",
-          "title": "Weekly Report: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-bfd486fde30417ebdc",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#10",
-          "title": "Weekly Report: Roundcube Webmailに複数の脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-c608dac3237f9999ba",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#7",
-          "title": "Weekly Report: 複数のAtlassian製品に脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-c6be81f6b713b30b48",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#9",
-          "title": "Weekly Report: LaravelのTokenGuardに認証回避につながる脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-d8ecc62e24a7d5e1a8",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#15",
-          "title": "Weekly Report: JPCERT/CCが2026年7月から9月分の「JPCERT/CC 四半期レポート」を公開",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-e305c96d53447bd315",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#5",
-          "title": "Weekly Report: Apache Tomcatに複数の脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-e352569c2d909a496a",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#14",
-          "title": "Weekly Report: JPCERT/CCが2026年7月から2026年9月分の「ソフトウェア等の脆弱性関連情報に関する届出状況」を公開",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        },
-        {
-          "id": "security-e58c1b73add09f87ab",
-          "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#12",
-          "title": "Weekly Report: 複数のOracle製品に脆弱性",
-          "source": "JPCERT/CC",
-          "category": "security",
-          "published": "2026-10-28T00:07:00Z",
-          "source_url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
-          "source_kind": "official_feed"
-        }
-      ]
-    },
-    {
-      "id": "social-6682f85fe484f7b7bb",
-      "category": "social",
-      "title": "Three TLS Bugs in GoAhead",
-      "summary": "Hacker News: 59ポイント、13件のコメント。投稿先で内容を確認。",
-      "url": "https://foxio.io/blog/choose-your-backend-three-tls-bugs-in-goahead",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-27T18:33:48Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 72
-    },
-    {
-      "title": "GROWIにおける複数の脆弱性",
-      "summary": "株式会社GROWIが提供するGROWIには、複数の脆弱性が存在します。",
-      "url": "https://jvn.jp/jp/JVN51223238/",
-      "published": "2026-10-27T06:00:00Z",
-      "id": "security-18b37edc155614f265",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 72,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "Sleipnir Mobile for Androidのユーザーインターフェースにおいて偽のアドレスバーなどを表示される脆弱性",
-      "summary": "フェンリル株式会社が提供するSleipnir Mobile for Androidには、ユーザーインターフェースにおいて偽のアドレスバーなどを表示される脆弱性が存在します。",
-      "url": "https://jvn.jp/jp/JVN90463048/",
-      "published": "2026-10-27T03:00:00Z",
-      "id": "security-63cc18b4aa03a61eff",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 72,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "Fireblocks製mpc-libの強化導出（Hardened Derivation）処理における脆弱性",
-      "summary": "CERT/CCから本件に関するアドバイザリが公表されました。",
-      "url": "https://jvn.jp/vu/JVNVU90547696/",
-      "published": "2026-10-27T01:30:15Z",
-      "id": "security-974972ab7cff46140c",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 72,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
-    },
-    {
-      "title": "COVESA vsomeipにおける過剰なメモリ割り当ての脆弱性",
-      "summary": "CERT/CCから本件に関するアドバイザリが公表されました。",
-      "url": "https://jvn.jp/vu/JVNVU90363302/",
-      "published": "2026-10-27T01:30:00Z",
-      "id": "security-5c62a08573e04056a2",
-      "category": "security",
-      "source": "JVN",
-      "tags": [
-        "国内",
-        "脆弱性"
-      ],
-      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
-      "score": 72,
-      "source_url": "https://jvn.jp/rss/jvn.rdf",
-      "source_kind": "official_feed",
-      "security": {
-        "cves": [],
-        "user_impact": "not_assessed",
-        "exploitation_status": "not_assessed"
-      }
+      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
+      "score": 55
     }
   ],
   "errors": [
@@ -6702,10 +6547,10 @@
       "name": "GitHub 新規・小規模",
       "url": "https://api.github.com/search/repositories?q=created%3A%3E2026-08-12+stars%3A30..9999+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=updated&order=desc&per_page=25",
       "status": "ok",
-      "count": 3,
+      "count": 6,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6716,8 +6561,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6728,8 +6573,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6740,8 +6585,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6752,8 +6597,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6764,8 +6609,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6776,8 +6621,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6788,8 +6633,8 @@
       "status": "ok",
       "count": 9,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6798,10 +6643,10 @@
       "name": "話題のニュース",
       "url": "https://news.google.com/rss/search?q=SNS+%E8%A9%B1%E9%A1%8C+%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89+%E6%97%A5%E6%9C%AC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
       "status": "ok",
-      "count": 8,
+      "count": 22,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6812,8 +6657,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6822,10 +6667,10 @@
       "name": "趣味・ガジェット",
       "url": "https://news.google.com/rss/search?q=%E3%82%B2%E3%83%BC%E3%83%A0%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88+OR+%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88+OR+AWS+%E6%96%B0%E6%A9%9F%E8%83%BD+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
       "status": "ok",
-      "count": 22,
+      "count": 20,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6836,9 +6681,9 @@
       "status": "failed",
       "count": 0,
       "error": "EmptyFeed",
-      "checked_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
       "last_success_at": null,
-      "consecutive_failures": 21,
+      "consecutive_failures": 22,
       "history_available": true
     },
     {
@@ -6848,8 +6693,8 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6860,8 +6705,8 @@
       "status": "ok",
       "count": 21,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6872,8 +6717,8 @@
       "status": "ok",
       "count": 7,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6884,8 +6729,8 @@
       "status": "ok",
       "count": 15,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6896,8 +6741,8 @@
       "status": "ok",
       "count": 27,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6908,8 +6753,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-10-31T01:44:24.271923Z",
-      "last_success_at": "2026-10-31T01:44:24.271923Z",
+      "checked_at": "2026-10-31T15:49:47.344286Z",
+      "last_success_at": "2026-10-31T15:49:47.344286Z",
       "consecutive_failures": 0,
       "history_available": true
     }
