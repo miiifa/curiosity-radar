@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T16:45:31.811513Z",
+  "generated_at": "2026-11-09T01:50:51.137366Z",
   "mode": "live",
   "items": [
     {
@@ -8,16 +8,16 @@
       "url": "https://github.com/louislam/uptime-kuma",
       "title": "louislam/uptime-kuma",
       "summary": "A fancy self-hosted monitoring tool",
-      "published": "2026-11-08T15:27:43Z",
+      "published": "2026-11-09T00:05:19Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/louislam/uptime-kuma",
-      "stars": 93379,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": 23,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 36.678215,
-      "star_growth_percent_per_day": 0.039289,
+      "stars": 93388,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": 9,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 23.765771,
+      "star_growth_percent_per_day": 0.025451,
       "discovery_group": "established",
       "language": "JavaScript",
       "license": "MIT",
@@ -37,16 +37,16 @@
       "url": "https://github.com/stablyai/orca",
       "title": "stablyai/orca",
       "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
-      "published": "2026-11-08T16:43:42Z",
+      "published": "2026-11-09T01:50:38Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/stablyai/orca",
-      "stars": 119083,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": 473,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 754.295473,
-      "star_growth_percent_per_day": 0.635946,
+      "stars": 119347,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": 264,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 697.129278,
+      "star_growth_percent_per_day": 0.585415,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": "MIT",
@@ -70,12 +70,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/janhq/jan",
-      "stars": 45598,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": 35,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 55.814676,
-      "star_growth_percent_per_day": 0.1225,
+      "stars": 45607,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": 9,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 23.765771,
+      "star_growth_percent_per_day": 0.05212,
       "discovery_group": "established",
       "language": "Rust",
       "license": null,
@@ -95,16 +95,16 @@
       "url": "https://github.com/QwenLM/qwen-code",
       "title": "QwenLM/qwen-code",
       "summary": "An open-source AI coding agent that lives in your terminal.",
-      "published": "2026-11-08T16:43:16Z",
+      "published": "2026-11-09T01:49:08Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/QwenLM/qwen-code",
-      "stars": 29094,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": 17,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 27.109985,
-      "star_growth_percent_per_day": 0.093235,
+      "stars": 29110,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": 16,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 42.250259,
+      "star_growth_percent_per_day": 0.14522,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -119,21 +119,50 @@
       "score": 99
     },
     {
+      "id": "github-193ec516c01691a224",
+      "category": "github",
+      "url": "https://github.com/usememos/memos",
+      "title": "usememos/memos",
+      "summary": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
+      "published": "2026-11-09T00:37:42Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/usememos/memos",
+      "stars": 64351,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": 5,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 13.203206,
+      "star_growth_percent_per_day": 0.020519,
+      "discovery_group": "established",
+      "language": "Go",
+      "license": "MIT",
+      "tags": [
+        "docker",
+        "foss",
+        "go",
+        "markdown",
+        "memo"
+      ],
+      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
+      "score": 99
+    },
+    {
       "id": "github-1970f2aab6a882fb2b",
       "category": "github",
       "url": "https://github.com/unslothai/unsloth",
       "title": "unslothai/unsloth",
       "summary": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
-      "published": "2026-11-08T16:43:45Z",
+      "published": "2026-11-09T01:50:39Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/unslothai/unsloth",
-      "stars": 79189,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": 23,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 36.678215,
-      "star_growth_percent_per_day": 0.046331,
+      "stars": 79213,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": 24,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 63.375389,
+      "star_growth_percent_per_day": 0.080031,
       "discovery_group": "established",
       "language": "Python",
       "license": "Apache-2.0",
@@ -157,12 +186,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/HKUDS/Vibe-Trading",
-      "stars": 37886,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": 43,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 68.572316,
-      "star_growth_percent_per_day": 0.181202,
+      "stars": 37910,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": 24,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 63.375389,
+      "star_growth_percent_per_day": 0.167279,
       "discovery_group": "established",
       "language": "Python",
       "license": "MIT",
@@ -186,12 +215,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/iOfficeAI/AionUi",
-      "stars": 34121,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": 29,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 46.246446,
-      "star_growth_percent_per_day": 0.135652,
+      "stars": 34133,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": 12,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 31.687694,
+      "star_growth_percent_per_day": 0.092869,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -215,12 +244,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/Twigpine/openclaude",
-      "stars": 34307,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
+      "stars": 34311,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
       "star_delta": 4,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 6.37882,
-      "star_growth_percent_per_day": 0.018596,
+      "star_delta_since": "2026-11-08T16:45:31.811513Z",
+      "star_delta_per_day": 10.562565,
+      "star_growth_percent_per_day": 0.030788,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": null,
@@ -232,36 +261,7 @@
         "coding"
       ],
       "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
-      "score": 96
-    },
-    {
-      "id": "github-193ec516c01691a224",
-      "category": "github",
-      "url": "https://github.com/usememos/memos",
-      "title": "usememos/memos",
-      "summary": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
-      "published": "2026-11-08T12:36:42Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/usememos/memos",
-      "stars": 64346,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": 3,
-      "star_delta_since": "2026-11-08T01:42:32.512503Z",
-      "star_delta_per_day": 4.784115,
-      "star_growth_percent_per_day": 0.007435,
-      "discovery_group": "established",
-      "language": "Go",
-      "license": "MIT",
-      "tags": [
-        "docker",
-        "foss",
-        "go",
-        "markdown",
-        "memo"
-      ],
-      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
-      "score": 96
+      "score": 98
     },
     {
       "id": "security-953902135b609ed34c",
@@ -878,7 +878,7 @@
       "url": "https://github.com/stablyai/orca",
       "title": "中小事業者向けの作業自動化サポート — orca",
       "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
-      "published": "2026-11-08T16:43:42Z",
+      "published": "2026-11-09T01:50:38Z",
       "source": "着想元: stablyai/orca",
       "tags": [
         "自動化",
@@ -894,7 +894,7 @@
       "url": "https://github.com/QwenLM/qwen-code",
       "title": "業務特化のAIミニツール — qwen-code",
       "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-11-08T16:43:16Z",
+      "published": "2026-11-09T01:49:08Z",
       "source": "着想元: QwenLM/qwen-code",
       "tags": [
         "AIサービス",
@@ -910,7 +910,7 @@
       "url": "https://github.com/louislam/uptime-kuma",
       "title": "ニッチ情報を届ける有料ダッシュボード — uptime-kuma",
       "summary": "収集した情報を整理し、特定の職種に役立つレポートとして提供できるか調査。情報の再配布許諾に注意。",
-      "published": "2026-11-08T15:27:43Z",
+      "published": "2026-11-09T00:05:19Z",
       "source": "着想元: louislam/uptime-kuma",
       "tags": [
         "情報サービス",
@@ -1065,58 +1065,27 @@
       "score": 93
     },
     {
-      "id": "money-fe458ba76b95a6fa55",
-      "category": "money",
-      "url": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
-      "title": "OSSの導入・カスタマイズ支援 — awesome-dsh-plugin",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-25T01:22:43Z",
-      "source": "着想元: awesome-dsh-plugin/awesome-dsh-plugin",
+      "id": "social-fe5fdb83e1ea95f1b4",
+      "category": "social",
+      "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+      "summary": "Hacker News: 598ポイント、356件のコメント。投稿先で内容を確認。",
+      "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-08T18:16:07Z",
       "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
+        "海外IT",
+        "コミュニティ"
       ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
-      "id": "money-38ffa19f0aa61b7d08",
-      "category": "money",
-      "url": "https://github.com/NandhaKishorM/laya",
-      "title": "OSSの導入・カスタマイズ支援 — laya",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-24T19:17:07Z",
-      "source": "着想元: NandhaKishorM/laya",
-      "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
-      "id": "money-4bef08f5f83b5a9b7d",
-      "category": "money",
-      "url": "https://github.com/Gathin23/cleanyourtv",
-      "title": "OSSの導入・カスタマイズ支援 — cleanyourtv",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-24T18:09:17Z",
-      "source": "着想元: Gathin23/cleanyourtv",
-      "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 92
     },
     {
       "id": "social-149c124f7b07d2a10e",
       "category": "social",
       "title": "Goodbye Claude, hello Pi",
-      "summary": "Hacker News: 535ポイント、342件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 702ポイント、432件のコメント。投稿先で内容を確認。",
       "url": "https://caleb.software/posts/claude-to-pi.html",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -1133,7 +1102,7 @@
       "id": "social-10bdc73097cfd2386d",
       "category": "social",
       "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-      "summary": "Hacker News: 496ポイント、356件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 585ポイント、397件のコメント。投稿先で内容を確認。",
       "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2473,103 +2442,21 @@
       "score": 92
     },
     {
-      "id": "social-1f6056f34e61a5ea93",
+      "id": "social-e68539633591cd5be6",
       "category": "social",
-      "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
-      "summary": "Hacker News: 420ポイント、447件のコメント。投稿先で内容を確認。",
-      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "title": "Nvidia Board of Directors Is Investigating Jensen Huang",
+      "summary": "Hacker News: 380ポイント、295件のコメント。投稿先で内容を確認。",
+      "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-24T23:11:54Z",
+      "published": "2026-11-08T20:26:43Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 92
-    },
-    {
-      "id": "social-42532ee811b2ffa8d8",
-      "category": "social",
-      "title": "We should be more ambitious with the software we build",
-      "summary": "Hacker News: 739ポイント、684件のコメント。投稿先で内容を確認。",
-      "url": "https://danluu.com/ambitious/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-24T21:47:31Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 92
-    },
-    {
-      "id": "social-1f21a11f54e05b7b97",
-      "category": "social",
-      "title": "Show HN: Steal My Bitcoin",
-      "summary": "Hacker News: 480ポイント、297件のコメント。投稿先で内容を確認。",
-      "url": "https://stealmybitcoin.com/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-24T20:30:31Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 92
-    },
-    {
-      "id": "social-a54fd0e20dbb904635",
-      "category": "social",
-      "title": "No signs of AI payoff outside the tech sector",
-      "summary": "Hacker News: 496ポイント、493件のコメント。投稿先で内容を確認。",
-      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-      "source": "Hacker News",
-      "published": "2026-10-24T19:47:19Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 92
-    },
-    {
-      "id": "social-c6f7fce2eddef14cda",
-      "category": "social",
-      "title": "The Goose Programming Language",
-      "summary": "Hacker News: 553ポイント、344件のコメント。投稿先で内容を確認。",
-      "url": "https://aardappel.github.io/goose/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-24T19:06:55Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 92
-    },
-    {
-      "id": "money-5a733329e644a84bb5",
-      "category": "money",
-      "url": "https://github.com/robbietilton/Compositor",
-      "title": "OSSの導入・カスタマイズ支援 — Compositor",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-10-24T17:51:20Z",
-      "source": "着想元: robbietilton/Compositor",
-      "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 92
+      "score": 91
     },
     {
       "id": "social-8017ce29f6d88c8d95",
@@ -2844,6 +2731,40 @@
       "score": 91
     },
     {
+      "id": "social-3edd9018e9e656df00",
+      "category": "social",
+      "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "summary": "Hacker News: 339ポイント、344件のコメント。投稿先で内容を確認。",
+      "url": "https://www.axios.com/2026/11/08/nvidia-ceo-jensen-huang-affair-email-to-company",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-08T22:20:09Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 90
+    },
+    {
+      "id": "social-55858f2b4ca73bdea1",
+      "category": "social",
+      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+      "summary": "Hacker News: 364ポイント、156件のコメント。投稿先で内容を確認。",
+      "url": "https://github.com/synchopate/llama-modchip",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-08T10:22:04Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 90
+    },
+    {
       "id": "social-dff9b7a159183f5ba3",
       "category": "social",
       "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
@@ -2904,6 +2825,23 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-11-05T04:54:10Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 90
+    },
+    {
+      "id": "social-a2291431669560a7c8",
+      "category": "social",
+      "title": "Declarative Dragging",
+      "summary": "Hacker News: 345ポイント、41件のコメント。投稿先で内容を確認。",
+      "url": "https://declarative-dragging.github.io/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-04T17:05:07Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -3099,21 +3037,62 @@
       "score": 90
     },
     {
-      "id": "social-e1545bcc45f4c70b2e",
-      "category": "social",
-      "title": "Cerebras Deploys Trillion-Parameter AI Models",
-      "summary": "Hacker News: 343ポイント、124件のコメント。投稿先で内容を確認。",
-      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-25T01:33:49Z",
+      "id": "github-49d25f73538469d6ff",
+      "category": "github",
+      "url": "https://github.com/lexifina/global-law",
+      "title": "lexifina/global-law",
+      "summary": "The world's law in git: any provision, any country, any date, and the law that wrote each word.",
+      "published": "2026-11-09T01:50:32Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/lexifina/global-law",
+      "stars": 1884,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "HTML",
+      "license": null,
       "tags": [
-        "海外IT",
-        "コミュニティ"
+        "git",
+        "law",
+        "legal-tech",
+        "legislation",
+        "mcp"
       ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 90
+      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
+      "score": 89
+    },
+    {
+      "id": "github-a7e710fc6c8e9540d0",
+      "category": "github",
+      "url": "https://github.com/reacher-z/Awesome-REA",
+      "title": "reacher-z/Awesome-REA",
+      "summary": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
+      "published": "2026-11-09T01:50:16Z",
+      "source": "GitHub Search API",
+      "source_kind": "github_api",
+      "source_url": "https://github.com/reacher-z/Awesome-REA",
+      "stars": 2126,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
+      "star_delta": null,
+      "star_delta_since": null,
+      "star_delta_per_day": null,
+      "star_growth_percent_per_day": null,
+      "discovery_group": "small",
+      "language": "Python",
+      "license": "MIT",
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "android-reverse-engineering",
+        "awesome",
+        "awesome-list"
+      ],
+      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
+      "score": 89
     },
     {
       "id": "social-7faad46bd3711d33c1",
@@ -3352,6 +3331,23 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 89
+    },
+    {
+      "id": "social-1f923716babf3c1ff1",
+      "category": "social",
+      "title": "Writing as a thinking tool",
+      "summary": "Hacker News: 278ポイント、82件のコメント。投稿先で内容を確認。",
+      "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-08T10:41:52Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 88
     },
     {
       "id": "social-27b87d65d3f9940668",
@@ -3880,6 +3876,55 @@
       "score": 87
     },
     {
+      "id": "money-49d25f73538469d6ff",
+      "category": "money",
+      "url": "https://github.com/lexifina/global-law",
+      "title": "業務特化のAIミニツール — global-law",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-11-09T01:50:32Z",
+      "source": "着想元: lexifina/global-law",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 86
+    },
+    {
+      "id": "money-a7e710fc6c8e9540d0",
+      "category": "money",
+      "url": "https://github.com/reacher-z/Awesome-REA",
+      "title": "業務特化のAIミニツール — Awesome-REA",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-11-09T01:50:16Z",
+      "source": "着想元: reacher-z/Awesome-REA",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 86
+    },
+    {
+      "id": "social-7cbb1e8e79a4571203",
+      "category": "social",
+      "title": "Outlook.com Is Quietly Rejecting Email from Domains Without DMARC",
+      "summary": "Hacker News: 241ポイント、188件のコメント。投稿先で内容を確認。",
+      "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-08T19:20:32Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 86
+    },
+    {
       "id": "social-dcc13ba1d4d778565f",
       "category": "social",
       "title": "Person of Interest",
@@ -3904,22 +3949,6 @@
       "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
       "published": "2026-11-08T01:41:45Z",
       "source": "着想元: yjid/kensaku",
-      "tags": [
-        "AIサービス",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 86
-    },
-    {
-      "id": "money-49d25f73538469d6ff",
-      "category": "money",
-      "url": "https://github.com/lexifina/global-law",
-      "title": "業務特化のAIミニツール — global-law",
-      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-11-08T01:41:00Z",
-      "source": "着想元: lexifina/global-law",
       "tags": [
         "AIサービス",
         "収益性未検証",
@@ -4652,21 +4681,38 @@
       "score": 85
     },
     {
-      "id": "social-c9d44435005d898d3b",
+      "id": "social-5a786529aaee4f4c84",
       "category": "social",
-      "title": "SpeedCrunch 1.1",
-      "summary": "Hacker News: 219ポイント、48件のコメント。投稿先で内容を確認。",
-      "url": "https://www.speedcrunch.org/",
+      "title": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+      "summary": "Hacker News: 191ポイント、42件のコメント。投稿先で内容を確認。",
+      "url": "https://ketchup3d.github.io/app/",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-24T19:19:43Z",
+      "published": "2026-11-08T22:35:35Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 85
+      "score": 84
+    },
+    {
+      "id": "social-c7aa9e435f02c624ff",
+      "category": "social",
+      "title": "Dux: Free, open-source Wayland desktop shell with file manager and theming",
+      "summary": "Hacker News: 197ポイント、61件のコメント。投稿先で内容を確認。",
+      "url": "https://duxlabs.dev/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-08T19:08:51Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 84
     },
     {
       "id": "social-55aa1dc18cbb251b0d",
@@ -5024,6 +5070,23 @@
       "score": 84
     },
     {
+      "id": "social-96571aa39f8d3b2f00",
+      "category": "social",
+      "title": "Agent memory needs its OpenTelemetry moment",
+      "summary": "Hacker News: 175ポイント、103件のコメント。投稿先で内容を確認。",
+      "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-08T08:40:23Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 83
+    },
+    {
       "id": "social-a5fe3cb9688bbbec7f",
       "category": "social",
       "title": "Making any integer with four 2s (2025)",
@@ -5117,6 +5180,23 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-11-04T17:17:46Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 83
+    },
+    {
+      "id": "social-19bb875381a128eb52",
+      "category": "social",
+      "title": "Show HN: Vegetable Gardening for Engineers",
+      "summary": "Hacker News: 164ポイント、32件のコメント。投稿先で内容を確認。",
+      "url": "https://jrcpl.us/contrib/2020/gardening-for-engineers/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-04T08:54:27Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -5413,15 +5493,15 @@
       "score": 83
     },
     {
-      "id": "social-55858f2b4ca73bdea1",
+      "id": "social-8b18a5361e6d14a958",
       "category": "social",
-      "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
-      "summary": "Hacker News: 163ポイント、53件のコメント。投稿先で内容を確認。",
-      "url": "https://github.com/synchopate/llama-modchip",
+      "title": "How I Fight AI Brain Fry",
+      "summary": "Hacker News: 151ポイント、127件のコメント。投稿先で内容を確認。",
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-08T10:22:04Z",
+      "published": "2026-11-08T19:37:42Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -5473,6 +5553,23 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-11-04T16:45:11Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 82
+    },
+    {
+      "id": "social-7c5538e7bf48e72ddf",
+      "category": "social",
+      "title": "Porting Android 16 to my blind mother's keypad phone",
+      "summary": "Hacker News: 157ポイント、48件のコメント。投稿先で内容を確認。",
+      "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-04T15:18:59Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -6074,53 +6171,65 @@
       "score": 81
     },
     {
-      "id": "social-8763261ffc09bb097c",
+      "title": "Zabbix agentにおけるDLL読み込みに関する脆弱性",
+      "summary": "Zabbix LLCが提供するZabbix agentにはDLL読み込みに関する脆弱性が存在します。",
+      "url": "https://jvn.jp/jp/JVN42011956/",
+      "published": "2026-11-09T01:15:00Z",
+      "id": "security-0b39415966c616ea25",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 80,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
+      "title": "Siemens製品に対するアップデート（2026年11月）",
+      "summary": "Siemensから各製品向けのアドバイザリが公表されました。",
+      "url": "https://jvn.jp/vu/JVNVU98354779/",
+      "published": "2026-11-09T00:00:00Z",
+      "id": "security-595e653cd5a7ccf66f",
+      "category": "security",
+      "source": "JVN",
+      "tags": [
+        "国内",
+        "脆弱性"
+      ],
+      "reason": "注意喚起・修正情報を確認し、利用サービスへの影響を判断。",
+      "score": 80,
+      "source_url": "https://jvn.jp/rss/jvn.rdf",
+      "source_kind": "official_feed",
+      "security": {
+        "cves": [],
+        "user_impact": "not_assessed",
+        "exploitation_status": "not_assessed"
+      }
+    },
+    {
+      "id": "social-876d6b63f912014458",
       "category": "social",
-      "title": "Small Programs and Languages",
-      "summary": "Hacker News: 145ポイント、20件のコメント。投稿先で内容を確認。",
-      "url": "https://ratfactor.com/cards/pl-small",
+      "title": "Ask HN: What are you working on? (November 2026)",
+      "summary": "Hacker News: 122ポイント、458件のコメント。投稿先で内容を確認。",
+      "url": "https://news.ycombinator.com/item?id=50417407",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-24T21:44:23Z",
+      "published": "2026-11-08T21:20:20Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 81
-    },
-    {
-      "id": "social-c7a37d520ea53c8293",
-      "category": "social",
-      "title": "Listen and read USA nuclear forces Emergency Action Messages, heard on 11175 kHz",
-      "summary": "Hacker News: 141ポイント、94件のコメント。投稿先で内容を確認。",
-      "url": "https://missileer.watch",
-      "source": "Hacker News",
-      "published": "2026-10-24T19:43:27Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 81
-    },
-    {
-      "id": "social-6edbfaf7649cfb4138",
-      "category": "social",
-      "title": "Decompiling Fast Food Tycoon 2: Drawing the World",
-      "summary": "Hacker News: 137ポイント、30件のコメント。投稿先で内容を確認。",
-      "url": "https://healeycodes.com/decompiling-fast-food-tycoon-2-drawing-the-world",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-24T18:17:57Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 81
+      "score": 80
     },
     {
       "id": "social-f7c4b6b4979900dd8b",
@@ -6200,23 +6309,6 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-11-08T10:56:43Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 79
-    },
-    {
-      "id": "social-96571aa39f8d3b2f00",
-      "category": "social",
-      "title": "Agent memory needs its OpenTelemetry moment",
-      "summary": "Hacker News: 119ポイント、87件のコメント。投稿先で内容を確認。",
-      "url": "https://www.lorekit.io/blog/open-agent-memory-format",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-08T08:40:23Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -6343,15 +6435,15 @@
       "score": 78
     },
     {
-      "id": "social-bb30ad069227b20fc3",
+      "id": "social-79b046481bd48da63d",
       "category": "social",
-      "title": "ISponsorBlockTV: SponsorBlock client for all YouTube TV clients",
-      "summary": "Hacker News: 93ポイント、37件のコメント。投稿先で内容を確認。",
-      "url": "https://github.com/dmunozv04/isponsorblocktv",
+      "title": "Starship Flight 15 on 11/13 plans to catch both booster and ship",
+      "summary": "Hacker News: 90ポイント、52件のコメント。投稿先で内容を確認。",
+      "url": "https://www.spacex.com/launches/starship-flight-15",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-08T03:47:19Z",
+      "published": "2026-11-08T19:49:46Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -6360,125 +6452,50 @@
       "score": 77
     },
     {
-      "id": "social-b3b504e090d22e065d",
+      "id": "social-fddcd5eaa1cd7d679a",
       "category": "social",
-      "title": "OpenAI raises $11B at a $1.25T valuation",
-      "summary": "Hacker News: 89ポイント、70件のコメント。投稿先で内容を確認。",
-      "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+      "title": "A Little Snitch for Windows",
+      "summary": "Hacker News: 94ポイント、46件のコメント。投稿先で内容を確認。",
+      "url": "https://packethound.app/",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-08T14:49:23Z",
+      "published": "2026-11-08T17:16:07Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 76
+      "score": 77
     },
     {
-      "id": "social-1f923716babf3c1ff1",
-      "category": "social",
-      "title": "Writing as a thinking tool",
-      "summary": "Hacker News: 82ポイント、15件のコメント。投稿先で内容を確認。",
-      "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-08T10:41:52Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 76
-    },
-    {
-      "id": "github-7a683797e8b2c7ea02",
+      "id": "github-12b56debdb54b248a2",
       "category": "github",
-      "url": "https://github.com/yarik-contr/mcp-forge-studio-bridge",
-      "title": "yarik-contr/mcp-forge-studio-bridge",
-      "summary": "AI-Powered Roblox Studio MCP Server 2026: Script, Terrain, Asset, Lighting & Two-Way Sync Assistant",
-      "published": "2026-11-08T16:44:35Z",
+      "url": "https://github.com/lalipa2003-arch/JailbreakHub",
+      "title": "lalipa2003-arch/JailbreakHub",
+      "summary": "A Hub/research area, for jailbreaking LLM's, and breaking their safety filters.",
+      "published": "2026-11-09T01:49:13Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
-      "source_url": "https://github.com/yarik-contr/mcp-forge-studio-bridge",
-      "stars": 74,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
+      "source_url": "https://github.com/lalipa2003-arch/JailbreakHub",
+      "stars": 259,
+      "stars_observed_at": "2026-11-09T01:50:51.137366Z",
       "star_delta": null,
       "star_delta_since": null,
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "small",
-      "language": "HTML",
-      "license": null,
+      "language": "Roff",
+      "license": "Unlicense",
       "tags": [
+        "adversarial-attacks",
         "ai",
-        "ai-agents",
-        "antigravity",
-        "claude",
-        "claude-code"
-      ],
-      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
-      "score": 61
-    },
-    {
-      "id": "github-54cbc1f8ce8d04e45f",
-      "category": "github",
-      "url": "https://github.com/conetheconeheadd-cloud/xyn-macro-suite",
-      "title": "conetheconeheadd-cloud/xyn-macro-suite",
-      "summary": "Automated Dragon Ball Online Generations Windows Trainer Macro 2026",
-      "published": "2026-11-08T16:44:39Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/conetheconeheadd-cloud/xyn-macro-suite",
-      "stars": 70,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "HTML",
-      "license": null,
-      "tags": [
-        "automation",
-        "opencv",
-        "roblox",
-        "tauri",
-        "windows"
-      ],
-      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
-      "score": 60
-    },
-    {
-      "id": "github-b223d3655209ef62b3",
-      "category": "github",
-      "url": "https://github.com/fahad8236/ai-roblox-studio-bridge",
-      "title": "fahad8236/ai-roblox-studio-bridge",
-      "summary": "Best Open-Source AI Roblox Studio Copilot 2026: Chat-Driven Script Editing & Luau Automation",
-      "published": "2026-11-08T16:44:42Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/fahad8236/ai-roblox-studio-bridge",
-      "stars": 70,
-      "stars_observed_at": "2026-11-08T16:45:31.811513Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "HTML",
-      "license": null,
-      "tags": [
         "ai-agent",
-        "browser-extension",
-        "deepseek",
-        "luau",
-        "mcp"
+        "ai-agents",
+        "ai-jailbreak"
       ],
-      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
-      "score": 60
+      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
+      "score": 74
     }
   ],
   "errors": [
@@ -6490,48 +6507,48 @@
     {
       "id": "github-new",
       "name": "GitHub 新規・小規模",
-      "url": "https://api.github.com/search/repositories?q=created%3A%3E2026-08-20+stars%3A30..9999+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=updated&order=desc&per_page=25",
+      "url": "https://api.github.com/search/repositories?q=created%3A%3E2026-08-21+stars%3A30..9999+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=updated&order=desc&per_page=25",
       "status": "ok",
       "count": 3,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
     {
       "id": "github-ai-agent",
       "name": "GitHub AIエージェント",
-      "url": "https://api.github.com/search/repositories?q=topic%3Aai-agent+pushed%3A%3E2026-10-14+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aai-agent+pushed%3A%3E2026-10-15+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
     {
       "id": "github-automation",
       "name": "GitHub 自動化",
-      "url": "https://api.github.com/search/repositories?q=topic%3Aautomation+pushed%3A%3E2026-10-14+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aautomation+pushed%3A%3E2026-10-15+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
     {
       "id": "github-self-hosted",
       "name": "GitHub セルフホスト",
-      "url": "https://api.github.com/search/repositories?q=topic%3Aself-hosted+pushed%3A%3E2026-10-14+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aself-hosted+pushed%3A%3E2026-10-15+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6542,8 +6559,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6554,8 +6571,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6564,10 +6581,10 @@
       "name": "国内旅行のニュース",
       "url": "https://news.google.com/rss/search?q=%E5%9B%BD%E5%86%85%E6%97%85%E8%A1%8C+%E7%A9%B4%E5%A0%B4+%E7%B5%B6%E6%99%AF+OR+%E6%B8%A9%E6%B3%89+OR+%E9%9B%A2%E5%B3%B6+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
       "status": "ok",
-      "count": 21,
+      "count": 20,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6578,8 +6595,8 @@
       "status": "ok",
       "count": 9,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6588,10 +6605,10 @@
       "name": "話題のニュース",
       "url": "https://news.google.com/rss/search?q=SNS+%E8%A9%B1%E9%A1%8C+%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89+%E6%97%A5%E6%9C%AC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
       "status": "ok",
-      "count": 5,
+      "count": 6,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6602,8 +6619,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6612,10 +6629,10 @@
       "name": "趣味・ガジェット",
       "url": "https://news.google.com/rss/search?q=%E3%82%B2%E3%83%BC%E3%83%A0%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%83%E3%83%88+OR+%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88+OR+AWS+%E6%96%B0%E6%A9%9F%E8%83%BD+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
       "status": "ok",
-      "count": 12,
+      "count": 13,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6626,9 +6643,9 @@
       "status": "failed",
       "count": 0,
       "error": "EmptyFeed",
-      "checked_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
       "last_success_at": null,
-      "consecutive_failures": 38,
+      "consecutive_failures": 39,
       "history_available": true
     },
     {
@@ -6638,8 +6655,8 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6650,8 +6667,8 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6662,8 +6679,8 @@
       "status": "ok",
       "count": 6,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6674,8 +6691,8 @@
       "status": "ok",
       "count": 15,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6686,8 +6703,8 @@
       "status": "ok",
       "count": 21,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6698,8 +6715,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-08T16:45:31.811513Z",
-      "last_success_at": "2026-11-08T16:45:31.811513Z",
+      "checked_at": "2026-11-09T01:50:51.137366Z",
+      "last_success_at": "2026-11-09T01:50:51.137366Z",
       "consecutive_failures": 0,
       "history_available": true
     }
