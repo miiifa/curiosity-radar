@@ -1,52 +1,23 @@
 {
-  "generated_at": "2026-11-15T17:20:55.701534Z",
+  "generated_at": "2026-11-16T02:20:13.459595Z",
   "mode": "live",
   "items": [
-    {
-      "id": "github-01407e022c6d7c308f",
-      "category": "github",
-      "url": "https://github.com/tiobeharxi1987/blender-ai-copilot-flow",
-      "title": "tiobeharxi1987/blender-ai-copilot-flow",
-      "summary": "A controlled AI workflow for Blender: every copilot edit is a supervised tool call—proposed, approved, executed in sequence, cancellable after the current step and undoable by name—inside a visual studio with a built-in MCP serve…",
-      "published": "2026-11-15T17:20:29Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/tiobeharxi1987/blender-ai-copilot-flow",
-      "stars": 475,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 126,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 197.742595,
-      "star_growth_percent_per_day": 56.659769,
-      "discovery_group": "rising",
-      "language": null,
-      "license": "MIT",
-      "tags": [
-        "3d-automation",
-        "3d-modeling",
-        "blender",
-        "blender-addon",
-        "blender-agents"
-      ],
-      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
-      "score": 99
-    },
     {
       "id": "github-05b853ba300b6a8978",
       "category": "github",
       "url": "https://github.com/louislam/uptime-kuma",
       "title": "louislam/uptime-kuma",
       "summary": "A fancy self-hosted monitoring tool",
-      "published": "2026-11-15T00:04:55Z",
+      "published": "2026-11-16T02:17:28Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/louislam/uptime-kuma",
-      "stars": 94412,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 151,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 236.977237,
-      "star_growth_percent_per_day": 0.251405,
+      "stars": 94434,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 22,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 58.743254,
+      "star_growth_percent_per_day": 0.06222,
       "discovery_group": "established",
       "language": "JavaScript",
       "license": "MIT",
@@ -66,16 +37,16 @@
       "url": "https://github.com/stablyai/orca",
       "title": "stablyai/orca",
       "summary": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
-      "published": "2026-11-15T17:16:14Z",
+      "published": "2026-11-16T02:19:24Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/stablyai/orca",
-      "stars": 125577,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 475,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 745.458197,
-      "star_growth_percent_per_day": 0.59588,
+      "stars": 125853,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 276,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 736.960823,
+      "star_growth_percent_per_day": 0.58686,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": "MIT",
@@ -95,16 +66,16 @@
       "url": "https://github.com/QwenLM/qwen-code",
       "title": "QwenLM/qwen-code",
       "summary": "An open-source AI coding agent that lives in your terminal.",
-      "published": "2026-11-15T17:20:36Z",
+      "published": "2026-11-16T02:11:28Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/QwenLM/qwen-code",
-      "stars": 30522,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 157,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 246.393551,
-      "star_growth_percent_per_day": 0.811439,
+      "stars": 30549,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 27,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 72.093994,
+      "star_growth_percent_per_day": 0.236203,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -124,16 +95,16 @@
       "url": "https://github.com/usememos/memos",
       "title": "usememos/memos",
       "summary": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
-      "published": "2026-11-15T07:09:33Z",
+      "published": "2026-11-16T01:07:19Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/usememos/memos",
-      "stars": 64481,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 10,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 15.693857,
-      "star_growth_percent_per_day": 0.024343,
+      "stars": 64490,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 9,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 24.031331,
+      "star_growth_percent_per_day": 0.037269,
       "discovery_group": "established",
       "language": "Go",
       "license": "MIT",
@@ -153,16 +124,16 @@
       "url": "https://github.com/unslothai/unsloth",
       "title": "unslothai/unsloth",
       "summary": "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4.1, MiniMax-H3, Gemma 4, FLUX and more.",
-      "published": "2026-11-15T17:19:35Z",
+      "published": "2026-11-16T02:15:02Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/unslothai/unsloth",
-      "stars": 79555,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 41,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 64.344813,
-      "star_growth_percent_per_day": 0.080923,
+      "stars": 79575,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 20,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 53.402958,
+      "star_growth_percent_per_day": 0.067127,
       "discovery_group": "established",
       "language": "Python",
       "license": "Apache-2.0",
@@ -186,12 +157,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/HKUDS/Vibe-Trading",
-      "stars": 38304,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 60,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 94.163141,
-      "star_growth_percent_per_day": 0.246217,
+      "stars": 38330,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 26,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 69.423846,
+      "star_growth_percent_per_day": 0.181244,
       "discovery_group": "established",
       "language": "Python",
       "license": "MIT",
@@ -215,12 +186,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/iOfficeAI/AionUi",
-      "stars": 34295,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 16,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 25.110171,
-      "star_growth_percent_per_day": 0.073252,
+      "stars": 34304,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 9,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 24.031331,
+      "star_growth_percent_per_day": 0.070072,
       "discovery_group": "established",
       "language": "TypeScript",
       "license": "Apache-2.0",
@@ -244,12 +215,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/jackwener/OpenCLI",
-      "stars": 31093,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 12,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 18.832628,
-      "star_growth_percent_per_day": 0.060592,
+      "stars": 31097,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 4,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 10.680592,
+      "star_growth_percent_per_day": 0.03435,
       "discovery_group": "established",
       "language": "JavaScript",
       "license": "Apache-2.0",
@@ -261,7 +232,7 @@
         "browser-use"
       ],
       "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
-      "score": 99
+      "score": 98
     },
     {
       "id": "github-14fe8b996dca9da914",
@@ -273,12 +244,12 @@
       "source": "GitHub Search API",
       "source_kind": "github_api",
       "source_url": "https://github.com/janhq/jan",
-      "stars": 45731,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": 7,
-      "star_delta_since": "2026-11-15T02:03:22.312670Z",
-      "star_delta_per_day": 10.9857,
-      "star_growth_percent_per_day": 0.024026,
+      "stars": 45734,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
+      "star_delta": 3,
+      "star_delta_since": "2026-11-15T17:20:55.701534Z",
+      "star_delta_per_day": 8.010444,
+      "star_growth_percent_per_day": 0.017516,
       "discovery_group": "established",
       "language": "Rust",
       "license": null,
@@ -290,7 +261,7 @@
         "localai"
       ],
       "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
-      "score": 98
+      "score": 97
     },
     {
       "id": "security-d42453b1f00a623a82",
@@ -960,62 +931,52 @@
       "score": 95
     },
     {
-      "id": "security-3e4dd48255f1a95fb5",
-      "category": "security",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
-      "title": "KEV登録: PHP Group PHP / CVE-2026-109619",
-      "summary": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
-      "source": "CISA KEV",
-      "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-      "source_kind": "official_catalog",
-      "published": "2026-10-26T00:00:00Z",
-      "security": {
-        "cves": [
-          "CVE-2026-109619"
-        ],
-        "user_impact": "not_assessed",
-        "exploitation_status": "listed_in_kev",
-        "kev_added_date": "2026-10-26",
-        "vendor": "PHP Group",
-        "product": "PHP",
-        "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in No…"
-      },
+      "id": "money-0a8884baa5f55aa660",
+      "category": "money",
+      "url": "https://github.com/stablyai/orca",
+      "title": "中小事業者向けの作業自動化サポート — orca",
+      "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
+      "published": "2026-11-16T02:19:24Z",
+      "source": "着想元: stablyai/orca",
       "tags": [
-        "KEV",
-        "悪用確認",
-        "CVE-2026-109619"
+        "自動化",
+        "収益性未検証",
+        "OSS活用"
       ],
-      "reason": "CISA KEVの悪用事例登録。利用製品への影響・対応は未確認。",
-      "score": 95
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
     },
     {
-      "id": "security-59f34b6f811267a06c",
-      "category": "security",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
-      "title": "KEV登録: PHP Group PHP / CVE-2026-109618",
-      "summary": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
-      "source": "CISA KEV",
-      "source_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
-      "source_kind": "official_catalog",
-      "published": "2026-10-26T00:00:00Z",
-      "security": {
-        "cves": [
-          "CVE-2026-109618"
-        ],
-        "user_impact": "not_assessed",
-        "exploitation_status": "listed_in_kev",
-        "kev_added_date": "2026-10-26",
-        "vendor": "PHP Group",
-        "product": "PHP",
-        "required_action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in No…"
-      },
+      "id": "money-05b853ba300b6a8978",
+      "category": "money",
+      "url": "https://github.com/louislam/uptime-kuma",
+      "title": "ニッチ情報を届ける有料ダッシュボード — uptime-kuma",
+      "summary": "収集した情報を整理し、特定の職種に役立つレポートとして提供できるか調査。情報の再配布許諾に注意。",
+      "published": "2026-11-16T02:17:28Z",
+      "source": "着想元: louislam/uptime-kuma",
       "tags": [
-        "KEV",
-        "悪用確認",
-        "CVE-2026-109618"
+        "情報サービス",
+        "収益性未検証",
+        "OSS活用"
       ],
-      "reason": "CISA KEVの悪用事例登録。利用製品への影響・対応は未確認。",
-      "score": 95
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
+    },
+    {
+      "id": "money-1970f2aab6a882fb2b",
+      "category": "money",
+      "url": "https://github.com/unslothai/unsloth",
+      "title": "業務特化のAIミニツール — unsloth",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-11-16T02:15:02Z",
+      "source": "着想元: unslothai/unsloth",
+      "tags": [
+        "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
     },
     {
       "id": "money-1922d9d520f9ceba15",
@@ -1023,10 +984,26 @@
       "url": "https://github.com/QwenLM/qwen-code",
       "title": "業務特化のAIミニツール — qwen-code",
       "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-11-15T17:20:36Z",
+      "published": "2026-11-16T02:11:28Z",
       "source": "着想元: QwenLM/qwen-code",
       "tags": [
         "AIサービス",
+        "収益性未検証",
+        "OSS活用"
+      ],
+      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
+      "score": 93
+    },
+    {
+      "id": "money-193ec516c01691a224",
+      "category": "money",
+      "url": "https://github.com/usememos/memos",
+      "title": "OSSの導入・カスタマイズ支援 — memos",
+      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
+      "published": "2026-11-16T01:07:19Z",
+      "source": "着想元: usememos/memos",
+      "tags": [
+        "受託開発",
         "収益性未検証",
         "OSS活用"
       ],
@@ -1050,31 +1027,15 @@
       "score": 93
     },
     {
-      "id": "money-0a8884baa5f55aa660",
+      "id": "money-1b56cc9447a6475c09",
       "category": "money",
-      "url": "https://github.com/stablyai/orca",
-      "title": "中小事業者向けの作業自動化サポート — orca",
-      "summary": "繰り返し作業の時間を減らせるか、まず一業種・一業務で検証。外部サービスの利用規約、個人情報、保守費用を確認。",
-      "published": "2026-11-15T17:16:14Z",
-      "source": "着想元: stablyai/orca",
+      "url": "https://github.com/HKUDS/Vibe-Trading",
+      "title": "業務特化のAIミニツール — Vibe-Trading",
+      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
+      "published": "2026-11-15T12:31:41Z",
+      "source": "着想元: HKUDS/Vibe-Trading",
       "tags": [
-        "自動化",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
-      "id": "money-05b853ba300b6a8978",
-      "category": "money",
-      "url": "https://github.com/louislam/uptime-kuma",
-      "title": "ニッチ情報を届ける有料ダッシュボード — uptime-kuma",
-      "summary": "収集した情報を整理し、特定の職種に役立つレポートとして提供できるか調査。情報の再配布許諾に注意。",
-      "published": "2026-11-15T00:04:55Z",
-      "source": "着想元: louislam/uptime-kuma",
-      "tags": [
-        "情報サービス",
+        "AIサービス",
         "収益性未検証",
         "OSS活用"
       ],
@@ -1114,38 +1075,6 @@
       "score": 93
     },
     {
-      "id": "money-1970f2aab6a882fb2b",
-      "category": "money",
-      "url": "https://github.com/unslothai/unsloth",
-      "title": "業務特化のAIミニツール — unsloth",
-      "summary": "特定の業種・作業に絞った小さなAIツールの受託開発・月額提供を検証。API従量課金と誤回答への対策が必要。",
-      "published": "2026-11-13T02:47:40Z",
-      "source": "着想元: unslothai/unsloth",
-      "tags": [
-        "AIサービス",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
-      "id": "money-193ec516c01691a224",
-      "category": "money",
-      "url": "https://github.com/usememos/memos",
-      "title": "OSSの導入・カスタマイズ支援 — memos",
-      "summary": "導入の難しいOSSを特定の業種向けに整備し、初期設定や継続保守のニーズを確認。商用利用可能なライセンスか要確認。",
-      "published": "2026-11-13T01:15:14Z",
-      "source": "着想元: usememos/memos",
-      "tags": [
-        "受託開発",
-        "収益性未検証",
-        "OSS活用"
-      ],
-      "reason": "公開OSSから生成した仮説。顧客需要・競合・ライセンス・費用は未検証。",
-      "score": 93
-    },
-    {
       "id": "social-8b9fd5e8fcaa556d10",
       "category": "social",
       "title": "All AI-generated code should be Open Source",
@@ -1163,10 +1092,27 @@
       "score": 92
     },
     {
+      "id": "social-b14335f00a8d665411",
+      "category": "social",
+      "title": "The MacBook Pro's OLED PWM problem",
+      "summary": "Hacker News: 426ポイント、237件のコメント。投稿先で内容を確認。",
+      "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-15T13:15:22Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 92
+    },
+    {
       "id": "social-79b046481bd48da63d",
       "category": "social",
       "title": "SpaceX catches the Starship to end Flight 15",
-      "summary": "Hacker News: 1486ポイント、1019件のコメント。投稿先で内容を確認。",
+      "summary": "Hacker News: 1646ポイント、1227件のコメント。投稿先で内容を確認。",
       "url": "https://www.spacex.com/launches/starship-flight-15",
       "source": "Hacker News",
       "source_kind": "public_api",
@@ -2472,55 +2418,21 @@
       "score": 92
     },
     {
-      "id": "social-4c6605822260484c20",
+      "id": "social-88fe434bf7982b6e2b",
       "category": "social",
-      "title": "An Italian farmer found some unknown seeds in his attic and planted them",
-      "summary": "Hacker News: 626ポイント、176件のコメント。投稿先で内容を確認。",
-      "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+      "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+      "summary": "Hacker News: 402ポイント、185件のコメント。投稿先で内容を確認。",
+      "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-31T22:41:06Z",
+      "published": "2026-11-15T18:36:10Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 92
-    },
-    {
-      "id": "social-2f8f2a14b01c9a219b",
-      "category": "social",
-      "title": "HackerTube: YouTube built from videos recommended by HN",
-      "summary": "Hacker News: 2287ポイント、540件のコメント。投稿先で内容を確認。",
-      "url": "https://karpathy.bearblog.dev/hacker-tube/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-31T19:56:53Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 92
-    },
-    {
-      "id": "social-5545fe355a55d4d0a4",
-      "category": "social",
-      "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
-      "summary": "Hacker News: 601ポイント、299件のコメント。投稿先で内容を確認。",
-      "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-31T19:16:30Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 92
+      "score": 91
     },
     {
       "id": "social-88ae2cfdd6f592722f",
@@ -2863,6 +2775,23 @@
       "score": 90
     },
     {
+      "id": "social-f3ec7aca50104437d6",
+      "category": "social",
+      "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
+      "summary": "Hacker News: 342ポイント、173件のコメント。投稿先で内容を確認。",
+      "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-12T05:29:24Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 90
+    },
+    {
       "id": "social-7c413c5b5223a57600",
       "category": "social",
       "title": "Critical RCE Vulnerability in Apache HTTP Server",
@@ -3042,23 +2971,6 @@
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
       "published": "2026-11-03T21:51:06Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 90
-    },
-    {
-      "id": "social-6725a773cbcfd0fd91",
-      "category": "social",
-      "title": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
-      "summary": "Hacker News: 359ポイント、176件のコメント。投稿先で内容を確認。",
-      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-31T22:46:12Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -4518,32 +4430,32 @@
       "score": 86
     },
     {
-      "id": "social-0e356c09eb849e6e67",
+      "id": "social-d27638383af294362c",
       "category": "social",
-      "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
-      "summary": "Hacker News: 232ポイント、125件のコメント。投稿先で内容を確認。",
-      "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+      "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+      "summary": "Hacker News: 206ポイント、109件のコメント。投稿先で内容を確認。",
+      "url": "https://prog21.dadgum.com/116.html",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-01T02:19:53Z",
+      "published": "2026-11-15T13:44:16Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 86
+      "score": 85
     },
     {
-      "id": "social-b14335f00a8d665411",
+      "id": "social-eba8c0480eb85e20e4",
       "category": "social",
-      "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
-      "summary": "Hacker News: 213ポイント、111件のコメント。投稿先で内容を確認。",
-      "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+      "title": "Understanding Positional Embeddings in Modern LLMs",
+      "summary": "Hacker News: 206ポイント、27件のコメント。投稿先で内容を確認。",
+      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-15T13:15:22Z",
+      "published": "2026-11-15T12:14:06Z",
       "tags": [
         "海外IT",
         "コミュニティ"
@@ -4770,6 +4682,23 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 85
+    },
+    {
+      "id": "social-2d856116026bff1c26",
+      "category": "social",
+      "title": "Emacs Is My Browser",
+      "summary": "Hacker News: 183ポイント、99件のコメント。投稿先で内容を確認。",
+      "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-15T15:21:21Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 84
     },
     {
       "id": "social-d5d8547e961af0e1fa",
@@ -5196,38 +5125,72 @@
       "score": 84
     },
     {
-      "id": "social-5608b4df5d1243d5f8",
+      "id": "social-4a41bfb9fc315bc4a7",
       "category": "social",
-      "title": "Toit v2.0.0",
-      "summary": "Hacker News: 192ポイント、64件のコメント。投稿先で内容を確認。",
-      "url": "https://toit.io/blog/toit-v2-0-0/",
+      "title": "Old Bitly links are being hijacked",
+      "summary": "Hacker News: 177ポイント、93件のコメント。投稿先で内容を確認。",
+      "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-01T00:25:04Z",
+      "published": "2026-11-15T22:11:43Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 84
+      "score": 83
     },
     {
-      "id": "social-3c488a5d9e8fc9b748",
+      "id": "social-56669394d3aaac0f76",
       "category": "social",
-      "title": "Anthropic blocks users for anything touching training larger models",
-      "summary": "Hacker News: 182ポイント、90件のコメント。投稿先で内容を確認。",
-      "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+      "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+      "summary": "Hacker News: 173ポイント、43件のコメント。投稿先で内容を確認。",
+      "url": "https://bruceroettgers.eu/blog/protomaps/",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-31T19:39:19Z",
+      "published": "2026-11-15T19:26:22Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 84
+      "score": 83
+    },
+    {
+      "id": "social-7895a3ff8eb274c6f1",
+      "category": "social",
+      "title": "A short explainer on how El Niño works [video]",
+      "summary": "Hacker News: 178ポイント、81件のコメント。投稿先で内容を確認。",
+      "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-15T18:23:21Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 83
+    },
+    {
+      "id": "social-45d7221487cb2b24ad",
+      "category": "social",
+      "title": "Crows make decisions faster than we can",
+      "summary": "Hacker News: 173ポイント、125件のコメント。投稿先で内容を確認。",
+      "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-15T17:53:31Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 83
     },
     {
       "id": "social-2b72b271581ba0ed49",
@@ -5616,35 +5579,6 @@
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
       "score": 83
-    },
-    {
-      "id": "github-06145131b7c717dc08",
-      "category": "github",
-      "url": "https://github.com/workhold/doca",
-      "title": "workhold/doca",
-      "summary": "Doca｜开源文档管理与知识库，支持多人协同编辑、在线文档、Markdown、表格、幻灯片、画布和 AI 助手。Self-hosted document management, knowledge base & real-time collaborative editing for individuals and small teams.",
-      "published": "2026-11-15T17:20:12Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/workhold/doca",
-      "stars": 621,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "TypeScript",
-      "license": "MIT",
-      "tags": [
-        "ai-assistant",
-        "canvas",
-        "collaborative-editing",
-        "docker",
-        "document-management"
-      ],
-      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
-      "score": 82
     },
     {
       "id": "social-78ecf69f257c2b9746",
@@ -6272,38 +6206,21 @@
       "score": 81
     },
     {
-      "id": "social-39ee96f3b35f3b96f1",
+      "id": "social-6b4c777097609cb0c0",
       "category": "social",
-      "title": "Leaking Secrets from Air-Gap Computers by Spelling Radio Signals from RAM (2024)",
-      "summary": "Hacker News: 146ポイント、73件のコメント。投稿先で内容を確認。",
-      "url": "https://arxiv.org/abs/2409.02292",
+      "title": "Handwriting, as a Font",
+      "summary": "Hacker News: 132ポイント、34件のコメント。投稿先で内容を確認。",
+      "url": "https://ductus.sorenblank.com",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-01T01:46:29Z",
+      "published": "2026-11-15T19:42:13Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 81
-    },
-    {
-      "id": "social-03ef0338d3a520b67f",
-      "category": "social",
-      "title": "Altoids Project",
-      "summary": "Hacker News: 147ポイント、7件のコメント。投稿先で内容を確認。",
-      "url": "https://uvdn7.github.io/altoids-project/",
-      "source": "Hacker News",
-      "source_kind": "public_api",
-      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-10-31T22:54:55Z",
-      "tags": [
-        "海外IT",
-        "コミュニティ"
-      ],
-      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 81
+      "score": 80
     },
     {
       "id": "social-7edaf96ac92a8a9208",
@@ -6424,6 +6341,23 @@
       "score": 80
     },
     {
+      "id": "social-fdbabb74a9b628f6c5",
+      "category": "social",
+      "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
+      "summary": "Hacker News: 119ポイント、64件のコメント。投稿先で内容を確認。",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-15T20:37:28Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 79
+    },
+    {
       "id": "money-06145131b7c717dc08",
       "category": "money",
       "url": "https://github.com/workhold/doca",
@@ -6440,21 +6374,21 @@
       "score": 79
     },
     {
-      "id": "social-eba8c0480eb85e20e4",
+      "id": "social-2a1718ef6b8f6c9fd9",
       "category": "social",
-      "title": "Understanding Positional Embeddings in Modern LLMs",
-      "summary": "Hacker News: 109ポイント、2件のコメント。投稿先で内容を確認。",
-      "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+      "title": "Clice v1.0 Released: Welcome to Modern C++",
+      "summary": "Hacker News: 106ポイント、68件のコメント。投稿先で内容を確認。",
+      "url": "https://ykiko.me/en/articles/2105384023094834022/",
       "source": "Hacker News",
       "source_kind": "public_api",
       "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
-      "published": "2026-11-15T12:14:06Z",
+      "published": "2026-11-15T17:22:32Z",
       "tags": [
         "海外IT",
         "コミュニティ"
       ],
       "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
-      "score": 79
+      "score": 78
     },
     {
       "id": "social-a11994a80f2fdec7a1",
@@ -6474,91 +6408,84 @@
       "score": 78
     },
     {
-      "id": "github-c19103dc625357cac0",
+      "id": "social-54d089d240e348eb17",
+      "category": "social",
+      "title": "WebGL Flight Simulator with seed generated terrain",
+      "summary": "Hacker News: 94ポイント、11件のコメント。投稿先で内容を確認。",
+      "url": "https://baron.by.dai.studio/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-15T20:20:05Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 77
+    },
+    {
+      "id": "social-dcc6efaac047652cb6",
+      "category": "social",
+      "title": "Preserving 30 years of Salon journalism",
+      "summary": "Hacker News: 75ポイント、19件のコメント。投稿先で内容を確認。",
+      "url": "https://blog.archive.org/2026/11/12/preserving-30-years-of-salon-journalism/",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-15T23:00:11Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 75
+    },
+    {
+      "id": "social-43bb8e334e0578d494",
+      "category": "social",
+      "title": "Notes on Mathematics for Engineers (1959) [pdf]",
+      "summary": "Hacker News: 74ポイント、20件のコメント。投稿先で内容を確認。",
+      "url": "https://websites.umich.edu/~ners311/CourseLibrary/MathNotes.pdf",
+      "source": "Hacker News",
+      "source_kind": "public_api",
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=25",
+      "published": "2026-11-11T12:25:42Z",
+      "tags": [
+        "海外IT",
+        "コミュニティ"
+      ],
+      "reason": "技術コミュニティでの注目度を示す参考値。Xの話題とは別です。",
+      "score": 75
+    },
+    {
+      "id": "github-c1345a2a5b1ecb203e",
       "category": "github",
-      "url": "https://github.com/EternalNight996/memory-eternal",
-      "title": "EternalNight996/memory-eternal",
-      "summary": "🧠 给 AI 一个可信的第二大脑：本地 SQLite · 先审核再入库 · 不可篡改审计 · 记忆账本。🕷 蜘蛛侠皮肤 · 🔍 自建集 R@5 99.1% / LongMemEval-S 97.2% · 🧩 一个库接入 DSH / Claude Code / Codex / Cursor / 任意 MCP · ⭐ MIT 开源 · 🚀 零依赖开箱即用",
-      "published": "2026-11-15T17:19:32Z",
+      "url": "https://github.com/amurgola/LumaBrowser",
+      "title": "amurgola/LumaBrowser",
+      "summary": "Local AI desktop app: a Chromium browser with a GPU-aware llama.cpp runtime, OpenAI-compatible API, AI chat and agents, Stable Diffusion image/video, TTS and music, plus an MCP server so Claude Code, Codex and Cline can drive you…",
+      "published": "2026-11-16T02:17:12Z",
       "source": "GitHub Search API",
       "source_kind": "github_api",
-      "source_url": "https://github.com/EternalNight996/memory-eternal",
-      "stars": 188,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
+      "source_url": "https://github.com/amurgola/LumaBrowser",
+      "stars": 151,
+      "stars_observed_at": "2026-11-16T02:20:13.459595Z",
       "star_delta": null,
       "star_delta_since": null,
       "star_delta_per_day": null,
       "star_growth_percent_per_day": null,
       "discovery_group": "small",
       "language": "JavaScript",
-      "license": "MIT",
+      "license": null,
       "tags": [
-        "agent-memory",
-        "ai-memory",
-        "audit-log",
-        "claude-code",
-        "codex"
-      ],
-      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
-      "score": 67
-    },
-    {
-      "id": "github-708de6ac48209a8025",
-      "category": "github",
-      "url": "https://github.com/volekerb/hivemill",
-      "title": "volekerb/hivemill",
-      "summary": "A self-hosted software factory of Claude Code agents with review, QA and a judge merge gate.",
-      "published": "2026-11-15T17:19:35Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/volekerb/hivemill",
-      "stars": 33,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "Python",
-      "license": "MIT",
-      "tags": [
-        "agent-orchestration",
-        "agentic-workflow",
         "ai-agents",
-        "automation",
-        "claude"
+        "ai-browser",
+        "browser-automation",
+        "chatgpt-alternative",
+        "desktop-app"
       ],
-      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。",
-      "score": 58
-    },
-    {
-      "id": "github-548f3e5a4fcc74c768",
-      "category": "github",
-      "url": "https://github.com/underworldhistory1-ctrl/minimax-h3-interface",
-      "title": "underworldhistory1-ctrl/minimax-h3-interface",
-      "summary": "Self-hosted MiniMax H3 video with native audio and Qwen Image. Adaptive ComfyUI workflows, character references, storyboards and saved scenes.",
-      "published": "2026-11-15T17:18:58Z",
-      "source": "GitHub Search API",
-      "source_kind": "github_api",
-      "source_url": "https://github.com/underworldhistory1-ctrl/minimax-h3-interface",
-      "stars": 36,
-      "stars_observed_at": "2026-11-15T17:20:55.701534Z",
-      "star_delta": null,
-      "star_delta_since": null,
-      "star_delta_per_day": null,
-      "star_growth_percent_per_day": null,
-      "discovery_group": "small",
-      "language": "Python",
-      "license": "MIT",
-      "tags": [
-        "ai-video",
-        "character-reference",
-        "comfyui",
-        "image-generation",
-        "image-to-video"
-      ],
-      "reason": "公開topicsから、自前運用や監視ツールへの応用を検討する候補（用途は未検証）。",
-      "score": 55
+      "reason": "公開topicsから、自動化やAI連携への応用を検討する候補（用途は未検証）。 ライセンス未確認。利用条件の確認が必要。",
+      "score": 69
     }
   ],
   "errors": [
@@ -6570,48 +6497,48 @@
     {
       "id": "github-new",
       "name": "GitHub 新規・小規模",
-      "url": "https://api.github.com/search/repositories?q=created%3A%3E2026-08-27+stars%3A30..9999+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=updated&order=desc&per_page=25",
+      "url": "https://api.github.com/search/repositories?q=created%3A%3E2026-08-28+stars%3A30..9999+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=updated&order=desc&per_page=25",
       "status": "ok",
-      "count": 5,
+      "count": 1,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
     {
       "id": "github-ai-agent",
       "name": "GitHub AIエージェント",
-      "url": "https://api.github.com/search/repositories?q=topic%3Aai-agent+pushed%3A%3E2026-10-21+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aai-agent+pushed%3A%3E2026-10-22+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
     {
       "id": "github-automation",
       "name": "GitHub 自動化",
-      "url": "https://api.github.com/search/repositories?q=topic%3Aautomation+pushed%3A%3E2026-10-21+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aautomation+pushed%3A%3E2026-10-22+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
     {
       "id": "github-self-hosted",
       "name": "GitHub セルフホスト",
-      "url": "https://api.github.com/search/repositories?q=topic%3Aself-hosted+pushed%3A%3E2026-10-21+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aself-hosted+pushed%3A%3E2026-10-22+stars%3A%3E%3D30+fork%3Afalse+archived%3Afalse+is%3Apublic&sort=stars&order=desc&per_page=25",
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6622,8 +6549,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6634,8 +6561,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6646,8 +6573,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6656,10 +6583,10 @@
       "name": "関東発ドライブ",
       "url": "https://news.google.com/rss/search?q=%E9%96%A2%E6%9D%B1+%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96+%E6%97%A5%E5%B8%B0%E3%82%8A+%E8%A6%B3%E5%85%89+OR+%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%97+when%3A14d&hl=ja&gl=JP&ceid=JP%3Aja",
       "status": "ok",
-      "count": 8,
+      "count": 10,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6668,10 +6595,10 @@
       "name": "話題のニュース",
       "url": "https://news.google.com/rss/search?q=SNS+%E8%A9%B1%E9%A1%8C+%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89+%E6%97%A5%E6%9C%AC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
       "status": "ok",
-      "count": 6,
+      "count": 7,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6682,8 +6609,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6694,8 +6621,8 @@
       "status": "ok",
       "count": 22,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6706,9 +6633,9 @@
       "status": "failed",
       "count": 0,
       "error": "EmptyFeed",
-      "checked_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
       "last_success_at": null,
-      "consecutive_failures": 52,
+      "consecutive_failures": 53,
       "history_available": true
     },
     {
@@ -6718,8 +6645,8 @@
       "status": "ok",
       "count": 20,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6730,8 +6657,8 @@
       "status": "ok",
       "count": 18,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6742,8 +6669,8 @@
       "status": "ok",
       "count": 6,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6754,8 +6681,8 @@
       "status": "ok",
       "count": 15,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6764,10 +6691,10 @@
       "name": "CISA KEV",
       "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
       "status": "ok",
-      "count": 25,
+      "count": 23,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     },
@@ -6778,8 +6705,8 @@
       "status": "ok",
       "count": 25,
       "error": null,
-      "checked_at": "2026-11-15T17:20:55.701534Z",
-      "last_success_at": "2026-11-15T17:20:55.701534Z",
+      "checked_at": "2026-11-16T02:20:13.459595Z",
+      "last_success_at": "2026-11-16T02:20:13.459595Z",
       "consecutive_failures": 0,
       "history_available": true
     }
